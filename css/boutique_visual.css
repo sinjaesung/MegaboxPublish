@@ -1,0 +1,2763 @@
+/*boutique_visual.css*/
+@media all and (orientation:landscape){
+
+    /*비주얼 영역 css*/
+   .visual_area{
+      width:100%;height:100vh;
+      background-color:#c48e00;
+      position:relative;
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_visual.jpg');
+   }
+   .visual_area .visual_text{
+      height:auto;
+      position:absolute;
+      left:18.75vw;/*360/1920 1920화면 기준일때 해당 비율로 처리한다*/
+      top:36.45833333333%;/*350/960 960높이일때 해당 비율로 처리한다 영역의 높이에 대해서 해당 비율로 처리한다*/
+      color:white;
+      z-index:8;
+   }
+   .visual_area .visual_text .visual_logo{
+      width:16.77083333333vw;/*322/1920 1920화면시에 해당비율로 처리한다*/
+    max-width:360px;
+      height:auto;/*이미지에 의해 결정되는 크기*/
+      margin-left:20px;
+    display:block;
+   }
+   .visual_area .visual_text .visual_title{
+      font-size:1.875vw;/*1920화면 크기일때 해당비율로 처리한다 36/1920*/
+      line-height:1.38888888889; /*36/50*/
+      margin-top:1.04166666667vw;/*20/1920 1920화면일때 해당 비유로 한다*/
+      font-weight:400;
+      padding-left:20px;
+   }
+   .visual_area .visual_text .visual_title br{
+        display:none;
+   }
+   .visual_area .visual_text .visual_sepbar{
+      background-color:#dadada;
+      width:32.29166666667vw;/*620/1920 해당 화면에 해다비율로 길이 비율*/
+      height:2px;
+      margin:1.04166666667vw 0;/*20/1920 1920화면일때 해당 비율로 한다.*/
+      margin-left:20px;
+   }
+   .visual_area .visual_text .visual_desc{
+      font-size:1.04166666667vw; /*20/1920 해당 사이즈로한다*/
+      line-height:1.25;/*20/25*/
+      padding-left:20px;
+   }
+   .visual_area .visual_text .visual_desc .tm_br{
+        display:none;
+   }
+   .visual_area ul.theater_menus{
+      width:100%; height:auto; overflow:hidden;
+      position:absolute; background-color:rgba(0,0,0,0.5);
+      bottom:0;left:0; text-align:center;
+      z-index:8; color:white;
+   }
+   .visual_area ul.theater_menus li.theater_menu{
+      font-size:1.04166666667vw;/*20/1920*/
+      line-height:3;/*20/60*/
+      display:inline-block;
+      margin:0 20px;
+   }
+   .visual_area .visual_goldenfilter{
+      background-color:rgba(196,142,0,0.3);
+      position:absolute; z-index:6;
+      left:0;top:0; width:100%;height:100%;
+   }
+
+   /*부티크 스위트 영역 css*/
+   .boutique_suite{
+      margin-top:120px;
+      width:100%;height:100vh;
+      background-color:#000;
+      position:relative;
+    overflow:hidden;
+   }
+   .boutique_suite .suite_content{
+      height:38.48958333333vw;/*739/1920 1920일떄 해당 높이 비율*/
+    width:47.55208333333vw;/*913/1920 1920일때 해당 폭 비율*/
+      position:absolute;
+      top:11.45833333333%;/*해당 960높이일때의 해당 비율로 처리한다 110/960*/
+      left:13.54166666667vw;/*260/1920 1920화면일때 left수치 비율유지한다*/
+      color:white;
+    z-index:7;
+    overflow:visible;
+   }
+   .boutique_suite .suite_content .suite_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend .suite_contentInner{
+        width:83.33333333333%;/*101%에 대한 100%의 비율이며, 항상 고정된 스크롤바 크기14px만큼 더해줘야 suiteContentWrap과 크기가 같아짐*/
+        height:auto;
+        padding:1.04166666667vw;/*suite_content와 동일크기이다*/
+   }
+   .boutique_suite .suite_content .suite_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_suite .suite_content .suite_contentTitle{
+      font-size:1.875vw;/*36/1920 1920화면시 해당 비율로 처리*/
+      line-height:1.38888888889;/*36/50*/
+      font-weight:700;
+   }
+   .boutique_suite .suite_content .suite_contentTitlesub{
+      font-size:1.45833333333vw;/*28/1920 1920화면시에 해당비율로 처리*/
+      line-height:1.78571428571;/*28/50*/
+      font-weight:400;color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_design{
+      margin-top:1.5625vw;/*30/1920 1920일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:1.45833333333vw;/*28/1920*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_suite .suite_content .suite_designdesc{
+      font-size:0.9375vw;/*18/1920*/
+      line-height:1.66666666667;/*18/30*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_screensound{
+      margin-top:1.5625vw;/*30/1920 1920일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:1.45833333333vw;/*28/1920*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_suite .suite_content .suite_screensound_desc{
+      font-size:0.9375vw;/*18/1920*/
+      line-height:1.66666666667;/*18/30*/
+      color:#d9d9d9;
+   }
+
+   .boutique_suite .suite_content .suite_serviceArea{
+      height:auto; width:auto; float:left;
+      margin-top:1.5625vw;/*30/1920 1920일때 해당 높이 비율일때의 비율을 유지*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_service{
+      font-size:1.45833333333vw;/*28/1920*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_servicedesc{
+      font-size:0.9375vw;/*18/1920*/
+      line-height:1.66666666667;/*18/30*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_serviceImg{
+      width:21.5625vw;/*414/1920 1920화면일때 기준 해당 크기로 처리*/
+      height:13.48958333333vw;/*259/1920 1920화면일때 기준 해당 높이로 비율처리*/
+      float:left; margin-left:1.04166666667vw;/*20/1920 1920일때 기준 해당 비율로*/
+      margin-top:1.5625vw;/*30/1920 1920일때 해당 높이 비율일때의 비율을 유지*/
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetImg.jpg');
+   }
+   .boutique_suite .boutique_suitebg{
+      background-color:transparent;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 노말 영역 css*/
+   .boutique{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:120px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique .boutique_content{
+       position:absolute;
+     width:46.51041666667vw;/*893/1920*/
+     height:38.54166666667vw;/*740/1920*/
+       right:13.54166666667vw; /*260/1920 1920화면기준일때 해당 비율로 한다*/
+       top:11.77083333333%;/*113/960 960높이 기준일떄 해당 비율로 처리한다*/
+       color:white;
+     z-index:7;
+   }
+   .boutique .boutique_content .boutique_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend .boutique_contentInner{
+        width:84.555555555555%;/*101%에 대한 100%의 +14px더한 비율로처리한다.*/
+        height:auto;
+        padding:1.04166666667vw;/*boutique_content와 동일크기이다*/
+   }
+   .boutique .boutique_content .boutique_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다. 항상 부모직사각형의 가로,세로 해당 비율의 직사각형 타원은 부모를 4꼭지점 내접하게 감쌀수있다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique .boutique_content .boutique_contentTitle{
+        font-size:1.875vw;/*36/1920*/
+        line-height:1.38888888889;/*36/50*/
+        font-weight:700;
+   }
+   .boutique .boutique_content .boutique_contentTitlesub{
+       font-size:1.25vw;/*24/1920*/
+       line-height:2.08333333333;/*24/50*/
+   }
+   .boutique .boutique_content .boutique_design{
+      font-size:1.45833333333vw;/*28/1920 1920일때의 해당 비율로 처리한다*/
+      line-height:1.78571428571;/*28/50*/
+      margin-top:1.04166666667vw;/*20/1920*/
+   }
+   .boutique .boutique_content .boutique_designdesc{
+      font-size:0.9375vw;/*18/1920*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique .boutique_content .boutique_screensound{
+      font-size:1.45833333333vw;/*28/1920 1920일때의 해당 비율로 처리한다*/
+      line-height:1.78571428571;/*28/50*/
+      margin-top:1.04166666667vw;/*20/1920*/
+   }
+   .boutique .boutique_content .boutique_screensound_desc{
+      font-size:0.9375vw;/*18/1920*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique .boutique_content .boutique_serviceArea{
+       height:auto;width:auto;float:left;
+       margin-top:1.04166666667vw;/*20/1920*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_service{
+      font-size:1.45833333333vw;/*28/1920 1920일때의 해당 비율로 처리한다*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_servicedesc{
+      font-size:0.9375vw;/*18/1920*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique .boutique_content .boutique_normalImg{
+       width:21.5625vw; /*414/1920 1920화면 대비 해당 비율로 처리*/
+       height:13.48958333333vw;/*259/1920 vw단위로 처리*/
+       float:left;
+       margin-left:1.04166666667vw;/*20/1920*/
+       margin-top:1.04166666667vw;/*20/1920*/
+       background-size:cover;
+       background-position:50% 50%;
+       background-repeat:no-repeat;
+       background-image:url('../images/theater/botique_normalImg.jpg');
+   }
+   .boutique .boutique_normalbg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 100%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_normalBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 프라이빗 영역 css*/
+   .boutique_private{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:120px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent{
+       width:46.45833333333vw;/*892/1920*/
+     height:34.42708333333vw;/*661/1920*/
+       position:absolute;
+       left:13.54166666667vw;/*260/1920*/
+       top:13.54166666667%;/*130/960 960일때 해당 비율로 */
+       color:white;
+
+     z-index:7;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend .boutique_privateContentInner{
+        width:84.555555555555%;/*101%에 대한 100%의 +14px더한 비율로처리한다.*/
+        height:auto;
+        padding:1.04166666667vw;/*boutique_content와 동일크기이다 20/1920패딩비율*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다. 항상 부모직사각형의 가로,세로 해당 비율의 직사각형 타원은 부모를 4꼭지점 내접하게 감쌀수있다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitle{
+       font-size:1.875vw;/*36/1920 1920일때 36비율로 처리한다*/
+       line-height:1.38888888889;/*36/50*/
+       font-weight:700;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitlesub{
+      font-size:1.45833333333vw;/*28/1920*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_private .boutique_privateContent .foryou{
+      font-size:1.45833333333vw;/*28/1920*/
+      line-height:1.78571428571;/*28/50*/
+      margin-top:1.5625vw;/*30/1920*/
+   }
+   .boutique_private .boutique_privateContent .foryou_desc{
+      font-size:0.9375vw;/*18/1920*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea{
+      margin-top:1.5625vw;/*30/1920*/
+      height:auto; width:auto; float:left;
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_service{
+      font-size:1.45833333333vw;/*28/1920*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_servicedesc{
+      font-size:0.9375vw;/*18/1920*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateImg{
+      width:21.5625vw;/*414/1920 1920일때 해당 비율로 처리한다*/
+      height:12.08333333333vw;/*232/1920 1920일때 해당 비율로 처리한다*/
+      float:left; margin-left:1.5625vw;/*30/1920*/
+      margin-top:1.5625vw;/*30/1920*/
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botiqu_privateImg.jpg');
+   }
+   .boutique_private .boutique_privatebg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_privateBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 고메 라운지 css*/
+   .gourmet_lounge{
+       position:relative; width:100%;height:100vh;
+       background-color:#000; margin-top:120px;
+     overflow:hidden;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea{
+      position:absolute;
+      left:18.75vw;/*360/1920해당 위치 비율로 처리*/
+      top:8.33333333333%;/*80/960 960높이일때 기준 해당비율로*/
+      z-index:9;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea h2.gourmet_loungeTitle{
+       font-size:1.875vw;/*36/1920 1920일때 해당 비율로 처리*/
+       line-height:1.38888888889;/*36/50*/
+        font-weight:700; color:white;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea p{
+        font-size:1.45833333333vw;/*28/1920*/
+      line-height:1.78571428571;/*28/50*/
+        color:white;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap{
+        overflow:hidden;
+        height:42.08333333333vw;/*808/1920 1920 1920기준 해당비율.*/
+        width:50.57291666667vw;/*971/1920 1920기준 해당비율*/
+        position:absolute;
+        right:13.54166666667vw; /*260/1920 1920일때 해당 비율로*/
+        top:7.91666666667%;/*76/960 960높이시에 해당 비율로*/
+        z-index:7;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungContentextend{
+         width:101%;
+         height:100%;/*부모와 같은 높이 및 더 큰 폭*/
+         overflow-y:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungContentextend .gourmet_loungeContent{
+        width:83.33333333333333%;/*101%에 대한 100%의 비율*/
+        height:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img{
+      width:11.30208333333vw;/*217/1920 1920일때 해당 폭 비율*/
+       height:11.30208333333vw;/*217/1920 1920일때 해당 높이비율*/
+      float:right; background-color:#fe8020;
+       background-size:cover;
+       background-repeat:no-repeat;
+       background-position:50% 50%;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi1{
+      margin-left:0.52083333333vw;/*10/1920 해당 비율로!*/
+       background-image:url('../images/theater/gourmet_img1.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi2{
+      margin-left:0.52083333333vw;
+      background-image:url('../images/theater/gourmet_img2.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi3{
+      background-image:url('../images/theater/gourmet_img3.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi4{
+      clear:both;margin-left:0.52083333333vw;margin-top:0.52083333333vw;/*10/1920*/
+       background-image:url('../images/theater/gourmet_img4.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi5{
+     margin-left:0.52083333333vw;/*10/1920*/
+     margin-top:0.52083333333vw;/*10/1920*/
+     background-image:url('../images/theater/gourmet_img5.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi6{
+     margin-top:0.52083333333vw;/*10/1920*/
+     background-image:url('../images/theater/gourmet_img6.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img7{
+     clear:both; float:right;
+     margin-top:1.5625vw;/*30/1920*/
+     background-color:#fe8020;
+     width:50.57291666667vw;/*971/1920*/
+     height:17.39583333333vw;/*334/1920 %로 할경우 직속부모인 라운지콘텐츠를 기준으로 그 부모높이의 %로 되기에 이상해짐!*/
+     background-size:cover;
+     background-position:50% 50%;
+     background-repeat:no-repeat;
+     background-image:url('../images/theater/gourmet_img7.jpg');
+   }
+   .gourmet_lounge .gourmet_loungebg{
+       width:100%;height:100%;
+       background:linear-gradient(90deg,#6c4826,#3c2b19,#735749,#422712,#4d4135);
+       display:none;
+   }
+}
+/*2.landscape 2 type css*/
+@media all and (orientation:landscape) and (min-height:200px) and (max-height:500px){
+    /*가로형 타입중에서도 기기높이가 200~500범위에 해당되는 보편적인 모바일 랜드스캡 형태 기기일경우에 브라우저화면 크기가 200~500높이일경우에 처리하는 css부분*/
+    /*비주얼 영역 css*/
+   .visual_area{
+      width:100%;height:100vh;
+      background-color:#c48e00;
+      position:relative;
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_visual.jpg');
+   }
+   .visual_area .visual_text{
+      height:auto;
+      position:absolute;
+      left:18.75vw;/*120/640 640화면 기준일때 해당 비율로 처리한다 pc기준일때 정통landscape과 동일비율유지*/
+      top:32.5%;/*117/360 360높이일때 해당 비율로 처리한다 영역의 높이에 대해서 해당 비율로 처리한다*/
+      color:white;
+      z-index:8;
+   }
+   .visual_area .visual_text .visual_logo{
+      width:28.125vw;/*180/640 640화면시에 해당비율로 처리한다*/
+    max-width:360px;
+      height:auto;/*이미지에 의해 결정되는 크기*/
+      margin-left:0;
+    display:block;
+   }
+   .visual_area .visual_text .visual_title{
+      font-size:3.125vw;/*640화면 크기일때 해당비율로 처리한다 20/640*/
+      line-height:1.5; /*20/30*/
+      margin-top:1.5625vw;/*10/640 640화면일때 해당 비유로 한다*/
+      font-weight:400;
+      padding-left:0px;
+   }
+   .visual_area .visual_text .visual_title br{
+        display:none;
+   }
+   .visual_area .visual_text .visual_sepbar{
+      background-color:#dadada;
+      width:54.6875vw;/*350/640 해당 화면에 해다비율로 길이 비율*/
+      height:2px;
+      margin:0.78125vw 0;/*5/640 640화면일때 해당 비율로 한다.*/
+      margin-left:0;
+   }
+   .visual_area .visual_text .visual_desc{
+      font-size:2.1875vw; /*14/640 해당 사이즈로한다*/
+      line-height:1.42857142857;/*14/20*/
+      padding-left:0;
+   }
+   .visual_area .visual_text .visual_desc .tm_br{
+        display:none;
+   }
+   .visual_area ul.theater_menus{
+      width:100%; height:auto; overflow:hidden;
+      position:absolute; background-color:rgba(0,0,0,0.5);
+      bottom:0;left:0; text-align:center;
+      z-index:8; color:white;
+   }
+   .visual_area ul.theater_menus li.theater_menu{
+      font-size:2.1875vw;/*14/640*/
+      line-height:3.57142857143;/*14/50*/
+      display:inline-block;
+      margin:0 1.5625vw;/*10/640 640화면일떄 해당 비율로 처리*/
+   }
+   .visual_area .visual_goldenfilter{
+      background-color:rgba(196,142,0,0.3);
+      position:absolute; z-index:6;
+      left:0;top:0; width:100%;height:100%;
+   }
+
+   /*부티크 스위트 영역 css*/
+   .boutique_suite{
+      margin-top:30px;
+      width:100%;height:100vh;
+      background-color:#000;
+      position:relative;
+    overflow:hidden;
+   }
+   .boutique_suite .suite_content{
+      height:88.88888888889%;/*320/360 360높이에 대해 해당 비율로처리*/
+    width:59.375vw;/*380/640 640화면 비율일때 해당 폭 비율처리 640*360유사 크기까지 사용자 또는 실무자가 브라우저를 줄여볼일은 드물겠으나 만약 그런일이 테스트차원에서 발생했을시 브라우저에선 스크롤바 크기가 14px로 에뮬러에티에 비해 거대하기에 vw가 안전할수있다.그 오차로 인해 콘텐츠가 넘칠수있음.넘친다기보다 어차피 block형태긴 해서 크게 상관은없음.그러나 vw가 안전.시안과 유사한 수치가능함.*/
+      position:absolute;
+      top:0;bottom:0;margin:auto 0;/*모바일 landscape은 항상 수직가운데정렬처리*/
+      left:13.4375vw;/*86/640 640화면일때 left수치 비율유지한다*/
+      color:white;
+    overflow:visible;
+    z-index:7;
+   }
+   .boutique_suite .suite_content .suite_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend .suite_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.5625vw;/*10/640*/
+        padding-left:3.125vw;/*20/640*/
+   }
+   .boutique_suite .suite_content .suite_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_suite .suite_content .suite_contentTitle{
+      font-size:3.125vw;/*20/640 640화면시 해당 비율로 처리*/
+      line-height:1.5;/*20/30*/
+      font-weight:700;
+   }
+   .boutique_suite .suite_content .suite_contentTitlesub{
+      font-size:2.8125vw;/*18/640 640화면시에 해당비율로 처리*/
+      line-height:1.66666666667;/*18/30*/
+      font-weight:400;color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_design{
+      margin-top:1.5625vw;/*10/640 640일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:3.125vw;/*20/640*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_suite .suite_content .suite_designdesc{
+      font-size:2.1875vw;/*14/640*/
+      line-height:1.42857142857;/*14/20*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_screensound{
+      margin-top:1.5625vw;/*10/640 640일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:3.125vw;/*20/640*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_suite .suite_content .suite_screensound_desc{
+      font-size:2.1875vw;/*14/640*/
+      line-height:1.42857142857;/*14/20*/
+      color:#d9d9d9;
+   }
+
+   .boutique_suite .suite_content .suite_serviceArea{
+      height:auto; width:auto; float:none;
+      margin-top:1.5625vw;/*10/640 640일때 해당 높이 비율일때의 비율을 유지*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_service{
+      font-size:3.125vw;/*20/640*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_servicedesc{
+      font-size:2.1875vw;/*14/640*/
+      line-height:1.42857142857;/*14/20*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_serviceImg{
+      width:53.125vw;/*340/640 640화면일때 기준 해당 크기로 처리*/
+      height:33.125vw;/*212/640 640화면일때 기준 해당 높이로 비율처리*/
+      float:none; margin-left:0;
+      margin-top:1.5625vw;/*10/640 640일때 해당 높이 비율일때의 비율을 유지*/
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetImg.jpg');
+   }
+   .boutique_suite .boutique_suitebg{
+      background-color:transparent;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 노말 영역 css*/
+   .boutique{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:30px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique .boutique_content{
+       position:absolute;
+     width:60vw;/*384/640 640화면일때 해당 비율로 처리*/
+     height:88.88888888889%;/*320/360 높이 비율 유지*/
+       right:13.4375vw; /*86/640 640화면기준일때 해당 비율로 한다*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique .boutique_content .boutique_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend .boutique_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.5625vw;/*10/640*/
+        padding-left:3.125vw;/*20/640*/
+   }
+   .boutique .boutique_content .boutique_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique .boutique_content .boutique_contentTitle{
+        font-size:3.125vw;/*20/640*/
+        line-height:1.5;/*20/30*/
+        font-weight:700;
+   }
+   .boutique .boutique_content .boutique_contentTitlesub{
+       font-size:2.8125vw;/*18/640*/
+       line-height:1.66666666667;/*18/30*/
+   }
+   .boutique .boutique_content .boutique_design{
+      font-size:3.125vw;/*20/640 640일때의 해당 비율로 처리한다*/
+      line-height:1.5;/*20/30*/
+      margin-top:1.5625vw;/*10/640*/
+   }
+   .boutique .boutique_content .boutique_designdesc{
+      font-size:2.1875vw;/*14/640*/
+      line-height:1.42857142857;/*14/20*/
+   }
+   .boutique .boutique_content .boutique_screensound{
+      font-size:3.125vw;/*20/640 640일때의 해당 비율로 처리한다*/
+      line-height:1.5;/*20/30*/
+      margin-top:1.5625vw;/*10/640*/
+   }
+   .boutique .boutique_content .boutique_screensound_desc{
+      font-size:2.1875vw;/*14/640*/
+      line-height:1.42857142857;/*14/20*/
+   }
+   .boutique .boutique_content .boutique_serviceArea{
+       height:auto;width:auto;float:none;
+       margin-top:1.5625vw;/*10/640*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_service{
+      font-size:3.125vw;/*20/640 640일때의 해당 비율로 처리한다*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_servicedesc{
+      font-size:2.1875vw;/*14/640*/
+      line-height:1.42857142857;/*14/20*/
+   }
+   .boutique .boutique_content .boutique_normalImg{
+       width:53.125vw; /*340/640 640화면 대비 해당 비율로 처리*/
+       height:33.125vw;/*212/640 vw단위로 처리*/
+       float:none;
+     margin-left:0;
+       margin-top:1.5625vw;/*10/640*/
+       background-size:cover;
+       background-position:50% 50%;
+       background-repeat:no-repeat;
+       background-image:url('../images/theater/botique_normalImg.jpg');
+   }
+   .boutique .boutique_normalbg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 100%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_normalBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 프라이빗 영역 css*/
+   .boutique_private{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:30px;
+       position:relative;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent{
+       width:60vw;/*384/640 640화면일떄 해당 비율*/
+     height:88.88888888889%;/*320/360*/
+       position:absolute;
+       left:13.4375vw;/*86/640*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend .boutique_privateContentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.5625vw;/*10/640*/
+        padding-left:3.125vw;/*20/640*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitle{
+       font-size:3.125vw;/*20/640 640일때 20비율로 처리한다*/
+       line-height:1.5;/*20/30*/
+       font-weight:700;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitlesub{
+      font-size:2.8125vw;/*18/640*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique_private .boutique_privateContent .foryou{
+      font-size:3.125vw;/*20/640*/
+      line-height:1.5;/*20/30*/
+      margin-top:1.5625vw;/*10/640*/
+   }
+   .boutique_private .boutique_privateContent .foryou_desc{
+      font-size:2.1875vw;/*14/640*/
+      line-height:1.42857142857;/*14/20*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea{
+      margin-top:1.5625vw;/*10/640*/
+      height:auto; width:auto; float:none;
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_service{
+      font-size:3.125vw;/*20/640*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_servicedesc{
+      font-size:2.1875vw;/*14/640*/
+      line-height:1.42857142857;/*14/20*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateImg{
+      width:53.125vw;/*340/640 640일때 해당 비율로 처리한다*/
+      height:33.125vw;/*212/640 640일때 해당 비율로 처리한다*/
+      float:none; margin-left:0;
+      margin-top:1.5625vw;/*10/640*/
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botiqu_privateImg.jpg');
+   }
+   .boutique_private .boutique_privatebg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_privateBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 고메 라운지 css*/
+   .gourmet_lounge{
+       position:relative; width:100%;height:100vh;
+       background-color:#000; margin-top:30px;
+     overflow:hidden;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea{
+      position:absolute;
+      left:15.625vw;/*100/640 해당 위치 비율로 처리*/
+      top:5.55555555556%;/*20/360 360높이일때 기준 해당비율로*/
+      z-index:9;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea h2.gourmet_loungeTitle{
+       display:none;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea p{
+        font-size:2.8125vw;/*18/640*/
+      line-height:1.33333333333;/*18/24*/
+        color:white;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap{
+        /*640*360 프로토타입 기준 폭은 370이며(auto로처리) 높이는 240으로 처리예정*/
+        height:66.66666666667%;/*240/360 360높이 기준 해당 높이비율*/
+        width:59.375vw;/*380/640 640화면 기준 해당폭비율 브라우저테스팅을 고려하여 (물론 브라우저테스팅도 안전하게 하는 방법으로 스크롤바의 폭을 모든브라우저에서 다 지원되게끔 줄이는 스크롤바 스타일링 방법이 있다. 이러면 안정성업된다.)*/
+         position:absolute;
+        right:13.4375vw; /*86/640 640일때 해당 비율로*/
+        top:24.44444444444%;/*88/360 360높이시에 해당 비율로*/
+        overflow:hidden;
+        z-index:7;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend{
+         width:101%;height:100%;
+         overflow-y:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend .gourmet_loungeContent{
+        width:84.3333333267%;height:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img{
+      width:28.125vw;/*180/640 640일때 해당 폭 비율*/
+    height:28.125vw;/*180/640 640일때 해당 높이비율*/
+      float:right; background-color:#fe8020;
+       background-size:cover;
+       background-repeat:no-repeat;
+       background-position:50% 50%;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi1{
+      margin-left:0.78125vw;/*5/640 해당 비율로!*/
+       background-image:url('../images/theater/gourmet_img1.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi2{
+      margin-left:0;
+      background-image:url('../images/theater/gourmet_img2.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi3{
+      background-image:url('../images/theater/gourmet_img3.jpg'); clear:both;
+      margin-left:0.78125vw;/*5/640*/
+      margin-top:0.78125vw;/*5/640*/
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi4{
+      margin-left:0; clear:none;
+    margin-top:0.78125vw;/*5/640*/
+    background-image:url('../images/theater/gourmet_img4.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi5{
+     margin-left:0.78125vw;/*5/640*/
+     margin-top:0.78125vw;/*5/640*/
+     background-image:url('../images/theater/gourmet_img5.jpg'); clear:both;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi6{
+     margin-left:0;
+     margin-top:0.78125vw;/*5/640*/
+     background-image:url('../images/theater/gourmet_img6.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img7{
+     clear:both; float:right;
+     margin-top:1.5625vw;/*10/640*/
+     background-color:#fe8020;
+     width:34.375vw;/*220/640*/
+     height:33.75vw;/*216/640 %로 할경우 직속부모인 라운지콘텐츠를 기준으로 그 부모높이의 %로 되기에 이상해짐!*/
+     background-size:cover;
+     background-position:50% 50%;
+     background-repeat:no-repeat;
+     background-image:url('../images/theater/gourmet_img7(mobile).jpg');
+   }
+   .gourmet_lounge .gourmet_loungebg{
+       width:100%;height:100%;
+       background:linear-gradient(90deg,#6c4826,#3c2b19,#735749,#422712,#4d4135);
+       display:none;
+   }
+}
+/*3.landscape 3 type css*/
+@media all and (orientation:landscape) and (min-height:501px) and (max-height:820px){
+    /*가로형 타입중에서도 기기높이가 501~820범위에 해당되는 보편적인 중소형태블릿 랜드스캡 형태 기기일경우에 브라우저화면 크기가 501~820높이일경우에 처리하는 css부분*/
+    /*비주얼 영역 css*/
+   .visual_area{
+      width:100%;height:100vh;
+      background-color:#c48e00;
+      position:relative;
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_visual.jpg');
+   }
+   .visual_area .visual_text{
+      height:auto;
+      position:absolute;
+      left:10.41666666667vw;/*100/960 960화면 기준일때 해당 비율로*/
+      top:34.5%;/*207/600 600높이일때 해당 비율로 처리한다 영역의 높이에 대해서 해당 비율로 처리한다*/
+      color:white;
+      z-index:8;
+   }
+   .visual_area .visual_text .visual_logo{
+      width:25.20833333333vw;/*242/960 960화면시에 해당비율로 처리한다*/
+    max-width:360px;
+      height:auto;/*이미지에 의해 결정되는 크기*/
+      margin-left:0;
+    display:block;
+   }
+   .visual_area .visual_text .visual_title{
+      font-size:2.39583333333vw;/*960화면 크기일때 해당비율로 처리한다 23/960*/
+      line-height:1.73913043478; /*23/40*/
+      margin-top:2.08333333333vw;/*20/960 960화면일때 해당 비유로 한다*/
+      font-weight:400;
+      padding-left:0px;
+   }
+   .visual_area .visual_text .visual_title br{
+        display:none;
+   }
+   .visual_area .visual_text .visual_sepbar{
+      background-color:#dadada;
+      width:41.66666666667vw;/*400/960 해당 화면에 해다비율로 길이 비율*/
+      height:2px;
+      margin:1.5625vw 0;/*15/960 960화면일때 해당 비율로 한다.*/
+      margin-left:0;
+   }
+   .visual_area .visual_text .visual_desc{
+      font-size:1.875vw; /*18/960 해당 사이즈로한다*/
+      line-height:1.33333333333;/*18/24*/
+      padding-left:0;
+   }
+   .visual_area .visual_text .visual_desc .tm_br{
+        display:none;
+   }
+   .visual_area ul.theater_menus{
+      width:100%; height:auto; overflow:hidden;
+      position:absolute; background-color:rgba(0,0,0,0.5);
+      bottom:0;left:0; text-align:center;
+      z-index:8; color:white;
+   }
+   .visual_area ul.theater_menus li.theater_menu{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:3.125;/*16/50*/
+      display:inline-block;
+      margin:0 3.125vw;/*30/960 960화면일떄 해당 비율로 처리*/
+   }
+   .visual_area .visual_goldenfilter{
+      background-color:rgba(196,142,0,0.3);
+      position:absolute; z-index:6;
+      left:0;top:0; width:100%;height:100%;
+   }
+
+   /*부티크 스위트 영역 css*/
+   .boutique_suite{
+      margin-top:60px;
+      width:100%;height:100vh;
+      background-color:#000;
+      position:relative;
+    overflow:hidden;
+   }
+   .boutique_suite .suite_content{
+      height:90%;/*540/600 600높이에 대해 해당 비율로처리*/
+    width:48.75%;/*468/960 960화면 기준 해당 비율로 처리*/
+      position:absolute;
+      top:0;bottom:0;margin:auto 0;/*태블릿 landscape은 항상 수직가운데정렬처리*/
+      left:13.54166666667%;/*130/960 960화면일때 left수치 비율유지한다*/
+      color:white;
+    overflow:visible;
+    z-index:7;
+   }
+   .boutique_suite .suite_content .suite_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend .suite_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.04166666667vw;/*10/960*/
+         padding-left:2.08333333333vw;/*20/960*/
+   }
+   .boutique_suite .suite_content .suite_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_suite .suite_content .suite_contentTitle{
+      font-size:2.39583333333vw;/*23/960 960화면시 해당 비율로 처리*/
+      line-height:1.73913043478;/*23/40*/
+      font-weight:700;
+   }
+   .boutique_suite .suite_content .suite_contentTitlesub{
+      font-size:2.08333333333vw;/*20/960 960화면시에 해당비율로 처리*/
+      line-height:1.5;/*20/30*/
+      font-weight:400;color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_design{
+      margin-top:1.5625vw;/*15/960 960일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:2.08333333333vw;/*20/960*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_suite .suite_content .suite_designdesc{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:1.5;/*16/24*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_screensound{
+      margin-top:1.5625vw;/*15/960 960일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:2.08333333333vw;/*20/960*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_suite .suite_content .suite_screensound_desc{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:1.5;/*16/24*/
+      color:#d9d9d9;
+   }
+
+   .boutique_suite .suite_content .suite_serviceArea{
+      height:auto; width:auto; float:none;
+      margin-top:1.5625vw;/*15/960 960일때 해당 높이 비율일때의 비율을 유지*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_service{
+      font-size:2.08333333333vw;/*20/960*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_servicedesc{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:1.5;/*16/24*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_serviceImg{
+      width:41.25vw;/*396/960 960화면일때 기준 해당 크기로 처리*/
+      height:25.83333333333vw;/*248/960 960화면일때 기준 해당 높이로 비율처리*/
+      float:none; margin-left:0;
+      margin-top:1.5625vw;/*15/960 960일때 해당 높이 비율일때의 비율을 유지*/
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetImg.jpg');
+   }
+   .boutique_suite .boutique_suitebg{
+      background-color:transparent;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 노말 영역 css*/
+   .boutique{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:60px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique .boutique_content{
+       position:absolute;
+     width:48.33333333333%;/*464/960 960화면일때 해당 비율이다*/
+     height:90%;/*540/600 높이 비율 유지*/
+       right:13.54166666667vw; /*130/960 960화면기준일때 해당 비율로 한다*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique .boutique_content .boutique_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend .boutique_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.04166666667vw;/*10/960*/
+        padding-left:2.08333333333vw;/*20/960*/
+   }
+   .boutique .boutique_content .boutique_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique .boutique_content .boutique_contentTitle{
+        font-size:2.39583333333vw;/*23/960*/
+        line-height:1.73913043478;/*23/40*/
+        font-weight:700;
+   }
+   .boutique .boutique_content .boutique_contentTitlesub{
+       font-size:2.08333333333vw;/*20/960*/
+       line-height:1.5;/*20/30*/
+   }
+   .boutique .boutique_content .boutique_design{
+      font-size:2.08333333333vw;/*20/960 960일때의 해당 비율로 처리한다*/
+      line-height:1.5;/*20/30*/
+      margin-top:1.5625vw;/*15/960*/
+   }
+   .boutique .boutique_content .boutique_designdesc{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:1.5;/*16/24*/
+   }
+   .boutique .boutique_content .boutique_screensound{
+      font-size:2.08333333333vw;/*20/960 960일때의 해당 비율로 처리한다*/
+      line-height:1.5;/*20/30*/
+      margin-top:1.5625vw;/*15/960*/
+   }
+   .boutique .boutique_content .boutique_screensound_desc{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:1.5;/*16/24*/
+   }
+   .boutique .boutique_content .boutique_serviceArea{
+       height:auto;width:auto;float:none;
+       margin-top:1.5625vw;/*15/960*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_service{
+      font-size:2.08333333333vw;/*20/960 960일때의 해당 비율로 처리한다*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_servicedesc{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:1.5;/*16/24*/
+   }
+   .boutique .boutique_content .boutique_normalImg{
+       width:43.125vw; /*396/960 960화면 대비 해당 비율로 처리*/
+       height:26.97916666667vw;/*248/960 vw단위로 처리*/
+       float:none;
+     margin-left:0;
+       margin-top:1.5625vw;/*15/960*/
+       background-size:cover;
+       background-position:50% 50%;
+       background-repeat:no-repeat;
+       background-image:url('../images/theater/botique_normalImg.jpg');
+   }
+   .boutique .boutique_normalbg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 100%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_normalBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 프라이빗 영역 css*/
+   .boutique_private{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:60px;
+       position:relative;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent{
+       width:46.45833333333%;/*446/960 960화면시 해당 폭 비율처리*/
+     height:90%;/*540/600*/
+       position:absolute;
+       left:13.54166666667vw;/*130/960*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend .boutique_privateContentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.04166666667vw;/*10/960*/
+        padding-left:2.08333333333vw;/*20/960*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitle{
+       font-size:2.39583333333vw;/*23/960 960일때 23비율로 처리한다*/
+       line-height:1.73913043478;/*23/40*/
+       font-weight:700;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitlesub{
+      font-size:2.08333333333vw;/*20/960*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_private .boutique_privateContent .foryou{
+      font-size:2.08333333333vw;/*20/960*/
+      line-height:1.5;/*20/30*/
+      margin-top:1.5625vw;/*15/960*/
+   }
+   .boutique_private .boutique_privateContent .foryou_desc{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:1.5;/*16/24*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea{
+      margin-top:1.5625vw;/*15/960*/
+      height:auto; width:auto; float:none;
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_service{
+      font-size:2.08333333333vw;/*20/960*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_servicedesc{
+      font-size:1.66666666667vw;/*16/960*/
+      line-height:1.5;/*16/24*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateImg{
+      width:41.25vw;/*396/960 960일때 해당 비율로 처리한다*/
+      height:25.83333333333vw;/*248/960 960일때 해당 비율로 처리한다*/
+      float:none; margin-left:0;
+      margin-top:1.5625vw;/*15/960*/
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botiqu_privateImg.jpg');
+   }
+   .boutique_private .boutique_privatebg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_privateBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 고메 라운지 css*/
+   .gourmet_lounge{
+       position:relative; width:100%;height:100vh;
+       background-color:#000; margin-top:60px;
+     overflow:hidden;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea{
+      position:absolute;
+      left:10.41666666667vw;/*100/960 해당 위치 비율로 처리*/
+      top:5%;/*30/600 600높이일때 기준 해당비율로*/
+      z-index:9;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea h2.gourmet_loungeTitle{
+         font-size:2.70833333333vw;/*26/960*/
+       line-height:1.53846153846;/*26/40*/
+       font-weight:700;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea p{
+        font-size:1.875vw;/*18/960*/
+      line-height:1.33333333333;/*18/24*/
+        color:white;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap{
+        /*960*600 프로토타입 기준 폭은 600이며(auto로처리) 높이는 400으로 처리예정*/
+        height:66.66666666667%;/*400/600 600높이 기준 해당 높이비율*/
+        width:63.8vw;/*600/960 960화면 기준 해당 폭을 비율유지 모바일테스팅 기준일떄같이 960화면이 정확히 960인 경우에 600비율일텐데 만약 사용자가 pc브라우저에서 명시적 브라우저 폭만 조절하여 해당 기기상태로 도달하였을경우(드물지만..)브라우저에는 항시 스크롤바가 존재하여 그14px로 인해946px크기이고 이에 대한 비율은 그만큼 낮기에..이걸 감안한 수치로써 어쩃든 600px크기를 넘어가야함! 이런걸 항시 막으려면 이 케이스의경우는 vw가 적합 vw라면 무조건 화면크기 기준이기에..*/
+        position:absolute;
+        right:13.54166666667vw; /*130/960 960일때 해당 비율로*/
+         top:28.33333333333%;/*170/600 600높이시에 해당 비율로*/
+         overflow:hidden;
+         z-index:7;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend .gourmet_loungeContent{
+         width:84.33333333376%;/*101%에대한 스크롤바14px포함 감안한 100%비율 크롬,파폭을 통하 ㄴ에뮬리팅 기기에서의 contentextend영역의 스크롤바width는 매우 작은 수치로 처리된다 1~3px추정.그러나 브라우저에서 테스트하는경우는 14px고정크기로써 훨씬 크고,에뮬레이터때 해당 비율로 600px근사값이 되었으나 브라우저에선 안될수있기에 더 크게 여유있게 한다.*/
+         height:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img{
+      width:20.10416666667vw;/*193/960 960일때 해당 폭 비율*/
+    height:20.10416666667vw;/*193/960 960일때 해당 높이비율*/
+      float:right; background-color:#fe8020;
+       background-size:cover;
+       background-repeat:no-repeat;
+       background-position:50% 50%;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi1{
+      margin-left:1.04166666667vw;/*10/960 해당 비율로!*/
+       background-image:url('../images/theater/gourmet_img1.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi2{
+      margin-left:1.04166666667vw;/*10/960*/
+      background-image:url('../images/theater/gourmet_img2.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi3{
+      background-image:url('../images/theater/gourmet_img3.jpg'); clear:none;
+      margin-left:0;
+      margin-top:0;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi4{
+    clear:both;
+      margin-left:1.04166666667vw;/*10/960*/
+    margin-top:1.04166666667vw;/*10/960*/
+    background-image:url('../images/theater/gourmet_img4.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi5{
+     margin-left:1.04166666667vw;/*10/960*/
+     margin-top:1.04166666667vw;/*10/960*/
+     background-image:url('../images/theater/gourmet_img5.jpg'); clear:none;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi6{
+     margin-left:0;
+     margin-top:1.04166666667vw;/*10/960*/
+     background-image:url('../images/theater/gourmet_img6.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img7{
+     clear:both; float:right;
+     margin-top:2.08333333333vw;/*20/960*/
+     background-color:#fe8020;
+     width:34.6875vw;/*333/960*/
+     height:28.95833333333vw;/*278/960 %로 할경우 직속부모인 라운지콘텐츠를 기준으로 그 부모높이의 %로 되기에 이상해짐!*/
+     background-size:cover;
+     background-position:50% 50%;
+     background-repeat:no-repeat;
+     background-image:url('../images/theater/gourmet_img7(tablet).jpg');
+   }
+   .gourmet_lounge .gourmet_loungebg{
+       width:100%;height:100%;
+       background:linear-gradient(90deg,#6c4826,#3c2b19,#735749,#422712,#4d4135);
+       display:none;
+   }
+}
+
+/*4.landscape 4 type css*/
+@media all and (orientation:landscape) and (min-height:821px) and (max-aspect-ratio:16/10){
+    /*가로형 타입중에서도 기기높이가 821이상이며, 가로/세로 비율이 16/10이하인 상대적으로 가로가 세로에 비해 기존바다 짧아진 정사각형에 가까워진 기기타입 css부분 프로토타입 1112*834 중대형 태블릿 뒤집은것or 작은pc,laptop기기들.. 해당된다.*/
+    /*비주얼 영역 css*/
+   .visual_area{
+      width:100%;height:100vh;
+      background-color:#c48e00;
+      position:relative;
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_visual.jpg');
+   }
+   .visual_area .visual_text{
+      height:auto;
+      position:absolute;
+      left:8.9928057554vw;/*100/1112 1112화면 기준일때 해당 비율로 처리한다 */
+      top:35.01199040767%;/*292/834 834높이일때 해당 비율로 처리한다 영역의 높이에 대해서 해당 비율로 처리한다*/
+      color:white;
+      z-index:8;
+   }
+   .visual_area .visual_text .visual_logo{
+      width:28.95683453237vw;/*322/1112 1112화면시에 해당비율로 처리한다*/
+    max-width:360px;
+      height:auto;/*이미지에 의해 결정되는 크기*/
+      margin-left:0;
+    display:block;
+   }
+   .visual_area .visual_text .visual_title{
+      font-size:3.23741007194vw;/*1112화면 크기일때 해당비율로 처리한다 36/1112*/
+      line-height:1.38888888889; /*36/50*/
+      margin-top:1.79856115108vw;/*20/1112 1112화면일때 해당 비율로 한다*/
+      font-weight:400;
+      padding-left:0px;
+   }
+   .visual_area .visual_text .visual_title br{
+        display:none;
+   }
+   .visual_area .visual_text .visual_sepbar{
+      background-color:#dadada;
+      width:56.38489208633vw;/*627/1112 해당 화면에 해다비율로 길이 비율*/
+      height:2px;
+      margin:1.34892086331vw 0;/*15/1112 1112화면일때 해당 비율로 한다.*/
+      margin-left:0;
+   }
+   .visual_area .visual_text .visual_desc{
+      font-size:1.97841726619vw; /*22/1112 해당 사이즈로한다*/
+      line-height:1.36363636364;/*22/30*/
+      padding-left:0;
+   }
+   .visual_area .visual_text .visual_desc .tm_br{
+        display:none;
+   }
+   .visual_area ul.theater_menus{
+      width:100%; height:auto; overflow:hidden;
+      position:absolute; background-color:rgba(0,0,0,0.5);
+      bottom:0;left:0; text-align:center;
+      z-index:8; color:white;
+   }
+   .visual_area ul.theater_menus li.theater_menu{
+      font-size:1.97841726619vw;/*22/1112*/
+      line-height:2.72727272727;/*22/60*/
+      display:inline-block;
+      margin:0 2.24820143885vw;/*25/1112 1112화면일떄 해당 비율로 처리*/
+   }
+   .visual_area .visual_goldenfilter{
+      background-color:rgba(196,142,0,0.3);
+      position:absolute; z-index:6;
+      left:0;top:0; width:100%;height:100%;
+   }
+
+   /*부티크 스위트 영역 css*/
+   .boutique_suite{
+      margin-top:90px;
+      width:100%;height:100vh;
+      background-color:#000;
+      position:relative;
+    overflow:hidden;
+   }
+   .boutique_suite .suite_content{
+      height:86.3309352518%;/*720/834 834높이에 대해 해당 비율로처리*/
+    width:48.74100719424%;/*542/1112px 1112px일떄 해당 폭비율유지..*/
+      position:absolute;
+      top:0;bottom:0;margin:auto 0;/*라지 landscape은 항상 수직가운데정렬처리*/
+      left:15.10791366906%;/*168/1112 1112화면일때 left수치 비율유지한다*/
+      color:white;
+    overflow:visible;
+    z-index:7;
+   }
+   .boutique_suite .suite_content .suite_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend .suite_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:0.89928057554vw;/*10/1112*/
+         padding-left:1.79856115108vw;/*20/1112*/
+   }
+   .boutique_suite .suite_content .suite_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_suite .suite_content .suite_contentTitle{
+      font-size:3.23741007194vw;/*36/1112 1112화면시 해당 비율로 처리*/
+      line-height:1.38888888889;/*36/50*/
+      font-weight:700;
+   }
+   .boutique_suite .suite_content .suite_contentTitlesub{
+      font-size:2.15827338129vw;/*24/1112 1112화면시에 해당비율로 처리*/
+      line-height:1.66666666667;/*24/40*/
+      font-weight:400;color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_design{
+      margin-top:1.34892086331vw;/*15/1112 1112일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:2.15827338129vw;/*24/1112*/
+      line-height:1.66666666667;/*24/40*/
+   }
+   .boutique_suite .suite_content .suite_designdesc{
+      font-size:1.79856115108vw;/*20/1112*/
+      line-height:1.5;/*20/30*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_screensound{
+      margin-top:1.34892086331vw;/*15/1112 1112일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:2.15827338129vw;/*24/1112*/
+      line-height:1.66666666667;/*24/40*/
+   }
+   .boutique_suite .suite_content .suite_screensound_desc{
+      font-size:1.79856115108vw;/*20/1112*/
+      line-height:1.5;/*20/30*/
+      color:#d9d9d9;
+   }
+
+   .boutique_suite .suite_content .suite_serviceArea{
+      height:auto; width:auto; float:none;
+      margin-top:1.34892086331vw;/*15/1112 1112일때 해당 높이 비율일때의 비율을 유지*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_service{
+      font-size:2.15827338129vw;/*24/1112*/
+      line-height:1.66666666667;/*24/40*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_servicedesc{
+      font-size:1.79856115108vw;/*20/1112*/
+      line-height:1.5;/*20/30*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_serviceImg{
+      width:37.23021582734vw;/*414/1112 1112화면일때 기준 해당 크기로 처리*/
+      height:23.29136690647vw;/*259/1112 1112화면일때 기준 해당 높이로 비율처리*/
+      float:none; margin-left:0;
+      margin-top:1.34892086331vw;/*15/1112 1112일때 해당 높이 비율일때의 비율을 유지*/
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetImg.jpg');
+   }
+   .boutique_suite .boutique_suitebg{
+      background-color:transparent;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 노말 영역 css*/
+   .boutique{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:90px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique .boutique_content{
+       position:absolute;
+     width:47.48201438849%;/*528/1112px 1112일떄 해당 폭 비율*/
+     height:86.3309352518%;/*720/834 높이 비율 유지*/
+       right:15.10791366906vw; /*168/1112 1112화면기준일때 해당 비율로 한다*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique .boutique_content .boutique_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend .boutique_contentInner{
+        width:84.333333333333%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:0.89928057554vw;/*10/1112*/
+        padding-left:1.79856115108vw;/*20/1112*/
+   }
+   .boutique .boutique_content .boutique_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique .boutique_content .boutique_contentTitle{
+        font-size:3.23741007194vw;/*36/1112*/
+        line-height:1.38888888889;/*36/50*/
+        font-weight:700;
+   }
+   .boutique .boutique_content .boutique_contentTitlesub{
+       font-size:2.15827338129vw;/*24/1112*/
+       line-height:1.66666666667;/*24/40*/
+   }
+   .boutique .boutique_content .boutique_design{
+      font-size:2.15827338129vw;/*24/1112 1112일때의 해당 비율로 처리한다*/
+      line-height:1.66666666667;/*24/40*/
+      margin-top:1.34892086331vw;/*15/1112*/
+   }
+   .boutique .boutique_content .boutique_designdesc{
+      font-size:1.79856115108vw;/*20/1112*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique .boutique_content .boutique_screensound{
+      font-size:2.15827338129vw;/*24/1112 1112일때의 해당 비율로 처리한다*/
+      line-height:1.66666666667;/*24/40*/
+      margin-top:1.34892086331vw;/*15/1112*/
+   }
+   .boutique .boutique_content .boutique_screensound_desc{
+      font-size:1.79856115108vw;/*20/1112*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique .boutique_content .boutique_serviceArea{
+       height:auto;width:auto;float:none;
+       margin-top:1.34892086331vw;/*15/1112*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_service{
+      font-size:2.15827338129vw;/*24/1112 1112일때의 해당 비율로 처리한다*/
+      line-height:1.66666666667;/*24/40*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_servicedesc{
+      font-size:1.79856115108vw;/*20/1112*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique .boutique_content .boutique_normalImg{
+       width:37.23021582734vw; /*414/1112 1112화면 대비 해당 비율로 처리*/
+       height:23.29136690647vw;/*259/1112 vw단위로 처리*/
+       float:none;
+     margin-left:0;
+       margin-top:1.34892086331vw;/*15/1112*/
+       background-size:cover;
+       background-position:50% 50%;
+       background-repeat:no-repeat;
+       background-image:url('../images/theater/botique_normalImg.jpg');
+   }
+   .boutique .boutique_normalbg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 100%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_normalBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 프라이빗 영역 css*/
+   .boutique_private{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:90px;
+       position:relative;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent{
+       width:45.86330935252%;/*510/1112 1112화면폭일시해당 비율로처리*/
+     height:86.3309352518%;/*720/834*/
+       position:absolute;
+       left:15.10791366906vw;/*168/1112*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend .boutique_privateContentInner{
+        width:84.333333333333%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:0.89928057554vw;/*10/1112*/
+        padding-left:1.79856115108vw;/*20/1112*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitle{
+       font-size:3.23741007194vw;/*36/1112 1112일때 36비율로 처리한다*/
+       line-height:1.38888888889;/*36/50*/
+       font-weight:700;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitlesub{
+      font-size:2.15827338129vw;/*24/1112*/
+      line-height:1.66666666667;/*24/40*/
+   }
+   .boutique_private .boutique_privateContent .foryou{
+      font-size:2.15827338129vw;/*24/1112*/
+      line-height:1.66666666667;/*24/40*/
+      margin-top:1.34892086331vw;/*15/1112*/
+   }
+   .boutique_private .boutique_privateContent .foryou_desc{
+      font-size:1.79856115108vw;/*20/1112*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea{
+      margin-top:1.34892086331vw;/*15/1112*/
+      height:auto; width:auto; float:none;
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_service{
+      font-size:2.15827338129vw;/*24/1112*/
+      line-height:1.66666666667;/*24/40*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_servicedesc{
+      font-size:1.79856115108vw;/*20/1112*/
+      line-height:1.5;/*20/30*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateImg{
+      width:37.23021582734vw;/*414/1112 1112일때 해당 비율로 처리한다*/
+      height:23.29136690647vw;/*259/1112 1112일때 해당 비율로 처리한다*/
+      float:none; margin-left:0;
+      margin-top:1.34892086331vw;/*15/1112*/
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botiqu_privateImg.jpg');
+   }
+   .boutique_private .boutique_privatebg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_privateBg.jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 고메 라운지 css*/
+   .gourmet_lounge{
+       position:relative; width:100%;height:100vh;
+       background-color:#000; margin-top:90px;
+     overflow:hidden;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea{
+      position:absolute;
+      left:10.41666666667vw;/*100/1112 해당 위치 비율로 처리*/
+      top:5%;/*30/834 834높이일때 기준 해당비율로*/
+    z-index:9;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea h2.gourmet_loungeTitle{
+         font-size:3.125vw;/*36/1112*/
+       line-height:1.66666666667;/*36/50*/
+       font-weight:700;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea p{
+        font-size:2.29166666667vw;/*24/1112*/
+      line-height:1.36363636364;/*24/40*/
+        color:white;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap{
+        height:66.66666666667%;/*560/834 834높이 기준 해당 높이비율*/
+        width:71.94244604317vw;/*800/1112px 1112화면 기준 해당 폭 비율*/
+        position:absolute;
+        right:13.54166666667vw; /*168/1112 1112일때 해당 비율로*/
+         top:28.33333333333%;/*190/834 834높이시에 해당 비율로*/
+         overflow:hidden;
+         z-index:7;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend{
+         width:101%;height:100%;
+         overflow-y:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend .gourmet_loungeContent{
+        width:84.66666666666666666666%;/*120에 대한 100%비율 스크롤바크기 감안 계산*/
+        height:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img{
+      width:21.66666666667vw;/*260/1112 1112일때 해당 폭 비율*/
+    height:21.66666666667vw;/*260/1112 1112일때 해당 높이비율*/
+      float:right; background-color:#fe8020;
+       background-size:cover;
+       background-repeat:no-repeat;
+       background-position:50% 50%;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi1{
+      margin-left:1.04166666667vw;/*10/1112 해당 비율로!*/
+       background-image:url('../images/theater/gourmet_img1.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi2{
+      margin-left:1.04166666667vw;/*10/1112*/
+      background-image:url('../images/theater/gourmet_img2.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi3{
+      background-image:url('../images/theater/gourmet_img3.jpg'); clear:none;
+      margin-left:0;
+      margin-top:0;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi4{
+    clear:both;
+      margin-left:1.04166666667vw;/*10/1112*/
+    margin-top:1.04166666667vw;/*10/1112*/
+    background-image:url('../images/theater/gourmet_img4.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi5{
+     margin-left:1.04166666667vw;/*10/1112*/
+     margin-top:1.04166666667vw;/*10/1112*/
+     background-image:url('../images/theater/gourmet_img5.jpg'); clear:none;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi6{
+     margin-left:0;
+     margin-top:1.04166666667vw;/*10/1112*/
+     background-image:url('../images/theater/gourmet_img6.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img7{
+     clear:both; float:right;
+     margin-top:2.08333333333vw;/*20/1112*/
+     background-color:#fe8020;
+     width:34.6875vw;/*400/1112*/
+     height:28.95833333333vw;/*334/1112 %로 할경우 직속부모인 라운지콘텐츠를 기준으로 그 부모높이의 %로 되기에 이상해짐!*/
+     background-size:cover;
+     background-position:50% 50%;
+     background-repeat:no-repeat;
+     background-image:url('../images/theater/gourmet_img7(tablet).jpg');
+   }
+   .gourmet_lounge .gourmet_loungebg{
+       width:100%;height:100%;
+       background:linear-gradient(90deg,#6c4826,#3c2b19,#735749,#422712,#4d4135);
+       display:none;
+   }
+}
+
+/*태블릿 부분 css*/
+@media all and (min-width:600px) and (max-width:1099px) and (orientation:portrait){
+
+    /*비주얼 영역 css*/
+   .visual_area{
+      width:100%;height:100vh;
+      background-color:#c48e00;
+      position:relative;
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_visual(tablet).jpg');
+   }
+   .visual_area .visual_text{
+      height:25.859375%;/*331/1280*/
+    width:72.5w;/*580/800*/
+      position:absolute;
+    top:35.625%;/*456/1280 1280화면 기준 해당 높이비율*/
+      left:0;right:0;margin:0 auto;
+      color:white;
+      z-index:8;
+    text-align:center;
+   }
+   .visual_area .visual_text .visual_logo{
+      width:40.25vw;/*322/800 800화면시에 해당비율로 처리한다*/
+    max-width:360px;
+      height:auto;/*이미지에 의해 결정되는 크기*/
+      margin:0 auto;
+    display:block;
+   }
+   .visual_area .visual_text .visual_title{
+      font-size:4vw;/*800화면 크기일때 해당비율로 처리한다 32/800*/
+      line-height:1.25; /*32/40*/
+      margin-top:2.5vw;/*20/800 800화면일때 해당 비율로 한다*/
+      font-weight:400;
+      padding-left:0;
+   }
+   .visual_area .visual_text .visual_title br{
+        display:block;
+   }
+   .visual_area .visual_text .visual_sepbar{
+      background-color:#dadada;
+      width:37.75vw;/*302/800 해당 화면에 해다비율로 길이 비율*/
+      height:2px;
+      margin:5vw auto;/*40/800 800화면일때 해당 비율로 한다.*/
+   }
+   .visual_area .visual_text .visual_desc{
+      font-size:2.75vw; /*22/800 해당 사이즈로한다*/
+      line-height:1.22727272727;/*22/27*/
+      padding-left:0;
+   }
+   .visual_area .visual_text .visual_desc .tm_br{
+        display:block;
+   }
+   .visual_area ul.theater_menus{
+      width:100%; height:auto; overflow:hidden;
+      position:absolute; background-color:rgba(0,0,0,0.5);
+      bottom:0;left:0; text-align:center;
+      z-index:8; color:white;
+   }
+   .visual_area ul.theater_menus li.theater_menu{
+      font-size:2.25vw;/*18/800*/
+      line-height:2.77777777778;/*18/50*/
+      display:inline-block;
+      margin:0 6vw;/*48/800 800화면 기준일때 해당 여백비율로 처리*/
+   }
+   .visual_area .visual_goldenfilter{
+      background-color:rgba(196,142,0,0.3);
+      position:absolute; z-index:6;
+      left:0;top:0; width:100%;height:100%;
+   }
+
+   /*부티크 스위트 영역 css*/
+   .boutique_suite{
+      margin-top:60px;
+      width:100%;height:100vh;
+      background-color:#000;
+      position:relative;
+    overflow:hidden;
+   }
+   .boutique_suite .suite_content{
+      position:absolute;
+    top:0;bottom:0;margin:auto 0;
+      left:7.5vw;/*60/800 800화면일때 left수치 비율유지한다*/
+    width:65vw;/*520/800 800화면일때 기준 해당비율*/
+    height:121.125vw;/*969/800 800화면 기준 해당 비율 내부 글자크기,line-height,글자영역간 여백,이미지 크기 등이 모두 화면폭을 기준으로 처리되기에 이 영역자체의 크기또한 그렇게 처리하는게 일관성있다.참고로 해당 크기는 패딩포함크기이다.*/
+      color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique_suite .suite_content .suite_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend .suite_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.875vw;/*15/800*/
+        padding-left:3.125vw;/*25/800*/
+   }
+   .boutique_suite .suite_content .suite_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_suite .suite_content .suite_contentTitle{
+      font-size:3.5vw;/*28/800 800화면시 해당 비율로 처리*/
+      line-height:1.42857142857;/*28/40*/
+      font-weight:700;
+   }
+   .boutique_suite .suite_content .suite_contentTitlesub{
+      font-size:2.75vw;/*22/800 800화면시에 해당비율로 처리*/
+      line-height:1.81818181818;/*22/40*/
+      font-weight:400;color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_design{
+    margin-top:3.75vw;/*30/800 800일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:3.5vw;/*28/800*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_suite .suite_content .suite_designdesc{
+      font-size:2.25vw;/*18/800*/
+      line-height:1.66666666667;/*18/30*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_screensound{
+      margin-top:3.75vw;/*30/800 800일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:3.5vw;/*28/800*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_suite .suite_content .suite_screensound_desc{
+      font-size:2.25vw;/*18/800*/
+      line-height:1.66666666667;/*18/30*/
+      color:#d9d9d9;
+   }
+
+   .boutique_suite .suite_content .suite_serviceArea{
+      height:auto; width:auto; float:none;
+      margin-top:3.75vw;/*30/800 800일때 해당 높이 비율일때의 비율을 유지*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_service{
+      font-size:3.5vw;/*28/800*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_servicedesc{
+      font-size:2.25vw;/*18/800*/
+      line-height:1.66666666667;/*18/30*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_serviceImg{
+      width:51.75vw;/*414/800 800화면일때 기준 해당 크기로 처리*/
+      height:32.375vw;/*259/800 800화면일때 기준 해당 높이로 비율처리*/
+      float:none; margin:0 auto;
+      margin-top:3.75vw;/*30/800 800일때 해당 높이 비율일때의 비율을 유지*/
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetImg.jpg');
+   }
+   .boutique_suite .boutique_suitebg{
+      background-color:transparent;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetBg(tablet).jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 노말 영역 css*/
+   .boutique{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:60px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique .boutique_content{
+       position:absolute;
+     width:75vw;/*600/800*/
+     height:118vw;/*944/800 800기준 해당비율로*/
+
+       right:7.5vw; /*60/800 800화면기준일때 해당 비율로 한다*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique .boutique_content .boutique_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend .boutique_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.875vw;/*15/800*/
+        padding-left:3.125vw;/*25/800*/
+   }
+   .boutique .boutique_content .boutique_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique .boutique_content .boutique_contentTitle{
+        font-size:3.5vw;/*28/800*/
+        line-height:1.42857142857;/*28/40*/
+        font-weight:700;
+   }
+   .boutique .boutique_content .boutique_contentTitlesub{
+       font-size:2.75vw;/*22/800*/
+       line-height:1.81818181818;/*22/40*/
+   }
+   .boutique .boutique_content .boutique_design{
+      font-size:3.5vw;/*28/800 800일때의 해당 비율로 처리한다*/
+      line-height:1.78571428571;/*28/50*/
+      margin-top:3.75vw;/*30/800*/
+   }
+   .boutique .boutique_content .boutique_designdesc{
+      font-size:2.25vw;/*18/800*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique .boutique_content .boutique_screensound{
+      font-size:3.5vw;/*28/800 800일때의 해당 비율로 처리한다*/
+      line-height:1.78571428571;/*28/50*/
+      margin-top:3.75vw;/*30/800*/
+   }
+   .boutique .boutique_content .boutique_screensound_desc{
+      font-size:2.25vw;/*18/800*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique .boutique_content .boutique_serviceArea{
+       height:auto;width:auto;float:none;
+       margin-top:3.75vw;/*30/800*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_service{
+      font-size:3.5vw;/*28/800 800일때의 해당 비율로 처리한다*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_servicedesc{
+      font-size:2.25vw;/*18/800*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique .boutique_content .boutique_normalImg{
+       width:51.75vw; /*414/800 800화면 대비 해당 비율로 처리*/
+       height:32.375vw;/*259/800 vw단위로 처리*/
+       float:none;
+       margin:0 auto;
+     margin-top:3.75vw;/*30/800*/
+       background-size:cover;
+       background-position:50% 50%;
+       background-repeat:no-repeat;
+       background-image:url('../images/theater/botique_normalImg.jpg');
+   }
+   .boutique .boutique_normalbg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 100%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_normalBg(tablet).jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 프라이빗 영역 css*/
+   .boutique_private{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:60px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent{
+       width:57.5vw;/*460/800*/
+     height:103.875vw;/*831/800*/
+       position:absolute;
+       left:7.5vw;/*60/800*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+      overflow:visible;
+      z-index:7;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend .boutique_privateContentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:1.875vw;/*15/800*/
+        padding-left:3.125vw;/*25/800*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitle{
+       font-size:3.5vw;/*28/800 800일때 28비율로 처리한다*/
+       line-height:1.42857142857;/*28/40*/
+       font-weight:700;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitlesub{
+      font-size:2.75vw;/*22/800*/
+      line-height:1.81818181818;/*22/40*/
+   }
+   .boutique_private .boutique_privateContent .foryou{
+      font-size:3.5vw;/*28/800*/
+      line-height:1.78571428571;/*28/50*/
+      margin-top:3.75vw;/*30/800*/
+   }
+   .boutique_private .boutique_privateContent .foryou_desc{
+      font-size:2.25vw;/*18/800*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea{
+      margin-top:3.75vw;/*30/800*/
+      height:auto; width:auto; float:none;
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_service{
+      font-size:3.5vw;/*28/800*/
+      line-height:1.78571428571;/*28/50*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_servicedesc{
+      font-size:2.25vw;/*18/800*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateImg{
+      width:51.75vw;/*414/800 800일때 해당 비율로 처리한다*/
+      height:29vw;/*232/800 800일때 해당 비율로 처리한다*/
+      float:none; margin:0 auto;
+      margin-top:3.75vw;/*30/800*/
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botiqu_privateImg.jpg');
+   }
+   .boutique_private .boutique_privatebg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_privateBg(tablet).jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 고메 라운지 css*/
+   .gourmet_lounge{
+       position:relative; width:100%;height:100vh;
+       background-color:#000; margin-top:60px;
+     overflow:hidden;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea{
+    position:absolute;
+      left:9.5vw;/*76/800해당 위치 비율로 처리*/
+      top:5.625%;/*72/1280 1280높이일때 기준 해당비율로*/
+      z-index:9;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea h2.gourmet_loungeTitle{
+       display:none;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea p{
+    font-size:3.5vw;/*28/800*/
+      line-height:1.42857142857;/*28/40*/
+    color:white;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap{
+        overflow:hidden;
+        width:88vw;/*704/800화면기준 704폭으로 여유있게 해야 안의 실제 콘텐츠폭도 680최소값은 넘어가서 안의 콘텐츠를 안정적으로 담을수있다*/
+        height:101vw;/*808/800화면 기준808높이로 처리한다. 높이의 경우 맞출필요는 없다.어차피 스크롤바가 있으므로 스크롤바가 더 길제 스크롤링 될뿐이다.화면폭에 따라 높이도 같이 비율에 맞게 주는 구조로한다.*/
+          position:absolute;
+         right:7.5vw; /*60/800 800일때 해당 비율로*/
+         top:20.703125%;/*265/1280 1280높이시에 해당 비율로*/
+        overflow:hidden;
+        z-index:7;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend{
+         width:101%;height:100%;
+         overflow-y:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend .gourmet_loungeContent{
+        width:83.33333333367%;/*최종계산결과가 어지되었든.670px을 여유있게 넘어가게 하는게 안정적 그보다 작아지는 화면상태가 된다면 콘텐츠가 어그러질수있음.*/
+        height:auto;
+   }
+
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img{
+      width:27.125vw;/*217/800 800일때 해당 폭 비율*/
+    height:27.125vw;/*217/800 800일때 해당 높이비율*/
+      float:right; background-color:#fe8020;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi1{
+      margin-left:1.25vw;/*10/800 해당 비율로!*/
+       background-image:url('../images/theater/gourmet_img1.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi2{
+      margin-left:1.25vw;
+      background-image:url('../images/theater/gourmet_img2.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi3{
+      background-image:url('../images/theater/gourmet_img3.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi4{
+      clear:both;
+    margin-left:1.25vw;
+    margin-top:1.25vw;/*10/800*/
+       background-image:url('../images/theater/gourmet_img4.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi5{
+     margin-left:1.25vw;/*10/800*/
+     margin-top:1.25vw;/*10/800*/
+     background-image:url('../images/theater/gourmet_img5.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi6{
+     margin-top:1.25vw;/*10/800*/
+     background-image:url('../images/theater/gourmet_img6.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img7{
+     clear:both; float:right;
+     margin-top:3.75vw;/*30/800*/
+     background-color:#fe8020;
+     width:50vw;/*400/800*/
+     height:41.75vw;/*334/800 %로 할경우 직속부모인 라운지콘텐츠를 기준으로 그 부모높이의 %로 되기에 이상해짐!*/
+     background-size:cover;
+     background-position:50% 50%;
+     background-repeat:no-repeat;
+     background-image:url('../images/theater/gourmet_img7(tablet).jpg');
+   }
+   .gourmet_lounge .gourmet_loungebg{
+       width:100%;height:100%;
+       background:linear-gradient(90deg,#6c4826,#3c2b19,#735749,#422712,#4d4135);
+       display:none;
+   }
+}
+/*모바일 기기 css 비주얼 영역부분*/
+@media all and (max-width:599px) and (orientation:portrait){
+    /*비주얼 영역 css*/
+   .visual_area{
+      width:100%;height:100vh;
+      background-color:#c48e00;
+      position:relative;
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_visual(mobile).jpg');
+   }
+   .visual_area .visual_text{
+      height:35.12880562061%;/*300/854*/
+    width:87.5vw;/*420/480*/
+      position:absolute;
+    top:30.91334894614%;/*264/854 854화면 기준 해당 높이비율*/
+      left:0;right:0;margin:0 auto;
+      color:white;
+      z-index:8;
+    text-align:center;
+   }
+   .visual_area .visual_text .visual_logo{
+      width:47.29166666667vw;/*227/480 480화면시에 해당비율로 처리한다*/
+    max-width:360px;
+      height:auto;/*이미지에 의해 결정되는 크기 227*57*/
+      margin:0 auto;
+    display:block;
+   }
+   .visual_area .visual_text .visual_title{
+      font-size:5vw;/*480화면 크기일때 해당비율로 처리한다 24/480*/
+      line-height:1.5; /*24/36*/
+      margin-top:4.16666666667vw;/*20/480 480화면일때 해당 비율로 한다*/
+      font-weight:400;
+      padding-left:0;
+   }
+   .visual_area .visual_text .visual_title br{
+        display:block;
+   }
+   .visual_area .visual_text .visual_sepbar{
+      background-color:#dadada;
+      width:62.5vw;/*300/480 해당 화면에 해다비율로 길이 비율*/
+      height:3px;
+      margin:4.16666666667vw auto;/*20/480 480화면일때 해당 비율로 한다.*/
+   }
+   .visual_area .visual_text .visual_desc{
+      font-size:3.125vw; /*15/480 해당 사이즈로한다*/
+      line-height:1.6;/*15/24*/
+      padding-left:0;
+   }
+   .visual_area .visual_text .visual_desc .tm_br{
+        display:block;
+   }
+   .visual_area ul.theater_menus{
+      width:100%; height:auto; overflow:hidden;
+      position:absolute; background-color:rgba(0,0,0,0.5);
+      bottom:0;left:0; text-align:center;
+      z-index:8; color:white;
+   }
+   .visual_area ul.theater_menus li.theater_menu{
+      font-size:3.125vw;/*15/480*/
+      line-height:3.33333333333;/*15/50*/
+      display:inline-block;
+      margin:0 4.16666666667vw;/*20/480 480화면 기준일때 해당 여백비율로 처리*/
+   }
+   .visual_area .visual_goldenfilter{
+      background-color:rgba(196,142,0,0.3);
+      position:absolute; z-index:6;
+      left:0;top:0; width:100%;height:100%;
+   }
+
+   /*부티크 스위트 영역 css*/
+   .boutique_suite{
+      margin-top:30px;
+      width:100%;height:100vh;
+      background-color:#000;
+      position:relative;
+    overflow:hidden;
+   }
+   .boutique_suite .suite_content{
+      position:absolute;
+    top:0;bottom:0;margin:auto 0;
+      left:6.25vw;/*30/480 480화면일때 left수치 비율유지한다*/
+    width:87.5vw;/*420/480 480화면일때 기준 해당비율*/
+    height:143.75vw;/*690/480 480화면 기준 해당 비율 내부 글자크기,line-height,글자영역간 여백,이미지 크기 등이 모두 화면폭을 기준으로 처리되기에 이 영역자체의 크기또한 그렇게 처리하는게 일관성있다.참고로 해당 크기는 패딩포함크기이다.*/
+      color:white;
+    overflow:visible;
+    z-index:7;
+   }
+   .boutique_suite .suite_content .suite_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_suite .suite_content .suite_contentWrap .suite_contentextend .suite_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:2.08333333333vw;/*10/480*/
+        padding-left:4.16666666667vw;/*20/480*/
+   }
+   .boutique_suite .suite_content .suite_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_suite .suite_content .suite_contentTitle{
+      font-size:4.58333333333vw;/*22/480 480화면시 해당 비율로 처리*/
+      line-height:1.81818181818;/*22/40*/
+      font-weight:700;
+   }
+   .boutique_suite .suite_content .suite_contentTitlesub{
+      font-size:3.75vw;/*18/480 480화면시에 해당비율로 처리*/
+      line-height:1.66666666667;/*18/30*/
+      font-weight:400;color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_design{
+    margin-top:3.125vw;/*15/480 480일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:5vw;/*24/480*/
+      line-height:1.25;/*24/30*/
+   }
+   .boutique_suite .suite_content .suite_designdesc{
+      font-size:3.125vw;/*15/480*/
+      line-height:1.4;/*15/21*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_screensound{
+      margin-top:3.125vw;/*15/480 480일때 해당 높이 비율일때의 비율을 유지*/
+      font-size:5vw;/*24/480*/
+      line-height:1.25;/*24/30*/
+   }
+   .boutique_suite .suite_content .suite_screensound_desc{
+      font-size:3.125vw;/*15/480*/
+      line-height:1.4;/*15/21*/
+      color:#d9d9d9;
+   }
+
+   .boutique_suite .suite_content .suite_serviceArea{
+      height:auto; width:auto; float:none;
+      margin-top:3.125vw;/*15/480 480일때 해당 높이 비율일때의 비율을 유지*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_service{
+      font-size:5vw;/*24/480*/
+      line-height:1.25;/*24/30*/
+   }
+   .boutique_suite .suite_content .suite_serviceArea .suite_servicedesc{
+      font-size:3.125vw;/*15/480*/
+      line-height:1.4;/*15/21*/
+      color:#d9d9d9;
+   }
+   .boutique_suite .suite_content .suite_serviceImg{
+      width:68.75vw;/*330/480 480화면일때 기준 해당 크기로 처리*/
+      height:42.91666666667vw;/*206/480 480화면일때 기준 해당 높이로 비율처리*/
+      float:none; margin:0 auto;
+      margin-top:3.125vw;/*15/480 480일때 해당 높이 비율일때의 비율을 유지*/
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetImg.jpg');
+   }
+   .boutique_suite .boutique_suitebg{
+      background-color:transparent;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botique_sweetBg(mobile).jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 노말 영역 css*/
+   .boutique{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:30px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique .boutique_content{
+       position:absolute;
+     width:83.33333333333vw;/*400/480*/
+     height:145.83333333333vw;/*700/480 480기준 해당비율로*/
+
+       right:6.25vw; /*30/480 480화면기준일때 해당 비율로 한다*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique .boutique_content .boutique_contentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique .boutique_content .boutique_contentWrap .boutique_contentextend .boutique_contentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:2.08333333333vw;/*10/480*/
+        padding-left:4.16666666667vw;/*20/480*/
+   }
+   .boutique .boutique_content .boutique_contentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique .boutique_content .boutique_contentTitle{
+        font-size:5vw;/*24/480*/
+        line-height:1.66666666667;/*24/40*/
+        font-weight:700;
+   }
+   .boutique .boutique_content .boutique_contentTitlesub{
+       font-size:3.75vw;/*18/480*/
+       line-height:1.66666666667;/*18/30*/
+   }
+   .boutique .boutique_content .boutique_contentTitlesub br{
+        display:block;
+   }
+   .boutique .boutique_content .boutique_design{
+      font-size:5vw;/*24/480 480일때의 해당 비율로 처리한다*/
+      line-height:1.25;/*24/30*/
+      margin-top:3.125vw;/*15/480*/
+   }
+   .boutique .boutique_content .boutique_designdesc{
+      font-size:3.125vw;/*15/480*/
+      line-height:1.4;/*15/21*/
+   }
+   .boutique .boutique_content .boutique_screensound{
+      font-size:5vw;/*24/480 480일때의 해당 비율로 처리한다*/
+      line-height:1.25;/*24/30*/
+      margin-top:3.125vw;/*15/480*/
+   }
+   .boutique .boutique_content .boutique_screensound_desc{
+      font-size:3.125vw;/*15/480*/
+      line-height:1.4;/*15/21*/
+   }
+   .boutique .boutique_content .boutique_serviceArea{
+       height:auto;width:auto;float:none;
+       margin-top:3.125vw;/*15/480*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_service{
+      font-size:5vw;/*24/480 480일때의 해당 비율로 처리한다*/
+      line-height:1.25;/*24/30*/
+   }
+   .boutique .boutique_content .boutique_serviceArea .boutique_servicedesc{
+      font-size:3.125vw;/*15/480*/
+      line-height:1.4;/*15/21*/
+   }
+   .boutique .boutique_content .boutique_normalImg{
+       width:68.75vw; /*330/480 480화면 대비 해당 비율로 처리*/
+       height:42.91666666667vw;/*206/480 vw단위로 처리*/
+       float:none;
+       margin:0 auto;
+     margin-top:3.125vw;/*15/480*/
+       background-size:cover;
+       background-position:50% 50%;
+       background-repeat:no-repeat;
+       background-image:url('../images/theater/botique_normalImg.jpg');
+   }
+   .boutique .boutique_normalbg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 100%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_normalBg(mobile).jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 프라이빗 영역 css*/
+   .boutique_private{
+       width:100%;height:100vh;
+       background-color:#000;
+       margin-top:30px;
+       position:relative;
+     overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent{
+       width:79.16666666667vw;/*380/480*/
+     height:122.5vw;/*588/480*/
+       position:absolute;
+       left:6.25vw;/*30/480*/
+       top:0;bottom:0;margin:auto 0;
+       color:white;
+     overflow:visible;
+     z-index:7;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap{
+        width:100%;height:100%;
+        overflow:hidden;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentWrap .boutique_privateContentextend .boutique_privateContentInner{
+        width:84.6666666673%;/*스크롤바가 항시 생기는 디자인모델이기에 위와같이 처리*/
+        height:auto;
+        padding:2.08333333333vw;/*10/480*/
+        padding-left:4.16666666667vw;/*20/480*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentshape{
+        width:143%;height:143%;/*부모요소크기의 가로,세로 1.43배씩 처리한 직사각형 타원형 처리시에 부모직사각형의 각 꼭지점에 외접하는 타원형이 기하학적으로 성립한다.*/
+        position:absolute;
+        z-index:-1;
+        background-color:rgba(61,33,3,0.7);
+        left:-21.5%;top:0;bottom:0;margin:auto 0;
+        border-radius:50%;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitle{
+       font-size:5vw;/*24/480 480일때 24비율로 처리한다*/
+       line-height:1.66666666667;/*24/40*/
+       font-weight:700;
+   }
+   .boutique_private .boutique_privateContent .boutique_privateContentTitlesub{
+      font-size:3.75vw;/*18/480*/
+      line-height:1.66666666667;/*18/30*/
+   }
+   .boutique_private .boutique_privateContent .foryou{
+      font-size:5vw;/*24/480*/
+      line-height:1.25;/*24/30*/
+      margin-top:3.125vw;/*15/480*/
+   }
+   .boutique_private .boutique_privateContent .foryou_desc{
+      font-size:3.125vw;/*15/480*/
+      line-height:1.4;/*15/21*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea{
+      margin-top:3.125vw;/*15/480*/
+      height:auto; width:auto; float:none;
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_service{
+      font-size:5vw;/*24/480*/
+      line-height:1.25;/*24/30*/
+   }
+   .boutique_private .boutique_privateContent .private_serviceArea .private_servicedesc{
+      font-size:3.125vw;/*15/480*/
+      line-height:1.4;/*15/21*/
+   }
+   .boutique_private .boutique_privateContent .boutique_privateImg{
+      width:64.16666666667vw;/*308/480 480일때 해당 비율로 처리한다*/
+      height:36.04166666667vw;/*173/480 480일때 해당 비율로 처리한다*/
+      float:none; margin:0 auto;
+      margin-top:3.125vw;/*15/480*/
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-image:url('../images/theater/botiqu_privateImg.jpg');
+   }
+   .boutique_private .boutique_privatebg{
+      background-color:transparent;
+      background-size:cover;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      background-image:url('../images/theater/botique_privateBg(mobile).jpg');
+      width:100%;
+      height:100%;
+    display:none;
+   }
+
+   /*부티크 고메 라운지 css*/
+   .gourmet_lounge{
+       position:relative; width:100%;height:100vh;
+       background-color:#000; margin-top:30px;
+     overflow:hidden;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea{
+    position:absolute;
+      left:6.25vw;/*30/480 해당 위치 비율로 처리*/
+      top:2.34192037471%;/*20/854 854높이일때 기준 해당비율로*/
+      z-index:9;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea h2.gourmet_loungeTitle{
+       display:none;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea p{
+    font-size:4.58333333333vw;/*22/480*/
+      line-height:1.36363636364;/*22/30*/
+    color:white;
+   }
+   .gourmet_lounge .gourmet_loungeTitleArea p span{
+        font-size:3.75vw;/*18/480*/
+        line-height:1.66666666667;/*18/30*/
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap{
+        height:81.96721311475%; /*700/854 854 기준 비율로 처리한다.*/
+        width:70.83333333333vw;/*340/480 화면 기준 해당 비율로 처리한다*/
+        position:absolute;
+        right:6.25vw; /*30/480 480일때 해당 비율로*/
+        top:13.70023419204%;/*117/854 854높이시에 해당 비율로*/
+        overflow:hidden;
+        z-index:7;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend{
+        width:101%;height:100%;
+        overflow-y:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContentWrap .gourmet_loungeContentextend .gourmet_loungeContent{
+         width:83.66666666667%;/*101%에대한 100%의 비율로 최종적 계산값이 480화면때 기준 335px이상 최소폭이 나오게 처리해야만 안정적 이리 수치 지정시 340px이 정확히 근사값으로 나오며 wrap과 동일하게 처리됨.*/
+         height:auto;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img{
+      width:33.33333333333vw;/*160/480 480일때 해당 폭 비율*/
+    height:33.33333333333vw;/*160/480 480일때 해당 높이비율*/
+      float:right; background-color:#fe8020;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi1{
+      margin-left:1.04166666667vw;/*5/480 해당 비율로!*/
+       background-image:url('../images/theater/gourmet_img1.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi2{
+      margin-left:0;
+      background-image:url('../images/theater/gourmet_img2.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi3{
+      background-image:url('../images/theater/gourmet_img3.jpg'); clear:both;
+      margin-left:1.04166666667vw;/*5/480*/
+      margin-top:1.04166666667vw;/*5/480*/
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi4{
+    margin-left:0;
+    margin-top:1.04166666667vw;/*5/480*/
+       background-image:url('../images/theater/gourmet_img4.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi5{
+     clear:both;
+     margin-left:1.04166666667vw;/*5/480*/
+     margin-top:1.04166666667vw;/*5/480*/
+     background-image:url('../images/theater/gourmet_img5.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gi6{
+     margin-left:0;
+     margin-top:1.04166666667vw;/*5/480*/
+     background-image:url('../images/theater/gourmet_img6.jpg');
+   }
+   .gourmet_lounge .gourmet_loungeContent .gourmet_img7{
+     clear:both; float:right;
+     margin-top:2.08333333333vw;/*10/480*/
+     background-color:#fe8020;
+     width:42.29166666667vw;/*203/480*/
+     height:41.66666666667vw;/*200/480 %로 할경우 직속부모인 라운지콘텐츠를 기준으로 그 부모높이의 %로 되기에 이상해짐!*/
+     background-size:cover;
+     background-position:50% 50%;
+     background-repeat:no-repeat;
+     background-image:url('../images/theater/gourmet_img7(mobile).jpg');
+   }
+   .gourmet_lounge .gourmet_loungebg{
+       width:100%;height:100%;
+       background:linear-gradient(90deg,#6c4826,#3c2b19,#735749,#422712,#4d4135);
+      display:none;
+   }
+}

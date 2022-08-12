@@ -1,0 +1,1032 @@
+.reserv_info{
+    margin-top:120px;
+    height:auto;width:100%;
+    padding:200px 0;
+    background-image:url('../images/reserv/visual_background3.jpg');
+    background-size:cover;background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+.reserv_info .inner{
+    width:100%;
+    max-width:1400px;
+    height:520px; overflow:hidden;
+    margin:0 auto; color:#fff;
+}
+.reserv_info .inner .left_area{
+    float:left;
+    width:50%; height:520px;
+    background-color:rgba(0,0,0,0.8);
+    border-radius:calc(100% *(50/700)); padding:calc(100% *(50/1400))
+}
+.left_area .title_area{
+    height:120px; width:100%; overflow:hidden;
+}
+.left_area .title_area h1{
+    float:left; height:120px; width:100px;
+    background-size:77px auto;
+    background-image:url('../images/reserv/reserv_title.png');
+    background-repeat:no-repeat;
+    background-position:50% 50%
+}
+.left_area .title_area h2{
+    float:left;font-size:42px; line-height:120px;font-weight:900;
+    padding-left:20px; width:auto;
+}
+.left_area .info_text{
+    font-size:30px; line-height:50px; font-weight:600;
+    margin-top:30px;
+    padding-left:10px;
+}
+.left_area .button_area{
+    height:90px;width:100%; margin-top:30px;
+}
+.left_area .button_area .reserv_btn{
+    font-size:28px; line-height:90px; background-color:#006762;
+    text-align:center;display:inline-block;
+    padding:0 15px; cursor:pointer;
+}
+.left_area .button_area .reserv_btn:first-child{
+    margin-right:10px;
+}
+
+.reserv_info .inner .right_area{
+    width:50%; height:520px;
+    overflow:hidden; position:static;
+}
+.reserv_info .inner .right_area li{
+    width:50%;height:50%; float:left;
+}
+.reserv_info .inner .right_area .reserv_icon1{
+    background-color:rgba(99,103,1,0.6);
+    background-image:url('../images/reserv/reserv_icon1.png');
+    background-repeat:no-repeat;
+    background-size:142px auto;
+    background-position:50% 50%
+}
+.reserv_info .inner .right_area .reserv_icon2{
+    background-color:rgba(0,103,98,0.6);
+    background-image:url('../images/reserv/reserv_icon2.png');
+    background-repeat:no-repeat;
+    background-size:129px auto;
+    background-position:50% 50%
+}
+.reserv_info .inner .right_area .reserv_icon3{
+    background-color:rgba(55,10,84,0.7);
+    background-image:url('../images/reserv/reserv_icon3.png');
+    background-repeat:no-repeat;
+    background-size:150px auto;
+    background-position:50% 50%
+}
+.reserv_info .inner .right_area .reserv_icon4{
+    background-color:rgba(2,3,159,0.7);
+    background-image:url('../images/reserv/reserv_icon4.png');
+    background-repeat:no-repeat;
+    background-size:132px auto;
+    background-position:50% 50%
+}
+
+.reserv_tip{
+    margin-top:120px;
+    width:100%;height:920px;
+    background-image:url('../images/reserv/purpleGradient4.jpg');
+    background-size:cover;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+.reserv_tip .inner{
+    width:100%;max-width:1800px; height:100%;
+    margin:0 auto;overflow:hidden; color:#fff;
+}
+.reserv_tip .inner article{
+    float:left;width:calc(100% *(400/1800));
+    height:auto;
+    margin:0 calc(100% *(25/1800));
+    margin-top:calc(100vw *(45/1800));
+}
+.reserv_tip .inner article .reserv_guide{
+    background-color:#000;
+    width:100%;
+    height:500px;
+    background-size:104% auto;
+    background-repeat:no-repeat;
+}
+.reserv_tip .inner article .img1{
+    background-image:url('../images/reserv/reserv_guide1.png');
+    background-position:50% 2%
+}
+.reserv_tip .inner article .img2{
+    background-image:url('../images/reserv/reserv_guide2.png');
+    background-position:50% 18%
+}
+.reserv_tip .inner article .img3{
+    background-image:url('../images/reserv/reserv_guide3.png');
+    background-position:50% 18%
+}
+.reserv_tip .inner article .img4{
+    background-image:url('../images/reserv/reserv_guide4.png');
+    background-position:50% 85%
+}
+.reserv_tip .inner article .reserv_step{
+    width:100%; margin-top:calc(100vw *(25/1800));
+    height:auto;
+}
+.reserv_tip .inner article .reserv_step h2{
+    width:350px;font-size:36px;
+    line-height:60px;
+    margin:0 auto;
+}
+.reserv_tip .inner article .reserv_step p{
+    width:350px;
+    font-size:24px;line-height:40px;
+    margin:0 auto;
+    margin-top:5px;
+}
+
+
+.reserv_confirm{
+    margin-top:120px;height:auto;
+}
+.reserv_confirm .inner{
+    width:100%;max-width:1400px; height:auto; overflow:hidden; margin:0 auto;color:#fff;
+}
+.reserv_confirm .inner .left_area{
+    width:50%;
+    height:374px;float:left; padding-top:30px;
+}
+.reserv_confirm .inner .left_area h2{
+    text-indent:10px; font-size:32px; line-height:50px; font-weight:900
+}
+.reserv_confirm .inner .left_area .user_reserv{
+    margin-top:20px;
+    height:auto;overflow:hidden;
+}
+.reserv_confirm .inner .left_area .user_reserv .user_icon{
+    width:100px; height:92px;
+    float:left;
+    background-size:70% auto;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    background-image:url('../images/reserv/user_icon.png');
+}
+.reserv_confirm .inner .left_area .user_reserv .user_confirm{
+    width:auto;height:auto;float:left;
+}
+.user_confirm p.title{
+    font-size:20px;line-height:40px; font-weight:500
+}
+.user_confirm p.desc{
+    font-size:18px; line-height:24px;
+    margin-top:4px; font-weight:400; display:block;
+}
+.user_confirm p span{
+    color:#02e4ff;
+}
+
+.reserv_confirm .inner .left_area .user_reserv .notuser_icon{
+    width:100px;height:92px;float:left;
+    background-size:70% auto;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    background-image:url('../images/reserv/not_user_icon.png');
+}
+p.mobile_desc{
+    display:none
+}
+
+.reserv_confirm .inner .right_area{
+    width:50%;float:left;height:374px; padding-top:30px;
+}
+.reserv_confirm .inner .right_area h2{
+    font-size:32px;line-height:50px; font-weight:90;
+}
+.reserv_confirm .inner .right_area dl{
+    margin-top:30px;height:auto;
+}
+.reserv_confirm .inner .right_area dl dt{
+    font-size:18px; line-height:24px; font-weight:400;
+    padding-left:10px; display:block;
+}
+.reserv_confirm .inner .right_area dl dt.mobile{
+    display:none;
+}
+.reserv_confirm .inner .right_area dl .reservbtn_area{
+    margin-top:20px;padding-left:10px;overflow:hidden;
+}
+.reserv_confirm .inner .right_area dl .reservbtn_area .reservbtn{
+    float:left;font-size:16px;line-height:30px;
+    font-weight:200; background-color:#006762;padding:0 10px;
+}
+.reserv_confirm .right_area .reservbtn_area .reservbtn:nth-child(2){
+    margin-left:20px;
+}
+.reserv_confirm .right_area .reserv_customer{
+    font-size:18px;line-height:50px; margin-top:20px;font-weight:500
+}
+.reserv_confirm .right_area .reserv_customer span{
+    color:#24def4
+}
+
+@media all and (min-width:1100px) and (max-width:1799px){
+    .reserv_tip{
+        margin-top:120px;width:100%;
+        height:calc(100vw *(920/1800));
+        background-image:url('../images/reserv/purpleGradient4.jpg');
+        background-size:cover;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+    }
+    .reserv_tip .inner{
+        width:100%;height:100%;
+        overflow:hidden;color:#fff;
+    }
+    .reserv_tip .inner article{
+        float:left;width:calc(100% *(400/1800));
+        height:auto;
+        margin:0 calc(100% *(25/1800));
+        margin-top:calc(100vw *(45/1800))
+    }
+    .reserv_tip .inner article .reserv_guide{
+        background-color:#000;width:100%;
+        height:calc(100vw *(500/1800));
+        background-size:104% auto;
+        background-repeat:no-repeat;
+    }
+    .reserv_tip .inner article .img1{
+        background-image:url('../images/reserv/reserv_guide1.png');
+        background-position:50% 2%
+    }
+    .reserv_tip .inner article .img2{
+        background-image:url('../images/reserv/reserv_guide2.png');
+        background-position:50% 18%
+    }
+    .reserv_tip .inner article .img3{
+        background-image:url('../images/reserv/reserv_guide3.png');
+        background-position:50% 18%
+    }
+    .reserv_tip .inner article .img4{
+        background-image:url('../images/reserv/reserv_guide4.png');
+        background-position:50% 85%
+    }
+    .reserv_tip .inner article .reserv_step{
+        width:100%;margin-top:calc(100vw *(25/1800));
+        height:auto;
+    }
+    .reserv_tip .inner article .reserv_step h2{
+        width:calc(100% *(350/400));
+        font-size:calc(100vw *(36/1800));
+        line-height:calc(60/36);
+        margin:0 auto;
+    }
+    .reserv_tip .inner article .reserv_step p{
+        width:calc(100% *(350/400));
+        font-size:calc(100vw *(24/1800));
+        line-height:calc(40/24);
+        margin:0 auto;
+        margin-top:5px;
+    }
+}
+@media all and (min-width:1100px) and (max-width:1399px){
+    .reserv_info{
+        margin-top:120px;
+        height:auto;width:100%;
+        padding:calc(100vw *(200/1400)) 0;
+        background-image:url('../images/reserv/visual_background3.jpg');
+        background-size:cover;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+    }
+    .reserv_info .inner{
+        width:100%;
+        height:auto;overflow:hidden;
+        color:#fff;
+    }
+    .reserv_info .inner .left_area{
+        float:left;
+        width:50%;
+        height:calc(100vw *(520/1400));
+        background-color:rgba(0,0,0,0.8);
+        border-radius:calc(100% *(50/700));
+    }
+    .left_area .title_area{
+        height:calc(100vw *(120/1400));
+        width:100%;overflow:hidden;
+    }
+    .left_area .title_area h1{
+        float:left;height:100%;
+        width:calc(100% *(100/700));
+        background-size:77% auto;
+        background-image:url('../images/reserv/reserv_title.png');
+        background-repeat:no-repeat;
+        background-position:50% 50%
+    }
+    .left_area .title_area h2{
+        float:left;
+        font-size:calc(100vw *(42/1400));
+        line-height:calc(120/42);
+        font-weight:900;padding-left:20px;width:auto;
+    }
+    .left_area .info_text{
+        font-size:calc(100vw *(30/1400));
+        line-height:calc(50/30);
+        font-weight:600;
+        margin-top:calc(100vw *(30/1400));
+        padding-left:calc(100% *(10/700));
+    }
+    .left_area .button_area{
+        height:calc(100vw *(90/1400));
+        width:100%;
+        margin-top:calc(100vw *(30/1400))
+    }
+    .left_area .button_area .reserv_btn{
+        font-size:calc(100vw *(28/1400));
+        line-height:calc(90/28);
+        background-color:#006762;
+        text-align:center;display:inline-block;
+        padding:0 calc(100% *(15/700));
+    }
+    .left_area .button_area .reserv_btn:first-child{
+        margin-right:10px;
+    }
+
+    .reserv_info .inner .right_area{
+        width:50%;
+        height:calc(100vw *(520/1400));
+        overflow:hidden;float:left;position:static;
+    }
+    .reserv_info .inner .right_area li{
+        width:50%;height:50%;float:left;
+    }
+    .reserv_info .inner .right_area .reserv_icon1{
+        background-color:rgba(99,103,1,0.6);
+        background-image:url('../images/reserv/reserv_icon1.png');
+        background-repeat:no-repeat;
+        background-size:calc(100% *(142/350)) auto;
+        background-position:50% 50%
+    }
+    .reserv_info .inner .right_area .reserv_icon2{
+		background-color:rgba(0,103,98,0.6);
+		background-image:url('../images/reserv/reserv_icon2.png');
+		background-repeat:no-repeat;
+		background-size:calc(100% *(142/350)) auto;
+		background-position:50% 50%;
+	}
+	.reserv_info .inner .right_area .reserv_icon3{
+		background-color:rgba(55,10,84,0.7);
+		background-image:url('../images/reserv/reserv_icon3.png');
+		background-repeat:no-repeat;
+		background-size:calc(100% *(142/350)) auto;
+		background-position:50% 50%;
+	}
+	.reserv_info .inner .right_area .reserv_icon4{
+		background-color:rgba(2,3,159,0.7);
+		background-image:url('../images/reserv/reserv_icon4.png');
+		background-repeat:no-repeat;
+		background-size:calc(100% *(142/350)) auto;
+		background-position:50% 50%;
+	}
+
+    .reserv_confirm{
+        margin-top:120px;
+    }
+    .reserv_confirm .inner{
+        width:100%;height:auto;overflow:hidden; color:#fff;
+    }
+    .reserv_confirm .inner .left_area{
+        width:50%;height:374px; float:left; padding-top:30px;
+    }
+    .reserv_confirm .inner .left_area h2{
+        font-size:calc(100vw *(32/1400));
+        line-height:calc(50/32); font-weight:900
+    }
+    .reserv_confirm .inner .left_area .user_reserv{
+        margin-top:20px;
+        height:auto;overflow:hidden;
+    }
+    .reserv_confirm .inner .left_area .user_reserv .user_icon{
+        width:calc(100% *(100/700));
+        height:92px;float:left;
+        background-size:70% auto;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+        background-image:url('../images/reserv/user_icon.png');
+    }
+    .reserv_confirm .inner .left_area .user_reserv .notuser_icon{
+        width:calc(100% *(100/700));
+        height:92px;float:left;
+        background-size:70% auto;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+        background-image:url('../images/reserv/not_user_icon.png');
+    }
+    .reserv_confirm .inner .left_area .user_reserv .user_confirm{
+        width:auto;height:auto;float:left;
+    }
+    .user_confirm p.title{
+        font-size:calc(100vw *(20/1400));
+        line-height:40px; font-weight:500
+    }
+    .user_confirm p.desc{
+        font-size:calc(100vw *(18/1400));
+        line-height:24px; margin-top:4px;
+        font-weight:400;display:block;
+    }
+    p.mobile_desc{
+        display:none;
+    }
+   
+    .reserv_confirm .inner .right_area{
+        width:50%;float:left;height:374px; padding-top:30px;
+    }
+    .reserv_confirm .inner .right_area h2{
+        font-size:calc(100vw *(32/1400));
+        line-height:calc(50/32);font-weight:900;
+    }
+    .reserv_confirm .inner .right_area dl{
+        margin-top:30px;height:auto;
+    }
+    .reserv_confirm .inner .right_area dl dt{
+        font-size:calc(100vw *(18/1400));
+        line-height:calc(24/18);font-weight:400; 
+        padding-left:10px; display:block;
+    }
+    .reserv_confirm .inner .right_area dl dt.mobile{
+        display:none;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area{
+        margin-top:20px;  padding-left:10px;overflow:hidden;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area .reservbtn{
+        float:left;font-size:calc(100vw *(16/1400));
+        line-height:calc(30/16);font-weight:200; background-color:#006762;padding:0 10px;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area .reservbtn:nth-child(2){
+        margin-left:calc(100% *(20/700));
+    }
+    .reserv_confirm .inner .right_area dl .reserv_customer{
+        font-size:calc(100vw *(18/1400));
+        line-height:calc(50/18);margin-top:20px;font-weight:500
+    }
+    .reserv_confirm .inner .right_area dl .reserv_customer span{
+        color:#24def4
+    }
+}
+
+@media all and (min-width:600px) and (max-width:1099px){
+    .reserv_info{
+        margin-top:60px;
+
+        height:auto;width:100%;
+        padding:calc(100vw *(210/800)) 0;
+        background-image:url('../images/reserv/visual_background3\(tablet\).jpg');
+        background-size:cover;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+    }
+    .reserv_info .inner{
+        width:calc(100% *(740/800));
+        height:calc(100vw *(380/800));overflow:hidden;
+        color:#fff;
+        position:relative;
+    }
+    .reserv_info .inner .left_area{
+        float:left;
+        width:100%;
+        height:100%;
+        border-radius:calc(100% *(30/740));
+        padding:calc(100% *(30/740));
+        background-color:rgba(0,0,0,0.8)
+    }
+    .left_area .title_area{
+        height:calc(100vw *(60/800));
+        width:100%;overflow:hidden;
+    }
+    .left_area .title_area h1{
+        float:left;
+        height:100%;
+        width:calc(100% *(70/680));
+        background-size:calc(100% *(51/70)) auto;
+        background-image:url('../images/reserv/reserv_title.png');
+        background-repeat:no-repeat;
+        background-position:50% 50%
+    }
+    .left_area .title_area h2{
+        float:left;
+        font-size:calc(100vw *(30/800));
+        line-height:2;
+        font-weight:900;padding-left:10px;
+        width:auto;
+    }
+    .left_area .info_text{
+        font-size:calc(100vw *(22/800));
+        line-height:calc(34/22);
+        font-weight:600;
+        padding:calc(100vw *(29/800)) 0;
+        padding-left:10px;
+        margin:0;
+    }
+    .left_area .button_area{
+        height:calc(100vw *(100/800));
+        width:100%;
+        padding:calc(100vw *(25/800)) 0;
+        padding-left:10px;
+        margin:0
+    }
+    .left_area .button_area .reserv_btn{
+        font-size:calc(100vw *(18/800));
+        line-height:calc(50/18);
+        background-color:#006762;
+        text-align:center;display:inline-block;
+        padding:0 calc(100% *(20/680));
+    }
+    .left_area .button_area .reserv_btn:first-child{
+        margin-right:30px;
+    }
+
+    .reserv_info .inner .right_area{
+        width:calc(100vw *(320/800));
+        height:calc(100vw *(160/800));
+        overflow:hidden;
+        float:none; position:absolute;
+        top:calc(100vw *(90/800));right:calc(100vw *(30/800));
+    }
+    .reserv_info .inner .right_area li{
+        width:50%;height:100%; float:left;
+    }
+    .reserv_info .inner .right_area .reserv_icon1{
+        background-image:url('../images/reserv/reserv_icon1_tm.png');
+        background-repeat:no-repeat;
+        background-size:73.75% auto;
+        background-position:50% 50%;
+        background-color:transparent;
+        border-radius:0
+    }
+    .reserv_info .inner .right_area .reserv_icon2{
+        display:none
+    }
+    .reserv_info .inner .right_area .reserv_icon3{
+		display:none;
+	}
+    .reserv_info .inner .right_area .reserv_icon4{
+        background-image:url('../images/reserv/reserv_icon4_tm.png');
+        background-repeat:no-repeat;
+        background-size:67.5% auto;
+        background-position:50% 50%;
+        background-color:transparent;
+        border-radius:0
+    }
+
+
+    .reserv_tip{
+        margin-top:60px;
+        width:100%; height:calc(100vw *(1290/800));
+        max-height:1500px;
+        background-image:url('../images/reserv/purpleGradient4.jpg');
+        background-size:auto;
+        background-position:50% 50%;
+        background-repeat:repeat;
+    }
+    .reserv_tip .inner{
+        width:calc(100% *(740/800));
+        height:100%;
+        overflow:hidden; color:#fff;
+        margin:0 auto;
+    }
+    .reserv_tip .inner article{
+        float:left; width:calc(100% *(350/740));
+        height:auto;margin:0 calc(100% *(10/740));
+        margin-top:calc(100vw *(20/800))
+    }
+    .reserv_tip .inner article .reserv_guide{
+        background-color:#000;
+        width:100%;
+        height:calc(100vw *(438/800));
+        max-width:380px;
+        max-height:475px; 
+        background-size:104% auto;
+        background-repeat:no-repeat;
+        margin:0 auto;
+    }
+    .reserv_tip .inner article .img1{
+        background-image:url('../images/reserv/reserv_guide1.png');
+        background-position:50% 2%;
+    }
+    .reserv_tip .inner article .img2{
+		background-image:url('../images/reserv/reserv_guide2.png');
+		background-position:50% 18%;
+	}
+	.reserv_tip .inner article .img3{
+		background-image:url('../images/reserv/reserv_guide3.png');
+		background-position:50% 18%;
+	}
+	.reserv_tip .inner article .img4{
+		background-image:url('../images/reserv/reserv_guide4.png');
+		background-position:50% 85%;
+	}
+    .reserv_tip .inner article .reserv_step{
+        width:100%;margin-top:5px;
+        height:auto;
+    }
+    .reserv_tip .inner article .reserv_step h2{
+        width:calc(100% *(300/350));
+        font-size:calc(100vw *(30/800));line-height:calc(50/30);
+        margin:0 auto;
+    }
+    .reserv_tip .inner article .reserv_step p{
+        width:calc(100% *(300/350));
+        font-size:calc(100vw *(19/800));
+        line-height:calc(26/19);
+        margin:0 auto;
+        margin-top:5px;
+    }
+
+    .reserv_confirm{
+        margin-top:60px;
+        height:auto;
+    }
+    .reserv_confirm .inner{
+        width:92.5%;height:auto;overflow:hidden;color:#fff;
+        margin:0 auto;padding:30px 0;
+    }
+    .reserv_confirm .inner .left_area{
+        width:100%;
+        height:auto;float:left;padding:0;
+        overflow:hidden;
+    }
+    .reserv_confirm .inner .left_area h2{
+        font-size:calc(100vw *(24/800));
+        line-height:calc(50/24);
+        font-weight:900
+    }
+    .reserv_confirm .inner .left_area .user_reserv{
+        margin-top:calc(100vw *(28/800));
+        height:auto;overflow:hidden;
+    }
+    .reserv_confirm .inner .left_area .user_reserv .user_icon{
+        width:calc(100% * (100/740));
+        max-width:110px;
+        height:calc(100vw *(93/800));
+        max-height:102px;
+        float:left;
+        background-size:70% auto;background-position:50% 50%;
+        background-repeat:no-repeat;
+        background-image:url('../images/reserv/user_icon.png');
+    }
+    .reserv_confirm .inner .left_area .user_reserv .notuser_icon{
+		width:13.51351351351%;/*100/740 740일떄 기준 100px이다*/
+		max-width:110px;
+		height:11.625vw;/*93/800 100*93크기로 처리*/
+		max-height:102px;
+		float:left;
+		background-size:70% auto;/*70/100 비율로써 처리한다*/
+		background-position:50% 50%;
+		background-repeat:no-repeat;
+		background-image:url('../images/reserv/not_user_icon.png');
+	}
+    .reserv_confirm .inner .left_area .user_reserv .user_confirm{
+        float:left;
+        width:auto;height:auto;
+        margin:0
+    }
+    .user_confirm p.title{
+        font-size:calc(100vw *(18/800));
+        line-height:2.222222222222;
+        font-weight:500
+    }
+    .user_confirm p.desc{
+        font-size:calc(100vw *(15/800));
+        line-height:calc(24/15);
+        margin-top:5px;
+        font-weight:400; display:block;
+    }
+    p.mobile_desc{
+        display:none;
+    }
+   
+    .reserv_confirm .inner .right_area{
+        width:100%; float:left;
+        height:auto;
+        margin-top:calc(100vw *(40/800));
+        padding:0
+    }
+    .reserv_confirm .inner .right_area h2{
+        font-size:calc(100vw *(24/800));
+        line-height:calc(50/24);
+        font-weight:900;
+        padding-left:10px;
+    }
+    .reserv_confirm .inner .right_area dl{
+        margin-top:calc(100vw *(30/800));
+        height:auto;
+    }
+    .reserv_confirm .inner .right_area dl dt{
+        font-size:calc(100vw *(15/800));
+        line-height:1.6;
+        font-weight:400;padding-left:10px;
+        display:block;
+    }
+    .reserv_confirm .inner .right_area dl dt.mobile{
+        display:none;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area{
+        margin-top:calc(100vw *(20/800));
+        padding-left:10px;overflow:hidden;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area .reservbtn{
+        float:left;
+        font-size:calc(100vw *(15/800));
+        line-height:2;
+        font-weight:200;background-color:#006762;
+        padding:0 10px;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area .reservbtn:nth-child(2){
+        margin-left:calc(100% *(20/740));
+    }
+    .reserv_confirm .inner .right_area dl .reserv_customer{
+        font-size:calc(100vw *(15/800));
+        line-height:3.3333333333;
+        margin-top:calc(100vw *(20/800));
+        font-weight:500
+    }
+    .reserv_confirm .inner .right_area dl .reserv_customer span{
+        color:#24def4
+    }
+}
+
+@media all and (min-width:240px) and (max-width:599px){
+    .reserv_info{
+        margin-top:30px;
+
+        height:auto;width:100%;
+        padding:calc(100vw *(182/480)) 0;
+
+        background-image:url('../images/reserv/visual_background3\(mobile\).jpg');
+        background-size:cover;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+    }
+    .reserv_info .inner{
+        width:calc(100% *(440/480));
+        height:auto;
+        overflow:hidden;
+        color:#fff;
+        position:relative;
+    }
+    .reserv_info .inner .left_area{
+        float:left;
+        width:100%;height:100%;
+        background-color:rgba(0,0,0,0.6);
+        padding:0;border-radius:0
+    }
+    .left_area .title_area{
+        height:calc(100vw *(60/440));
+        width:100%;overflow:hidden;
+    }
+    .left_area .title_area h1{
+        float:left;
+        height:100%;
+        width:calc(100% *(60/440));
+
+        background-size:66.66666666667% auto;
+        background-image:url('../images/reserv/reserv_title.png');
+        background-repeat:no-repeat;
+        background-position:50% 50%
+    }
+    .left_area .title_area h2{
+        float:left;
+        font-size:calc(100vw *(24/480));
+        line-height:2.5;
+        font-weight:900;
+        padding-left:0;width:auto;
+    }
+    .left_area .info_text{
+        font-size:calc(100vw *(16/480));
+        line-height:1.375;font-weight:600;
+        margin:0;
+
+        height:calc(100vw *(96/480));
+        width:100%;padding:calc(100vw *(15/480)) 0;
+        padding-left:calc(100% *(18/440));
+    }
+    .left_area .button_area{
+        height:calc(100vw *(80/480));width:100%;
+        margin:0;
+        padding:calc(100vw *(20/480)) 0;
+        padding-left:calc(100% *(20/440))
+    }
+    .left_area .button_area .reserv_btn{
+        font-size:calc(100vw *(15/480));
+        line-height:calc(40/15);
+        background-color:#006762;
+        text-align:center;display:inline-block;
+        padding:0 calc(100% *(20/440))
+    }
+    .left_area .button_area .reserv_btn:first-cihld{
+        margin-right:7px;
+    }
+
+    .reserv_info .inner .right_area{
+        width:calc(100vw *(192/480));
+        height:calc(100vw *(96/480));
+        overflow:hidden;
+        float:none;position:absolute;
+        top:calc(100vw *(60/480));
+        right:calc(100vw *(20/440));
+    }
+    .reserv_info .inner .right_area li{
+        width:50%;height:100%;float:left;
+    }
+    .reserv_info .inner .right_area .reserv_icon1{
+        background-color:transparent;
+        background-image:url('../images/reserv/reserv_icon1_tm.png');
+        background-repeat:no-repeat;
+        background-size:73.75% auto;
+        background-position:50% 50%
+    }
+    .reserv_info .inner .right_area .reserv_icon2{
+		display:none;
+	}
+	.reserv_info .inner .right_area .reserv_icon3{
+		display:none;
+	}
+    .reserv_info .inner .right_area .reserv_icon4{
+        background-color:transparent;
+        background-image:url('../images/reserv/reserv_icon4_tm.png');
+        background-repeat:no-repeat;
+        background-size:67.5% auto;
+        background-position:50% 50%
+    }
+
+    .reserv_tip{
+        margin-top:30px;
+        width:100%;height:calc(100vw *(798/480));
+        background-image:url('../images/reserv/purpleGradient4.jpg');
+        background-size:auto;
+        background-position:50% 50%;
+        background-repeat:repeat;
+    }
+    .reserv_tip .inner{
+        width:calc(100% *(440/480));
+        height:100%;
+        overflow:hidden; color:#fff;
+        margin:0 auto;
+    }
+    .reserv_tip .inner article{
+        float:left;width:calc(100% *(208/440));
+        height:auto;
+        margin:0 calc(100% *(6/440));
+        margin-top:calc(100vw *(12/480));
+    }
+    .reserv_tip .inner article .reserv_guide{
+        background-color:#000;
+        width:100%;
+        height:calc(100vw *(260/480));
+        background-size:104% auto;
+        background-repeat:no-repeat;
+    }
+    .reserv_tip .inner article .img1{
+        background-image:url('../images/reserv/reserv_guide1.png');
+        background-position:50% 2%
+    }
+    .reserv_tip .inner article .img2{
+		background-image:url('../images/reserv/reserv_guide2.png');
+		background-position:50% 18%;
+	}
+	.reserv_tip .inner article .img3{
+		background-image:url('../images/reserv/reserv_guide3.png');
+		background-position:50% 18%;
+	}
+	.reserv_tip .inner article .img4{
+		background-image:url('../images/reserv/reserv_guide4.png');
+		background-position:50% 85%;
+	}
+    .reserv_tip .inner article .reserv_step{
+        width:100%;margin-top:0px;
+        height:auto;
+    }
+    .reserv_tip .inner article .reserv_step h2{
+        width:calc(100% *(178/208));
+        font-size:calc(100vw *(22/480));
+        line-height:calc(40/22);
+        margin:0 auto;
+    }
+    .reserv_tip .inner article .reserv_step p{
+        width:calc(100% *(178/208));
+        font-size:calc(100vw *(14/480));
+        line-height:calc(18/14);
+        margin:0 auto;
+        margin-top:0px;
+    }
+
+    .reserv_confirm{
+        margin-top:30px;
+        height:auto
+    }
+    .reserv_confirm .inner{
+        width:91.6666666667%; height:auto;overflow:hidden; color:#fff;
+        margin:0 auto;
+        padding:30px 0;
+    }
+    .reserv_confirm .inner .left_area{
+        width:100%; height:auto;float:left;
+        padding:0; margin:0
+    }
+    .reserv_confirm .inner .left_area h2{
+        font-size:calc(100vw *(24/480));
+        line-height:1.5;
+        font-weight:900    
+    }
+    .reserv_confirm .inner .left_area .user_reserv{
+        margin-top:calc(100vw *(20/480));
+        height:auto;overflow:hidden;
+    }
+    .reserv_confirm .inner .left_area .user_reserv .user_icon{
+        width:calc(100% *(80/440));
+        height:calc(100vw *(100/480));
+        max-width:100px;
+        max-height:125px;
+        float:left;
+        background-size:75% auto;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+        background-image:url('../images/reserv/user_icon.png');
+    }
+    .reserv_confirm .inner .left_area .user_reserv .notuser_icon{
+        width:calc(100% *(80/440));
+        height:calc(100vw *(100/480));
+		max-width:100px;
+		max-height:125px;
+
+		float:left;
+		background-size:75% auto;/*60/80 비율로써 처리한다*/
+		background-position:50% 50%;
+		background-repeat:no-repeat;
+		background-image:url('../images/reserv/not_user_icon.png');
+	}
+    .reserv_confirm .inner .left_area .user_reserv .user_confirm{
+        width:auto;height:auto;float:left;
+    }
+    .user_confirm p.title{
+        font-size:calc(100vw *(16/480));
+        line-height:calc(30/16);
+        font-weight:500
+    }
+    .user_confirm p.desc{
+        display:none;
+    }
+    .user_confirm p span{
+        color:#02e4ff
+    }
+    .user_confirm p.mobile_desc{
+        font-size:calc(100vw *(14/480));
+        line-height:calc(20/14);
+        margin-top:calc(100vw *(10/480));
+        font-weight:400;display:block;
+    }
+    .reserv_confirm .inner .right_area{
+        width:100%;float:left;height:auto;
+        margin-top:calc(100vw *(50/480));
+        padding:0
+    }
+    .reserv_confirm .inner .right_area h2{
+        font-size:calc(100vw *(24/480));
+        line-height:1.5;
+        font-weight:900;
+        padding-left:10px;
+    }
+    .reserv_confirm .inner .right_area dl{
+        margin-top:calc(100vw *(25/480));
+        height:auto;
+    }
+    .reserv_confirm .inner .right_area dl dt{
+        display:none;
+    }
+    .reserv_confirm .inner .right_area dl dt.mobile{
+        font-size:calc(100vw *(14/480));
+        line-height:calc(20/14);
+        font-weight:400;padding-left:10px;
+        display:block;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area{
+        margin-top:calc(100vw *(10/480));
+        padding-left:10px;overflow:hidden;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area .reservbtn{
+        float:left;font-size:calc(100vw *(13/480));
+        line-height:calc(30/13);
+        font-weight:200;
+        background-color:#006762;
+        padding:0 10px;
+    }
+    .reserv_confirm .inner .right_area dl .reservbtn_area .reservbtn:nth-child(2){
+        margin-left:10px;
+    }
+    .reserv_confirm .inner .right_area dl .reserv_customer{
+        font-size:calc(100vw *(14/480));
+        line-height:calc(40/14);
+        margin-top:calc(100vw *(10/480));
+        font-weight:500
+    }
+    .reserv_confirm .inner .right_area dl .reserv_customer span{
+        color:#24def4
+    }
+}

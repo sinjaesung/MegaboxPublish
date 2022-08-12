@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/html5_reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/reserv_visual.css"/>
+
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reserv_style.css"/>
+</head>
+<body>
+<header>
+    <!--inner구조물과 이너바깥의 user_bar는 pc에서만의 전유물이며, 모바일에선 이러한 리스트 구조에서 탈피한다-->
+    <!-- pc header ui start -->
+    <div class='inner'>
+        <ul class='header_menu'>
+            <li><a href='movie_page.html'>영화</a></li><li><a href='reserv_page.html'>예매</a></li><li><a href='#'>미리보기</a></li><li><a href='#'>특별관</a></li><li class='site_logo'><a href='index.html'></a></li><li><a href='store_page.html'>스토어</a></li><li><a href='card_page.html'>할인카드</a></li><li><a href='event_page.html'>이벤트</a></li>
+        </ul>
+    </div>
+    <ul class='user_bar'>
+        <li>로그인</li><li>회원가입</li><li>고객센터</li>
+    </ul>
+    <!--//pc ui end-->
+
+    <!--태블릿,모바일에서만 보이게 t&m ui start-->
+    <!-- tm_inner는 태블릿,모바일 전용 inner이다. 고정값은 아니며 outer 해더 전체 크기의 항상 92.5%비율을 유지하는 크기이다.-->
+    <div class='tm_inner'>
+        <div class='tm_menubar' id='tm_menubar'>
+
+        </div>
+        <div class='tm_headerlogo'>
+            <a href='index.html'></a>
+        </div>
+        <div class='tm_usericon'>
+        </div>
+    </div>
+    <!--t&m header ui end -->
+</header><!--header area end-->
+
+<!--pc에선 기본적으로 감춰놓는다-->
+<!--태블릿,모바일에서만 보여지고 처리되는 해더 디테일 네비게이션-->
+<nav class='tmheader_detail' id='tmheader_detail'>
+    <div class='tmdetail_wrap' id='tmdetail_wrap'>
+        <nav class='left_view' id='left_view'>
+
+        <div class='top_menu'>
+            <ul>
+                <li class='home_btn'><a href='index.html'></a></li><li class='setting_btn'></li>
+            </ul>
+
+            <div class='tmheader_detailClose' id='tmheader_detailClose'></div>
+        </div>
+
+        <div class='login_btn'>로그인</div>
+
+        <ul class='user_info'>
+            <li>회원가입</li><li>ID/PW찾기</li><li class='last'>비회원 예매확인</li>
+        </ul>
+
+        <ul class='reserv_menu'>
+            <li><a href='reserv_page.html'>영화관별 예매</a></li><li><a href='reserv_page.html'>영화별 예매</a></li>
+        </ul>
+
+        <ul class='main_menu'>
+            <li class='movie_symbol' onclick='javascript:location.href="movie_page.html"'><a href='movie_page.html'>영화</a></li><li class='play_symbol'onclick='javascript:location.href="reserv_page.html"'><a href='reserv_page.html'>예매</a></li><li class='discount_symbol'onclick='javascript:location.href="card_page.html"'><a href='card_page.html'>할인카드</a></li><li class='store_symbol'onclick='javascript:location.href="store_page.html"'><a href='store_page.html'>스토어</a></li><li class='theater_symbol' onclick='javascript:location.href="theater_pageE.html"'><a href='theater_pageE.html'>영화관</a></li><li class='gift_symbol'onclick='javascript:location.href="event_page.html"'><a href='event_page.html'>이벤트</a></li>
+        </ul>
+
+        <ul class='sub_menu'>
+            <li>▶&nbsp;&nbsp;무비포스트</li><li>▶&nbsp;&nbsp;할인카드안내</li><li>▶&nbsp;&nbsp;프라이빗 예매</li><li>▶&nbsp;&nbsp;스페셜 멤버십</li><li>▶&nbsp;&nbsp;고객센터</li><li>▶&nbsp;&nbsp;공지사항</li>
+        </ul>
+
+        </nav>
+        <ul class='right_view' id='right_view'>
+
+            <li class='right_viewImg v_img11'></li>
+            <li class='right_viewImg v_img12'></li>
+            <li class='right_viewImg v_img13'></li>
+            <li class='right_viewImg v_img14'></li>
+            <li class='right_viewImg v_img15'></li>
+            <li class='right_viewImg v_img16'></li>
+            <li class='right_viewImg v_img17'></li>
+            <li class='right_viewImg v_img18'></li>
+        <li class='right_viewImg v_img1'></li>
+        <li class='right_viewImg v_img2'></li>
+        <li class='right_viewImg v_img3'></li>
+        <li class='right_viewImg v_img4'></li>
+        <li class='right_viewImg v_img5'></li>
+        <li class='right_viewImg v_img6'></li>
+        <li class='right_viewImg v_img7'></li>
+        <li class='right_viewImg v_img8'></li>
+        <li class='right_viewImg v_img9'></li>
+            <li class='right_viewImg v_img10'></li>
+        </ul>
+    </div>
+    <div class='tmheader_controls'>
+    <div class='tmh_left_btn' id='tmh_left_btn'></div>
+    <div class='tmh_right_btn' id='tmh_right_btn'></div>
+    </div>
+</nav><!--t&m header detial nav end -->
+
+<section class="visual_area">
+    <div class="visual_text">
+        <h1 class="site_logo"></h1>
+        <p>창의적인 콘텐츠로 다양한 라이프<br/>
+        스타일을 만족시키는 당신의 인생 극장</p>
+    </div>
+</section>
+
+<section class="reserv_info">
+    <div class="inner">
+        <div class="left_area">
+            <div class="title_area">
+                <h1 class="title_icon"></h1>
+                <h2>예매안내</h2>
+            </div>
+            <p class="info_text">
+                빠른예매를 통해<br/>
+                관람하실 영화를<br/>
+                쉽고 빠르게 예매해 보세요!
+            </p>
+            <div class="button_area">
+                <div class="reserv_btn" onclick="javascript:location.href='card_page.html'">할인카드안내</div>
+                <div class="reserv_btn">지금 예매하러가기</div>
+            </div>
+        </div>
+        <ul class="right_area">
+            <li class="reserv_icon1"></li>
+            <li class="reserv_icon2"></li>
+            <li class="reserv_icon3"></li>
+            <li class="reserv_icon4"></li>
+        </ul>
+    </div>
+</section>
+
+<section class="reserv_tip">
+    <div class="inner">
+        <article>
+            <div class="reserv_guide img1"></div>
+            <div class="reserv_step">
+                <h2>step1.</h2>
+                <p>
+                    원하는 영화관을 선택해<br/>
+                주세요.
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="reserv_guide img2"></div>
+            <div class="reserv_step">
+                <h2>step2.</h2>
+                <p>
+                    해당 영화관의 예매가능<br/>
+                    날짜 중에 원하는 날짜를<br/>
+                     선택해주세요.
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="reserv_guide img3"></div>
+            <div class="reserv_step">
+                <h2>step3.</h2>
+                <p>
+                선택 영화관, 날짜의<br/>
+                예매가능 영화,시간목록을<br/>
+                 한 눈에 볼 수 있어요.<br/>
+                 <br/>
+                 보고 싶은 영화 및 <br/>
+                 시간대를 선택하세요.
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="reserv_guide img4"></div>
+            <div class="reserv_step">
+                <h2>step4.</h2>
+                <p>
+                    해당 시간대의 영화관의<br/>
+                    좌석 상태가 실시간<br/>
+                    조회되며, 원하는 좌석을<br/>
+                    선택 후 결제하면 됩니다.
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="reserv_confirm">
+    <div class="inner">
+        <div class="left_area">
+            <h2>에매 확인/취소</h2>
+            <dl class="user_reserv">
+                <dt class="user_icon"></dt>
+                <dd class="user_confirm">
+                    <p class="title">회원예매 확인/취소▷</p>
+                    <p class="desc">
+                        메가박스 온라인 회원이시면 <span>나의 메가박스->예매확인/취소</span>
+                        에서<br/>
+                        예매/취소 내역을 확인하실 수 있습니다.
+                    </p>
+                    <p class="mobile_desc">
+                        메가박스 온라인 회원이시면<br/>
+                        <span>나의 메가박스 -> 예매확인/취소</span>
+                        에서<br/>
+                        예매/취소 내역을 확인하실 수 있습니다.
+                    </p>
+                </dd>
+            </dl>
+            <dl class="user_reserv">
+                <dt class="notuser_icon"></dt>
+                <dd class="user_confirm">
+                    <p class="title">비회원 예매 확인/취소▷</p>
+                    <p class="desc">
+                        비회원으로 예매하신 분들은 비회원 로그인 후 예매/취소 내역을<br/>
+                        확인하실 수 있습니다.
+                    </p>
+                    <p class="mobile_desc">
+                        비회원으로 예매하신 분들은 비회원<br/>
+                        로그인 후 예매/취소 내역을<br/>
+                        확인하실 수 있습니다.
+                    </p>
+                </dd>
+            </dl>
+        </div>
+        <div class="right_area">
+            <h2>예매 관련 문의사항</h2>
+            <dl>
+                <dt>
+                    예매관련 문의사항은 메가박스 드림센터 ARS 또는 고객센터<br/>
+                    1:1문의를 이용해주세요.
+                </dt>
+                <dt class="mobile">
+                    예매관련 문의사항은 메가박스 드림센터<br/>
+                    ARS 또는 고객센터 1:1문의를 이용해주세요.
+                </dt>
+                <dd class="reservbtn_area">
+                    <div class="reservbtn">예매관련 FAQ 보기</div>
+                    <div class="reservbtn">1:1 문의하기</div>
+                </dd>
+                <dd class="reserv_customer">
+                    메가박스 고객센터 <span>Dream Center</span>   |   <span>1544-0070</span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</section>
+
+<!-- footer area start-->
+<footer>
+	<div class='top_footer'>
+	  <div class='inner'>
+          <div class='zido_box' id='zido_box'>
+			<!--전국 팔도 이미지가 여기에 표시됨 background-image로써-->
+		</div>
+		<div class='area_text'>
+			<ul class='wide_area'>
+				<li>선호영화관</li><li class='wa_btn' id='wa1'>광주/전라</li><li class='wa_btn' id='wa2'>서울</li><li class='wa_btn' id='wa3'>강원</li><li class='wa_btn' id='wa4'>경기</li><li class='wa_btn' id='wa5'>제주</li><li class='wa_btn' id='wa6'>인천</li><li class='wa_btn' id='wa7'>부산/대구/경상</li><li class='wa_btn' id='wa8'>대전/충청/세종</li>
+			</ul>
+			<div class='narrow_area'>
+				<ul class='wabox' id='wa1box'>
+					<li id='wa1na1'>광주상무</li><li id='wa1na2'>광주하남</li><li id='wa1na3'>남원</li><li id='wa1na4'>목포</li><li id='wa1na5'>목포하당</li><li id='wa1na6'>송천</li><li id='wa1na7'>순천</li><li id='wa1na8'>여수</li><li id='wa1na9'>여수응천</li><li id='wa1na10'>전대(광주)</li><li id='wa1na11'>전주(객사)</li><li id='wa1na12'>첨단(광주)</li>
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa2box'>
+					<li id='wa2na1'>강남</li><li id='wa2na2'>강남대로</li><li id='wa2na3'>강동</li><li id='wa2na4'>군자</li><li id='wa2na5'>동대문</li><li id='wa2na6'>마곡</li><li id='wa2na7'>목동</li><li id='wa2na8'>상봉</li><li id='wa2na9'>상암월드컵..</li><li id='wa2na10'>센트럴</li><li id='wa2na11'>송파파크</li><li id='wa2na12'>신촌</li><li id='wa2na13'>은평</li><li id='wa2na14'>이수</li><li id='wa2na15'>창동</li><li id='wa2na16'>코엑스</li><li id='wa2na17'>홍대</li><li id='wa2na18'>화곡</li><li id='wa2na19'>ARTNINE</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa3box'>
+					<li id='wa3na1'>남춘천</li><li id='wa3na2'>속초</li><li id='wa3na3'>원주</li><li id='wa3na4'>원주센트럴</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa4box'>
+					<li id='wa4na1'>고양스타필드</li><li id='wa4na2'>김포한강신</li><li id='wa4na3'>남양주</li><li id='wa4na4'>동탄</li><li id='wa4na5'>미사강변</li><li id='wa4na6'>백석</li><li id='wa4na7'>별내</li><li id='wa4na8'>부천스타필드</li><li id='wa4na9'>분당</li><li id='wa4na10'>수원</li><li id='wa4na11'>수원남문</li><li id='wa4na12'>시흥배곧</li><li id='wa4na13'>안산중앙</li><li id='wa4na14'>양주</li><li id='wa4na15'>영통</li><li id='wa4na16'>오산</li><li id='wa4na17'>용인테크노</li><li id='wa4na18'>의정부민락</li><li id='wa4na19'>일산</li><li id='wa4na20'>일산벨라시타</li><li id='wa4na21'>킨텍스</li><li id='wa4na22'>파주금촌</li><li id='wa4na23'>파주운정</li><li id='wa4na24'>파주출판도시</li><li id='wa4na25'>평택</li><li id='wa4na26'>하남스타필드</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa5box'>
+					<li id='wa5na1'>제주</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa6box'>
+					<li id='wa6na1'>검단</li><li id='wa6na2'>송도</li><li id='wa6na3'>영종</li><li id='wa6na4'>인천논현</li><li id='wa6na5'>청라</li><li id='wa6na6'>청라지젤</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa7box'>
+					<li id='wa7na1'>거창</li><li id='wa7na2'>경북도청</li><li id='wa7na3'>경산하양</li><li id='wa7na4'>경주</li><li id='wa7na5'>구미강동</li><li id='wa7na6'>김천</li><li id='wa7na7'>남포항</li><li id='wa7na8'>대구(칠성로)</li><li id='wa7na9'>대구신세계</li><li id='wa7na10'>대구이시아</li><li id='wa7na11'>덕천</li><li id='wa7na12'>마산</li><li id='wa7na13'>문경</li><li id='wa7na14'>부산극장</li><li id='wa7na15'>부산대</li><li id='wa7na16'>북대구(칠곡)</li><li id='wa7na17'>사천</li><li id='wa7na18'>삼천포</li><li id='wa7na19'>양산</li><li id='wa7na20'>양산라피에스타</li><li id='wa7na21'>울산</li><li id='wa7na22'>정관</li><li id='wa7na23'>창원</li><li id='wa7na24'>해운대(장산)</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa8box'>
+					<li id='wa8na1'>공주</li><li id='wa8na2'>대전</li><li id='wa8na3'>대전중앙로</li><li id='wa8na4'>세종</li><li id='wa8na5'>오창</li><li id='wa8na6'>제천</li><li id='wa8na7'>진천</li><li id='wa8na8'>천안</li><li id='wa8na9'>청주충북대</li><li id='wa8na10'>충주</li><li id='wa8na11'>홍성내포</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+			</div><!--narrow_area end -->
+
+		</div><!-- area_text end -->
+
+	  </div><!--top_footer inner-->
+	</div>
+
+	<div class='bottom_footer'>
+	    <div class='inner'>
+			<h1 class='footer_logo'>
+			</h1>
+			<div class='footer_info'>
+				<ul>
+					<li>회사소개</li><li>채용정보</li><li>제휴/광고/부대사업문의</li><li>이용약관</li><li class='private_info'>개인정보처리방침</li><li>고객센터</li><li>윤리경영</li>
+				</ul>
+				<p class='info'>
+					서울특별시 강남구 도산대로 156, 2층 메가박스중앙(주) (논현동, 중앙엠앤비사옥) <br/>
+					대표자명 김진선 | 개인정보보호 책임자 경영지원실 실장 박영진 <br/>
+					사업자등록번호 211-86-59478 | 통신판매업신고번호 제 833호
+				</p>
+			</div>
+			<h1 class='tm_footer_logo'></h1>
+			<div class='footer_info2'>
+				<ul class='sns_info'>
+					<li class='twitter'></li><li class='facebook'></li><li class='instagram'></li><li class='playstore'></li><li class='apple'></li>
+				</ul>
+				<p class='tel_info'>ARS 1544-0070</p>
+				<p class='copyright'>Copyright 2014 by MegaboxJonngAng,lnc.<br/> All rights reserved</p>
+			</div>
+	    </div><!--bottom-footer inner-->
+	</div>
+</footer>
+<!-- footer area end -->
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/header_control(copy).js"></script>
+<script src="js/footer_control.js"></script>
+</body>
+</html>

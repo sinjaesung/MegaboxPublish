@@ -1,0 +1,990 @@
+.discountcard_list{
+    margin-top:120px;
+}
+.discountcard_list h2.discountcard_title{
+    font-size:36px;font-weight:700;
+    line-height:80px; position:relative; color:white; width:93.75vw; 
+    margin:0 auto;padding-left:10px;
+}
+.discountcard_list h2.discountcard_title span{
+    position:absolute;left:246px; top:0; font-size:16px; line-height:80px; color:#bfbfbf; font-weight:100
+}
+.discountcard_list ul.card_menu{
+    overflow:hidden;height:auto;
+    width:93.75vw; margin:0 auto;margin-top:20px; text-align:center;
+}
+.discountcard_list ul.card_menu li{
+    display:inline-block;font-size:20px;line-height:40px; margin:0 15px;color:#fff;font-weight:300; cursor:pointer;
+}
+.discountcard_list .list_panel{
+    height:auto;width:100%
+}
+.discountcard_list .list_panel .inner{
+    width:93.75vw;margin:0 auto;overflow:hidden;
+    padding-top:40px;
+}
+.discountcard_list .list_panel .inner .card_info{
+    float:left;width:17.7777777777777777777778%;
+    height:auto;color:white;
+    margin:0 1.111111111111%;text-align:center;
+    padding-bottom:2.083333333333333333vw;
+    margin-bottom:2.083333333333333333vw;
+}
+.card_info .card_img{
+    width:100%;height:calc(100vw *(201/1920));
+    background-position:50% 50%;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.card_info .card_name{
+    width:100%;height:3.75vw;
+    font-size:0.9375vw;line-height:2; font-weight:400;
+}
+.card_info .discount_seg{
+    height:calc(100vw *(36/1920)); width:100%;overflow:hidden; text-align:center;
+}
+.card_info .discount_seg p{
+    font-size:calc(100vw *(16/1920));line-height:2.25;font-weight:300;
+    color:white;display:inline-block;
+}
+.card_info .discount_seg .insider{
+    margin-left:22px;
+}
+.card_info .discount_seg .outsider span{color:#2cd3bd}
+.card_info .discount_seg .insider span{color:#2cd3bd}
+
+#list_panel2,#list_panel3,#list_panel4,#list_panel7,#list_panel8{
+    display:none;
+}
+#list_panel1 .card_info .card1{
+    background-image:url('../images/discountcard/samsung/card1.png');
+}
+#list_panel1 .card_info .card2{
+    background-image:url('../images/discountcard/samsung/card2.png');
+}
+#list_panel1 .card_info .card3{
+    background-image:url('../images/discountcard/samsung/card3.png');
+}
+#list_panel1 .card_info .card4{
+    background-image:url('../images/discountcard/samsung/card4.png');
+}
+#list_panel1 .card_info .card5{
+    background-image:url('../images/discountcard/samsung/card5.png');
+}
+#list_panel1 .card_info .card6{
+    background-image:url('../images/discountcard/samsung/card6.png');
+}
+#list_panel1 .card_info .card7{
+    background-image:url('../images/discountcard/samsung/card7.png');
+}
+#list_panel1 .card_info .card8{
+    background-image:url('../images/discountcard/samsung/card8.png');
+}
+#list_panel1 .card_info .card9{
+    background-image:url('../images/discountcard/samsung/card9.png');
+}
+#list_panel1 .card_info .card10{
+    background-image:url('../images/discountcard/samsung/card10.png');
+}
+#list_panel1 .card_info .card11{
+    background-image:url('../images/discountcard/samsung/card11.png');
+}
+#list_panel1 .card_info .card12{
+    background-image:url('../images/discountcard/samsung/card12.png');
+}
+
+#list_panel2 .card_info .card1{
+    background-image:url('../images/discountcard/bc/card1.png');
+}
+#list_panel2 .card_info .card2{
+    background-image:url('../images/discountcard/bc/card2.png');
+}
+#list_panel2 .card_info .card3{
+    background-image:url('../images/discountcard/bc/card3.png');
+}
+#list_panel2 .card_info .card4{
+    background-image:url('../images/discountcard/bc/card4.png');
+}
+#list_panel2 .card_info .card5{
+    background-image:url('../images/discountcard/bc/card5.png');
+}
+#list_panel2 .card_info .card6{
+    background-image:url('../images/discountcard/bc/card6.png');
+}
+#list_panel2 .card_info .card7{
+    background-image:url('../images/discountcard/bc/card7.png');
+}
+#list_panel2 .card_info .card8{
+    background-image:url('../images/discountcard/bc/card8.png');
+}
+#list_panel2 .card_info .card9{
+    background-image:url('../images/discountcard/bc/card9.png');
+}
+#list_panel2 .card_info .card10{
+    background-image:url('../images/discountcard/bc/card10.png');
+}
+#list_panel2 .card_info .card11{
+    background-image:url('../images/discountcard/bc/card10.png');
+}
+#list_panel2 .card_info .card12{
+    background-image:url('../images/discountcard/bc/card12.png');
+}
+
+#list_panel3 .card_info .card1{
+    background-image:url('../images/discountcard/gockmin/card1.png');
+}
+#list_panel3 .card_info .card2{
+    background-image:url('../images/discountcard/gockmin/card2.png');
+}
+#list_panel3 .card_info .card3{
+    background-image:url('../images/discountcard/gockmin/card3.png');
+}
+#list_panel3 .card_info .card4{
+    background-image:url('../images/discountcard/gockmin/card4.png');
+}
+#list_panel3 .card_info .card5{
+    background-image:url('../images/discountcard/gockmin/card5.png');
+}
+#list_panel3 .card_info .card6{
+    background-image:url('../images/discountcard/gockmin/card6.png');
+}
+#list_panel3 .card_info .card7{
+    background-image:url('../images/discountcard/gockmin/card7.png');
+}
+#list_panel3 .card_info .card8{
+    background-image:url('../images/discountcard/gockmin/card8.png');
+}
+#list_panel3 .card_info .card9{
+   background-image:url('../images/discountcard/gockmin/card9.png');
+}
+
+#list_panel4 .card_info .card1{
+    background-image:url('../images/discountcard/shinhan/card1.png');
+}
+#list_panel4 .card_info .card2{
+    background-image:url('../images/discountcard/shinhan/card2.png');
+}
+#list_panel4 .card_info .card3{
+    background-image:url('../images/discountcard/shinhan/card3.png');
+}
+#list_panel4 .card_info .card4{
+    background-image:url('../images/discountcard/shinhan/card4.png');
+}
+#list_panel4 .card_info .card5{
+    background-image:url('../images/discountcard/shinhan/card5.png');
+}
+#list_panel4 .card_info .card6{
+    background-image:url('../images/discountcard/shinhan/card6.png');
+}
+#list_panel4 .card_info .card7{
+    background-image:url('../images/discountcard/shinhan/card7.png');
+}
+#list_panel4 .card_info .card8{
+    background-image:url('../images/discountcard/shinhan/card8.png');
+}
+#list_panel4 .card_info .card9{
+    background-image:url('../images/discountcard/shinhan/card9.png');
+}
+#list_panel4 .card_info .card10{
+    background-image:url('../images/discountcard/shinhan/card10.png');
+}
+#list_panel4 .card_info .card11{
+    background-image:url('../images/discountcard/shinhan/card11.png');
+}
+#list_panel4 .card_info .card12{
+    background-image:url('../images/discountcard/shinhan/card12.png');
+}
+
+#list_panel7 .card_info .card1{
+    background-image:url('../images/discountcard/company/card1.png');
+}
+#list_panel7 .card_info .card2{
+    background-image:url('../images/discountcard/company/card2.png');
+}
+#list_panel7 .card_info .card3{
+    background-image:url('../images/discountcard/company/card3.png');
+}
+#list_panel7 .card_info .card4{
+    background-image:url('../images/discountcard/company/card4.png');
+}
+#list_panel7 .card_info .card5{
+    background-image:url('../images/discountcard/company/card5.png');
+}
+#list_panel7 .card_info .card6{
+    background-image:url('../images/discountcard/company/card6.png');
+}
+#list_panel7 .card_info .card7{
+    background-image:url('../images/discountcard/company/card7.png');
+}
+#list_panel7 .card_info .card8{
+    background-image:url('../images/discountcard/company/card8.png');
+}
+#list_panel7 .card_info .card9{
+    background-image:url('../images/discountcard/company/card9.png');
+}
+#list_panel7 .card_info .card10{
+    background-image:url('../images/discountcard/company/card10.png');
+}
+#list_panel7 .card_info .card11{
+    background-image:url('../images/discountcard/company/card11.png');
+}
+#list_panel7 .card_info .card12{
+    background-image:url('../images/discountcard/company/card12.png');
+}
+
+#list_panel8 .card_info .card1{
+    background-image:url('../images/discountcard/our/card1.png');
+}
+ #list_panel8 .card_info .card2{
+    background-image:url('../images/discountcard/our/card2.png');
+}
+ #list_panel8 .card_info .card3{
+    background-image:url('../images/discountcard/our/card3.png');
+}
+ #list_panel8 .card_info .card4{
+    background-image:url('../images/discountcard/our/card4.png');
+}
+ #list_panel8 .card_info .card5{
+    background-image:url('../images/discountcard/our/card5.png');
+}
+ #list_panel8 .card_info .card6{
+    background-image:url('../images/discountcard/our/card6.png');
+}
+ #list_panel8 .card_info .card7{
+    background-image:url('../images/discountcard/our/card7.png');
+}
+ #list_panel8 .card_info .card8{
+    background-image:url('../images/discountcard/our/card8.png');
+}
+ #list_panel8 .card_info .card9{
+    background-image:url('../images/discountcard/our/card9.png');
+}
+ #list_panel8 .card_info .card10{
+    background-image:url('../images/discountcard/our/card10.png');
+}
+
+
+.pointcard_list{
+    margin-top:120px;height:auto;
+}
+.pointcard_list h2.pointcard_title{
+    font-size:36px;font-weight:700;line-height:80px;
+    position:relative;color:white;width:calc(100vw *(1800/1920));
+    margin:0 auto;padding-left:10px;
+}
+.pointcard_list .inner{
+    width:calc(100vw *(1800/1920));
+    margin:0 auto;overflow:hidden;padding-top:40px;
+}
+.pointcard_list .inner .card_info{
+    float:left;width:calc(100% *(320/1800));
+    height:auto;color:white; margin:0 1.11111111111111111111%;text-align:center;
+    padding-bottom:calc(100vw *(40/1920));margin-bottom:calc(100vw *(40/1920));
+}
+.pointcard_list .inner .card_info .card_img{
+    width:100%;height:calc(100vw *(201/1920));
+   background-position:50% 50%;
+   background-size:cover;background-repeat:no-repeat;
+}
+.pointcard_list .inner .card_info .card_name{
+    width:100%;height:calc(100vw *(72/1920));font-size:calc(100vw *(18/1720));
+    line-height:2; font-weight:400
+}
+.pointcard_list .inner .card_info .discount_seg{
+    height:calc(100vw *(36 / 1920)); width:100%;overflow:hidden;text-align:center;
+}
+.pointcard_list .inner .card_info .discount_seg p{
+    font-size:calc(100vw *(16/1920));
+    line-height:2.25;font-weight:300; color:#fff;display:inline-block;
+}
+.pointcard_list .inner .card_info .discount_seg .insider{
+    margin-left:22px
+}
+.pointcard_list .inner .card_info .discount_seg p span{
+    color:#2cd3bd
+}
+
+.pointcard_list .inner .card_info .card1{
+    background-image:url('../images/discountcard/point/card1.png');
+}
+.pointcard_list .inner .card_info .card2{
+    background-image:url('../images/discountcard/point/card2.jpg');
+}
+.pointcard_list .inner .card_info .card3{
+    background-image:url('../images/discountcard/point/card3.png');
+}
+.pointcard_list .inner .card_info .card4{
+    background-image:url('../images/discountcard/point/card4.png');
+}
+.pointcard_list .inner .card_info .card5{
+    background-image:url('../images/discountcard/point/card5.png');
+}
+.pointcard_list .inner .card_info .card6{
+    background-image:url('../images/discountcard/point/card6.png');
+}
+.pointcard_list .inner .card_info .card7{
+    background-image:url('../images/discountcard/point/card7.png');
+}
+.pointcard_list .inner .card_info .card8{
+    background-image:url('../images/discountcard/point/card8.png');
+}
+.pointcard_list .inner .card_info .card9{
+    background-image:url('../images/discountcard/point/card9.png');
+}
+.pointcard_list .inner .card_info .card10{
+    background-image:url('../images/discountcard/point/card10.png');
+}
+.pointcard_list .inner .card_info .card11{
+    background-image:url('../images/discountcard/point/card11.png');
+}
+.pointcard_list .inner .card_info .card12{
+    background-image:url('../images/discountcard/point/card12.png');
+}
+.pointcard_list .inner .card_info .card13{
+    background-image:url('../images/discountcard/point/card13.png');
+}
+.pointcard_list .inner .card_info .card14{
+    background-image:url('../images/discountcard/point/card14.png');
+}
+
+
+.culture_itemlist{
+    height:auto;margin-top:120px;
+}
+.culture_itemlist .cultureitem_title{
+    font-size:36px;line-height:80px;font-weight:700; color:white; padding-left:10px; width:calc(100vw *(1800/1920));
+    margin:0 auto;
+}
+.culture_itemlist .inner{
+    width:calc(100vw *(1800/1920));
+    height:auto;padding-top:40px;overflow:hidden;margin:0 auto;
+}
+.culture_itemlist .inner .cultureitem_info{
+    width:31.11111111111111111111%;
+    height:auto;float:left; margin:0 1.11111111111111111%;text-align:center;color:white;
+}
+.culture_itemlist .inner .cultureitem_info dt.cultureitem_img{
+    width:100%;height:calc(100vw *(252/1920));/*560,320크기비율*/
+    position:relative;
+}
+.culture_itemlist .inner .cultureitem_info dt.cultureitem_img img{
+    width:100%;height:auto;max-width:460px; position:absolute; left:0;top:0;
+    bottom:0;right:0;margin:auto;
+}
+.culture_itemlist .inner .cultureitem_info dt.cultureitem_name{
+    font-size:18px;line-height:36px;font-weight:400
+}
+.culture_itemlist .inner .cultureitem_info dd{
+    font-size:16px;font-weight:300; line-height:36px; color:#dadada;
+}
+
+.culture_itemlist .cultureitem_desc{
+    color:white; margin-top:40px; background-color:#240040
+}
+.culture_itemlist .cultureitem_desc .inner{
+    padding:40px 0;
+    height:auto;overflow:hidden;
+    width:calc(100vw *(1800/1920));margin:0 auto;
+}
+.culture_itemlist .cultureitem_desc .inner .desc{
+    float:left;width:50%
+}
+.culture_itemlist .cultureitem_desc .inner .desc dt{
+    font-size:20px;line-height:36px; padding-left:10px;font-weight:400
+}
+.culture_itemlist .cultureitem_desc .inner .desc dd{
+    font-size:18px;line-height:24px;
+    padding-left:10px; font-weight:300
+}
+
+.viewticket_info{
+    height:auto;
+    margin-top:120px;
+}
+.viewticket_info .viewticket_title{
+    width:calc(100vw *(1800/1920));margin:0 auto;font-size:36px;line-height:80px;
+    padding-left:10px;color:white;font-weight:700
+}
+.viewticket_info .inner{
+    width:calc(100vw *(1800/1920));margin:0 auto;
+    overflow:hidden;
+}
+.viewticket_info .inner .viewticket_img{
+    width:33.33333333333333333333333333333%;
+    height:calc(100vw *(388/1920));float:left;margin-top:40px;
+    margin-left:2.2222222222222222222%;
+    margin-right:4.44444444444444444%;
+    position:relative; 
+}
+.viewticket_info .inner .viewticket_img img{
+    width:100%;height:auto;max-width:480px;
+    position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;
+}
+.viewticket_info .inner .right_info{
+    color:#fff; width:60%;height:auto;float:left;
+    padding:20px 0; padding-left:20px; margin-top:40px; background-color:#01392b;
+}
+.viewticket_info .inner .right_info dt.rightinfo_title{
+    font-size:20px; line-height:36px;font-weight:400
+}
+.viewticket_info .inner .right_info .rightinfo_subtitle{
+    font-size:18px;line-height:36px;font-weight:400
+}
+.viewticket_info .inner .right_info dd{
+    font-size:16px;line-height:24px;font-weight:300;color:#dadada;
+}
+
+.viewticket_info .extra_info{
+    color:#fff;
+    margin-top:40px;padding:40px calc(100vw *(60/1920));background-color:#240040
+}
+.viewticket_info .extra_info dt.extrainfo_title{
+    font-size:20px;line-height:36px;font-weight:400;
+}
+.viewticket_info .extra_info dd{
+    font-size:18px;line-height:24px;font-weight:300; color:#dadada
+}
+
+@media all and (min-width:1100px) and (max-width:1499px){
+    .discountcard_list{
+        margin-top:120px;
+    }
+    .discountcard_list h2.discountcard_title{
+        font-size:30px;font-weight:700;line-height:70px;
+        position:relative;color:white; width:calc(100vw *(1400/1499));
+        margin:0 auto;padding-left:10px;
+    }
+    .discountcard_list h2.discountcard_title span{
+        position:absolute;left:226px;top:0;font-size:16px;line-height:70px; color:#bfbfbf; font-weight:100
+    }
+    .discountcard_list ul.card_menu{
+        overflow:hidden;height:auto;
+        width:calc(100vw *(1400/1499));margin:0 auto;margin-top:20px; text-align:center;
+    }
+    .discountcard_list ul.card_menu li{
+        display:inline-block;font-size:18px;line-height:40px; margin:0 15px; color:#fff;font-weight:300;cursor:pointer;
+    }
+    .discountcard_list .list_panel{
+        height:auto;width:100%
+    }
+    .discountcard_list .list_panel .inner{
+        width:calc(100vw *(1400/1499));margin:0 auto;overflow:hidden; padding-top:30px;
+    }
+    .discountcard_list .list_panel .inner .card_info{
+        float:left; width:calc(100% *(320/1400));height:auto;color:white;
+        margin:0 calc(100% *(15/1400));text-align:center;
+        padding-bottom:calc(100vw *(30/1920));margin-bottom:calc(100vw *(30/1920));
+    }
+    .card_info .card_img{
+        width:100%;height:calc(100vw *(201/1499));
+        background-position:50% 50%;background-size:cover;background-repeat:no-repeat;
+    }
+    .card_info .card_name{
+        width:100%;height:calc(100vw *(64/1499)); font-size:calc(100vw *(16/1499)); line-height:2;font-weight:400
+    }
+    .card_info .discount_seg{
+        height:calc(100vw *(32/1499));width:100%;overflow:hidden; text-align:center;
+    }
+    .card_info .discount_seg p{
+        font-size:calc(100vw *(14/1499));line-height:2.28571428571;
+        font-weight:300; color:#fff;display:inline-block;
+    }
+    .card_info .discount_seg .insider{
+        margin-left:22px;
+    }
+
+    .pointcard_list{
+        margin-top:120px;
+    }
+    .pointcard_list h2.pointcard_title{
+        font-size:30px;font-weight:700;line-height:70px;position:relative;
+        color:white; width:calc(100vw * (1400/1499)); margin:0 auto;padding-left:10px;
+    }
+    .pointcard_list .inner{
+        width:calc(100vw *(1400/1499)); margin:0 auto;overflow:hidden;
+        padding-top:30px;
+    }
+    .pointcard_list .inner .card_info{
+        float:left; width:calc(100% *(320/1400));height:auto;color:white;
+        margin:0 calc(100% *(15/1400)); text-align:center;
+        padding-bottom:calc(100vw *(30/1920));margin-bottom:calc(100vw *(30/1920));
+    }
+    .pointcard_list .inner .card_info .card_img{
+        width:100%;height:calc(100vw *(201/1499));
+        background-position:50% 50%; background-size:cover;background-repeat:no-repeat;
+    }
+    .pointcard_list .inner .card_info .card_name{
+        width:100%;height:calc(100vw *(64/1499));
+      font-size:calc(100vw *(16/1499));line-height:2;font-weight:400;
+    }
+    .pointcard_list .inner .card_info .discount_seg{
+        height:calc(100vw *(32/1499));width:100%;overflow:hidden; text-align:center;
+    }
+    .pointcard_list .inner .card_info .discount_seg p{
+        font-size:calc(100vw *(14/1499));line-height:2.28571428571;
+        font-weight:300; color:#fff;display:inline-block;
+    }
+    .pointcard_list .inner .card_info .discount_seg .insider{
+        margin-left:22px
+    }
+
+    .culture_itemlist{
+        height:auto;margin-top:120px;
+    }
+    .culture_itemlist .cultureitem_title{
+        font-size:30px;line-height:70px; color:white; padding-left:10px; width:calc(100vw *(1400/1499));margin:0 auto;
+    }
+    .culture_itemlist .inner{
+        width:calc(100vw *(1400/1499));height:auto;padding-top:30px; overflow:hidden; margin:0 auto;
+    }
+    .culture_itemlist .inner .cultureitem_info{
+        width:calc(100% *(560/1800));height:auto;float:left;
+        margin:0 calc(100% *(20/1800));text-align:center;color:white;
+    }
+    .culture_itemlist .inner .cultureitem_info dt.cultureitem_img{
+        width:100%;height:calc(100vw *(252/1920));
+        background-repeat:no-repeat;
+        background-size:cover;background-position:50% 50%
+    }
+    .culture_itemlist .inner .cultureitem_info dt.cultureitem_name{
+        font-size:16px; line-height:30px; font-weight:400
+    }
+    .culture_itemlist .inner .cultureitem_info dd{
+        font-size:14px;font-weight:300;line-height:30px; color:#dadada;
+    }
+    .culture_itemlist .cultureitem_desc{
+        background-color:#240040; color:white;margin-top:30px;
+    }
+    .culture_itemlist .cultureitem_desc .inner{
+        padding:30px 0;height:auto;overflow:hidden;width:calc(100vw *(1800/1920));
+        margin:0 auto;
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc{
+        float:left;width:50%
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc dt{
+        font-size:18px;line-height:30px; padding-left:10px;
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc dd{
+        font-size:15px; line-height:20px; padding-left:10px
+    }
+
+    .viewticket_info{
+        height:auto;margin-top:120px;
+    }
+    .viewticket_info .viewticket_title{
+        width:calc(100vw *(1800/1920));
+        margin:0 auto;font-size:30px;line-height:70px; padding-left:10px; color:white; font-weight:700
+    }
+    .viewticket_info .inner{
+        width:calc(100vw *(1800/1920));margin:0 auto;overflow:hidden;
+    }
+    .viewticket_info .inner .viewticket_img{
+        width:calc(100% *(600 / 1800));
+        height:calc(100vw *(388/1920)); float:left;margin-top:30px; margin-left:calc(100% *(40 /1800));
+        margin-right:calc(100% *(80/1800));position:relative;
+    }
+    .viewticket_info .inner .right_info{
+        color:#fff;
+        width:60%; height:auto;float:left;padding:20px 0;
+        padding-left:15px;margin-top:30px; background-color:#01392b
+    }
+    .viewticket_info .inner .right_info dt.rightinfo_title{
+        font-size:17px; line-height:30px;font-weight:400
+    }
+    .viewticket_info .inner .right_info .rightinfo_subtitle{
+        font-size:15px;line-height:25px; font-weight:400
+    }
+    .viewticket_info .inner .right_info dd{
+        font-size:14px; line-height:20px; font-weight:300; color:#dadada
+    }
+
+    .viewticket_info .extra_info{
+        color:#fff; margin-top:30px;
+        padding:30px calc(100vw *(60/1920)); background-color:#240040;
+    }
+    .viewticket_info .extra_info dt.extrainfo_title{
+        font-size:17px;line-height:30px;font-weight:400
+    }
+    .viewticket_info .extra_info dd{
+        font-size:14px;line-height:20px;font-weight:300; color:#dadada
+    }
+}
+
+@media all and (min-width:600px) and (max-width:1099px){
+    .discountcard_list{
+        margin-top:60px;
+    }
+    .discountcard_list h2.discountcard_title{
+        font-size:24px; font-weight:700;line-height:50px; position:relative; color:white;
+        width:calc(100vw *(740/800)); margin:0 auto;padding-left:10px;
+    }
+    .discountcard_list h2.discountcard_title span{
+        position:absolute; left:164px; top:0;font-size:14px; line-height:50px; color:#bfbfbf; font-weight:100
+    }
+    .discountcard_list ul.card_menu{
+        overflow:hidden; height:auto; width:calc(100vw *(740/800));
+        margin:0 auto;margin-top:10px; text-align:center;
+    }
+    .discountcard_list ul.card_menu li{
+        display:inline-block; font-size:14px; line-height:30px; margin:0 7px; color:#fff;font-weight:300; cursor:pointer;
+    }
+    .discountcard_list .list_panel{
+        height:auto;width:100%
+    }
+    .discountcard_list .list_panel .inner{
+        width:calc(100vw *(740/800)); margin:0 auto;overflow:hidden;
+        padding-top:20px;
+    }
+    .discountcard_list .list_panel .inner .card_info{
+        float:left; width:calc(100% *(226/740)); height:auto;color:white;
+        margin:0 calc(100% *(10/740)); text-align:center;padding-bottom:calc(100vw*(20/800));
+        margin-bottom:calc(100vw *(20/800))
+    }
+    .card_info .card_img{
+        width:100%;height:calc(100vw *(142/800)); background-position:50% 50%;
+        background-size:cover;background-repeat:no-repeat;
+    }
+    .card_info .card_name{
+        width:100%;height:calc(100vw *(48/800));font-size:calc(100vw *(14/800));line-height:calc(24/14);
+        font-weight:400
+    }
+    .card_info .discount_seg{
+        height:calc(100vw *(24/800));width:100%;overflow:hidden; text-align:center;
+    }
+    .card_info .discount_seg p{
+        font-size:calc(100vw *(13/800));line-height:calc(24/13);
+        font-weight:300;color:#fff; display:inline-block;
+    }
+    .card_info .discount_seg .insider{
+        margin-left:14px;
+    }
+
+    .pointcard_list{
+        margin-top:60px;
+    }
+    .pointcard_list h2.pointcard_title{
+        font-size:24px; font-weight:700;
+        line-height:50px; position:relative; color:white;
+        width:calc(100vw *(740/800)); margin:0 auto;padding-left:10px;
+    }
+    .pointcard_list .inner{
+        width:calc(100vw *(740/800));
+        margin:0 auto;overflow:hidden; padding-top:20px;
+    }
+    .pointcard_list .inner .card_info{
+        float:left;width:calc(100% *(226/740)); height:auto;color:white;
+        margin:calc(100% *(10/740)); text-align:center; padding-bottom:calc(100vw *(20/800));margin-bottom:calc(100vw *(20/800));
+    }
+    .pointcard_list .inner .card_info .card_img{
+        width:100%;height:calc(100vw *(142/800)); background-position:50% 50%;
+        background-size:cover;background-repeat:no-repeat;
+    }
+    .pointcard_list .inner .card_info .card_name{
+        width:100%; height:calc(100vw *(48/800));
+        font-size:calc(100vw *(14/800));
+        line-height:calc(24/14); font-weight:400
+    }
+    .pointcard_list .inner .card_info .discount_seg{
+      height:calc(100vw *(24/800));width:100%;overflow:hidden;text-align:center;  
+    }
+    .pointcard_list .inner .card_info .discount_seg p{
+        font-size:calc(100vw *(13/800)); line-height:calc(24/13);
+        font-weight:300; color:#fff;display:inline-block;
+    }
+    .pointcard_list .inner .card_info .discount_seg .insider{
+        margin-left:14px;
+    }
+
+    .culture_itemlist{
+        height:auto;margin-top:60px;
+    }
+    .culture_itemlist .cultureitem_title{
+        font-size:24px; line-height:50px; color:white;
+        padding-left:10px; width:calc(100vw *(740/800)); margin:0 auto;
+    }
+    .culture_itemlist .inner{
+        width:calc(100vw *(740/800)); height:auto;padding-top:20px; padding-bottom:0;
+        overflow:hidden;margin:0 auto;
+    }
+    .culture_itemlist .inner .cultureitem_info{
+        width:calc(100% *( 350/740)); height:auto;float:left;
+        margin:0 calc(100% *(10/740)); text-align:center;color:white; margin-bottom:20px;
+    }
+    .culture_itemlist .inner .cultureitem_info:last-child{
+        margin-bottom:0
+    }
+    .culture_itemlist .inner .cultureitem_info dt.cultureitem_img{
+        width:100%;height:calc(100vw *(158/800));
+    }
+    .culture_itemlist .inner .cultureitem_info dt.cultureitem_name{
+        font-size:16px; line-height:30px; font-weight:400;
+        background-color:#000
+    }
+    .culture_itemlist .inner .cultureitem_info dd{
+        font-size:14px; font-weight:300; line-height:30px; color:#dadada;
+        background-color:#000
+    }
+    .culture_itemlist .cultureitem_desc{
+        background-color:#240040; color:white;margin-top:20px;
+    }
+    .culture_itemlist .cultureitem_desc .inner{
+        padding:20px 0;
+        height:auto;overflow:hidden;
+        width:calc(100vw *(740/800));margin:0 auto;
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc{
+        float:left; width:50%
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc dt{
+        font-size:15px; line-height:30px; padding-left:10px; padding-right:20px;
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc dd{
+        font-size:13px;line-height:20px; padding-left:10px;
+    }
+
+
+    .viewticket_info{
+        height:auto;
+        margin-top:60px;
+    }
+    .viewticket_info .viewticket_title{
+        width:calc(100vw *(740/800));
+        margin:0 auto;font-size:24px; line-height:50px;padding-left:10px;
+        color:white; font-weight:700
+    }
+    .viewticket_info .inner{
+        width:calc(100vw *(740/800));
+        margin:0 auto;overflow:hidden;
+    }
+    .viewticket_info .inner .viewticket_img{
+        width:50%; height:calc(100vw*(239/800));
+        float:left;margin-top:20px;margin-left:0; margin-right:calc(100% *(20/740));
+        position:relative
+    }
+    .viewticket_info .inner .right_info{
+        color:#fff;
+        width:calc(100% *(350/740));
+        height:auto;float:left;padding:10px 0;padding-left:10px;
+        background-color:transparent; margin-top:20px;
+    }
+    .viewticket_info .inner .right_info dt.rightinfo_title{
+        font-size:20px; line-height:30px;font-weight:400
+    }
+    .viewticket_info .inner .right_info .rightinfo_subtitle{
+        font-size:15px;line-height:20px;font-weight:400
+    }
+    .viewticket_info .inner .right_info dd{
+        font-size:13px; line-height:20px;font-weight:300;color:#dadada
+    }
+    .viewticket_info .inner .right_info dd br{
+        display:none;
+    }
+
+    .viewticket_info .extra_info{
+        color:#fff; margin-top:20px; background-color:#240040;
+        padding:20px calc(100vw *(30/800));
+    }
+    .viewticket_info .extra_info dt.extrainfo_title{
+        font-size:16px;line-height:30px; font-weight:400
+    }
+    .viewticket_info .extra_info dd{
+        font-size:14px;line-height:20px;font-weight:300; color:#dadada
+    }
+}
+
+@media all and (min-width:240px) and (max-width:599px){
+    .discountcard_list{
+        margin-top:30px;
+    }
+    .discountcard_list h2.discountcard_title{
+        font-size:18px;font-weight:700; line-height:32px; position:relative; color:white;
+        width:calc(100vw *(440/480)); margin:0 auto;padding-left:10px;
+    }
+    .discountcard_list h2.discountcard_title span{
+        position:absolute;left:140px; top:0; font-size:12px;line-height:32px; color:#bfbfbf; font-weight:100
+    }
+    .discountcard_list ul.card_menu{
+        overflow:hidden;height:auto;width:calc(100vw *(440/480));
+        margin:0 auto;margin-top:10px; text-align:center;
+    }
+    .discountcard_list ul.card_menu li{
+        display:inline-block;font-size:12px; line-height:20px; margin:0 15px; color:#fff; font-weight:300; cursor:pointer;
+    }
+    .discountcard_list .list_panel{
+        height:auto;width:100%
+    }
+    .discountcard_list .list_panel .inner{
+        width:calc(100vw *(440/480));
+        margin:0 auto;overflow:hidden; padding-top:15px;
+    }
+    .discountcard_list .list_panel .inner .card_info{
+        float:left;width:calc(100% *(200/440));height:auto;color:white;
+        margin:0 calc(100% *(10/440)); text-align:center;
+        padding-bottom:10px; margin-bottom:calc(100vw *(20/480));
+    }
+    .card_info .card_img{
+        width:100%;height:calc(100vw *(126/480));
+        background-position:50% 50%;
+        background-size:cover;background-repeat:no-repeat;
+    }
+    .card_info .card_name{
+        width:100%;height:40px;font-size:12px;
+        line-height:20px;font-weight:400
+    }
+    .card_info .discount_seg{
+        height:auto; width:100%;overflow:hidden;text-align:center;
+    }
+    .card_info .discount_seg p{
+        font-size:11px; line-height:20px; font-weight:300; color:#fff; display:inline-block;
+        width:100%
+    }
+    .card_info .discount_seg .insider{
+        margin-left:0
+    }
+    
+
+    .pointcard_list{
+        margin-top:30px;
+    }
+    .pointcard_list h2.pointcard_title{
+        font-size:18px;font-weight:700;line-heigh:32px;
+        position:relative; color:white; width:calc(100vw *(440/480)); margin:0 auto;padding-left:10px;
+    }
+    .pointcard_list .inner{
+        width:calc(100vw *(440/480));margin:0 auto;overflow:hidden;
+        padding-top:15px;
+    }
+    .pointcard_list .inner .card_info{
+        float:left;
+        width:calc(100% *(200/440)); height:auto;color:white;
+        margin:0 calc(100% *(10/440)); text-align:center; padding-bottom:10px;
+        margin-bottom:calc(100vw *(20/480));
+    }
+    .pointcard_list .inner .card_info .card_img{
+        width:100%;height:calc(100vw*(126/480));background-position:50% 50%;
+        background-size:cover;background-repeat:no-repeat;
+    }
+    .pointcard_list .inner .card_info .card_name{
+        width:100%;height:40px; font-size:12px;
+        line-height:20px; font-weight:400
+    }
+    .pointcard_list .inner .card_info .discount_seg{
+        height:auto;
+        width:100%;overflow:hidden;text-align:center;
+    }
+    .pointcard_list .inner .card_info .discount_seg p{
+        font-size:11px; line-height:20px; font-weight:300;
+        color:#fff;display:inline-block; width:100%
+    }
+    .pointcard_list .inner .card_info .discount_seg .insider{
+        margin-left:0
+    }
+
+
+    .culture_itemlist{
+        height:auto;margin-top:30px;
+    }
+    .culture_itemlist .cultureitem_title{
+        font-size:18px;line-height:32px; color:white;
+        padding-left:10px; width:calc(100vw *(440/480));
+        margin:0 auto;
+    }
+    .culture_itemlist .inner{
+        width:calc(100vw *(440/480));height:auto;
+        padding-top:15px;padding-bottom:0; overflow:hidden;margin:0 auto;
+    }
+    .culture_itemlist .inner .cultureitem_info{
+        width:calc(100% *(420/440));
+        height:auto;float:none; 
+        margin:0 auto;margin-bottom:15px; text-align:center;color:white;
+    }
+    .culture_itemlist .inner .cultureitem_info:last-child{
+        margin-bottom:0
+    }
+    .culture_itemlist .inner .cultureitem_info dt.cultureitem_img{
+        width:100%; height:calc(100vw *(190/480));
+    }
+    .culture_itemlist .inner .cultureitem_info dt.cultureitem_name{
+        font-size:16px;line-height:30px; font-weight:400
+    }
+    .culture_itemlist .inner .cultureitem_info dd{
+        font-size:14px;font-weight:300;
+        line-height:30px; color:#dadada;
+        background-color:#000
+    }
+
+    .culture_itemlist .cultureitem_desc{
+        color:white; margin-top:15px; background-color:#240040
+    }
+    .culture_itemlist .cultureitem_desc .inner{
+        padding:10px 0;
+        height:auto;overflow:hidden;
+        width:calc(100vw *(440/480)); margin:0 auto;
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc{
+        float:none; width:100%
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc:nth-child(2){
+        margin-top:20px;
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc dt{
+        font-size:15px;line-height:30px; padding-left:10px;
+        padding-right:0
+    }
+    .culture_itemlist .cultureitem_desc .inner .desc dd{
+        font-size:14px;line-height:20px; padding-left:10px;
+    }
+
+
+    .viewticket_info{
+        height:auto;margin-top:30px;
+    }
+    .viewticket_info .viewticket_title{
+        width:calc(100vw *(440/480));margin:0 auto;font-size:18px;line-height:32px; 
+        padding-left:10px; color:white; font-weight:700
+    }
+    .viewticket_info .inner{
+        width:calc(100vw *(440/480));
+        margin:0 auto;overflow:hidden;
+    }
+    .viewticket_info .inner .viewticket_img{
+        width:calc(100% *(420/440));
+        height:calc(100vw *(271/480)); float:none;
+
+        margin:0 auto;margin-top:15px;
+
+        position:relative;
+    }
+    .viewticket_info .inner .right_info{
+        color:#fff;
+        width:calc(100% *(420/440)); height:auto;float:none;
+        padding:10px 0;padding-left:10px;
+        margin:0 auto;
+        margin-top:10px; background-color:transparent;
+    }
+    .viewticket_info .inner .right_info dt.rightinfo_title{
+        font-size:16px; line-height:30px;font-weight:400
+    }
+    .viewticket_info .inner .right_info .rightinfo_subtitle{
+        font-size:15px;line-height:20px; font-weight:400
+    }
+    .viewticket_info .inner .right_info dd{
+        font-size:13px;line-height:20px; font-weight:300; color:#dadada
+    }
+    .viewticket_info .inner .right_info dd br{
+        display:none;
+    }
+
+    .viewticket_info .extra_info{
+        color:#fff; margin-top:20px; background-color:#240040;
+        padding:10px calc(100vw *(20/480));
+    }
+    .viewticket_info .extra_info dt.extrainfo_title{
+        font-size:15px;line-height:30px;font-weight:400
+    }
+    .viewticket_info .extra_info dd{
+        font-size:12px;line-height:20px;font-weight:300;
+        color:#dadada;
+    }
+}

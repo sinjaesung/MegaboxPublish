@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-sacle=1.0, minimum-sacle=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/html5_reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/store_visual.css"/>
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;}
+    </style>
+    <link rel="stylesheet" href="css/store_style.css"/>
+</head>
+<body>
+<header>
+    <!--inner구조물과 이너바깥의 user_bar는 pc에서만의 전유물이며, 모바일에선 이러한 리스트 구조에서 탈피한다-->
+    <!-- pc header ui start -->
+    <div class='inner'>
+        <ul class='header_menu'>
+            <li><a href='movie_page.html'>영화</a></li><li><a href='reserv_page.html'>예매</a></li><li><a href='#'>미리보기</a></li><li><a href='#'>특별관</a></li><li class='site_logo'><a href='index.html'></a></li><li><a href='store_page.html'>스토어</a></li><li><a href='card_page.html'>할인카드</a></li><li><a href='event_page.html'>이벤트</a></li>
+        </ul>
+    </div>
+    <ul class='user_bar'>
+        <li>로그인</li><li>회원가입</li><li>고객센터</li>
+    </ul>
+    <!--//pc ui end-->
+
+    <!--태블릿,모바일에서만 보이게 t&m ui start-->
+    <!-- tm_inner는 태블릿,모바일 전용 inner이다. 고정값은 아니며 outer 해더 전체 크기의 항상 92.5%비율을 유지하는 크기이다.-->
+    <div class='tm_inner'>
+        <div class='tm_menubar' id='tm_menubar'>
+
+        </div>
+        <div class='tm_headerlogo'>
+            <a href='index.html'></a>
+        </div>
+        <div class='tm_usericon'>
+        </div>
+    </div>
+    <!--t&m header ui end -->
+</header><!--header area end-->
+
+<!--pc에선 기본적으로 감춰놓는다-->
+<!--태블릿,모바일에서만 보여지고 처리되는 해더 디테일 네비게이션-->
+<nav class='tmheader_detail' id='tmheader_detail'>
+    <div class='tmdetail_wrap' id='tmdetail_wrap'>
+        <nav class='left_view' id='left_view'>
+
+        <div class='top_menu'>
+            <ul>
+                <li class='home_btn'><a href='index.html'></a></li><li class='setting_btn'></li>
+            </ul>
+
+            <div class='tmheader_detailClose' id='tmheader_detailClose'></div>
+        </div>
+
+        <div class='login_btn'>로그인</div>
+
+        <ul class='user_info'>
+            <li>회원가입</li><li>ID/PW찾기</li><li class='last'>비회원 예매확인</li>
+        </ul>
+
+        <ul class='reserv_menu'>
+            <li><a href='reserv_page.html'>영화관별 예매</a></li><li><a href='reserv_page.html'>영화별 예매</a></li>
+        </ul>
+
+        <ul class='main_menu'>
+            <li class='movie_symbol' onclick='javascript:location.href="movie_page.html"'><a href='movie_page.html'>영화</a></li><li class='play_symbol'onclick='javascript:location.href="reserv_page.html"'><a href='reserv_page.html'>예매</a></li><li class='discount_symbol'onclick='javascript:location.href="card_page.html"'><a href='card_page.html'>할인카드</a></li><li class='store_symbol'onclick='javascript:location.href="store_page.html"'><a href='store_page.html'>스토어</a></li><li class='theater_symbol' onclick='javascript:location.href="theater_pageE.html"'><a href='theater_pageE.html'>영화관</a></li><li class='gift_symbol'onclick='javascript:location.href="event_page.html"'><a href='event_page.html'>이벤트</a></li>
+        </ul>
+
+        <ul class='sub_menu'>
+            <li>▶&nbsp;&nbsp;무비포스트</li><li>▶&nbsp;&nbsp;할인카드안내</li><li>▶&nbsp;&nbsp;프라이빗 예매</li><li>▶&nbsp;&nbsp;스페셜 멤버십</li><li>▶&nbsp;&nbsp;고객센터</li><li>▶&nbsp;&nbsp;공지사항</li>
+        </ul>
+
+        </nav>
+        <ul class='right_view' id='right_view'>
+
+            <li class='right_viewImg v_img11'></li>
+            <li class='right_viewImg v_img12'></li>
+            <li class='right_viewImg v_img13'></li>
+            <li class='right_viewImg v_img14'></li>
+            <li class='right_viewImg v_img15'></li>
+            <li class='right_viewImg v_img16'></li>
+            <li class='right_viewImg v_img17'></li>
+            <li class='right_viewImg v_img18'></li>
+            <li class='right_viewImg v_img1'></li>
+            <li class='right_viewImg v_img2'></li>
+            <li class='right_viewImg v_img3'></li>
+            <li class='right_viewImg v_img4'></li>
+            <li class='right_viewImg v_img5'></li>
+            <li class='right_viewImg v_img6'></li>
+            <li class='right_viewImg v_img7'></li>
+            <li class='right_viewImg v_img8'></li>
+            <li class='right_viewImg v_img9'></li>
+            <li class='right_viewImg v_img10'></li>
+        </ul>
+    </div>
+    <div class='tmheader_controls'>
+    <div class='tmh_left_btn' id='tmh_left_btn'></div>
+    <div class='tmh_right_btn' id='tmh_right_btn'></div>
+    </div>
+</nav><!--t&m header detial nav end -->
+
+<div class="visual_wrap">
+    <canvas id="store_visual">
+    </canvas>
+    <dl class="store_visual_text">
+        <dt class="visual_title">
+            MEGABOX Store
+        </dt>
+        <dt class="visual_subtitle">
+            더 즐거운 영화감상을 하는 방법!<br/>
+            스토어의 다양한 상품과 함께 하세요!
+        </dt>
+        <dd class="desc_bar"></dd>
+        <dd class="desc">메가박스의 고객을 위한 다양한 상품을 제공합니다.</dd>
+    </dl>
+    <img src="images/store/store_visual_icon1.png" alt="store_visual_icon1" class="store_visual_icon1" id="store_visual_icon1"/>
+    <img src="images/store/store_visual_icon2.png" alt="store_visual_icon2" class="store_visual_icon2" id="store_visual_icon2"/>
+</div>
+
+<section class="store_list">
+    <ul class="store_menu_list">
+        <li class="store_menu" id="store_menu1">메가티켓</li>
+        <li class="store_menu" id="store_menu2">메가찬스</li>
+        <li class="store_menu" id="store_menu3">팝콘/음료/굿즈</li>
+    </ul>
+    <div class="list_panel list_panel1" id="list_panel1">
+        <div class="inner">
+            <dl class="item_info i1">
+                <dd class="item_img">
+                    <img class="badge" src="images/store/store_badge1.png" alt="배지1"/>
+                </dd>
+                <dt class="item_title">메가박스 라이브중계 2일<br/> 패키지권</dt>
+                <dt class="item_subtitle">[블리즈컨 2019] 메가박스 단독 라이브<br/>중계 2일 패키지 관람권</dt>
+                <dd class="item_leave"><span>98</span>개 남음</dd>
+                <dd class="item_price">34,000원</dd>
+            </dl>
+            <dl class="item_info i2">
+                <dd class="item_img">
+                    <img class="badge" src="images/store/store_badge3.png" alt="배지1"/>
+                </dd>
+                <dt class="item_title">일반관람권(2D)</dt>
+                <dt class="item_subtitle">2D 일반관람권</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">10,000원</dd>
+            </dl>
+            <dl class="item_info i3">
+                <dd class="item_img">
+                </dd>
+                <dt class="item_title">메가박스 3D 관람권</dt>
+                <dt class="item_subtitle">3D 일반관람권</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">12,000원</dd>
+            </dl>
+            <dl class="item_info i4">
+                <dd class="item_img">
+                    <img class="badge" src="images/store/store_badge1.png" alt="배지1"/>
+                </dd>
+                <dt class="item_title">[특별관] MX관 전용관람권<br/>(2D)</dt>
+                <dt class="item_subtitle">MX관 전용관람권</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">12,000원</dd>
+            </dl>
+            <dl class="item_info i5">
+                <dd class="item_img">
+                    <img class="badge" src="images/store/store_badge1.png" alt="배지1"/>
+                </dd>
+                <dt class="item_title">[특별관]더 부티그 전용관</dt>
+                <dt class="item_subtitle">메가박스만의 프리미엄 시네마, 더 부티크 전용관람권</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">12,000원</dd>
+            </dl>
+            <dl class="item_info i6">
+                <dd class="item_img">
+                </dd>
+                <dt class="item_title">[특별관] 더 부티그 스위트</dt>
+                <dt class="item_subtitle">메가박스만이 프리미엄 시네마, 더 부티<br/>크 스위트 전용관람권</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">35,000원</dd>
+            </dl>
+            <dl class="item_info i7">
+                <dd class="item_img">
+                </dd>
+                <dt class="item_title">싱글패키지</dt>
+                <dt class="item_subtitle">2D 일반관람권 1매 + 팝콘(R)1 + 탄산음료(R)1</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">15,000원</dd>
+            </dl>
+            <dl class="item_info i8">
+                <dd class="item_img">
+                    <img class="badge" src="images/store/store_badge3.png" alt="배지1"/>
+                </dd>
+                <dt class="item_title">러브콤포 패키지</dt>
+                <dt class="item_subtitle">2D 일반관람권 2매 + 러브콤보[팝콘<br/>
+                    (L)1 + 탄산음료(R) 2]</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">27,500원</dd>
+            </dl>
+            <dl class="item_info i9">
+                <dd class="item_img">
+                </dd>
+                <dt class="item_title">패밀리패키지</dt>
+                <dt class="item_subtitle">2D 일반관람 3매 + 팝콘(R)2 + 탄산<br/>음료(R)2</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">37,500원</dd>
+            </dl>
+            <dl class="item_info i10">
+                <dd class="item_img">
+                </dd>
+                <dt class="item_title">메가패밀리패키지</dt>
+                <dt class="item_subtitle">2D 일반관람권 4매 + 팝콘(R)2 + 음료<br/>
+                    (R)2 + 나쵸1 + 팩오징어1</dt>
+                <dd class="item_leave hidden">00개 남음</dd>
+                <dd class="item_price">50,000원</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="list_panel list_panel2" id="list_panel2">
+        <div class="inner">
+            <dl class="item_info i1">
+                <dd class="item_img">
+                    <div class="sold-out">SOLD OUT</div>
+                </dd>
+                <dt class='item_title'>
+                    [82년생 김지영] 1+1 관람권
+               </dt>
+               <dt class='item_subtitle'>
+                    [82년생 김지영] 1+1 관람권
+               </dt>
+               <dd class='item_leave'>
+                    <span>0</span> 개 남음
+               </dd>
+               <dd class='item_price'>
+                    9,000원
+               </dd>
+            </dl>
+            <dl class='item_info i2'>
+                <dd class='item_img'>
+                     <div class='sold-out'>
+                          SOLD OUT
+                     </div>
+                </dd>
+                <dt class='item_title'>[날씨의 아이] 1+1 관람권</dt>
+                <dt class='item_subtitle'>
+                     [날씨의 아이] 1+1 관람권
+                </dt>
+                <dd class='item_leave'>
+                     <span>0</span> 개 남음
+                </dd>
+                <dd class='item_price'>
+                     9,000원
+                </dd>
+           </dl>
+           <dl class='item_info i3'>
+                <dd class='item_img'>
+                     <div class='sold-out'>
+                          SOLD OUT
+                     </div>
+                </dd>
+                <dt class='item_title'>[터미네이터 타크페이트] 1+1 관람권</dt>
+                <dt class='item_subtitle'>
+                     [터미네이터 다크페이트] 1+1 관람권
+                </dt>
+                <dd class='item_leave'>
+                     <span>0</span> 개 남음
+                </dd>
+                <dd class='item_price'>
+                     9,000원
+                </dd>
+           </dl>
+           <dl class='item_info i4'>
+                <dd class='item_img'>
+
+                </dd>
+                <dt class='item_title'>[람보 라스터 워] 1+1 관람권</dt>
+                <dt class='item_subtitle'>
+                     [람보 라스터 워] 1+1 관람권
+                </dt>
+                <dd class='item_leave'>
+                     <span>3,148</span> 개 남음
+                </dd>
+                <dd class='item_price'>
+                     8,000원
+                </dd>
+           </dl>
+           <dl class='item_info i5'>
+                <dd class='item_img'>
+
+                </dd>
+                <dt class='item_title'>
+                     [만원의행복] 더 부티크 스<br/>
+                     위트, 82년생 김지영
+                </dt>
+                <dt class='item_subtitle'>
+                     더 부티그 스위트 [82년생 김지영] 관람<br/>
+                     권 1매(하남스타필드 전용)
+                </dt>
+                <dd class='item_leave'>
+                     <span>2</span> 개 남음
+                </dd>
+                <dd class='item_price'>
+                     10,000원
+                </dd>
+           </dl>
+           <dl class='item_info i6'>
+                <dd class='item_img'>
+
+                </dd>
+                <dt class='item_title'>
+                     [만원의행복] 더 부티크 스<br/>
+                     위트, 82년생 김지영
+                </dt>
+                <dt class='item_subtitle'>
+                     더 부티크 스위트 [82년생 김지영] 관람<br/>
+                     권 1매(분당 전용)
+                </dt>
+                <dd class='item_leave'>
+                     <span>38</span> 개 남음
+                </dd>
+                <dd class='item_price'>
+                     10,000원
+                </dd>
+           </dl>
+        </div>
+    </div>
+    <div class='list_panel list_panel3' id='list_panel3'>
+        <div class='inner'>
+             <dl class='item_info i1'>
+                  <dd class='item_img'>
+                       <img class='badge' src='images/store/store_badge4.png' alt='베지' />
+                  </dd>
+                  <dt class='item_title'>
+                       [39% OFF] 나쵸콤보 할인
+                  </dt>
+                  <dt class='item_subtitle'>
+                       팝콘(R) 1 + 탄산음료(R) 2 + 나쵸 1
+                  </dt>
+                  <dd class='item_leave'>
+                       <span>790</span> 개 남음
+                  </dd>
+                  <dd class='item_price'>7,000원</dd>
+             </dl>
+             <dl class='item_info i2'>
+                  <dd class='item_img'>
+                       <img class='badge' src='images/store/store_badge1.png' alt='베지' />
+                  </dd>
+                  <dt class='item_title'>후라이드콤보</dt>
+                  <dt class='item_subtitle'>
+                       팝콘(R) 1 + 탄산음료(R) 2 + 순살치킨<br/>
+                       or치킨앤칩스or포테이토 1
+                  </dt>
+                  <dd class='item_leave hidden'>
+                       00개 남음
+                  </dd>
+                  <dd class='item_price'>
+                       14,000원
+                  </dd>
+             </dl>
+             <dl class='item_info i3'>
+                  <dd class='item_img'>
+                       <img class='badge' src='images/store/store_badge1.png' alt='베지' />
+                  </dd>
+                  <dt class='item_title'>통찡어콤보</dt>
+                  <dt class='item_subtitle'>
+                       팝콘(R) 1 + 탄산음료(R) 2 + 통찡어 1
+                  </dt>
+                  <dd class='item_leave hidden'>
+                       00개 남음
+                  </dd>
+                  <dd class='item_price'>
+                       15,000원
+                  </dd>
+             </dl>
+             <dl class='item_info i4'>
+                  <dd class='item_img'>
+                       <img class='badge' src='images/store/store_badge1.png' alt='베지' />
+                  </dd>
+                  <dt class='item_title'>
+                       즉석구이콤보
+                  </dt>
+                  <dt class='item_subtitle'>
+                       팝콘(R) 1 + 탄산음료(R) 2 + 즉석구이<br/>
+                       오징어 몸 or 다리 1
+                  </dt>
+                  <dd class='item_leave hidden'>
+                       00개 남음
+                  </dd>
+                  <dd class='item_price'>
+                       12,000원
+                  </dd>
+             </dl>
+             <dl class='item_info i5'>
+                  <dd class='item_img'>
+                       <img class='badge' src='images/store/store_badge3.png' alt='베지' />
+                  </dd>
+                  <dt class='item_title'>
+                       더블콤보
+                  </dt>
+                  <dt class='item_subtitle'>
+                       팝콘(R) 2 + 탄산음료(R) 2
+                  </dt>
+                  <dd class='item_leave hidden'>
+                       00개 남음
+                  </dd>
+                  <dd class='item_price'>
+                       11,500원
+                  </dd>
+             </dl>
+             <dl class='item_info i6'>
+                  <dd class='item_img'>
+
+                  </dd>
+                  <dt class='item_title'>
+                       핫도그콤보
+                  </dt>
+                  <dt class='item_subtitle'>
+                       팝콘(R) 1 + 탄산음료(R) 2 + 핫도그 1
+                  </dt>
+                  <dd class='item_leave hidden'>
+                       00개 남음
+                  </dd>
+                  <dd class='item_price'>
+                       11,000원
+                  </dd>
+             </dl>
+             <dl class='item_info i7'>
+                  <dd class='item_img'>
+
+                  </dd>
+                  <dt class='item_title'>
+                       스트링치즈프랫즐콤보
+                  </dt>
+                  <dt class='item_subtitle'>
+                       팝콘(R) 1 + 탄산음료(R) 2 + 스트링치<br/>
+                       즈프랫즐 1
+                  </dt>
+                  <dd class='item_leave hidden'>
+                       00개 남음
+                  </dd>
+                  <dd class='item_price'>
+                       12,000원
+                  </dd>
+             </dl>
+             <dl class='item_info i8'>
+                  <dd class='item_img'>
+
+                  </dd>
+                  <dt class='item_title'>팝콘L</dt>
+                  <dt class='item_subtitle'>
+                       팝콘L
+                  </dt>
+                  <dd class='item_leave hidden'>
+                       00개 남음
+                  </dd>
+                  <dd class='item_price'>5,000원</dd>
+             </dl>
+        </div><!--inner-->
+   </div>
+</section>
+
+<!-- footer area start-->
+<footer>
+	<div class='top_footer'>
+		<div class='inner'>
+               <div class='zido_box' id='zido_box'>
+     			<!--전국 팔도 이미지가 여기에 표시됨 background-image로써-->
+     		</div>
+			<div class='area_text'>
+				<ul class='wide_area'>
+					<li>선호영화관</li><li class='wa_btn' id='wa1'>광주/전라</li><li class='wa_btn' id='wa2'>서울</li><li class='wa_btn' id='wa3'>강원</li><li class='wa_btn' id='wa4'>경기</li><li class='wa_btn' id='wa5'>제주</li><li class='wa_btn' id='wa6'>인천</li><li class='wa_btn' id='wa7'>부산/대구/경상</li><li class='wa_btn' id='wa8'>대전/충청/세종</li>
+				</ul>
+				<div class='narrow_area'>
+					<ul class='wabox' id='wa1box'>
+						<li id='wa1na1'>광주상무</li><li id='wa1na2'>광주하남</li><li id='wa1na3'>남원</li><li id='wa1na4'>목포</li><li id='wa1na5'>목포하당</li><li id='wa1na6'>송천</li><li id='wa1na7'>순천</li><li id='wa1na8'>여수</li><li id='wa1na9'>여수응천</li><li id='wa1na10'>전대(광주)</li><li id='wa1na11'>전주(객사)</li><li id='wa1na12'>첨단(광주)</li>
+						<div class='detail_arrow'></div>
+					</ul>
+					<ul class='wabox' id='wa2box'>
+						<li id='wa2na1'>강남</li><li id='wa2na2'>강남대로</li><li id='wa2na3'>강동</li><li id='wa2na4'>군자</li><li id='wa2na5'>동대문</li><li id='wa2na6'>마곡</li><li id='wa2na7'>목동</li><li id='wa2na8'>상봉</li><li id='wa2na9'>상암월드컵..</li><li id='wa2na10'>센트럴</li><li id='wa2na11'>송파파크</li><li id='wa2na12'>신촌</li><li id='wa2na13'>은평</li><li id='wa2na14'>이수</li><li id='wa2na15'>창동</li><li id='wa2na16'>코엑스</li><li id='wa2na17'>홍대</li><li id='wa2na18'>화곡</li><li id='wa2na19'>ARTNINE</li>
+
+						<div class='detail_arrow'></div>
+					</ul>
+					<ul class='wabox' id='wa3box'>
+						<li id='wa3na1'>남춘천</li><li id='wa3na2'>속초</li><li id='wa3na3'>원주</li><li id='wa3na4'>원주센트럴</li>
+
+						<div class='detail_arrow'></div>
+					</ul>
+					<ul class='wabox' id='wa4box'>
+						<li id='wa4na1'>고양스타필드</li><li id='wa4na2'>김포한강신</li><li id='wa4na3'>남양주</li><li id='wa4na4'>동탄</li><li id='wa4na5'>미사강변</li><li id='wa4na6'>백석</li><li id='wa4na7'>별내</li><li id='wa4na8'>부천스타필드</li><li id='wa4na9'>분당</li><li id='wa4na10'>수원</li><li id='wa4na11'>수원남문</li><li id='wa4na12'>시흥배곧</li><li id='wa4na13'>안산중앙</li><li id='wa4na14'>양주</li><li id='wa4na15'>영통</li><li id='wa4na16'>오산</li><li id='wa4na17'>용인테크노</li><li id='wa4na18'>의정부민락</li><li id='wa4na19'>일산</li><li id='wa4na20'>일산벨라시타</li><li id='wa4na21'>킨텍스</li><li id='wa4na22'>파주금촌</li><li id='wa4na23'>파주운정</li><li id='wa4na24'>파주출판도시</li><li id='wa4na25'>평택</li><li id='wa4na26'>하남스타필드</li>
+
+						<div class='detail_arrow'></div>
+					</ul>
+					<ul class='wabox' id='wa5box'>
+						<li id='wa5na1'>제주</li>
+
+						<div class='detail_arrow'></div>
+					</ul>
+					<ul class='wabox' id='wa6box'>
+						<li id='wa6na1'>검단</li><li id='wa6na2'>송도</li><li id='wa6na3'>영종</li><li id='wa6na4'>인천논현</li><li id='wa6na5'>청라</li><li id='wa6na6'>청라지젤</li>
+
+						<div class='detail_arrow'></div>
+					</ul>
+					<ul class='wabox' id='wa7box'>
+						<li id='wa7na1'>거창</li><li id='wa7na2'>경북도청</li><li id='wa7na3'>경산하양</li><li id='wa7na4'>경주</li><li id='wa7na5'>구미강동</li><li id='wa7na6'>김천</li><li id='wa7na7'>남포항</li><li id='wa7na8'>대구(칠성로)</li><li id='wa7na9'>대구신세계</li><li id='wa7na10'>대구이시아</li><li id='wa7na11'>덕천</li><li id='wa7na12'>마산</li><li id='wa7na13'>문경</li><li id='wa7na14'>부산극장</li><li id='wa7na15'>부산대</li><li id='wa7na16'>북대구(칠곡)</li><li id='wa7na17'>사천</li><li id='wa7na18'>삼천포</li><li id='wa7na19'>양산</li><li id='wa7na20'>양산라피에스타</li><li id='wa7na21'>울산</li><li id='wa7na22'>정관</li><li id='wa7na23'>창원</li><li id='wa7na24'>해운대(장산)</li>
+
+						<div class='detail_arrow'></div>
+					</ul>
+					<ul class='wabox' id='wa8box'>
+						<li id='wa8na1'>공주</li><li id='wa8na2'>대전</li><li id='wa8na3'>대전중앙로</li><li id='wa8na4'>세종</li><li id='wa8na5'>오창</li><li id='wa8na6'>제천</li><li id='wa8na7'>진천</li><li id='wa8na8'>천안</li><li id='wa8na9'>청주충북대</li><li id='wa8na10'>충주</li><li id='wa8na11'>홍성내포</li>
+
+						<div class='detail_arrow'></div>
+					</ul>
+				</div><!--narrow_area end -->
+
+			</div><!-- area_text end -->
+
+		</div><!--top_footer inner-->
+	</div>
+
+	<div class='bottom_footer'>
+	    <div class='inner'>
+			<h1 class='footer_logo'>
+			</h1>
+			<div class='footer_info'>
+				<ul>
+					<li>회사소개</li><li>채용정보</li><li>제휴/광고/부대사업문의</li><li>이용약관</li><li class='private_info'>개인정보처리방침</li><li>고객센터</li><li>윤리경영</li>
+				</ul>
+				<p class='info'>
+					서울특별시 강남구 도산대로 156, 2층 메가박스중앙(주) (논현동, 중앙엠앤비사옥) <br/>
+					대표자명 김진선 | 개인정보보호 책임자 경영지원실 실장 박영진 <br/>
+					사업자등록번호 211-86-59478 | 통신판매업신고번호 제 833호
+				</p>
+			</div>
+			<h1 class='tm_footer_logo'></h1>
+			<div class='footer_info2'>
+				<ul class='sns_info'>
+					<li class='twitter'></li><li class='facebook'></li><li class='instagram'></li><li class='playstore'></li><li class='apple'></li>
+				</ul>
+				<p class='tel_info'>ARS 1544-0070</p>
+				<p class='copyright'>Copyright 2014 by MegaboxJonngAng,lnc.<br/> All rights reserved</p>
+			</div>
+	    </div><!--bottom-footer inner-->
+	</div>
+</footer>
+<!-- footer area end -->
+
+<script src='granim.js-2.0.0/dist/granim.js'></script>
+<script src='http://code.jquery.com/jquery-1.10.2.js'></script>
+<script type='text/javascript' src='js/header_control(copy).js'></script>
+<script type='text/javascript' src='js/footer_control.js'></script>
+
+<script>
+    var granimInstance= new Granim({
+        element:'#store_visual',
+        direction:'left-right',
+        isPausedWhenNotInView:true,
+        states : {
+            "default-state": {
+                gradients: [
+                    ['#341e66', '#4c0564'],
+                    ['#8403d7','#28105a'],
+                    ['#4b38a0', '#19dec5'],
+                    ['#003f79', '#035547'],
+                    ['#513d0b', '#feb802']
+            ],
+            transitionSpeed:2000
+            }
+        }
+    })
+
+var icon1_degs=0;
+var icon1_anicount=0;
+var icon1_isDown=false;
+
+var icon2_degs=0;
+var icon2_anicount=0;
+var icon2_isDown=false;
+
+function icon1_rotate_animate(target){
+    if(!icon1_isDown){
+        icon1_degs += 0.4;
+        console.log('=========증가 애니메이션 실행중!==============',icon1_isDown);
+        target.style.transform='rotateZ('+icon1_degs+'deg)';
+    }else{
+        icon1_degs -= 0.4;
+        target.style.transform='rotateZ('+icon1_degs+'deg)';
+    }
+
+    if(icon1_anicount === 75){
+        icon1_isDown = (icon1_isDown === false) ? true: false;
+        icon1_anicount = 0
+    }
+    ++icon1_anicount;
+}
+function icon2_rotate_animate(target){
+     if(!icon2_isDown){//upscaling중 상태 값이 false상태인경우라면 up하는 애니메팅이 발생해야한다.
+          icon2_degs += 0.1;//0.1deg씩 증가시키는 애니메이션 행동구현. 0.1씩 300각 down,up당 횟수 총 30deg량 만큼을 증감시킨다.
+          console.log('==========증가 애니메이션 실행중!============',icon2_isDown);
+          console.log('반영된 icon2_degs값:',icon2_degs);
+          target.style.transform='rotateZ('+icon2_degs+'deg)';
+          //0~30까지의 연산이 시행된다.
+     }else{//isDown상태가 맞다면 반대 연산을 취한다.
+          icon2_degs -= 0.1;//반대로 감소시키는 애니메이션 구현한다.
+          console.log('===========감소 애니메이션 실행중!===========',icon2_isDown);
+          console.log('반영된 icon2_degs값:',icon2_degs);
+          target.style.transform='rotateZ('+icon2_degs+'deg)';
+     }
+
+     if(icon2_anicount === 300){
+          console.log('=====매 카운팅 값이 300이 도달시마다 isDown값을 초기 false->>true->>false->>true로 매번 전환 토글링한다=========');
+          icon2_isDown = (icon2_isDown === false)? true : false;//해당 isDown이 false(업애니메이션 중) 이였던 상태였다면 반대로 true(다운스켈링)하게 처리하고 기존에 isdown=true상태였다면 false로 처리하여 기존값에 대해서 항상 반대의 역의 값이 나오게 처리하여 매 카운팅으로 인해 목표값 도달 0->30 30->0 시마다 상태값 idDOWN여부 을 변경시킨다.
+          icon2_anicount = 0;//다시 초기화 하여 새로운 반대 국면의 애니메이션을 실행하기위한 카운트로써 초기화
+     }
+     console.log('카운팅값 now:',icon2_anicount);
+     ++icon2_anicount;
+}
+var infinite_rotate1 = window.setInterval(icon1_rotate_animate,20,store_visual_icon1);
+var infinite_rotate2 = window.setInterval(icon2_rotate_animate,20,store_visual_icon2);
+
+var store_menus=document.getElementsByClassName('store_menu');
+for(var j=0; j<store_menus.length; j++){
+     store_menus[j].addEventListener('click',change_panel,false);
+}//메뉴버튼에 클릭 리스너 등록한다.
+
+var what_panel=1;//초기 패널은 1~3중에서 1이다..
+
+function change_panel(event){
+     var target_id=event.target.id;
+     what_panel=parseInt(target_id.replace('store_menu',''));//숫자화한다..1,2,3무슨 패널인지 구한다.
+     console.log('현재 패널:',what_panel);
+     var list_panel=document.getElementsByClassName('list_panel');//리스트패널에서 1~3중에서 현재 패널에 해당되는 패널만 block하고 나머지는 none처리한다.
+     for(var i=0; i<list_panel.length; i++){//list_panel1,2,3,4식이다.
+     //해당 세개중에서 타깃 패널인것(해당 패널아이디)사용자가 클릭한 메뉴의id값 1,2,3에 해당되는것으로 기존과 같은걸 클릭했던 다른걸 했던 현재 클릭한 id값 1~3을 가져온다.그 값으로 list_panel 1,2,3타깃을 구한다.
+          if(list_panel[i].id === ('list_panel'+what_panel) ){
+               list_panel[i].style.display='block';
+          }else{//비 타깃요소의 경우는 클릭하지 않은 나머지 요소는 숨긴다.
+               list_panel[i].style.display='none';
+          }
+     }
+}
+</script>
+</body>
+</html>

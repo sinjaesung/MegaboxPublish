@@ -1,0 +1,1561 @@
+.movie_list >.list_panel{
+    width:100%;
+    height:calc(100vw *(1100/1920));
+    background-color:#202080;
+    background-image:url('../images/main/violet_bg13\(pc\).png');
+    background-size:cover;
+    background-position:50% 50%;
+    overflow:hidden;
+    position:absolute;
+    left:0;top:130px;
+    perspective:8000px;
+    z-index:2
+}
+.movie_list>.list_panel>.movie_mother{
+    
+    width:calc(100% *(640/1920));
+    height:50px;
+    position:absolute;
+    left:0;right:0;margin:0 auto;
+    top:7%;
+    transform-style:preserve-3d;
+    transform:rotateX(-10deg);
+}
+.movie_list>.list_panel>.movie_mother>.movieWrap{
+    width:100%;
+    height:18.75vw;
+    perspective:8000px;
+    perspective-origin:50% 50%;
+    transform-style:preserve-3d;
+    position:absolute;
+}
+.movie_list>.list_panel>.movie_mother>.mw1{
+    left:0;top:0;
+    
+}
+.movie_list>.list_panel>.movie_mother>.mw2{
+    left:0;top:calc(100vw *(422/1920));
+    
+}
+
+.movie_list>.list_panel>.movie_mother>.movieWrap>.movie{
+    border:3px groove #7f16ea;
+    width:100%;height:100%;
+    position:absolute;
+    left:0;top:0;
+    background-color:transparent;
+    background-size:cover;
+    background-position:50% 50%;
+    color:white;
+    font-size:60px;
+    font-weight:900;
+
+    opacity:0.9
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1{
+
+    transform:rotateY(0deg)translateZ(calc(100vw *(691/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(691/1920)));
+    /*1920px기준 항상 691.2px거리의 비율이 항상 유지되게 한다 기기별 상황에 맞게 항상 그 거리의 비가 유지되게 해야..거리의 비율이 유지되고,크기가 유지되어 이질감이없고 기기별 화면(폭)안에 다 들어오게 된다*/
+    background-image:url('../images/main/boxoffice/movie1.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-1{
+    transform:rotateY(0deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(689/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-2{
+    transform:rotateY(0deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-3{
+    transform:rotateY(0deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-4{
+    transform:rotateY(0deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-5{
+    transform:rotateY(0deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-6{
+    transform:rotateY(0deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-7{
+    transform:rotateY(0deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-8{
+    transform:rotateY(0deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-9{
+    transform:rotateY(0deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-10{
+    transform:rotateY(0deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-11{
+    transform:rotateY(0deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-12{
+    transform:rotateY(0deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-13{
+    transform:rotateY(0deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-14{
+    transform:rotateY(0deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-15{
+    transform:rotateY(0deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-16{
+    transform:rotateY(0deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-17{
+    transform:rotateY(0deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-18{
+    transform:rotateY(0deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-19{
+    transform:rotateY(0deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m1-20{
+    transform:rotateY(0deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+.movie_list>.list_panel>.movie_mother>.mw1>.m2{
+    transform:rotateY(60deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie2.jpg');
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-1{
+    transform:rotateY(60deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(689/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-2{
+    transform:rotateY(60deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-3{
+    transform:rotateY(60deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-4{
+    transform:rotateY(60deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-5{
+    transform:rotateY(60deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-6{
+    transform:rotateY(60deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-7{
+    transform:rotateY(60deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-8{
+    transform:rotateY(60deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-9{
+    transform:rotateY(60deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-10{
+    transform:rotateY(60deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-11{
+    transform:rotateY(60deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-12{
+    transform:rotateY(60deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-13{
+    transform:rotateY(0deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-14{
+    transform:rotateY(60deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-15{
+    transform:rotateY(60deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-16{
+    transform:rotateY(60deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-17{
+    transform:rotateY(60deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-18{
+    transform:rotateY(60deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-19{
+    transform:rotateY(60deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m2-20{
+    transform:rotateY(60deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+
+.movie_list>.list_panel>.movie_mother>.mw1>.m3{
+    transform:rotateY(120deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie3.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-1{
+    transform:rotateY(120deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(689/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-2{
+    transform:rotateY(120deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-3{
+    transform:rotateY(120deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-4{
+    transform:rotateY(120deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-5{
+    transform:rotateY(120deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-6{
+    transform:rotateY(120deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-7{
+    transform:rotateY(120deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-8{
+    transform:rotateY(120deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-9{
+    transform:rotateY(120deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-10{
+    transform:rotateY(120deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-11{
+    transform:rotateY(120deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-12{
+    transform:rotateY(120deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-13{
+    transform:rotateY(120deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-14{
+    transform:rotateY(120deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-15{
+    transform:rotateY(120deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-16{
+    transform:rotateY(120deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-17{
+    transform:rotateY(120deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-18{
+    transform:rotateY(120deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-19{
+    transform:rotateY(120deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m3-20{
+    transform:rotateY(120deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+.movie_list>.list_panel>.movie_mother>.mw1>.m4{
+    transform:rotateY(180deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie4.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-1{
+    transform:rotateY(180deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(689/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-2{
+    transform:rotateY(180deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-3{
+    transform:rotateY(180deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-4{
+    transform:rotateY(180deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-5{
+    transform:rotateY(180deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-6{
+    transform:rotateY(180deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-7{
+    transform:rotateY(180deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-8{
+    transform:rotateY(180deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-9{
+    transform:rotateY(180deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-10{
+    transform:rotateY(180deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-11{
+    transform:rotateY(180deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-12{
+    transform:rotateY(180deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-13{
+    transform:rotateY(180deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-14{
+    transform:rotateY(180deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-15{
+    transform:rotateY(180deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-16{
+    transform:rotateY(180deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-17{
+    transform:rotateY(180deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-18{
+    transform:rotateY(180deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-19{
+    transform:rotateY(180deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m4-20{
+    transform:rotateY(180deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+.movie_list>.list_panel>.movie_mother>.mw1>.m5{
+    transform:rotateY(240deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie5.jpg');
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-1{
+    transform:rotateY(240deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(689/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-2{
+    transform:rotateY(240deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-3{
+    transform:rotateY(240deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-4{
+    transform:rotateY(240deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-5{
+    transform:rotateY(240deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-6{
+    transform:rotateY(240deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-7{
+    transform:rotateY(240deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-8{
+    transform:rotateY(240deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-9{
+    transform:rotateY(240deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-10{
+    transform:rotateY(240deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-11{
+    transform:rotateY(240deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-12{
+    transform:rotateY(240deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-13{
+    transform:rotateY(240deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-14{
+    transform:rotateY(240deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-15{
+    transform:rotateY(240deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-16{
+    transform:rotateY(240deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-17{
+    transform:rotateY(240deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-18{
+    transform:rotateY(240deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-19{
+    transform:rotateY(240deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m5-20{
+    transform:rotateY(240deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+.movie_list>.list_panel>.movie_mother>.mw1>.m6{
+    transform:rotateY(300deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie6.jpg');
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-1{
+    transform:rotateY(300deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(689/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-2{
+    transform:rotateY(300deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-3{
+    transform:rotateY(300deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-4{
+    transform:rotateY(300deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-5{
+    transform:rotateY(300deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-6{
+    transform:rotateY(300deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-7{
+    transform:rotateY(300deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-8{
+    transform:rotateY(300deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-9{
+    transform:rotateY(300deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-10{
+    transform:rotateY(300deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-11{
+    transform:rotateY(300deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-12{
+    transform:rotateY(300deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-13{
+    transform:rotateY(300deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-14{
+    transform:rotateY(300deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-15{
+    transform:rotateY(300deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-16{
+    transform:rotateY(300deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-17{
+    transform:rotateY(300deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-18{
+    transform:rotateY(300deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-19{
+    transform:rotateY(300deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw1>.m6-20{
+    transform:rotateY(300deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+.movie_list>.list_panel>.movie_mother>.mw2>.m7{
+    transform:rotateY(0deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie7.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-1{
+    transform:rotateY(0deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(689/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-2{
+    transform:rotateY(0deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-3{
+    transform:rotateY(0deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-4{
+    transform:rotateY(0deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-5{
+    transform:rotateY(0deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-6{
+    transform:rotateY(0deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-7{
+    transform:rotateY(0deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-8{
+    transform:rotateY(0deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-9{
+    transform:rotateY(0deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-10{
+    transform:rotateY(0deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-11{
+    transform:rotateY(0deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-12{
+    transform:rotateY(0deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-13{
+    transform:rotateY(0deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-14{
+    transform:rotateY(0deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-15{
+    transform:rotateY(0deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-16{
+    transform:rotateY(0deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-17{
+    transform:rotateY(0deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-18{
+    transform:rotateY(0deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-19{
+    transform:rotateY(0deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m7-20{
+    transform:rotateY(0deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(0deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+.movie_list>.list_panel>.movie_mother>.mw2>.m8{
+    transform:rotateY(60deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie8.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-1{
+    transform:rotateY(60deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(689/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-2{
+    transform:rotateY(60deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-3{
+    transform:rotateY(60deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-4{
+    transform:rotateY(60deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-5{
+    transform:rotateY(60deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-6{
+    transform:rotateY(60deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-7{
+    transform:rotateY(60deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-8{
+    transform:rotateY(60deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-9{
+    transform:rotateY(60deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-10{
+    transform:rotateY(60deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-11{
+    transform:rotateY(60deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-12{
+    transform:rotateY(60deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-13{
+    transform:rotateY(60deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-14{
+    transform:rotateY(60deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-15{
+    transform:rotateY(60deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-16{
+    transform:rotateY(60deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-17{
+    transform:rotateY(60deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-18{
+    transform:rotateY(60deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-19{
+    transform:rotateY(60deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m8-20{
+    transform:rotateY(60deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(60deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+.movie_list>.list_panel>.movie_mother>.mw2>.m9{
+    transform:rotateY(120deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie9.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-1{
+    transform:rotateY(120deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(689/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-2{
+    transform:rotateY(120deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-3{
+    transform:rotateY(120deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-4{
+    transform:rotateY(120deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-5{
+    transform:rotateY(120deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-6{
+    transform:rotateY(120deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-7{
+    transform:rotateY(120deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-8{
+    transform:rotateY(120deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-9{
+    transform:rotateY(120deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-10{
+    transform:rotateY(120deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-11{
+    transform:rotateY(120deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-12{
+    transform:rotateY(120deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-13{
+    transform:rotateY(120deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-14{
+    transform:rotateY(120deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-15{
+    transform:rotateY(120deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-16{
+    transform:rotateY(120deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-17{
+    transform:rotateY(120deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-18{
+    transform:rotateY(120deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-19{
+    transform:rotateY(120deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m9-20{
+    transform:rotateY(120deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(120deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+.movie_list>.list_panel>.movie_mother>.mw2>.m10{
+    transform:rotateY(180deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie10-1.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-1{
+    transform:rotateY(180deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(689/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-2{
+    transform:rotateY(180deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-3{
+    transform:rotateY(180deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-4{
+    transform:rotateY(180deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-5{
+    transform:rotateY(180deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-6{
+    transform:rotateY(180deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-7{
+    transform:rotateY(180deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-8{
+    transform:rotateY(180deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-9{
+    transform:rotateY(180deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-10{
+    transform:rotateY(180deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-11{
+    transform:rotateY(180deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-12{
+    transform:rotateY(180deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-13{
+    transform:rotateY(180deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-14{
+    transform:rotateY(180deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-15{
+    transform:rotateY(180deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-16{
+    transform:rotateY(180deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-17{
+    transform:rotateY(180deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-18{
+    transform:rotateY(180deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-19{
+    transform:rotateY(180deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m10-20{
+    transform:rotateY(180deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(180deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+.movie_list>.list_panel>.movie_mother>.mw2>.m11{
+    transform:rotateY(240deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie11.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-1{
+    transform:rotateY(240deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(689/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-2{
+    transform:rotateY(240deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-3{
+    transform:rotateY(240deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-4{
+    transform:rotateY(240deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-5{
+    transform:rotateY(240deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-6{
+    transform:rotateY(240deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-7{
+    transform:rotateY(240deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-8{
+    transform:rotateY(240deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-9{
+    transform:rotateY(240deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-10{
+    transform:rotateY(240deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-11{
+    transform:rotateY(240deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-12{
+    transform:rotateY(240deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-13{
+    transform:rotateY(240deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-14{
+    transform:rotateY(240deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-15{
+    transform:rotateY(240deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-16{
+    transform:rotateY(240deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-17{
+    transform:rotateY(240deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-18{
+    transform:rotateY(240deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-19{
+    transform:rotateY(240deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m11-20{
+    transform:rotateY(240deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(240deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+
+.movie_list>.list_panel>.movie_mother>.mw2>.m12{
+    transform:rotateY(300deg)translateZ(calc(100vw *(691/1920)));
+    background-image:url('../images/main/boxoffice/movie12.jpg');
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-1{
+    transform:rotateY(300deg)translateZ(calc(100vw *(689/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(689/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-2{
+    transform:rotateY(300deg)translateZ(calc(100vw *(687/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(687/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-3{
+    transform:rotateY(300deg)translateZ(calc(100vw *(685/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(685/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-4{
+    transform:rotateY(300deg)translateZ(calc(100vw *(683/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(683/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-5{
+    transform:rotateY(300deg)translateZ(calc(100vw *(681/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(681/1920)));
+
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-6{
+    transform:rotateY(300deg)translateZ(calc(100vw *(679/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(679/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-7{
+    transform:rotateY(300deg)translateZ(calc(100vw *(677/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(677/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-8{
+    transform:rotateY(300deg)translateZ(calc(100vw *(675/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(675/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-9{
+    transform:rotateY(300deg)translateZ(calc(100vw *(673/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(673/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-10{
+    transform:rotateY(300deg)translateZ(calc(100vw *(671/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(671/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-11{
+    transform:rotateY(300deg)translateZ(calc(100vw *(669/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(669/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-12{
+    transform:rotateY(300deg)translateZ(calc(100vw *(667/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(667/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-13{
+    transform:rotateY(300deg)translateZ(calc(100vw *(665/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(665/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-14{
+    transform:rotateY(300deg)translateZ(calc(100vw *(663/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(663/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-15{
+    transform:rotateY(300deg)translateZ(calc(100vw *(661/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(661/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-16{
+    transform:rotateY(300deg)translateZ(calc(100vw *(659/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(659/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-17{
+    transform:rotateY(300deg)translateZ(calc(100vw *(657/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(657/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-18{
+    transform:rotateY(300deg)translateZ(calc(100vw *(655/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(655/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-19{
+    transform:rotateY(300deg)translateZ(calc(100vw *(653/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(653/1920)));
+}
+.movie_list>.list_panel>.movie_mother>.mw2>.m12-20{
+    transform:rotateY(300deg)translateZ(calc(100vw *(651/1920)));
+    -ms-transform:rotateY(300deg)translateZ(calc(100vw *(651/1920)));
+    background:radial-gradient(ellipse at 40% 40%,#7f16ea,#59189c,#410083,#1b0036,#6f06a0,#a616e9);
+}
+
+.movie_list>.list_panel>.movie_info{
+    width:calc(100vw *(800/1920));
+    height:calc(100vw *(450/1920));
+    position:absolute;
+    left:0;right:0;top:0;bottom:0;margin:auto;
+    z-index:23;
+
+    background-color:rgba(100,20,250,0.2);
+    background-size:contain;
+    background-repeat:repeat;
+    box-shadow:1px 1px 30px 10px #7f16ea;
+    background-position:50% 50%;
+    cursor:pointer;
+    display:none;
+}
+.movie_list>.list_panel>.movie_info>h1{
+    font-size:80px;color:white;text-align:center;
+}
+.movie_list>.list_panel>.m1info{
+    transform:translateX(-65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie1.jpg');
+}
+.movie_list>.list_panel>.m2info{
+    transform:translateX(-65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie2.jpg');
+}
+.movie_list>.list_panel>.m3info{
+    transform:translateX(-65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie3.jpg');
+}
+.movie_list>.list_panel>.m4info{
+    transform:translateX(-65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie4.jpg');
+}
+.movie_list>.list_panel>.m5info{
+    transform:translateX(-65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie5.jpg');
+}
+.movie_list>.list_panel>.m6info{
+    transform:translateX(-65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie6.jpg');
+}
+.movie_list>.list_panel>.m7info{
+    transform:translateX(65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie7.jpg');
+}
+.movie_list>.list_panel>.m8info{
+    transform:translateX(65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie8.jpg');
+}
+.movie_list>.list_panel>.m9info{
+    transform:translateX(65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie9.jpg');
+}
+.movie_list>.list_panel>.m10info{
+    transform:translateX(65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie10-1.jpg');
+}
+.movie_list>.list_panel>.m11info{
+    transform:translateX(65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie11.jpg');
+}
+.movie_list>.list_panel>.m12info{
+    transform:translateX(65%);
+    opacity:0;background-image:url('../images/main/boxoffice/movie12.jpg');
+    color:white;
+}
+
+@media all and (min-width:600px) and (max-width:1099px){
+    .movie_list >.list_panel{
+        width:100%;
+        height:calc(100vw *(1000/1099));
+        background-color:#202080;
+        position:absolute;
+        overflow:hidden;
+        left:0;top:100px;
+        z-index:2;
+        perspective:8000px;
+    }
+    .movie_list >.list_panel >.movie_mother{
+        
+        width:30%;
+        height:50px;
+        position:absolute;
+        left:0;right:0;margin:0 auto;
+        top:0;
+        transform-style:preserve-3d;
+        transform:rotateX(-10deg)
+    }
+    .movie_list >.list_panel>.movie_mother>.movieWrap{
+        width:100%;
+        height:39vw;
+        position:absolute;
+        perspective:8000px;
+        perspective-origin:50% 50%;
+        transform-style:preserve-3d;
+    }
+    .movie_list >.list_panel>.movie_mother>.mw1{
+        left:0;top:0;
+        
+    }
+    .movie_list>.list_panel>.movie_mother>.mw2{
+        left:0;top:42.5vw;
+        background-color:blueviolet
+    }
+
+    .movie_list>.list_panel>.movie_mother>.movieWrap>.movie{
+        border:3px groove #7f16ea;
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0;top:0;
+        background-color:transparent;
+        background-size:cover;background-position:50% 50%;
+        color:white;
+    }
+
+    .movie_list>.list_panel>.movie_mother>.mw1>.m1{
+
+        background-image:url('../images/main/boxoffice/movie1sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m2{
+
+        background-image:url('../images/main/boxoffice/movie2sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m3{
+
+        background-image:url('../images/main/boxoffice/movie3sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m4{
+
+        background-image:url('../images/main/boxoffice/movie4sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m5{
+
+        background-image:url('../images/main/boxoffice/movie5sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m6{
+
+        background-image:url('../images/main/boxoffice/movie6sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m7{
+
+        background-image:url('../images/main/boxoffice/movie7sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m8{
+
+        background-image:url('../images/main/boxoffice/movie8sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m9{
+
+        background-image:url('../images/main/boxoffice/movie9sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m10{
+
+        background-image:url('../images/main/boxoffice/movie10sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m11{
+
+        background-image:url('../images/main/boxoffice/movie11sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m12{
+
+        background-image:url('../images/main/boxoffice/movie12sero.jpg');
+   }
+
+
+    .movie_list>.list_panel>.movie_info{
+        width:40vw;
+        height:52vw;
+
+        position:absolute;
+        left:0;right:0;
+        top:0;bottom:0;margin:auto;
+        z-index:23;
+
+        background-color:rgba(100,20,250,0.2);
+        background-size:cover;
+        background-repeat:repeat;
+        box-shadow:1px 1px 30px 10px #7f16ea;
+        background-position:50% 50%;
+
+        display:none;
+    }   
+
+    .movie_list>.list_panel>.m1info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie1sero.jpg');
+   }
+   .movie_list>.list_panel>.m2info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie2sero.jpg');
+   }
+   .movie_list>.list_panel>.m3info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie3sero.jpg');
+   }
+   .movie_list>.list_panel>.m4info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie4sero.jpg');
+   }
+   .movie_list>.list_panel>.m5info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie5sero.jpg');
+   }
+   .movie_list>.list_panel>.m6info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie6sero.jpg');
+   }
+   .movie_list>.list_panel>.m7info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie7sero.jpg');
+   }
+   .movie_list>.list_panel>.m8info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie8sero.jpg');
+   }
+   .movie_list>.list_panel>.m9info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie9sero.jpg');
+   }
+   .movie_list>.list_panel>.m10info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie10sero.jpg');
+   }
+   .movie_list>.list_panel>.m11info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie11sero.jpg');
+   }
+   .movie_list>.list_panel>.m12info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie12sero.jpg');
+        color:white;
+   }
+}
+
+@media all and (min-width:240px) and (max-width:599px){
+    .movie_list>.list_panel{
+        width:100%;
+        height:calc(100vw *(600/599));
+        background-color:#202080;
+        position:absolute;
+        overflow:hidden;
+        left:0;top:60px;
+        z-index:2;
+        perspective:8000px;        
+    }
+    .movie_list>.list_panel>.movie_mother{
+        background-color:transparent;
+        width:30%;
+        height:50px;
+        position:absolute;
+        left:0;right:0;margin:0 auto;
+        top:4%;
+        transform-style:preserve-3d;
+        transform:rotateX(-10deg)
+    }
+    .movie_list>.list_panel>.movie_mother>.movieWrap{
+        width:100%;
+        height:39vw;
+
+        position:absolute;
+        perspective:8000px;
+        perspective-origin:50% 50%;
+        transform-style:preserve-3d;
+    }
+    .movie_list>.list_panel>.movie_mother>.mw1{
+        left:0;top:0;
+        
+    }
+    .movie_list>.list_panel>.movie_mother>.mw2{
+        left:0;top:42.25vw;
+        
+    }
+    .movie_list>.list_panel>.movie_mother>.movieWrap>.movie{
+        border:3px groove #7f16ea;
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0;top:0;
+        background-color:transparent;
+        background-size:cover;
+        background-position:50% 50%;
+        color:white;
+        opacity:0.9
+    }
+
+
+    .movie_list>.list_panel>.movie_mother>.mw1>.m1{
+
+        background-image:url('../images/main/boxoffice/movie1sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m2{
+
+        background-image:url('../images/main/boxoffice/movie2sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m3{
+
+        background-image:url('../images/main/boxoffice/movie3sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m4{
+
+        background-image:url('../images/main/boxoffice/movie4sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m5{
+
+        background-image:url('../images/main/boxoffice/movie5sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw1>.m6{
+
+        background-image:url('../images/main/boxoffice/movie6sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m7{
+
+        background-image:url('../images/main/boxoffice/movie7sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m8{
+
+        background-image:url('../images/main/boxoffice/movie8sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m9{
+
+        background-image:url('../images/main/boxoffice/movie9sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m10{
+
+        background-image:url('../images/main/boxoffice/movie10sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m11{
+
+        background-image:url('../images/main/boxoffice/movie11sero.jpg');
+   }
+   .movie_list>.list_panel>.movie_mother>.mw2>.m12{
+
+        background-image:url('../images/main/boxoffice/movie12sero.jpg');
+   }
+
+   .movie_list>.list_panel>.movie_info{
+        width:40vw;
+        height:52vw;
+
+        position:absolute;
+        left:0;right:0;
+        top:0;bottom:0;margin:auto;
+
+        z-index:23;
+
+        background-color:rgba(100,20,250,0.2);
+        background-size:cover;
+        background-repeat:repeat;
+        box-shadow:1px 1px 30px 10px #7f16ea;
+        background-position:50% 50%;
+        display:none;
+   }
+
+   .movie_list>.list_panel>.m1info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie1sero.jpg');
+    }
+    .movie_list>.list_panel>.m2info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie2sero.jpg');
+    }
+    .movie_list>.list_panel>.m3info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie3sero.jpg');
+    }
+    .movie_list>.list_panel>.m4info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie4sero.jpg');
+    }
+    .movie_list>.list_panel>.m5info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie5sero.jpg');
+    }
+    .movie_list>.list_panel>.m6info{
+        transform:translateX(-65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie6sero.jpg');
+    }
+    .movie_list>.list_panel>.m7info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie7sero.jpg');
+    }
+    .movie_list>.list_panel>.m8info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie8sero.jpg');
+    }
+    .movie_list>.list_panel>.m9info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie9sero.jpg');
+    }
+    .movie_list>.list_panel>.m10info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie10sero.jpg');
+    }
+    .movie_list>.list_panel>.m11info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie11sero.jpg');
+    }
+    .movie_list>.list_panel>.m12info{
+        transform:translateX(65%);
+        opacity:0;background-image:url('../images/main/boxoffice/movie12sero.jpg');
+        color:white;
+    }
+}

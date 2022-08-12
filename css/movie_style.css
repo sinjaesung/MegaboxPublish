@@ -1,0 +1,1407 @@
+.movie_list{
+    background-color:#000;
+    width:100%;
+    height:auto;
+    position:relative;
+    margin-top:calc(100vw *(120/1920));
+}
+.movie_list > ul{
+    list-style:none;
+    background-color:transparent;
+    color:white;
+    margin:0 auto;
+    padding:calc(100vw *(30/1920)) 0;
+    text-align:center;height:calc(100vw *(130/1920));
+    background-image:url('../images/main/purple_pattern(pc).jpg');
+    background-size:auto;
+    background-position:50% 50%
+}
+.movie_list >ul >li{
+    display:inline-block;
+    margin:0 calc(100vw *(20/1920));
+    font-size:calc(100vw *(20/1920));line-height:1.5;
+    padding:calc(100vw *(20/1920)) 0;
+    cursor:pointer;
+}
+.movie_list > .list_panel{
+    width:100%;height:auto;
+}
+.movie_list >.list_panel >.movie_wrap{
+    background-color:transparent;
+    width:calc(100vw *(1800/1920)); height:auto;
+    margin:0 auto;
+    padding:calc(100vw *(40/1920)) 0; overflow:hidden;
+}
+.movie_list >.list_panel >.read_moreWrap{
+    height:calc(100vw *(80/1920));width:100%;
+    padding:calc(100vw *(20/1920)) 0;
+}
+.movie_list >.list_panel >.read_moreWrap >.read_more{
+    width:50%;height:calc(100vw *(40/1920));
+    font-size:calc(100vw *(26/1920));line-height:calc(40/26);
+    background-color:#210045;
+    text-align:center;color:white; font-weight:200;
+    margin:0 auto;
+}
+
+.movie{
+    background-color:#000;
+    color:white;
+    margin:0 calc(100% *(20/1800));
+    padding-bottom:calc(100% *(40/1800));
+    float:left;
+    width:calc(100% *(320/1800));height:auto;
+}
+.movie>.movie_Img{
+    width:100%;height:calc(100vw *(450/1920));
+    background-image:url('../images/movie/movie7.jpg');
+    background-size:cover;
+    background-position:50% 50%;
+    cursor:pointer;
+}
+
+.movie>.grade_area{
+    height:calc(100vw *(50/1920));
+    overflow:hidden;
+}
+.movie>.grade_area>h5{
+    font-size:calc(100vw *(18/1920));line-height:calc(30/18); padding:calc(100vw *(10/1920)) 0;
+    height:calc(100vw *(50/1920));
+    margin:0 calc(100vw *(50/1920)) 0 calc(100vw *(30/1920));
+    float:left;
+}
+.movie>.grade_area>.gradeWrap{
+    height:100%;
+    padding:calc(100vw *(10/1920)) 0;
+    float:left;
+}
+.movie>.grade_area>.gradeWrap>.grade1{
+    width:calc(100vw *(32/1920));
+    height:calc(100vw *(30/1920));
+
+    background-image:url('../images/movie/moviePage_gradeIcon1.0(large).png');
+    background-size:cover;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    float:left;
+}
+.movie>.movie_title_area{
+    height:calc(100vw *(60/1920));width:100%;
+    border-top:1px solid #fff;
+    overflow:hidden;
+}
+.movie>.movie_title_area>.age_grade{
+    width:calc(100vw *(20/1920));height:calc(100vw *(60/1920));
+    margin-left:calc(100vw *(30/1920)); padding-top:calc(100vw *(20/1920));
+    float:left;
+}
+.movie>.movie_title_area>.age_grade >.age_icon{
+    width:calc(100vw*(20/1920));height:calc(100vw*(21/1920));
+    background-image:url('../images/movie/15_age.png');
+    background-size:auto;
+    background-position:50% 50%
+}
+.movie>.movie_title_area>h5{
+    font-size:calc(100vw *(22/1920));
+    line-height:calc(60/22);
+    font-weight:600;
+    margin-left:calc(100vw *(10/1920));
+    float:left;
+}
+.movie>.button_area{
+    height:calc(100vw *(40/1920));width:calc(100vw *(180/1920)); margin:0 auto;
+}
+.movie>.button_area>.detail_btn,.movie>.button_area>.reserv_btn{
+    width:calc(100vw *(80/1920));height:calc(100vw *(40/1920));
+    font-size:calc(100vw *(16/1920));line-height:calc(40/16);
+    background-color:#440090;
+    font-weight:200;
+    float:left;
+    margin-right:calc(100vw *(20/1920));
+    text-align:center;
+    cursor:pointer;
+}
+.movie>.button_area>.reserv_btn{
+    margin-right:0
+}
+
+
+@media all and (min-width:1100px) and (max-width:1499px){
+  .movie_list{
+    background-color:#000;
+    width:100%;height:auto;
+    position:relative;
+    margin-top:calc(100vw *(120/1499))
+  }
+  .movie_list >ul{
+    list-style:none;
+    background-color:transparent;
+    color:white;
+    margin:0 auto;
+    padding:calc(100vw *(25/1499)) 0;
+    text-align:center;
+    height:calc(100vw *(110/1499));
+    background-image:url('../images/main/purple_pattern\(pc\).jpg');
+    background-size:auto;background-position:50% 50%
+  } 
+  .movie_list >ul >li{
+    display:inline-block;
+    margin:0 calc(100vw *(20/1499));
+    font-size:calc(100vw *(20/1499));
+    line-height:calc(30/20);
+    padding:calc(100vw *(15/1499)) 0;
+    cursor:pointer;
+  }
+  .movie_list >.list_panel{
+    width:100%;height:auto;
+  }
+  .movie_list >.list_panel>.movie_wrap{
+    background-color:transparent;
+    width:calc(100vw *(1400/1499));height:auto;margin:0 auto;
+    padding:calc(100vw *(30/1499)) 0;overflow:hidden;
+  }
+  .movie_list >.list_panel>.read_moreWrap{
+    height:calc(100vw *(80/1499));width:100%;
+    padding:calc(100vw *(20/1499)) 0;
+  }
+  .movie_list >.list_panel>.read_moreWrap >.read_more{
+    width:50%;height:calc(100vw *(40/1499));
+    font-size:calc(100vw *(26/1499));line-height:calc(40/26);
+    background-color:#210045;
+    text-align:center;color:white; font-weight:200;
+    margin:0 auto;
+  }
+
+  .movie{
+    background-color:#000;
+    color:white;
+    margin:0 calc(100vw *(10/1499));
+    padding-bottom:calc(100vw *(20/1499));
+    float:left;
+    width:calc(100vw *(330/1499));height:auto;
+  }
+  .movie>.movie_Img{
+    width:100%;height:calc(100vw *(465/1499));
+    background-image:url('../images/movie/movie7.jpg');
+    background-size:cover;
+    background-position:50% 50%
+  }
+
+  .movie>.grade_area{
+    height:calc(100vw *(50/1499));
+    overflow:hidden;
+  }
+  .movie>.grade_area>h5{
+    font-size:calc(100vw *(16/1499));
+    line-height:calc(30/16);
+    padding:calc(100vw *(10/1499)) 0;
+    height:calc(100vw *(50/1499));
+    margin:0 calc(100vw *(40/1499)) 0 calc(100vw *(25/1499));
+    float:left;
+  }
+  .movie>.grade_area>.gradeWrap{
+    height:100%;
+    padding:calc(100vw *(10/1499)) 0;
+    float:left;
+  }
+  .movie>.grade_area>.gradeWrap>.grade1{
+    width:calc(100vw *(32/1499));
+    height:calc(100vw *(30/1499));
+
+    background-image:url('../images/movie/moviePage_gradeIcon1.0\(large\).png');
+    background-size:cover;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    float:left;
+  }
+  .movie>.movie_title_area{
+    height:calc(100vw *(60/1499));width:100%;
+    border-top:1px solid #fff;
+    overflow:hidden;
+  }
+  .movie>.movie_title_area>.age_grade{
+    width:calc(100vw *(20/1499));height:calc(100vw *(60/1499));
+    margin-left:calc(100vw *(25/1499));padding-top:calc(100vw *(20/1499));
+    float:left;
+  }
+  .movie>.movie_title_area>.age_grade>.age_icon{
+    width:calc(100vw *(20/1499));height:calc(100vw *(21/1499));
+    background-image:url('../images/movie/15_age.png');
+    background-size:auto;
+    background-position:50% 50%;
+  }
+  .movie>.movie_title_area>h5{
+    font-size:calc(100vw *(22/1499));
+    line-height:calc(100vw *(60/1499));
+    font-weight:600;margin-left:calc(100vw *(10/1499));
+    float:left;
+  }
+  .movie>.button_area{
+    height:calc(100vw *(40/1499));width:calc(100vw *(160/1499));margin:0 auto;
+  }
+  .movie>.button_area>.detail_btn,.movie>.button_area>.reserv_btn{
+    width:calc(100vw *(70/1499));
+    height:calc(100vw *(40/1499));
+    font-size:calc(100vw *(15/1499));line-height:calc(40/15);
+    background-color:#440090;font-weight:200;
+    float:left;
+    margin-right:calc(100vw *(20/1499));
+    text-align:center;
+  }
+  .movie>.button_area>.reserv_btn{
+    margin-right:0
+  }
+}
+
+@media all and (min-width:600px) and (max-width:1099px){
+    .movie_list{
+        background-color:#000;
+        width:100%; height:auto;
+        position:relative; 
+        margin-top:calc(100vw *(60/1099))
+    }
+    .movie_list>ul{
+        list-style:none;
+        background-color:transparent;
+        color:white;
+        margin:0 auto; 
+        padding:calc(100vw *(20/1499));
+        text-align:center;
+        height:calc(100vw *(100/1499));
+        background-image:url('../images/main/purple_pattern\(tablet\).jpg');
+        background-size:auto;
+        background-position:50% 50%
+    }
+    .movie_list > ul >li{
+        display:inline-block;
+        margin:0 calc(100vw *(14/1099));
+        font-size:calc(100vw *(17/1099));
+        line-height:calc(30/17);
+        padding:calc(100vw *(15/1099)) 0;
+        cursor:pointer;
+    }
+    .movie_list >.list_panel{
+        width:100%;height:auto;
+    }
+    .movie_list >.list_panel>.movie_wrap{
+        background-color:transparent;
+        width:calc(100vw *(1008/1099));height:auto;margin:0 auto;
+        padding:calc(100vw *(24/1099)) 0;overflow:hidden;
+    }
+    .movie_list >.list_panel >.read_moreWrap{
+        height:calc(100vw *(80/1099));width:100%;
+        padding:calc(100vw *(20/1099));
+    }
+    .movie_list>.list_panel >.read_moreWrap >.read_more{
+        width:50%;height:calc(100vw *(40/1099));
+        font-size:calc(100vw *(22/1099));line-height:calc(40/22);
+        background-color:#210045;
+        text-align:center;color:white; font-weight:200;
+        margin:0 auto;
+    }
+
+    .movie{
+        background-color:#000;
+        color:white;
+        margin:0 calc(100vw *(10/1099));
+        padding-bottom:calc(100vw *(20/1099));
+        float:left;
+        width:calc(100vw *(316/1099)); height:auto;
+    }
+    .movie>.movie_Img{
+        width:100%;height:calc(100vw *(444/1099));
+        background-image:url('../images/movie/movie7.jpg');
+        background-size:cover;
+        background-position:50% 50%
+    }
+    
+    .movie>.grade_area{
+        height:calc(100vw *(50/1099));
+        overflow:hidden;
+    }
+    .movie>.grade_area>h5{
+        font-size:calc(100vw *(15/1099));
+        line-height:2;
+        padding:calc(100vw *(10/1099)) 0;
+        height:calc(100vw *(50/1099));
+        margin:0 calc(100vw *(25/1099)) 0 calc(100vw *(15/1099));
+        float:left;
+    }
+    .movie>.grade_area>.gradeWrap{
+        height:100%;
+        padding:calc(100vw *(10/1099)) 0;
+        float:left;
+    }
+    .movie>.grade_area>.gradeWrap >.grade1{
+        width:calc(100vw *(32/1099));
+        height:calc(100vw *(30/1099));
+
+        background-image:url('../images/movie/moviePage_gradeIcon1.0\(large\).png');
+        background-size:cover;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+        float:left
+    }
+    .movie>.movie_title_area{
+        height:calc(100vw *(60/1099));width:100%;
+        border-top:1px solid #fff;
+        overflow:hidden;
+    }
+    .movie>.movie_title_area>.age_grade{
+        width:calc(100vw *(20/1099));height:calc(100vw *(60/1099));
+        margin-left:calc(100vw *(20/1099));padding-top:calc(100vw *(20/1099));float:left;
+    }
+    .movie>.movie_title_area>.age_grade>.age_icon{
+        width:calc(100vw *(20/1099));height:calc(100vw *(21/1099));
+        background-image:url('../images/movie/15_age.png');
+        background-size:auto;
+        background-position:50% 50%
+    }
+    .movie>.movie_title_area>h5{
+        font-size:calc(100vw *(22/1099));
+        line-height:calc(60/22);
+        font-weight:600;
+        margin-left:calc(100vw *(10/1099));
+        float:left;
+    }
+    .movie>.button_area{
+        height:calc(100vw *(40/1099));width:calc(100vw *(150/1099));margin:0 auto;
+    }
+    .movie>.button_area >.detail_btn,.movie>.button_area>.reserv_btn{
+        width:calc(100vw *(65/1099));height:calc(100vw *(40/1099));
+        font-size:calc(100vw *(14/1099));line-height:calc(40/14);
+        background-color:#440090;
+        font-weight:200;
+        float:left;
+        margin-right:calc(100vw *(16/1099));
+        text-align:center;
+    }
+    .movie>.button_area >.reserv_btn{
+        margin-right:0
+    }
+}
+
+@media all and (max-width:599px){
+    .movie_list{
+        background-color:#000;
+        width:100%;
+        height:auto;
+        position:relative;
+        margin-top:calc(100vw *(30/599))
+    }
+    .movie_list >ul{
+        list-style:none;
+        background-color:transparent;
+        color:white;
+        margin:0 auto;
+        padding:calc(100vw *(10/599)) 0;
+        text-align:center;
+        height:calc(100vw *(60/599));
+        background-image:url('../images/main/purple_pattern\(mobile\).jpg');
+        background-size:auto;
+        background-position:50% 50%
+    }
+    .movie_list >ul >li{
+        display:inline-block;
+        margin:0 calc(100vw *(9/599));
+        font-size:calc(100vw *(14/599));
+        line-height:calc(20/14);
+        padding:calc(100vw *(10/599)) 0;
+        cursor:pointer;
+    }
+    .movie_list >.list_panel{
+        width:100%;height:auto;
+    }
+    .movie_list>.list_panel>.movie_wrap{
+        background-color:transparent;
+        width:calc(100vw *(548/599));height:auto;margin:0 auto;
+        padding:calc(100vw *(14/599)) 0;overflow:hidden;
+    }
+    .movie_list >.list_panel>.read_moreWrap{
+        height:calc(100vw *(60/599));width:100%;
+        padding:calc(100vw *(10/599)) 0;
+    }
+    .movie_list >.list_panel>.read_moreWrap>.read_more{
+        width:90%;height:calc(100vw *(40/599));
+        font-size:calc(100vw *(15/599));line-height:calc(40/15);
+        background-color:#210045;
+        text-align:center;color:white;font-weight:200;
+        margin:0 auto;
+    }
+
+    .movie{
+        background-color:#000;
+        color:white;
+        margin:0 calc(100vw *(8/599));
+        padding-bottom:calc(100vw *(16/599));
+        float:left;
+        width:calc(100vw *(258/599));height:auto;
+    }
+
+    .movie>.movie_Img{
+        width:100%;height:calc(100vw *(363/599));
+        background-image:url('../images/movie/movie7.jpg');
+        background-size:cover;
+        background-position:50% 50%
+    }
+    .movie>.grade_area{
+        height:calc(100vw *(40/599));
+        overflow:hidden;
+    }
+    .movie>.grade_area>h5{
+        font-size:calc(100vw *(12/599));
+        line-height:calc(20/12);
+        padding:calc(100vw *(10/599)) 0;
+        height:calc(100vw *(40/599));
+        margin:0 calc(100vw *(15/599)) 0 calc(100vw *(7/599));
+        float:left;
+    }
+    .movie>.grade_area>.gradeWrap{
+        height:100%;
+        padding:calc(100vw *(8/599)) 0;
+        float:left;
+    }
+    .movie>.grade_area>.gradeWrap>.grade1{
+        width:calc(100vw *(26/599));
+        height:calc(100vw *(24/599));
+
+        background-image:url('../images/movie/moviePage_gradeIcon1.0\(large\).png');
+        background-size:cover;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+        float:left;
+    }
+    .movie>.movie_title_area{
+        height:calc(100vw *(50/599));width:100%;
+        border-top:1px solid #fff;
+        overflow:hidden;
+    }
+    .movie>.movie_title_area>.age_grade{
+        width:calc(100vw *(16/599));height:calc(100vw *(60/599));
+        margin-left:calc(100vw *(12/599));padding-top:calc(100vw *(15/599));
+        float:left;
+    }
+    .movie>.movie_title_area>.age_grade>.age_icon{
+        width:calc(100vw *(20/599));height:calc(100vw *(21/599));
+        background-image:url('../images/movie/15_age.png');
+        background-size:auto;
+        background-position:50% 50%
+    }
+    .movie>.movie_title_area>h5{
+        font-size:calc(100vw *(18/599));
+        line-height:calc(50/18);
+        font-weight:600;
+        margin-left:calc(100vw *(10/599));
+        float:left;
+    }
+    .movie>.button_area{
+        height:calc(100vw *(30/599));width:calc(100vw *(120/599)); margin:0 auto;
+    }
+    .movie>.button_area>.detail_btn,.movie>.button_area>.reserv_btn{
+        width:calc(100vw *(55/599));height:calc(100vw *(30/599));
+        font-size:calc(100vw *(12/599));line-height:calc(30/12);
+        background-color:#440090;
+        font-weight:200;
+        float:left;
+        margin-right:calc(100vw *(10/599));
+        text-align:center;
+    }
+    .movie>.button_area>.reserv_btn{
+        margin-right:0
+    }
+}
+
+@media all and (max-width:450px){
+    
+    .movie>.movie_title_area>.age_grade>.age_icon{
+        width:calc(100vw *(20/360));height:calc(100vw *(21/360));
+        background-image:url('../images/movie/15_age.png');
+        background-size:auto;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+    }
+    .movie>.movie_title_area>h5{
+        font-size:calc(100vw *(18/599));
+        line-height:calc(50/18);
+        font-weight:600;
+        margin-left:calc(100vw *(10/360));
+        float:left;
+    }
+    .movie>.button_area{
+        height:auto;width:calc(100vw *(120/450)); margin:0 auto;
+    }
+    .movie>.button_area>.detail_btn,.movie>.button_area>.reserv_btn{
+        width:calc(100vw *(85/450));height:calc(100vw *(30/450));
+        font-size:calc(100vw *(12/599));line-height:calc(100vw *(30/450));
+        background-color:#440090;
+        font-weight:200;
+        float:none;
+        margin-right:calc(100vw *(10/599));
+        text-align:center;
+    }
+    .movie>.button_area>.reserv_btn{
+        margin-right:0
+    }
+}
+
+
+/*각 영화정보 요소 관련 제어 display상태 및 영화이미지 적용 css 기기에 상관없이 항상 공통된 부분 css*/
+.m21{
+	display:none;
+}
+.m22{
+	display:none;
+}
+.m23{
+	display:none;
+}
+.m24{
+	display:none;
+}
+.m25{
+	display:none;
+}
+.m26{
+	display:none;
+}
+.m27{
+	display:none;
+}
+.m28{
+	display:none;
+}
+.m29{
+	display:none;
+}
+.m30{
+	display:none;
+}
+.m31{
+	display:none;
+}
+.m32{
+	display:none;
+}
+.m33{
+	display:none;
+}
+.m34{
+	display:none;
+}
+.m35{
+	display:none;
+}
+.m36{
+	display:none;
+}
+.m37{
+	display:none;
+}
+.m38{
+	display:none;
+}
+.m39{
+	display:none;
+}
+.m40{
+	display:none;
+}
+
+.m41{
+	display:none;
+}
+.m42{
+	display:none;
+}
+.m43{
+	display:none;
+}
+.m44{
+	display:none;
+}
+.m45{
+	display:none;
+}
+.m46{
+	display:none;
+}
+.m47{
+	display:none;
+}
+.m48{
+	display:none;
+}
+.m49{
+	display:none;
+}
+.m50{
+	display:none;
+}
+.m51{
+	display:none;
+}
+.m52{
+	display:none;
+}
+.m53{
+	display:none;
+}
+.m54{
+	display:none;
+}
+.m55{
+	display:none;
+}
+.m56{
+	display:none;
+}
+.m57{
+	display:none;
+}
+.m58{
+	display:none;
+}
+.m59{
+	display:none;
+}
+.m60{
+	display:none;
+}
+
+.m1>.movie_Img{
+	background-image:url('../images/movie/movie1.jpg');
+}
+.m2>.movie_Img{
+	background-image:url('../images/movie/movie2.jpg');
+}
+.m3>.movie_Img{
+	background-image:url('../images/movie/movie3.jpg');
+}
+.m4>.movie_Img{
+	background-image:url('../images/movie/movie4.jpg');
+}
+.m5>.movie_Img{
+	background-image:url('../images/movie/movie5.jpg');
+}
+.m6>.movie_Img{
+	background-image:url('../images/movie/movie6.jpg');
+}
+.m7>.movie_Img{
+	background-image:url('../images/movie/movie7.jpg');
+}
+.m8>.movie_Img{
+	background-image:url('../images/movie/movie8.jpg');
+}
+.m9>.movie_Img{
+	background-image:url('../images/movie/movie9.jpg');
+}
+.m10>.movie_Img{
+	background-image:url('../images/movie/movie10.jpg');
+}
+.m11>.movie_Img{
+	background-image:url('../images/movie/movie11.jpg');
+}
+.m12>.movie_Img{
+	background-image:url('../images/movie/movie12.jpg');
+}
+.m13>.movie_Img{
+	background-image:url('../images/movie/movie13.jpg');
+}
+.m14>.movie_Img{
+	background-image:url('../images/movie/movie14.jpg');
+}
+.m15>.movie_Img{
+	background-image:url('../images/movie/movie15.jpg');
+}
+.m16>.movie_Img{
+	background-image:url('../images/movie/movie16.jpg');
+}
+.m17>.movie_Img{
+	background-image:url('../images/movie/movie17.jpg');
+}
+.m18>.movie_Img{
+	background-image:url('../images/movie/movie18.jpg');
+}
+.m19>.movie_Img{
+	background-image:url('../images/movie/movie19.jpg');
+}
+.m20>.movie_Img{
+	background-image:url('../images/movie/movie20.jpg');
+}
+
+.m21>.movie_Img{
+	background-image:url('../images/movie/movie21.jpg');
+}
+.m22>.movie_Img{
+	background-image:url('../images/movie/movie22.jpg');
+}
+.m23>.movie_Img{
+	background-image:url('../images/movie/movie23.jpg');
+}
+.m24>.movie_Img{
+	background-image:url('../images/movie/movie24.jpg');
+}
+.m25>.movie_Img{
+	background-image:url('../images/movie/movie25.jpg');
+}
+.m26>.movie_Img{
+	background-image:url('../images/movie/movie26.jpg');
+}
+.m27>.movie_Img{
+	background-image:url('../images/movie/movie27.jpg');
+}
+.m28>.movie_Img{
+	background-image:url('../images/movie/movie28.jpg');
+}
+.m29>.movie_Img{
+	background-image:url('../images/movie/movie29.jpg');
+}
+.m30>.movie_Img{
+	background-image:url('../images/movie/movie30.jpg');
+}
+.m31>.movie_Img{
+	background-image:url('../images/movie/movie31.jpg');
+}
+.m32>.movie_Img{
+	background-image:url('../images/movie/movie32.jpg');
+}
+.m33>.movie_Img{
+	background-image:url('../images/movie/movie33.jpg');
+}
+.m34>.movie_Img{
+	background-image:url('../images/movie/movie34.jpg');
+}
+.m35>.movie_Img{
+	background-image:url('../images/movie/movie35.jpg');
+}
+.m36>.movie_Img{
+	background-image:url('../images/movie/movie36.jpg');
+}
+.m37>.movie_Img{
+	background-image:url('../images/movie/movie37.jpg');
+}
+.m38>.movie_Img{
+	background-image:url('../images/movie/movie38.jpg');
+}
+.m39>.movie_Img{
+	background-image:url('../images/movie/movie39.jpg');
+}
+.m40>.movie_Img{
+	background-image:url('../images/movie/movie40.jpg');
+}
+
+.m41>.movie_Img{
+	background-image:url('../images/movie/movie41.jpg');
+}
+.m42>.movie_Img{
+	background-image:url('../images/movie/movie42.jpg');
+}
+.m43>.movie_Img{
+	background-image:url('../images/movie/movie43.jpg');
+}
+.m44>.movie_Img{
+	background-image:url('../images/movie/movie44.jpg');
+}
+.m45>.movie_Img{
+	background-image:url('../images/movie/movie45.jpg');
+}
+.m46>.movie_Img{
+	background-image:url('../images/movie/movie46.jpg');
+}
+.m47>.movie_Img{
+	background-image:url('../images/movie/movie47.jpg');
+}
+.m48>.movie_Img{
+	background-image:url('../images/movie/movie48.jpg');
+}
+.m49>.movie_Img{
+	background-image:url('../images/movie/movie49.jpg');
+}
+.m50>.movie_Img{
+	background-image:url('../images/movie/movie50.jpg');
+}
+.m51>.movie_Img{
+	background-image:url('../images/movie/movie51.jpg');
+}
+.m52>.movie_Img{
+	background-image:url('../images/movie/movie52.jpg');
+}
+.m53>.movie_Img{
+	background-image:url('../images/movie/movie53.jpg');
+}
+.m54>.movie_Img{
+	background-image:url('../images/movie/movie54.jpg');
+}
+.m55>.movie_Img{
+	background-image:url('../images/movie/movie55.jpg');
+}
+.m56>.movie_Img{
+	background-image:url('../images/movie/movie56.jpg');
+}
+.m57>.movie_Img{
+	background-image:url('../images/movie/movie57.jpg');
+}
+.m58>.movie_Img{
+	background-image:url('../images/movie/movie58.jpg');
+}
+.m59>.movie_Img{
+	background-image:url('../images/movie/movie59.jpg');
+}
+.m60>.movie_Img{
+	background-image:url('../images/movie/movie60.jpg');
+}
+.m1 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m2 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/19_age.png');
+}
+.m3 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m4 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m5 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m6 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m7 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m8 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m9 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m10 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/19_age.png');
+}
+.m11 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m12 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m13 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m14 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m15 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m16 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m17 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m18 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m19 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m20 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m21 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m22 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m23 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/12_age.png');
+}
+.m24 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/12_age.png');
+}
+.m25 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m26 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m27 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m28 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m29 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m30 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/12_age.png');
+}
+.m31 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/12_age.png');
+}
+.m32 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/12_age.png');
+}
+.m33 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m34 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m35 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m36 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m37 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m38 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/12_age.png');
+}
+.m39 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m40 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/12_age.png');
+}
+.m41 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m42 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m43 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m44 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m45 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m46 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m47 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m48 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m49 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m50 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m51 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m52 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m53 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/12_age.png');
+}
+.m54 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m55 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m56 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/all_age.png');
+}
+.m57 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m58 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m59 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/15_age.png');
+}
+.m60 >.movie_title_area > .age_grade > .age_icon{
+	background-image:url('../images/movie/19_age.png');
+}
+
+
+/*패널1 css end*/
+
+/*패널2 (movieWrap2 id)css start*/
+.w2m21{
+	display:none;
+}
+.w2m22{
+	display:none;
+}
+.w2m23{
+	display:none;
+}
+.w2m24{
+	display:none;
+}
+.w2m25{
+	display:none;
+}
+.w2m26{
+	display:none;
+}
+.w2m27{
+	display:none;
+}
+.w2m28{
+	display:none;
+}
+.w2m29{
+	display:none;
+}
+.w2m30{
+	display:none;
+}
+.w2m31{
+	display:none;
+}
+.w2m32{
+	display:none;
+}
+.w2m33{
+	display:none;
+}
+.w2m34{
+	display:none;
+}
+.w2m35{
+	display:none;
+}
+.w2m36{
+	display:none;
+}
+.w2m37{
+	display:none;
+}
+.w2m38{
+	display:none;
+}
+.w2m39{
+	display:none;
+}
+.w2m40{
+	display:none;
+}
+
+
+.w2m1>.movie_Img{
+	background-image:url('../images/movie/movie48.jpg');
+}
+.w2m2>.movie_Img{
+	background-image:url('../images/movie/movie47.jpg');
+}
+.w2m3>.movie_Img{
+	background-image:url('../images/movie/movie46.jpg');
+}
+.w2m4>.movie_Img{
+	background-image:url('../images/movie/movie45.jpg');
+}
+.w2m5>.movie_Img{
+	background-image:url('../images/movie/movie44.jpg');
+}
+.w2m6>.movie_Img{
+	background-image:url('../images/movie/movie43.jpg');
+}
+.w2m7>.movie_Img{
+	background-image:url('../images/movie/movie42.jpg');
+}
+.w2m8>.movie_Img{
+	background-image:url('../images/movie/movie41.jpg');
+}
+.w2m9>.movie_Img{
+	background-image:url('../images/movie/movie40.jpg');
+}
+.w2m10>.movie_Img{
+	background-image:url('../images/movie/movie39.jpg');
+}
+.w2m11>.movie_Img{
+	background-image:url('../images/movie/movie38.jpg');
+}
+.w2m12>.movie_Img{
+	background-image:url('../images/movie/movie37.jpg');
+}
+.w2m13>.movie_Img{
+	background-image:url('../images/movie/movie36.jpg');
+}
+.w2m14>.movie_Img{
+	background-image:url('../images/movie/movie35.jpg');
+}
+.w2m15>.movie_Img{
+	background-image:url('../images/movie/movie34.jpg');
+}
+.w2m16>.movie_Img{
+	background-image:url('../images/movie/movie33.jpg');
+}
+.w2m17>.movie_Img{
+	background-image:url('../images/movie/movie32.jpg');
+}
+.w2m18>.movie_Img{
+	background-image:url('../images/movie/movie31.jpg');
+}
+.w2m19>.movie_Img{
+	background-image:url('../images/movie/movie30.jpg');
+}
+.w2m20>.movie_Img{
+	background-image:url('../images/movie/movie29.jpg');
+}
+
+.w2m21>.movie_Img{
+	background-image:url('../images/movie/movie28.jpg');
+}
+.w2m22>.movie_Img{
+	background-image:url('../images/movie/movie27.jpg');
+}
+.w2m23>.movie_Img{
+	background-image:url('../images/movie/movie26.jpg');
+}
+.w2m24>.movie_Img{
+	background-image:url('../images/movie/movie25.jpg');
+}
+.w2m25>.movie_Img{
+	background-image:url('../images/movie/movie24.jpg');
+}
+.w2m26>.movie_Img{
+	background-image:url('../images/movie/movie23.jpg');
+}
+.w2m27>.movie_Img{
+	background-image:url('../images/movie/movie22.jpg');
+}
+.w2m28>.movie_Img{
+	background-image:url('../images/movie/movie21.jpg');
+}
+.w2m29>.movie_Img{
+	background-image:url('../images/movie/movie20.jpg');
+}
+.w2m30>.movie_Img{
+	background-image:url('../images/movie/movie19.jpg');
+}
+.w2m31>.movie_Img{
+	background-image:url('../images/movie/movie18.jpg');
+}
+.w2m32>.movie_Img{
+	background-image:url('../images/movie/movie17.jpg');
+}
+.w2m33>.movie_Img{
+	background-image:url('../images/movie/movie16.jpg');
+}
+.w2m34>.movie_Img{
+	background-image:url('../images/movie/movie15.jpg');
+}
+.w2m35>.movie_Img{
+	background-image:url('../images/movie/movie14.jpg');
+}
+.w2m36>.movie_Img{
+	background-image:url('../images/movie/movie13.jpg');
+}
+.w2m37>.movie_Img{
+	background-image:url('../images/movie/movie12.jpg');
+}
+.w2m38>.movie_Img{
+	background-image:url('../images/movie/movie11.jpg');
+}
+.w2m39>.movie_Img{
+	background-image:url('../images/movie/movie10.jpg');
+}
+.w2m40>.movie_Img{
+	background-image:url('../images/movie/movie9.jpg');
+}
+/*패널2 css end*/
+
+/*패널3 css moviewrap3 id start*/
+.w3m21{
+	display:none;
+}
+.w3m22{
+	display:none;
+}
+.w3m23{
+	display:none;
+}
+.w3m24{
+	display:none;
+}
+.w3m25{
+	display:none;
+}
+.w3m26{
+	display:none;
+}
+.w3m27{
+	display:none;
+}
+.w3m28{
+	display:none;
+}
+.w3m29{
+	display:none;
+}
+.w3m30{
+	display:none;
+}
+.w3m31{
+	display:none;
+}
+.w3m32{
+	display:none;
+}
+.w3m33{
+	display:none;
+}
+.w3m34{
+	display:none;
+}
+.w3m35{
+	display:none;
+}
+.w3m36{
+	display:none;
+}
+.w3m37{
+	display:none;
+}
+.w3m38{
+	display:none;
+}
+.w3m39{
+	display:none;
+}
+.w3m40{
+	display:none;
+}
+
+
+.w3m1>.movie_Img{
+	background-image:url('../images/movie/movie78.jpg');
+}
+.w3m2>.movie_Img{
+	background-image:url('../images/movie/movie77.jpg');
+}
+.w3m3>.movie_Img{
+	background-image:url('../images/movie/movie76.jpg');
+}
+.w3m4>.movie_Img{
+	background-image:url('../images/movie/movie75.jpg');
+}
+.w3m5>.movie_Img{
+	background-image:url('../images/movie/movie74.jpg');
+}
+.w3m6>.movie_Img{
+	background-image:url('../images/movie/movie73.jpg');
+}
+.w3m7>.movie_Img{
+	background-image:url('../images/movie/movie72.jpg');
+}
+.w3m8>.movie_Img{
+	background-image:url('../images/movie/movie71.jpg');
+}
+.w3m9>.movie_Img{
+	background-image:url('../images/movie/movie70.jpg');
+}
+.w3m10>.movie_Img{
+	background-image:url('../images/movie/movie69.jpg');
+}
+.w3m11>.movie_Img{
+	background-image:url('../images/movie/movie68.jpg');
+}
+.w3m12>.movie_Img{
+	background-image:url('../images/movie/movie67.jpg');
+}
+.w3m13>.movie_Img{
+	background-image:url('../images/movie/movie66.jpg');
+}
+.w3m14>.movie_Img{
+	background-image:url('../images/movie/movie65.jpg');
+}
+.w3m15>.movie_Img{
+	background-image:url('../images/movie/movie64.jpg');
+}
+.w3m16>.movie_Img{
+	background-image:url('../images/movie/movie63.jpg');
+}
+.w3m17>.movie_Img{
+	background-image:url('../images/movie/movie62.jpg');
+}
+.w3m18>.movie_Img{
+	background-image:url('../images/movie/movie61.jpg');
+}
+.w3m19>.movie_Img{
+	background-image:url('../images/movie/movie60.jpg');
+}
+.w3m20>.movie_Img{
+	background-image:url('../images/movie/movie59.jpg');
+}
+
+.w3m21>.movie_Img{
+	background-image:url('../images/movie/movie58.jpg');
+}
+.w3m22>.movie_Img{
+	background-image:url('../images/movie/movie57.jpg');
+}
+.w3m23>.movie_Img{
+	background-image:url('../images/movie/movie56.jpg');
+}
+.w3m24>.movie_Img{
+	background-image:url('../images/movie/movie55.jpg');
+}
+.w3m25>.movie_Img{
+	background-image:url('../images/movie/movie54.jpg');
+}
+.w3m26>.movie_Img{
+	background-image:url('../images/movie/movie53.jpg');
+}
+.w3m27>.movie_Img{
+	background-image:url('../images/movie/movie52.jpg');
+}
+.w3m28>.movie_Img{
+	background-image:url('../images/movie/movie51.jpg');
+}
+.w3m29>.movie_Img{
+	background-image:url('../images/movie/movie50.jpg');
+}
+.w3m30>.movie_Img{
+	background-image:url('../images/movie/movie49.jpg');
+}
+.w3m31>.movie_Img{
+	background-image:url('../images/movie/movie46.jpg');
+}
+.w3m32>.movie_Img{
+	background-image:url('../images/movie/movie45.jpg');
+}
+.w3m33>.movie_Img{
+	background-image:url('../images/movie/movie44.jpg');
+}
+.w3m34>.movie_Img{
+	background-image:url('../images/movie/movie43.jpg');
+}
+.w3m35>.movie_Img{
+	background-image:url('../images/movie/movie42.jpg');
+}
+.w3m36>.movie_Img{
+	background-image:url('../images/movie/movie41.jpg');
+}
+.w3m37>.movie_Img{
+	background-image:url('../images/movie/movie40.jpg');
+}
+.w3m38>.movie_Img{
+	background-image:url('../images/movie/movie36.jpg');
+}
+.w3m39>.movie_Img{
+	background-image:url('../images/movie/movie35.jpg');
+}
+.w3m40>.movie_Img{
+	background-image:url('../images/movie/movie33.jpg');
+}
+/*패널3 css end*/

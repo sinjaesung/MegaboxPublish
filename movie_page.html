@@ -1,0 +1,3814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/html5_reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/movie_visual.css"/>
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="css/movie_style.css"/>
+    <link rel="stylesheet" href="css/movieDetail.css"/>
+
+</head>
+<body>
+    <header>
+	<!--inner구조물과 이너바깥의 user_bar는 pc에서만의 전유물이며, 모바일에선 이러한 리스트 구조에서 탈피한다-->
+	<!-- pc header ui start -->
+	<div class='inner'>
+		<ul class='header_menu'>
+			<li><a href='movie_page.html'>영화</a></li><li><a href='reserv_page.html'>예매</a></li><li><a href='#'>미리보기</a></li><li><a href='#'>특별관</a></li><li class='site_logo'><a href='index.html'></a></li><li><a href='store_page.html'>스토어</a></li><li><a href='card_page.html'>할인카드</a></li><li><a href='event_page.html'>이벤트</a></li>
+		</ul>
+	</div>
+	<ul class='user_bar'>
+		<li>로그인</li><li>회원가입</li><li>고객센터</li>
+	</ul>
+	<!--//pc ui end-->
+
+	<!--태블릿,모바일에서만 보이게 t&m ui start-->
+	<!-- tm_inner는 태블릿,모바일 전용 inner이다. 고정값은 아니며 outer 해더 전체 크기의 항상 92.5%비율을 유지하는 크기이다.-->
+	<div class='tm_inner'>
+		<div class='tm_menubar' id='tm_menubar'>
+
+		</div>
+		<div class='tm_headerlogo'>
+			<a href='index.html'></a>
+		</div>
+		<div class='tm_usericon'>
+		</div>
+	</div>
+	<!--t&m header ui end -->
+</header><!--header area end-->
+
+<!--pc에선 기본적으로 감춰놓는다-->
+<!--태블릿,모바일에서만 보여지고 처리되는 해더 디테일 네비게이션-->
+<nav class='tmheader_detail' id='tmheader_detail'>
+ <div class='tmdetail_wrap' id='tmdetail_wrap'>
+	 <nav class='left_view' id='left_view'>
+
+		<div class='top_menu'>
+			<ul>
+				<li class='home_btn'><a href='index.html'></a></li><li class='setting_btn'></li>
+			</ul>
+
+			<div class='tmheader_detailClose' id='tmheader_detailClose'></div>
+		</div>
+
+		<div class='login_btn'>로그인</div>
+
+		<ul class='user_info'>
+			<li>회원가입</li><li>ID/PW찾기</li><li class='last'>비회원 예매확인</li>
+		</ul>
+
+		<ul class='reserv_menu'>
+			<li><a href='reserv_page.html'>영화관별 예매</a></li><li><a href='reserv_page.html'>영화별 예매</a></li>
+		</ul>
+
+		<ul class='main_menu'>
+			<li class='movie_symbol' onclick='javascript:location.href="movie_page.html"'><a href='movie_page.html'>영화</a></li><li class='play_symbol'onclick='javascript:location.href="reserv_page.html"'><a href='reserv_page.html'>예매</a></li><li class='discount_symbol'onclick='javascript:location.href="card_page.html"'><a href='card_page.html'>할인카드</a></li><li class='store_symbol'onclick='javascript:location.href="store_page.html"'><a href='store_page.html'>스토어</a></li><li class='theater_symbol' onclick='javascript:location.href="theater_pageE.html"'><a href='theater_pageE.html'>영화관</a></li><li class='gift_symbol'onclick='javascript:location.href="event_page.html"'><a href='event_page.html'>이벤트</a></li>
+		</ul>
+
+		<ul class='sub_menu'>
+			<li>▶&nbsp;&nbsp;무비포스트</li><li>▶&nbsp;&nbsp;할인카드안내</li><li>▶&nbsp;&nbsp;프라이빗 예매</li><li>▶&nbsp;&nbsp;스페셜 멤버십</li><li>▶&nbsp;&nbsp;고객센터</li><li>▶&nbsp;&nbsp;공지사항</li>
+		</ul>
+
+	 </nav>
+	 <ul class='right_view' id='right_view'>
+
+ 		<li class='right_viewImg v_img11'></li>
+ 		<li class='right_viewImg v_img12'></li>
+ 		<li class='right_viewImg v_img13'></li>
+ 		<li class='right_viewImg v_img14'></li>
+ 		<li class='right_viewImg v_img15'></li>
+ 		<li class='right_viewImg v_img16'></li>
+ 		<li class='right_viewImg v_img17'></li>
+ 		<li class='right_viewImg v_img18'></li>
+		<li class='right_viewImg v_img1'></li>
+		<li class='right_viewImg v_img2'></li>
+		<li class='right_viewImg v_img3'></li>
+		<li class='right_viewImg v_img4'></li>
+		<li class='right_viewImg v_img5'></li>
+		<li class='right_viewImg v_img6'></li>
+		<li class='right_viewImg v_img7'></li>
+		<li class='right_viewImg v_img8'></li>
+		<li class='right_viewImg v_img9'></li>
+		 <li class='right_viewImg v_img10'></li>
+	 </ul>
+ </div>
+ <div class='tmheader_controls'>
+	<div class='tmh_left_btn' id='tmh_left_btn'></div>
+	<div class='tmh_right_btn' id='tmh_right_btn'></div>
+ </div>
+</nav><!--t&m header detial nav end -->
+
+<div class="main_perspective">
+    <div class="movie_banner movie_banner1" id="movie_banner1"></div>
+    <div class="movie_banner movie_banner2" id="movie_banner2"></div>
+    <div class="movie_banner movie_banner3" id="movie_banner3"></div>
+    <div class="movie_banner movie_banner4" id="movie_banner4"></div>
+    <div class="movie_banner movie_banner5" id="movie_banner5"></div>
+    <div class="movie_banner movie_banner6" id="movie_banner6"></div>
+    <div class="movie_banner movie_banner7" id="movie_banner7"></div>
+    <div class="movie_banner movie_banner8" id="movie_banner8"></div>
+    <div class="movie_banner movie_banner9" id="movie_banner9"></div>
+    <div class="movie_banner movie_banner10" id="movie_banner10"></div>
+    <div class="movie_banner movie_banner11" id="movie_banner11"></div>
+    <div class="movie_banner movie_banner12" id="movie_banner12"></div>
+    <div class="movie_banner movie_banner13" id="movie_banner13"></div>
+    <div class="movie_banner movie_banner14" id="movie_banner14"></div>
+    <div class="movie_banner movie_banner15" id="movie_banner15"></div>
+    <div class="movie_banner movie_banner16" id="movie_banner16"></div>
+    <div class="movie_banner movie_banner17" id="movie_banner17"></div>
+    <div class="movie_banner movie_banner18" id="movie_banner18"></div>
+    <div class="movie_banner movie_banner19" id="movie_banner19"></div>
+    <div class="movie_banner movie_banner20" id="movie_banner20"></div>
+
+    <div class="flip_controls">
+        <div class="flip_Button" id="flip_Button"></div>
+        <div class="flipReverse_Button" id="flipReverse_Button"></div>
+    </div>
+</div>
+
+
+<div class="movie_list">
+    <ul>
+        <li class="movie_menu" id="menu1">박스오피스</li>
+        <li class="movie_menu" id="menu2">최신개봉작</li>
+        <li class="movie_menu" id="menu3">상영예정작</li>
+        <li>영화제</li>
+        <li>무비포스트</li>
+    </ul>
+
+    <div class="list_panel" id="list_panel1">
+        <div class="movie_wrap">
+            <div class="movie m1" id="m1">
+                <div class="movie_Img"></div>
+                <div class="grade_area">
+                    <h5>평점4.0</h5>
+                    <div class="gradeWrap">
+                        <div class="grade1"></div>
+                        <div class="grade1"></div>
+                        <div class="grade1"></div>
+                        <div class="grade1"></div>
+                    </div>
+                </div>
+                <div class="movie_title_area">
+                    <div class="age_grade">
+                        <div class="age_icon"></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class="button_area">
+                    <div class="detail_btn">상세정보</div>
+                    <div class="reserv_btn">예매하기</div>
+                </div>
+            </div>
+            <div class='movie m2' id='m2'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m3' id='m3'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m4' id='m4'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m5' id='m5'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m6' id='m6'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m7' id='m7'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m8' id='m8'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m9' id='m9'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m10' id='m10'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m11' id='m11'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m12' id='m12'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m13' id='m13'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m14' id='m14'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m15' id='m15'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m16' id='m16'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m17' id='m17'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m18' id='m18'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m19' id='m19'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m20' id='m20'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+
+            <!--감춰진 두번째 장 요소들 20개-->
+
+            <div class='movie m21' id='m21'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m22' id='m22'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m23' id='m23'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m24' id='m24'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m25' id='m25'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m26' id='m26'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m27' id='m27'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m28' id='m28'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m29' id='m29'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m30' id='m30'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m31' id='m31'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m32' id='m32'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m33' id='m33'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m34' id='m34'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m35' id='m35'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m36' id='m36'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m37' id='m37'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m38' id='m38'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m39' id='m39'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m40' id='m40'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+
+            <!--감춰진 3장 요소들-->
+            <div class='movie m41' id='m41'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m42' id='m42'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m43' id='m43'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m44' id='m44'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m45' id='m45'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m46' id='m46'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m47' id='m47'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+
+            <div class='movie m48' id='m48'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+
+            <div class='movie m49' id='m49'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m50' id='m50'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m51' id='m51'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m52' id='m52'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m53' id='m53'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m54' id='m54'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m55' id='m55'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m56' id='m56'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m57' id='m57'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m58' id='m58'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m59' id='m59'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+            <div class='movie m60' id='m60'>
+                <div class='movie_Img'></div>
+                <div class='grade_area'>
+                    <h5>평점4.0</h5>
+                    <div class='gradeWrap'>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                        <div class='grade1'></div>
+                    </div>
+                </div>
+
+                <div class='movie_title_area'>
+                    <div class='age_grade'>
+                        <div class='age_icon'></div>
+                    </div>
+                    <h5>영화</h5>
+                </div>
+                <div class='button_area'>
+                    <div class='detail_btn'>상세정보</div>
+                    <div class='reserv_btn'>예매하기</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="read_moreWrap" id="read_more1">
+            <div class="read_more">더보기+</div>
+        </div>
+    </div>
+    <!--list_panel2 start-->
+	<div class='list_panel' id='list_panel2'>
+		<div class='movie_wrap'>
+			<div class='movie w2m1' id='w2m1'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+						</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m2' id='w2m2'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+						</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m3' id='w2m3'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+						</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m4' id='w2m4'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+							<div class='grade1'></div>
+						</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m5' id='w2m5'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m6' id='w2m6'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m7' id='w2m7'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m8' id='w2m8'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m9' id='w2m9'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m10' id='w2m10'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m11' id='w2m11'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m12' id='w2m12'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m13' id='w2m13'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m14' id='w2m14'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m15' id='w2m15'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m16' id='w2m16'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m17' id='w2m17'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m18' id='w2m18'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m19' id='w2m19'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m20' id='w2m20'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+
+			<!--감춰진 두번째 장 요소들 20개-->
+
+			<div class='movie w2m21' id='w2m21'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m22' id='w2m22'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m23' id='w2m23'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m24' id='w2m24'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m25' id='w2m25'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m26' id='w2m26'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m27' id='w2m27'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m28' id='w2m28'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m29' id='w2m29'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m30' id='w2m30'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m31' id='w2m31'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m32' id='w2m32'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m33' id='w2m33'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m34' id='w2m34'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m35' id='w2m35'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m36' id='w2m36'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m37' id='w2m37'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m38' id='w2m38'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m39' id='w2m39'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w2m40' id='w2m40'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+
+		</div><!--movie_wrap -->
+		<div class='read_moreWrap' id='read_more2'>
+			<div class='read_more'>더보기+</div>
+		</div>
+	</div><!--list_panel2 end-->
+    <div class='list_panel' id='list_panel3'>
+		<div class='movie_wrap'>
+			<div class='movie w3m1' id='w3m1'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m2' id='w3m2'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m3' id='w3m3'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m4' id='w3m4'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m5' id='w3m5'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m6' id='w3m6'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m7' id='w3m7'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m8' id='w3m8'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m9' id='w3m9'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m10' id='w3m10'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m11' id='w3m11'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m12' id='w3m12'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m13' id='w3m13'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m14' id='w3m14'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m15' id='w3m15'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m16' id='w3m16'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m17' id='w3m17'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m18' id='w3m18'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m19' id='w3m19'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m20' id='w3m20'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+
+			<!--감춰진 두번째 장 요소들 20개-->
+
+			<div class='movie w3m21' id='w3m21'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m22' id='w3m22'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m23' id='w3m23'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m24' id='w3m24'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m25' id='w3m25'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m26' id='w3m26'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m27' id='w3m27'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m28' id='w3m28'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m29' id='w3m29'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m30' id='w3m30'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m31' id='w3m31'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m32' id='w3m32'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m33' id='w3m33'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m34' id='w3m34'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m35' id='w3m35'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m36' id='w3m36'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m37' id='w3m37'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m38' id='w3m38'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m39' id='w3m39'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+			<div class='movie w3m40' id='w3m40'>
+				<div class='movie_Img'></div>
+				<div class='grade_area'>
+					<h5>평점4.0</h5>
+					<div class='gradeWrap'>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+						<div class='grade1'></div>
+					</div>
+				</div>
+
+				<div class='movie_title_area'>
+					<div class='age_grade'>
+						<div class='age_icon'></div>
+					</div>
+					<h5>영화</h5>
+				</div>
+				<div class='button_area'>
+					<div class='detail_btn'>상세정보</div>
+					<div class='reserv_btn'>예매하기</div>
+				</div>
+			</div>
+
+		</div><!--movie_wrap 3 end-->
+		<div class='read_moreWrap' id='read_more3'>
+			<div class='read_more'>더보기+</div>
+		</div>
+	</div><!--list_panel3 end-->
+</div>
+
+
+<div class="movie_detail_fullWrap" id="movie_detail_fullWrap">
+    <div class="movie_detail_extended">
+        <div class="movie_detail_mother">
+            <div class="movie_detail">
+                <button class="close_btn" id="movie_detailClose"></button>
+                <div class="movie_poster"></div><div class="movie_information">
+                    <h2 class="title_area">
+                        <span class="age_grade"></span>
+                        <span class="title">람보 라스트워</span>
+                    </h2>
+                    <div class="core_info_area">
+                        <p class="core_info">
+                            타입 : 디지털<br/>
+							개봉일 : 2019.11.27<br/>
+							감독 : 김승우<br/>
+							출연진 : 이영애, 유재명, 박해준, 이원근<br/>
+							장르 : 스릴러 / 108 분<br/>
+							누적관객 : 170,481명<br/>
+							전일관객 : 58,847명<br/>
+                        </p>
+                    </div>
+                    <hr class="sep_line"/>
+                    <div class="story_area">
+                        <h2>줄거리</h2>
+                        <p class="story">
+                            6년 전 실종된 아들을 봤다는 연락을 받은 ‘정연’(이영애).<br/>
+	숱하게 반복되던 거짓 제보와 달리<br/>
+	생김새부터 흉터까지 똑같은 아이를 봤다는 낯선 이의 이야기에<br/>
+	‘정연’은 지체 없이 홀로 낯선 곳으로 향한다.<br/>
+	<br/>
+	하지만 자신의 등장을 경계하는 듯한 경찰 ‘홍경장’(유재명)과<br/>
+	비슷한 아이를 본 적도 없다는 마을 사람들.<br/>
+	그들이 뭔가 숨기고 있음을 직감한 ‘정연’은<br/>
+	포기하지 않고 진실을 찾기 시작하는데…<br/>
+	<br/>
+	6년 전 사라진 아이<br/>
+	그리고 낯선 사람들<br/>
+	모두가 숨기고 있다.
+                        </p>
+                    </div>
+                </div>
+                <div class="trailer">
+                    <video src="images/movie/seagull.mp4" controls></video>
+                </div>
+            </div><!--movie_detail end-->
+        </div><!-- movie_detail mother-->
+    </div><!--movie_detail extended-->
+</div><!--movie detail dialgo fullwrap endss-->
+
+<!-- footer area start-->
+<footer>
+    <div class='top_footer'>
+        <div class='inner'>
+            <div class='zido_box' id='zido_box'>
+            <!--전국 팔도 이미지가 여기에 표시됨 background-image로써-->
+            </div>
+            <div class='area_text'>
+                <ul class='wide_area'>
+                    <li>선호영화관</li><li class='wa_btn' id='wa1'>광주/전라</li><li class='wa_btn' id='wa2'>서울</li><li class='wa_btn' id='wa3'>강원</li><li class='wa_btn' id='wa4'>경기</li><li class='wa_btn' id='wa5'>제주</li><li class='wa_btn' id='wa6'>인천</li><li class='wa_btn' id='wa7'>부산/대구/경상</li><li class='wa_btn' id='wa8'>대전/충청/세종</li>
+                </ul>
+                <div class='narrow_area'>
+                    <ul class='wabox' id='wa1box'>
+                        <li id='wa1na1'>광주상무</li><li id='wa1na2'>광주하남</li><li id='wa1na3'>남원</li><li id='wa1na4'>목포</li><li id='wa1na5'>목포하당</li><li id='wa1na6'>송천</li><li id='wa1na7'>순천</li><li id='wa1na8'>여수</li><li id='wa1na9'>여수응천</li><li id='wa1na10'>전대(광주)</li><li id='wa1na11'>전주(객사)</li><li id='wa1na12'>첨단(광주)</li>
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa2box'>
+                        <li id='wa2na1'>강남</li><li id='wa2na2'>강남대로</li><li id='wa2na3'>강동</li><li id='wa2na4'>군자</li><li id='wa2na5'>동대문</li><li id='wa2na6'>마곡</li><li id='wa2na7'>목동</li><li id='wa2na8'>상봉</li><li id='wa2na9'>상암월드컵..</li><li id='wa2na10'>센트럴</li><li id='wa2na11'>송파파크</li><li id='wa2na12'>신촌</li><li id='wa2na13'>은평</li><li id='wa2na14'>이수</li><li id='wa2na15'>창동</li><li id='wa2na16'>코엑스</li><li id='wa2na17'>홍대</li><li id='wa2na18'>화곡</li><li id='wa2na19'>ARTNINE</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa3box'>
+                        <li id='wa3na1'>남춘천</li><li id='wa3na2'>속초</li><li id='wa3na3'>원주</li><li id='wa3na4'>원주센트럴</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa4box'>
+                        <li id='wa4na1'>고양스타필드</li><li id='wa4na2'>김포한강신</li><li id='wa4na3'>남양주</li><li id='wa4na4'>동탄</li><li id='wa4na5'>미사강변</li><li id='wa4na6'>백석</li><li id='wa4na7'>별내</li><li id='wa4na8'>부천스타필드</li><li id='wa4na9'>분당</li><li id='wa4na10'>수원</li><li id='wa4na11'>수원남문</li><li id='wa4na12'>시흥배곧</li><li id='wa4na13'>안산중앙</li><li id='wa4na14'>양주</li><li id='wa4na15'>영통</li><li id='wa4na16'>오산</li><li id='wa4na17'>용인테크노</li><li id='wa4na18'>의정부민락</li><li id='wa4na19'>일산</li><li id='wa4na20'>일산벨라시타</li><li id='wa4na21'>킨텍스</li><li id='wa4na22'>파주금촌</li><li id='wa4na23'>파주운정</li><li id='wa4na24'>파주출판도시</li><li id='wa4na25'>평택</li><li id='wa4na26'>하남스타필드</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa5box'>
+                        <li id='wa5na1'>제주</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa6box'>
+                        <li id='wa6na1'>검단</li><li id='wa6na2'>송도</li><li id='wa6na3'>영종</li><li id='wa6na4'>인천논현</li><li id='wa6na5'>청라</li><li id='wa6na6'>청라지젤</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa7box'>
+                        <li id='wa7na1'>거창</li><li id='wa7na2'>경북도청</li><li id='wa7na3'>경산하양</li><li id='wa7na4'>경주</li><li id='wa7na5'>구미강동</li><li id='wa7na6'>김천</li><li id='wa7na7'>남포항</li><li id='wa7na8'>대구(칠성로)</li><li id='wa7na9'>대구신세계</li><li id='wa7na10'>대구이시아</li><li id='wa7na11'>덕천</li><li id='wa7na12'>마산</li><li id='wa7na13'>문경</li><li id='wa7na14'>부산극장</li><li id='wa7na15'>부산대</li><li id='wa7na16'>북대구(칠곡)</li><li id='wa7na17'>사천</li><li id='wa7na18'>삼천포</li><li id='wa7na19'>양산</li><li id='wa7na20'>양산라피에스타</li><li id='wa7na21'>울산</li><li id='wa7na22'>정관</li><li id='wa7na23'>창원</li><li id='wa7na24'>해운대(장산)</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa8box'>
+                        <li id='wa8na1'>공주</li><li id='wa8na2'>대전</li><li id='wa8na3'>대전중앙로</li><li id='wa8na4'>세종</li><li id='wa8na5'>오창</li><li id='wa8na6'>제천</li><li id='wa8na7'>진천</li><li id='wa8na8'>천안</li><li id='wa8na9'>청주충북대</li><li id='wa8na10'>충주</li><li id='wa8na11'>홍성내포</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                </div><!--narrow_area end -->
+
+            </div><!-- area_text end -->
+
+        </div><!--top_footer inner-->
+    </div>
+
+    <div class='bottom_footer'>
+        <div class='inner'>
+                <h1 class='footer_logo'>
+                </h1>
+            <div class='footer_info'>
+                <ul>
+                    <li>회사소개</li><li>채용정보</li><li>제휴/광고/부대사업문의</li><li>이용약관</li><li class='private_info'>개인정보처리방침</li><li>고객센터</li><li>윤리경영</li>
+                </ul>
+                <p class='info'>
+                    서울특별시 강남구 도산대로 156, 2층 메가박스중앙(주) (논현동, 중앙엠앤비사옥) <br/>
+                    대표자명 김진선 | 개인정보보호 책임자 경영지원실 실장 박영진 <br/>
+                    사업자등록번호 211-86-59478 | 통신판매업신고번호 제 833호
+                </p>
+            </div>
+                <h1 class='tm_footer_logo'></h1>
+            <div class='footer_info2'>
+                <ul class='sns_info'>
+                    <li class='twitter'></li><li class='facebook'></li><li class='instagram'></li><li class='playstore'></li><li class='apple'></li>
+                </ul>
+                     <p class='tel_info'>ARS 1544-0070</p>
+                <p class='copyright'>Copyright 2014 by MegaboxJonngAng,lnc.<br/> All rights reserved</p>
+            </div>
+        </div><!--bottom-footer inner-->
+    </div>
+</footer>
+<!-- footer area end -->
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="js/header_control(copy).js"></script>
+<script type="text/javascript" src="js/footer_control.js"></script>
+<script type="text/javascript" src="js/movieInfo.js"></script>
+
+<script>
+    flip_Button.addEventListener("click",flip_action,false);
+    flipReverse_Button.addEventListener('click',flip_reverse_action,false);
+
+    var isWait=false;
+    var task_array=[];
+
+    function waiting_func(){
+        if(task_array.length>0){
+            isWait=true;
+        }
+        else{
+            isWait=false;
+        }
+        window.setTimeout(waiting_func,2);
+    }
+    waiting_func();
+
+    var flip_target=1;
+    var flip_ReverseTarget=null;
+    var flip_ani=null;
+    var filpReverse_ani=null;
+
+    var flipTargetYdegs=0;
+    var flipreverseTargetYdegs=-100;
+    var flip_aniCount=0;
+    var flipreverse_aniCount=0;
+
+    function flip_action(){
+        if(isWait){
+            console.log('플립애니메이션 실행중 관련함수들 실행불가!');
+
+            return;
+        }else{
+            if(flip_target===20){
+                console.log('마지막 장으로 도달했음,더 이상 넘기지 못하게 처리');
+
+                return;
+            }
+            flip_ani = window.setInterval(flip_animate,8,document.getElementById('movie_banner'+flip_target),-1);
+            task_array.push(flip_ani);
+
+            flip_ReverseTarget=flip_target;
+            flip_target += 1;
+        }
+    }
+    function flip_reverse_action(){
+        if(isWait){
+            console.log('플립애니메이션 실행중 관련함수들 실행불가!');
+
+            return;
+        }else{
+            if(flip_ReverseTarget===1){
+                flipReverse_ani = window.setInterval(flip_animate,8,document.getElementById('movie_banner'+flip_ReverseTarget),1);
+                task_array.push(flipReverse_ani);
+
+                flip_target=flip_ReverseTarget;
+                flip_ReverseTarget=null;
+            }else if(flip_ReverseTarget === null){
+                console.log('더이상 역으로 넘길 요소가 없음,더이상 못 넘기게 처리');
+
+                return;
+            }
+            else{
+                flipReverse_ani=window.setInterval(flip_animate,8,document.getElementById('movie_banner'+flip_ReverseTarget),1);
+                task_array.push(flipReverse_ani);
+
+                flip_target = flip_ReverseTarget;
+                flip_ReverseTarget -= 1;
+            }
+        }
+    }
+
+    function flip_animate(target,y_factor){
+        if(y_factor ===-1){
+            flipTargetYdegs += y_factor;
+
+            target.style.transform='rotateY('+flipTargetYdegs+'deg)';
+
+            flip_aniCount++;
+        }else if(y_factor === 1){
+            flipreverseTargetYdegs += y_factor;
+
+            target.style.transform='rotateY('+flipreverseTargetYdegs+'deg)';
+
+            flipreverse_aniCount++;
+        }
+        if(flip_aniCount===100){
+            flip_aniCount=0;
+            flipTargetYdegs=0;
+
+            window.clearInterval(flip_ani);
+            task_array.pop(flip_ani);
+        }else if(flipreverse_aniCount===100){
+            flipreverse_aniCount=0;
+            flipreverseTargetYdegs=-100;
+
+            window.clearInterval(flipReverse_ani);
+            task_array.pop(flipReverse_ani);
+        }
+    }
+
+    list_panel2.style.display='none';    list_panel3.style.display='none';
+
+    var movie_menus=document.getElementsByClassName('movie_menu');
+     for(var i=0; i<movie_menus.length; i++){
+     	movie_menus[i].addEventListener('click',change_panel,false);
+     }
+     /*영화 리스트 관련 스크립트 부분*/
+     read_more1.addEventListener('click',more_view,false);
+     read_more2.addEventListener('click',more_view2,false);
+     read_more3.addEventListener('click',more_view3,false);
+
+     var w1_mpage=1;
+     var w2_mpage=1;
+     var w3_mpage=1;
+
+     var w1_m_array=[null,'m1','m2','m3','m4','m5','m6','m7','m8','m9','m10','m11','m12','m13','m14','m15','m16','m17','m18','m19','m20'];
+     var w2_m_array=[null,'w2m1','w2m2','w2m3','w2m4','w2m5','w2m6','w2m7','w2m8','w2m9','w2m10','w2m11','w2m12','w2m13','w2m14','w2m15','w2m16','w2m17','w2m18','w2m19','w2m20'];
+     var w3_m_array=[null,'w3m1','w3m2','w3m3','w3m4','w3m5','w3m6','w3m7','w3m8','w3m9','w3m10','w3m11','w3m12','w3m13','w3m14','w3m15','w3m16','w3m17','w3m18','w3m19','w3m20'];
+
+     var what_panel=1;
+     function change_panel(event){
+     	var target_id=event.target.id;
+     	what_panel=parseInt(target_id.replace('menu',''));//숫자화한다..1,2,3무슨 패널인지 구한다.
+     	console.log('현재 패널:',what_panel);
+     	var list_panel=document.getElementsByClassName('list_panel');//리스트패널에서 1~3중에서 현재 패널에 해당되는 패널만 block하고 나머지는 none처리한다.
+     	for(var i=0; i<list_panel.length; i++){//list_panel1,2,3식이다.
+     	//해당 세개중에서 타깃 패널인것(해당 패널아이디)사용자가 클릭한 메뉴의id값 1,2,3에 해당되는것으로 기존과 같은걸 클릭했던 다른걸 했던 현재 클릭한 id값 1~3을 가져온다.그 값으로 list_panel 1,2,3타깃을 구한다.
+     		if(list_panel[i].id === ('list_panel'+what_panel) ){
+     			list_panel[i].style.display='block';
+     		}else{//비 타깃요소의 경우는 클릭하지 않은 나머지 요소는 숨긴다.
+     			list_panel[i].style.display='none';
+     		}
+     	}
+     }
+     function more_view(event){
+        w1_mpage++;
+        var target;
+        if(w1_mpage===3 || w1_m_array.length === 61){
+            read_more1.style.display='none';
+        }
+        var pos=(20* (w1_mpage -1))+1;
+        for(var j=0; j<20; j++){
+            w1_m_array[pos] ='m'+pos;
+            pos++
+        }
+        for(var j=1; j<w1_m_array.length; j++){
+            target=w1_m_array[j];
+            document.getElementById(target).style.display='block';
+        }
+     }
+     function more_view2(event){
+
+        w2_mpage++;
+        var target;
+        if(w2_mpage===2 || w2_m_array.length === 41){
+            read_more2.style.display='none';
+        }
+        var pos=(20* (w2_mpage -1))+1;
+        for(var j=0; j<20; j++){
+            w2_m_array[pos] ='w2m'+pos;
+            pos++
+        }
+        for(var j=1; j<w2_m_array.length; j++){
+            target=w2_m_array[j];
+            document.getElementById(target).style.display='block';
+        }
+     }
+     function more_view3(event){
+
+        w3_mpage++;
+        var target;
+        if(w3_mpage===2 || w3_m_array.length === 41){
+            read_more3.style.display='none';
+        }
+        var pos=(20* (w3_mpage -1))+1;
+        for(var j=0; j<20; j++){
+            w3_m_array[pos] ='w3m'+pos;
+            pos++
+        }
+        for(var j=1; j<w3_m_array.length; j++){
+            target=w3_m_array[j];
+            document.getElementById(target).style.display='block';
+        }
+     }
+
+     window.scrollTo(0,0);
+     $('.movie_Img').click(read_detail_info);
+     $('.movie_Img').click(detail_open);
+     $('.detail_btn').click(read_detail_info);
+     $('.detail_btn').click(detail_open);
+
+     window.addEventListener('scroll',moviedetailMove,false);
+     movie_detailClose.addEventListener('click',detail_close,false);
+
+     function moviedetailMove(event){
+        movie_detail_fullWrap.style.top=window.pageYOffset+'px';
+     }
+
+     function read_detail_info(event){
+        var movie_target=null;
+        var target=event.target;
+        if(target.className==='detail_btn'){
+            movie_target=target.parentElement.parentElement;
+
+        }
+        else if(target.className==='movie_Img'){
+            movie_target=target.parentElement;
+        }
+
+        var movie_target_id=movie_target.id;
+
+        var read_info = movie_info[movie_target_id];
+
+        var title=read_info['title'];
+        var poster_url=read_info['poster_url'];
+        var agegrade_url=read_info['agegrade_url'];
+        var core_info=read_info['core_info'];
+        var story=read_info['story'];
+        var trailer_url=read_info['trailer_url'];
+
+        $('.movie_poster').css({'background-image':'url("'+poster_url+'")'});
+        $('.movie_information .age_grade').css({'background-image':'url("'+agegrade_url+'")'});
+        $('.movie_information .title').text(title);
+        $('.movie_information .core_info').html(core_info);
+        $('.movie_information .story').html(story);
+        $('.trailer video').attr('src',trailer_url);
+     }
+
+     function detail_close(event){
+        $('#movie_detail_fullWrap').animate({
+            opacity:0,
+            height:0
+        },{
+            duration:500,
+            complete:function(){
+                $('#movie_detail_fullWrap').css({'display':'none'});
+                $('#movie_detail_fullWrap').css({'transform':'translateX(-100%)'});
+                $('html').css({'overflow':'visible'})
+            }
+        });
+
+        return false;
+     }
+     function detail_open(event){
+        $('#movie_detail_fullWrap').css({'display':'block'});
+        $('#movie_detail_fullWrap').css({'transform':'translateX(0%)'});
+
+        $('#movie_detail_fullWrap').animate({
+            opacity:1,
+            height:'100vh'
+        },{
+            duration:500,
+            complete:function(){
+                $('html').css({'overflow':'hidden'})
+            }
+        });
+
+        return false;
+     }
+</script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+/*main_movieDetail.css 영화 상세정보를 보여주는 다이어로그 창 관련css*/
+.movie_detail_fullWrap{
+     width:100vw;
+     height:0;/*화면을 가득 채우는 fixed박스로 처리 초기 크기는 잠겨있으니까 0으로 되어야만 한다 썸네일 크릭시 height:100vh로의ㅣ 애니메이션 과정을 봐야하기에..100vh로 해놓으면 그 과정을 못봄..그냥 누르는 순간 바로 100vh으로 보이며 투명도만 애니메이션 될뿐임.*/
+     opacity:0;/*투명도 또한 초기값은 0에서 시작해야함!*/
+     background-color:rgba(28,1,56,0.8);
+     position:fixed; overflow:hidden; left:0;top:0; z-index:999;
+     display:none;
+}
+/*어떤 기기든 내부의 디테일 정보콘텐츠 길이가 당연히 100vh는 넘기기에 100vw ,100%크기로만 wrap을 처리해놓으면 스크롤바(세로)가 보이기에 미관성 보기 안좋기에 처리가 더 큰 크기의 확장wrap요소가 필요 이 요소는 화면을 벗어나는 공간에 스크롤바를 생성시키게 한다*/
+.movie_detail_fullWrap .movie_detail_extended{
+     width:120%;height:100%;
+     position:relative; overflow-y:auto;
+}
+.movie_detail_extended .movie_detail_mother{
+     width:100vw;/*vw로 해야 fullwrap(fixed요소)와 크기를 동일하게 화면크기만큼으로 할수있다. 화면 크기만큼해야 실제 콘텐츠 요소가 화면 정중앙 정렬처리 가능하다(pc1920~1400해상도까지는 수평중앙정렬 지원이 가능해야함)*/
+     height:auto;
+}
+/*1920~1400해상도까지는 고정크기로 모두 처리한다*/
+.movie_detail_mother .movie_detail{
+     width:100%;
+     max-width:1400px;
+     margin:0 auto; position:relative;
+     height:auto;
+     padding:60px; overflow:visible;
+}
+.movie_detail .close_btn{
+     position:absolute;
+     width:45px;height:45px;
+     right:20px;top:20px;
+     background-image:url('../images/movie/close_btn.png');
+     background-size:cover;
+     background-position:50% 50%;
+     background-repeat:no-repeat;
+     background-color:transparent;
+     z-index:9;
+}
+.movie_detail .movie_poster{
+     width:420px;/*420/1400 1400일때 해당 폭 비율로 처리*/
+     height:624px; /*624/1400 1400해상도 이하부터 적용되는데 1400이였을때 해당 높이인걸 감안하여 비율처리*/
+     background-size:cover;
+     background-repeat:no-repeat;
+     background-color:#000;
+     background-image:url('../images/main/lastest/movie1sero.jpg');
+     display:inline-block;
+     margin-top:30px;/*30/1400 1400폭일떄 기준 해당 비율로*/
+}
+.movie_detail .movie_information{
+     width:auto;height:auto;
+     display:inline-block; margin-left:60px;/*60/1400 1400였을때 해당 비율의 left비율유지*/
+     color:white;
+}
+.movie_information .title_area{
+     width:800px;/*800/1400 1400폭기준 해당 비율로 처리*/
+     height:100px;/*100/1400 1400일때 화면 기준 해당 높이이다.*/
+     border-bottom:1px solid #a5a5a5;
+     position:relative;
+}
+.movie_information .title_area .age_grade{
+     width:40px;
+     height:100%;/*부모요소 높이와 같다*/
+     max-width:36px;/*36px이상 크기로 커지게 안한다*/
+     display:inline-block;
+     background-position:50% 50%;
+     background-size:100% auto;
+     background-repeat:no-repeat;
+     background-image:url('../images/movie/15_age2.png');
+}
+.movie_information .title_area .title{
+     font-size:40px;/*40/1400 1400일떄 기준 해당 크기비율*/
+     line-height:100px;/*40/100*/
+     font-weight:900; display:inline-block;
+}
+
+
+.movie_detail .core_info_area{
+     width:800px;/*800/1400*/
+     height:auto;
+     margin-top:20px;/*20/1400 1400화면기준일때 해당 여백비율로 처리*/
+}
+.core_info_area .core_info{
+     width:100%;
+     height:auto;
+     font-size:24px;/*24/1400 1400기준 해당 글쓰비율*/
+     line-height:32px;/*24/32*/
+}
+.movie_detail hr.sep_line{
+     width:800px;/*800/1400*/
+     height:1px;
+     background-color:#a5a5a5;
+     margin:20px 0;/*20/1400 1400기준 해당 상하여백*/
+     display:block;
+}
+.movie_detail .story_area{
+     width:800px;/*800/1400*/
+     height:auto;
+}
+.story_area h2{
+     width:100%;
+     height:auto;
+     font-size:36px;/*36/1400 1400일때 해당 비율*/
+     line-height:80px;/*36/80*/
+}
+.story_area .story{
+     width:100%;height:auto;
+     margin-top:20px;/*20/1400*/
+     font-size:20px;/*20/1400*/
+     line-height:28px;/*20/28*/
+}
+.movie_detail .trailer{
+     width:100%;/*1280px 패딩 제외 1400-120 1280폭을 가진다.*/
+     height:720px;/*720/1400 1400일때 기준 720높이를 가진다.해당 비율을 유지한다*/
+     margin-top:100px;/*100/1400 1400화면기준 100px상단여백가짐*/
+     background-color:#000;
+     display:inline-block;
+}
+.trailer video{
+     width:100%;
+     height:100%;
+}
+/*1399~1100px해상도 부분까지의 css부분*/
+@media all and (min-width:1100px) and (max-width:1399px){
+     .movie_detail_fullWrap{
+          width:100vw;
+          height:0;/*화면을 가득 채우는 fixed박스로 처리 초기 크기는 잠겨있으니까 0으로 되어야만 한다 썸네일 크릭시 height:100vh로의ㅣ 애니메이션 과정을 봐야하기에..100vh로 해놓으면 그 과정을 못봄..그냥 누르는 순간 바로 100vh으로 보이며 투명도만 애니메이션 될뿐임.*/
+          opacity:0;/*투명도 또한 초기값은 0에서 시작해야함!*/
+          background-color:rgba(28,1,56,0.8);
+          position:fixed; overflow:hidden; left:0;top:0; z-index:999;
+          display:none;
+     }
+     /*어떤 기기든 내부의 디테일 정보콘텐츠 길이가 당연히 100vh는 넘기기에 100vw ,100%크기로만 wrap을 처리해놓으면 스크롤바(세로)가 보이기에 미관성 보기 안좋기에 처리가 더 큰 크기의 확장wrap요소가 필요 이 요소는 화면을 벗어나는 공간에 스크롤바를 생성시키게 한다*/
+     .movie_detail_fullWrap .movie_detail_extended{
+          width:120%;height:100%;
+          position:relative; overflow-y:auto;
+     }
+     .movie_detail_extended .movie_detail_mother{
+          width:100vw;/*vw로 해야 fullwrap(fixed요소)와 크기를 동일하게 화면크기만큼으로 할수있다. 화면 크기만큼해야 실제 콘텐츠 요소가 화면 정중앙 정렬처리 가능하다(pc1920~1400해상도까지는 수평중앙정렬 지원이 가능해야함)*/
+          height:auto;
+     }
+     /*최대크기속성은 1400으로 냅두고 1399~1100해상도 상에서 width:100%꽉채우게 그대로 처리 1400이상으로만 안 커지게 하면됨*/
+     .movie_detail_mother .movie_detail{
+          width:100%;/*무비디테일도 폭을 꽉 채우는 형태임!*/
+          max-width:1400px;
+          margin:0 auto; position:relative;
+          height:auto;
+          padding:4.28571428571vw;/*60/1400 1400폭였을떄 기준 60비율로 내부 패딩*/
+          overflow:visible;
+     }
+     .movie_detail .close_btn{
+          position:absolute;
+          width:3.21428571429%;/*45/1400 1400화면떄 기준 해당 크기로*/
+          height:3.21428571429vw;/*45/1400*/
+          right:1.42857142857%;/*20/1400 1400일때 끝에서 right:20*/
+          top:1.42857142857vw;/*20/1400 1400일때 기준 해당 수치비율*/
+          background-image:url('../images/movie/close_btn.png');
+          background-size:cover;
+          background-position:50% 50%;
+          background-repeat:no-repeat;
+     }
+     .movie_detail .movie_poster{
+          width:30vw;/*420/1400 1400일때 해당 폭 비율로 처리*/
+          height:44.57142857143vw; /*624/1400 1400해상도 이하부터 적용되는데 1400이였을때 해당 높이인걸 감안하여 비율처리*/
+          background-size:cover;
+          background-repeat:no-repeat;
+          background-color:#000;
+          background-image:url('../images/main/lastest/movie1sero.jpg');
+          display:inline-block;
+          margin-top:2.14285714286vw;/*30/1400 1400폭일떄 기준 해당 비율로*/
+     }
+     .movie_detail .movie_information{
+          width:auto;height:auto;
+          display:inline-block;margin-left:4.28571428571%;/*60/1400 1400였을때 해당 비율의 left비율유지*/
+          color:white;
+     }
+     .movie_information .title_area{
+          width:57.14285714286vw;/*800/1400 1400폭기준 해당 비율로 처리*/
+          height:7.14285714286vw;/*100/1400 1400일때 화면 기준 해당 높이이다.*/
+          border-bottom:1px solid #a5a5a5;
+          position:relative;
+     }
+     .movie_information .title_area .age_grade{
+          width:5%;/*40/800 800영역크기 기준 해당 비율*/
+          max-width:36px;/*36px이상 크기로 커지게 안한다*/
+          height:100%;/*부모요소 높이와 같다*/
+          display:inline-block;
+          background-position:50% 50%;
+          background-size:100% auto;
+          background-repeat:no-repeat;
+          background-image:url('../images/movie/15_age2.png');
+     }
+     .movie_information .title_area .title{
+          font-size:2.85714285714vw;/*40/1400 1400일떄 기준 해당 크기비율*/
+          line-height:2.5;/*40/100*/
+          font-weight:900; display:inline-block;
+     }
+
+     .movie_detail .core_info_area{
+          width:57.14285714286vw;/*800/1400*/
+          height:auto;
+          margin-top:1.42857142857vw;/*20/1400 1400화면기준일때 해당 여백비율로 처리*/
+     }
+     .core_info_area .core_info{
+          width:100%;
+          height:auto;
+          font-size:1.71428571429vw;/*24/1400 1400기준 해당 글쓰비율*/
+          line-height:1.33333333333;/*24/32*/
+     }
+     .movie_detail hr.sep_line{
+          width:57.14285714286vw;/*800/1400*/
+          height:1px;
+          background-color:#a5a5a5;
+          margin:1.42857142857vw 0;/*20/1400 1400기준 해당 상하여백*/
+          display:block;
+     }
+     .movie_detail .story_area{
+          width:57.14285714286vw;/*800/1400*/
+          height:auto;
+     }
+     .story_area h2{
+          width:100%;
+          height:auto;
+          font-size:2.57142857143vw;/*36/1400 1400일때 해당 비율*/
+          line-height:2.22222222222;/*36/80*/
+     }
+     .story_area .story{
+          width:100%;height:auto;
+          margin-top:1.42857142857vw;/*20/1400*/
+          font-size:1.42857142857vw;/*20/1400*/
+          line-height:1.4;/*20/28*/
+     }
+     .movie_detail .trailer{
+          width:100%;/*1280px 패딩 제외 1400-120 1280폭을 가진다.*/
+          height:51.42857142857vw;/*720/1400 1400일때 기준 720높이를 가진다.해당 비율을 유지한다*/
+          margin-top:7.14285714286vw;/*100/1400 1400화면기준 100px상단여백가짐*/
+          background-color:#000;
+          display:inline-block;
+     }
+     .trailer video{
+          width:100%;
+          height:100%;
+     }
+}
+/*태블릿 기기 화면 css*/
+@media all and (min-width:600px) and (max-width:1099px){
+     .movie_detail_fullWrap{
+          width:100vw;
+          height:0;/*화면을 가득 채우는 fixed박스로 처리 초기 크기는 잠겨있으니까 0으로 되어야만 한다 썸네일 크릭시 height:100vh로의ㅣ 애니메이션 과정을 봐야하기에..100vh로 해놓으면 그 과정을 못봄..그냥 누르는 순간 바로 100vh으로 보이며 투명도만 애니메이션 될뿐임.*/
+          opacity:0;/*투명도 또한 초기값은 0에서 시작해야함!*/
+          background-color:rgba(28,1,56,0.8);
+          position:fixed; overflow:hidden; left:0;top:0; z-index:999;
+          display:none;
+     }
+     /*어떤 기기든 내부의 디테일 정보콘텐츠 길이가 당연히 100vh는 넘기기에 100vw ,100%크기로만 wrap을 처리해놓으면 스크롤바(세로)가 보이기에 미관성 보기 안좋기에 처리가 더 큰 크기의 확장wrap요소가 필요 이 요소는 화면을 벗어나는 공간에 스크롤바를 생성시키게 한다*/
+     .movie_detail_fullWrap .movie_detail_extended{
+          width:120%;height:100%;
+          position:relative; overflow-y:auto;
+     }
+     .movie_detail_extended .movie_detail_mother{
+          width:100vw;/*vw로 해야 fullwrap(fixed요소)와 크기를 동일하게 화면크기만큼으로 할수있다. 화면 크기만큼해야 실제 콘텐츠 요소가 화면 정중앙 정렬처리 가능하다(pc1920~1400해상도까지는 수평중앙정렬 지원이 가능해야함)*/
+          height:auto;
+     }
+     /*최대크기속성은 1400으로 냅두고 1399~1100해상도 상에서 width:100%꽉채우게 그대로 처리 1400이상으로만 안 커지게 하면됨*/
+     .movie_detail_mother .movie_detail{
+          width:100%;/*무비디테일도 폭을 꽉 채우는 형태임!*/
+          max-width:1400px;
+          margin:0 auto; position:relative;
+          height:auto;
+          padding:4.09463148317vw;/*45/1099 1099폭였을떄 기준 45비율로 내부 패딩*/
+          overflow:visible;
+     }
+     .movie_detail .close_btn{
+          position:absolute;
+          width:4.09463148317vw;/*45/1099 1099화면떄 기준 해당 크기로*/
+          height:4.09463148317vw;/*45/1099*/
+          right:1.81983621474%;/*20/1099 1099일때 끝에서 right:20*/
+          top:1.81983621474vw;/*20/1099 1099일때 기준 해당 수치비율*/
+          background-image:url('../images/movie/close_btn.png');
+          background-size:cover;
+          background-position:50% 50%;
+          background-repeat:no-repeat;
+     }
+     .movie_detail .movie_poster{
+          width:32.75705186533vw;/*360/1099 1099일때 해당 폭 비율로 처리*/
+          height:48.58962693358vw; /*534/1099 1099해상도 이하부터 적용되는데 1099이였을때 해당 높이인걸 감안하여 비율처리*/
+          background-size:cover;
+          background-repeat:no-repeat;
+          background-color:#000;
+          background-image:url('../images/main/lastest/movie1sero.jpg');
+          display:inline-block;
+          margin-top:2.72975432211vw;/*30/1099 1099폭일떄 기준 해당 비율로*/
+     }
+     .movie_detail .movie_information{
+          width:auto;height:auto;
+          display:inline-block; margin-left:1.81983621474%;/*20/1099 1099였을때 해당 비율의 left비율유지*/
+          color:white;
+     }
+     .movie_information .title_area{
+          width:57.14285714286vw;/*628/1099 1099폭기준 해당 비율로 처리*/
+          height:9.0991810737vw;/*100/1099 1099일때 화면 기준 해당 높이이다.*/
+          border-bottom:1px solid #a5a5a5;
+          position:relative;
+     }
+     .movie_information .title_area .age_grade{
+          width:7.96178343949%;/*50/628 628영역크기 기준 해당 비율*/
+          max-width:36px;/*36폭 이상으론 안커지게한다*/
+          height:100%;/*부모요소 높이와 같다*/
+          display:inline-block;
+          background-position:50% 50%;
+          background-size:100% auto;
+          background-repeat:no-repeat;
+          background-image:url('../images/movie/15_age2.png');
+     }
+     .movie_information .title_area .title{
+          font-size:4.1856232939vw;/*46/1099 1099일떄 기준 해당 크기비율*/
+          line-height:2.17391304348;/*46/100*/
+          font-weight:900; display:inline-block;
+     }
+
+     .movie_detail .core_info_area{
+          width:57.14285714286vw;/*628/1099*/
+          height:auto;
+          margin-top:1.81983621474vw;/*20/1099 1099화면기준일때 해당 여백비율로 처리*/
+     }
+     .core_info_area .core_info{
+          width:100%;
+          height:auto;
+          font-size:2.4567788899vw;/*27/1099 1099기준 해당 글쓰비율*/
+          line-height:1.25925925926;/*27/34*/
+     }
+     .movie_detail hr.sep_line{
+          width:57.14285714286vw;/*628/1099*/
+          height:1px;
+          background-color:#a5a5a5;
+          margin:1.81983621474vw 0;/*20/1099 1099기준 해당 상하여백*/
+          display:block;
+     }
+     .movie_detail .story_area{
+          width:57.14285714286vw;/*628/1099*/
+          height:auto;
+     }
+     .story_area h2{
+          width:100%;
+          height:auto;
+          font-size:3.45768880801vw;/*38/1099 1099일때 해당 비율*/
+          line-height:2.10526315789;/*38/80*/
+     }
+     .story_area .story{
+          width:100%;height:auto;
+          margin-top:1.81983621474vw;/*20/1099*/
+          font-size:2.09281164695vw;/*23/1099*/
+          line-height:1.30434782609;/*23/30*/
+     }
+     .movie_detail .trailer{
+          width:100%;/*1009px 패딩 제외 1099-90 1009폭을 가진다.*/
+          height:51.68334849864vw;/*568/1099 1099일때 기준 568높이를 가진다.해당 비율을 유지한다*/
+          margin-top:7.27934485896vw;/*80/1099 1099화면기준 80px상단여백가짐*/
+          background-color:#000;
+          display:inline-block;
+     }
+     .trailer video{
+          width:100%;
+          height:100%;
+     }
+}
+/*모바일 기기 css*/
+@media all and (max-width:599px){
+     .movie_detail_fullWrap{
+          width:100vw;
+          height:0;/*화면을 가득 채우는 fixed박스로 처리 초기 크기는 잠겨있으니까 0으로 되어야만 한다 썸네일 크릭시 height:100vh로의ㅣ 애니메이션 과정을 봐야하기에..100vh로 해놓으면 그 과정을 못봄..그냥 누르는 순간 바로 100vh으로 보이며 투명도만 애니메이션 될뿐임.*/
+          opacity:0;/*투명도 또한 초기값은 0에서 시작해야함!*/
+          background-color:rgba(28,1,56,0.8);
+          position:fixed; overflow:hidden; left:0;top:0; z-index:999;
+          display:none;
+     }
+     /*어떤 기기든 내부의 디테일 정보콘텐츠 길이가 당연히 100vh는 넘기기에 100vw ,100%크기로만 wrap을 처리해놓으면 스크롤바(세로)가 보이기에 미관성 보기 안좋기에 처리가 더 큰 크기의 확장wrap요소가 필요 이 요소는 화면을 벗어나는 공간에 스크롤바를 생성시키게 한다*/
+     .movie_detail_fullWrap .movie_detail_extended{
+          width:120%;height:100%;
+          position:relative; overflow-y:auto;
+     }
+     .movie_detail_extended .movie_detail_mother{
+          width:100vw;/*vw로 해야 fullwrap(fixed요소)와 크기를 동일하게 화면크기만큼으로 할수있다. 화면 크기만큼해야 실제 콘텐츠 요소가 화면 정중앙 정렬처리 가능하다(pc1920~1400해상도까지는 수평중앙정렬 지원이 가능해야함)*/
+          height:auto;
+     }
+     /*최대크기속성은 1400으로 냅두고 1399~1100해상도 상에서 width:100%꽉채우게 그대로 처리 1400이상으로만 안 커지게 하면됨*/
+     .movie_detail_mother .movie_detail{
+          width:100%;/*무비디테일도 폭을 꽉 채우는 형태임!*/
+          max-width:1400px;
+          margin:0 auto; position:relative;
+          height:auto;
+          padding:5vw;/*24/480 480폭였을떄 기준 24비율로 내부 패딩*/
+          overflow:visible;
+          text-align:center;
+     }
+     .movie_detail .close_btn{
+          position:absolute;
+          width:5.83333333333vw;/*28/480 480화면떄 기준 해당 크기로*/
+          height:5.83333333333vw;/*28/480*/
+          right:3.125%;/*15/480 480일때 끝에서 right:15*/
+          top:3.125vw;/*15/480 480일때 기준 해당 수치비율*/
+          background-image:url('../images/movie/close_btn.png');
+          background-size:cover;
+          background-position:50% 50%;
+          background-repeat:no-repeat;
+     }
+     .movie_detail .movie_poster{
+          width:75vw;/*360/480 480일때 해당 폭 비율로 처리*/
+          height:111.25vw; /*534/480 480해상도 였을때 해당높이 비율유지*/
+          background-size:cover;
+          background-repeat:no-repeat;
+          background-color:#000;
+          background-image:url('../images/main/lastest/movie1sero.jpg');
+          display:inline-block;
+          margin:0 auto;/*모바일기기에선 레이아웃이 바뀐다. 포스터 이미지를 크게 화면 전체(한줄)를 차지하게 처리하며 남은 여백은 자동수평정렬처리 가운데 처리 인라인블록엔 안먹힘!*/
+          margin-top:4.16666666667vw;/*20/480 480폭일떄 기준 해당 비율로*/
+     }
+     .movie_detail .movie_information{
+          width:100%;height:auto;
+          display:inline-block;
+          margin-left:0;
+          margin-top:2.08333333333vw;/*10/480 480폭일때 해당 여백비율로*/
+          color:white;
+          text-align:left;
+     }
+     .movie_information .title_area{
+          width:100%;/*화면 폭을 가득채운다. 영역폭(패딩제외) 백퍼*/
+          height:12.5vw;/*60/480 480일때 화면 기준 해당 높이이다.*/
+          border-bottom:0px solid #a5a5a5;
+          position:relative;
+     }
+     .movie_information .title_area::after{
+          /*모바일에선 해당 영역의 뒷부분에 가상 요소를 생성하여 보더bottom으로 할시 영역의 전체를 가득 채우는 형태로 경계선 설정되어 모바일에선 답답해보이기에 보더는 해제하고, 대신 가상요소로 대체*/
+          display:block;
+          position:absolute;
+          content:'';
+          width:83.33333333333%;/*360/432 432영역크기 기준 해당 비율크기*/
+          height:1px;
+          background-color:#a5a5a5;
+          left:0;
+          top:calc(100% - 1px);/*가장 밑바닥에서 1px만큼 항상 더 위에 배치한다.*/
+     }
+     .movie_information .title_area .age_grade{
+          width:8.7962962963%;/*38/432 432영역크기 기준 해당 비율 로 처리하였으며 36px이상으론 안커지게 한다.*/
+          max-width:36px;/*36폭 이상으론 안커지게한다*/
+          height:100%;/*부모요소 높이와 같다*/
+          display:inline-block;
+          background-position:50% 50%;
+          background-size:100% auto;
+          background-repeat:no-repeat;
+          background-image:url('../images/movie/15_age2.png');
+     }
+     .movie_information .title_area .title{
+          font-size:6.25vw;/*30/480 480일떄 기준 해당 크기비율*/
+          line-height:2;/*30/60*/
+          font-weight:900; display:inline-block;
+     }
+
+     .movie_detail .core_info_area{
+          width:100%;
+          height:auto;
+          margin-top:4.16666666667vw;/*20/480 480화면기준일때 해당 여백비율로 처리*/
+     }
+     .core_info_area .core_info{
+          width:100%;
+          height:auto;
+          font-size:4.58333333333vw;/*22/480 480기준 해당 글쓰비율*/
+          line-height:1.36363636364;/*22/30*/
+     }
+     .movie_detail hr.sep_line{
+          width:83.33333333333%;/*360/432 432폭 기준 해당 비율로처리*/
+          height:1px;
+          background-color:#a5a5a5;
+          margin:4.16666666667vw 0;/*20/480 480기준 해당 상하여백*/
+          display:block;
+     }
+     .movie_detail .story_area{
+          width:100%;
+          height:auto;
+     }
+     .story_area h2{
+          width:100%;
+          height:auto;
+          font-size:5.625vw;/*27/480 480일때 해당 비율*/
+          line-height:1.85185185185;/*27/50*/
+     }
+     .story_area .story{
+          width:100%;height:auto;
+          margin-top:4.16666666667vw;/*20/480*/
+          font-size:3.75vw;/*18/480*/
+          line-height:1.33333333333;/*18/24*/
+     }
+     .movie_detail .trailer{
+          width:100%;/*432px 패딩 제외 480-48 432폭을 가진다.*/
+          height:50.83333333333vw;/*244/480 480일때 기준 244높이를 가진다.해당 비율을 유지한다*/
+          margin-top:8.33333333333vw;/*40/480 480화면기준 40px상단여백가짐*/
+          background-color:#000;
+          display:inline-block;
+     }
+     .trailer video{
+          width:100%;
+          height:100%;
+     }
+}

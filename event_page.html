@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/html5_reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/event_visual.css"/>
+
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="css/event_style.css"/>
+</head>
+<body>
+<header>
+    <!--inner구조물과 이너바깥의 user_bar는 pc에서만의 전유물이며, 모바일에선 이러한 리스트 구조에서 탈피한다-->
+    <!-- pc header ui start -->
+    <div class='inner'>
+        <ul class='header_menu'>
+            <li><a href='movie_page.html'>영화</a></li><li><a href='reserv_page.html'>예매</a></li><li><a href='#'>미리보기</a></li><li><a href='#'>특별관</a></li><li class='site_logo'><a href='index.html'></a></li><li><a href='store_page.html'>스토어</a></li><li><a href='card_page.html'>할인카드</a></li><li><a href='event_page.html'>이벤트</a></li>
+        </ul>
+    </div>
+    <ul class='user_bar'>
+        <li>로그인</li><li>회원가입</li><li>고객센터</li>
+    </ul>
+    <!--//pc ui end-->
+
+    <!--태블릿,모바일에서만 보이게 t&m ui start-->
+    <!-- tm_inner는 태블릿,모바일 전용 inner이다. 고정값은 아니며 outer 해더 전체 크기의 항상 92.5%비율을 유지하는 크기이다.-->
+    <div class='tm_inner'>
+        <div class='tm_menubar' id='tm_menubar'>
+
+        </div>
+        <div class='tm_headerlogo'>
+            <a href='index.html'></a>
+        </div>
+        <div class='tm_usericon'>
+        </div>
+    </div>
+    <!--t&m header ui end -->
+</header><!--header area end-->
+
+<!--pc에선 기본적으로 감춰놓는다-->
+<!--태블릿,모바일에서만 보여지고 처리되는 해더 디테일 네비게이션-->
+<nav class='tmheader_detail' id='tmheader_detail'>
+    <div class='tmdetail_wrap' id='tmdetail_wrap'>
+        <nav class='left_view' id='left_view'>
+   
+           <div class='top_menu'>
+               <ul>
+                   <li class='home_btn'><a href='index.html'></a></li><li class='setting_btn'></li>
+               </ul>
+   
+               <div class='tmheader_detailClose' id='tmheader_detailClose'></div>
+           </div>
+   
+           <div class='login_btn'>로그인</div>
+   
+           <ul class='user_info'>
+               <li>회원가입</li><li>ID/PW찾기</li><li class='last'>비회원 예매확인</li>
+           </ul>
+   
+           <ul class='reserv_menu'>
+               <li><a href='reserv_page.html'>영화관별 예매</a></li><li><a href='reserv_page.html'>영화별 예매</a></li>
+           </ul>
+   
+           <ul class='main_menu'>
+               <li class='movie_symbol' onclick='javascript:location.href="movie_page.html"'><a href='movie_page.html'>영화</a></li><li class='play_symbol'onclick='javascript:location.href="reserv_page.html"'><a href='reserv_page.html'>예매</a></li><li class='discount_symbol'onclick='javascript:location.href="card_page.html"'><a href='card_page.html'>할인카드</a></li><li class='store_symbol'onclick='javascript:location.href="store_page.html"'><a href='store_page.html'>스토어</a></li><li class='theater_symbol' onclick='javascript:location.href="theater_pageE.html"'><a href='theater_pageE.html'>영화관</a></li><li class='gift_symbol'onclick='javascript:location.href="event_page.html"'><a href='event_page.html'>이벤트</a></li>
+           </ul>
+   
+           <ul class='sub_menu'>
+               <li>▶&nbsp;&nbsp;무비포스트</li><li>▶&nbsp;&nbsp;할인카드안내</li><li>▶&nbsp;&nbsp;프라이빗 예매</li><li>▶&nbsp;&nbsp;스페셜 멤버십</li><li>▶&nbsp;&nbsp;고객센터</li><li>▶&nbsp;&nbsp;공지사항</li>
+           </ul>
+   
+        </nav>
+        <ul class='right_view' id='right_view'>
+   
+            <li class='right_viewImg v_img11'></li>
+            <li class='right_viewImg v_img12'></li>
+            <li class='right_viewImg v_img13'></li>
+            <li class='right_viewImg v_img14'></li>
+            <li class='right_viewImg v_img15'></li>
+            <li class='right_viewImg v_img16'></li>
+            <li class='right_viewImg v_img17'></li>
+            <li class='right_viewImg v_img18'></li>
+           <li class='right_viewImg v_img1'></li>
+           <li class='right_viewImg v_img2'></li>
+           <li class='right_viewImg v_img3'></li>
+           <li class='right_viewImg v_img4'></li>
+           <li class='right_viewImg v_img5'></li>
+           <li class='right_viewImg v_img6'></li>
+           <li class='right_viewImg v_img7'></li>
+           <li class='right_viewImg v_img8'></li>
+           <li class='right_viewImg v_img9'></li>
+            <li class='right_viewImg v_img10'></li>
+        </ul>
+    </div>
+    <div class='tmheader_controls'>
+       <div class='tmh_left_btn' id='tmh_left_btn'></div>
+       <div class='tmh_right_btn' id='tmh_right_btn'></div>
+    </div>
+   </nav><!--t&m header detial nav end -->
+
+<!--비주얼 영역-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide s1">
+            <dl class="event_desc">
+                <dt class="event_title">메가박스 오리지널 티켓 No.7</dt>
+                <dd class="event_subtitle">[말레피센트2]를 가장 잘 간직하는 방법</dd>
+                <dd class="desc_bar"></dd>
+                <dd class="event_date">10월 17일(목) 출시</dd>
+            </dl>
+        </div>
+        <div class="swiper-slide s2"></div>
+        <div class="swiper-slide s3">
+            <dl class="event_desc">
+                <dt class="event_title">말레피센트2</dt>
+                <dd class="event_subtitle">Maleficent:Mistress ofEvil</dd>
+                <dd class="desc_bar"></dd>
+                <dd class="event_title2">[시사회 이벤트]</dd>
+            </dl>
+        </div>
+        <div class="swiper-slide s4">
+            <dl class="event_desc">
+                <dt class="event_title">날씨의 아이</dt>
+                <dd class="event_subtitle">Weathering With You</dd>
+                <dd class="desc_bar"></dd>
+                <dd class="event_title2">지금부터 하늘이 맑아질 거야</dd>
+            </dl>
+        </div>
+        <div class="swiper-slide s5">
+            <dl class='event_desc darkver '>
+                 <dt class='event_title'>82년생 김지영</dt>
+                 <dd class='event_subtitle'>KIM Ji-young: Born 1982</dd>
+                 <dd class='desc_bar boxshadow'></dd>
+                 <dd class='event_title2'>당신과 나의 이야기</dd>
+            </dl>
+         </div>
+         <div class="swiper-slide s6">
+              <dl class='event_desc'>
+                   <dt class='event_title'>더 킹: 헨리 5세</dt>
+                   <dd class='event_subtitle'>The King</dd>
+                   <dd class='desc_bar'></dd>
+                   <dd class='event_title2'>왕을 맞으라</dd>
+              </dl>
+         </div>
+         <div class="swiper-slide s7"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<!--swiper js-->
+<script src="swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script>
+    var swiper=new Swiper('.swiper-container',{
+        navigation:{
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev',
+        },
+        loop:true,
+        pagination:{
+            el:'.swiper-pagination',
+            clickable:true,
+            type:'fraction'
+        },
+        scrollbar:{
+            el:'.swiper-scrollbar',
+        },
+        autoplay:{
+            delay:4000,
+            disableOnInteraction:false
+        },
+        speed:500
+    });
+</script>
+
+<section class="event_list">
+    <ul>
+        <li class="event_menu" id="event_menu1">메가박스이벤트</li><li class="event_menu" id="event_menu2">영화이벤트</li><li class="event_menu" id="event_menu3">제휴이벤트</li><li class="event_menu" id="event_menu4">영화관이벤트</li>
+    </ul>
+    <div class="list_panel" id="list_panel1">
+        <div class="inner">
+            <dl class='event_info e1'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>메가박스 오리지널 티켓<br/>No.7 말레피센...</dt>
+                <dd class='event_date'>2019.10.17~2019.10.23</dd>
+           </dl>
+           <dl class='event_info e2'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>메박에서 놀~자_중고등<br/>
+                학생 모두 모여!</dt>
+                <dd class='event_date'>2019.09.23~2019.11.13</dd>
+           </dl>
+           <dl class='event_info e3'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>10월 신화읽는 영화관<br/>
+                (신과함께:...)</dt>
+                <dd class='event_date'>2019.10.14~2019.10.24</dd>
+           </dl>
+           <dl class='event_info e4'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>클래식 소사이어티 회원<br/>
+                국립극장 창극(....)</dt>
+                <dd class='event_date'>2019.10.10~2019.10.27</dd>
+           </dl>
+           <dl class='event_info e5'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>2019 시네 도슨트</dt>
+                <dd class='event_date'>2019.09.16~2019.12.31</dd>
+           </dl>
+           <dl class='event_info e6'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>블럭콤보 시즌3 (레드카펫)</dt>
+                <dd class='event_date'>2019.06.26~2019.12.31</dd>
+           </dl>
+           <dl class='event_info e7'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>2019 팝콘 클래식</dt>
+                <dd class='event_date'>2019.04.02~2019.11.11</dd>
+           </dl>
+           <dl class='event_info e8'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>[VIP메가찬스] 교보문고<br/>
+                &핫트랙스 특별...
+                </dt>
+                <dd class='event_date'>2019.10.17~2019.10.23</dd>
+           </dl>
+           <dl class='event_info e9'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>2019 신화 읽는 영화관</dt>
+                <dd class='event_date'>2019.03.07~2019.12.30</dd>
+           </dl>
+           <dl class='event_info e10'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>2019 메가박스 VIP 승급<br/>
+                및 혜택</dt>
+                <dd class='event_date'>2019.03.01~2020.02.29</dd>
+           </dl>
+           <dl class='event_info e11'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>메가박스 스토어매점 득템찬스</dt>
+                <dd class='event_date'>2019.07.01~2019.12.31</dd>
+           </dl>
+           <dl class='event_info e12'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>더 부티그 프라이빗</dt>
+                <dd class='event_date'>2018.03.09~2019.12.31</dd>
+           </dl>
+           <dl class='event_info e13'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>[메가박스] 가치봄 10월<br/>
+                상영작 안내!</dt>
+                <dd class='event_date'>2019.10.16~2019.10.31</dd>
+           </dl>
+           <dl class='event_info e14'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>팝콘리필</dt>
+                <dd class='event_date'>2018.03.01~2025.12.31</dd>
+           </dl>
+           <dl class='event_info e15'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>메가박스 라이프 다이어리</dt>
+                <dd class='event_date'>2019.01.09~2019.12.31</dd>
+           </dl>
+           <dl class='event_info e16'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>메가박스 마티네데이</dt>
+                <dd class='event_date'>2017.02.16~2019.12.31</dd>
+           </dl>
+           <dl class='event_info e17'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>[심야영화패키지] MEGABOX
+                <br/>
+                MOVIE ....</dt>
+                <dd class='event_date'>2019.01.01~2020.12.31</dd>
+           </dl>
+           <dl class='event_info e18'>
+                <dt class='event_img'></dt><!--이벤트 이미지-->
+                <dt class='event_title'>메가박스 '문화 있는날'</dt>
+                <dd class='event_date'>2017.03.27~2019.12.31</dd>
+           </dl>
+        </div>
+    </div>
+    <div class='list_panel' id='list_panel2'>
+        <div class='inner'>
+             <dl class='event_info e1'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(날씨의 아이) 전국 앵<br/>
+                  콜! MX 시사회</dt>
+                  <dd class='event_date'>2019.10.16~2019.10.24</dd>
+             </dl>
+             <dl class='event_info e2'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>BTS WORLD TOUR 'L'<br/>
+                  OVE YOU...</dt>
+                  <dd class='event_date'>2019.10.12~2019.10.27</dd>
+             </dl>
+             <dl class='event_info e3'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>필름 소사이어티 기획전<br/>
+                  HE;STORY</dt>
+                  <dd class='event_date'>2019.09.09~2019.12.31</dd>
+             </dl>
+             <dl class='event_info e4'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(날씨의 아이) MX 특별<br/>
+                  상영회</dt>
+                  <dd class='event_date'>2019.10.29~2019.10.29</dd>
+             </dl>
+             <dl class='event_info e5'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(버스데이 원더랜드) 개<br/>
+                  봉기념 현장 이벤....</dt>
+                  <dd class='event_date'>2019.10.24~2019.10.30</dd>
+             </dl>
+             <dl class='event_info e6'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(뱅드림! 필름 라이브)<br/>
+                  마지막 주차 특...</dt>
+                  <dd class='event_date'>2019.10.24~2019.10.30</dd>
+             </dl>
+             <dl class='event_info e7'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(더 킹: 헨리 5세) 오리<br/>
+                  지널 포스터 ....</dt>
+                  <dd class='event_date'>2019.10.23~2019.10.29</dd>
+             </dl>
+             <dl class='event_info e8'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(블랙머니) VIP 회원시<br/>
+                  사 초대 이벤트</dt>
+                  <dd class='event_date'>2019.10.18~2019.10.30</dd>
+             </dl>
+             <dl class='event_info e9'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(블랙머니) 회원 시사회<br/>
+                  초대 이벤트</dt>
+                  <dd class='event_date'>2019.10.18~2019.11.03</dd>
+             </dl>
+             <dl class='event_info e10'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(신문기자) 개봉기념 현<br/>
+                  장이벤트</dt>
+                  <dd class='event_date'>2019.10.17~2019.10.23</dd>
+             </dl>
+             <dl class='event_info e11'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(뱅드림! 필름 라이브)<br/>
+                  4주차 특전 증...</dt>
+                  <dd class='event_date'>2019.10.17~2019.10.23</dd>
+             </dl>
+             <dl class='event_info e12'>
+                  <dt class='event_img'></dt><!--이벤트 이미지-->
+                  <dt class='event_title'>(판소리 복서) 피륾소사<br/>
+                  이어티 현장 증정...</dt>
+                  <dd class='event_date'>2019.10.16~2019.10.27</dd>
+             </dl>
+        </div><!--inner-->
+   </div><!--list_panel2 end-->
+   <div class='list_panel' id='list_panel3'>
+    <div class='inner'>
+         <dl class='event_info e1'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>신라인터넷면세점 신규<br/>
+              가입하면 팝콘(L)....</dt>
+              <dd class='event_date'>2019.09.30~2020.09.30</dd>
+         </dl>
+         <dl class='event_info e2'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>빨간날 영화,BC카드로<br/>
+              결제하면 나쵸....</dt>
+              <dd class='event_date'>2019.08.01~2019.12.31</dd>
+         </dl>
+         <dl class='event_info e3'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>GS칼텍스 I am your Ci<br/>
+              nema</dt>
+              <dd class='event_date'>2019.04.02~2019.12.31</dd>
+         </dl>
+         <dl class='event_info e4'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>SKT 데이터PLUS 혜택패<br/>
+              키지!</dt>
+              <dd class='event_date'>2019.04.15~2020.01.31</dd>
+         </dl>
+         <dl class='event_info e5'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>T멤버십 VIP Pick</dt>
+              <dd class='event_date'>2019.04.12~2019.12.31</dd>
+         </dl>
+         <dl class='event_info e6'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>KT멤버십 VIP 무료 예매</dt>
+              <dd class='event_date'>2015.05.01~2019.12.31</dd>
+         </dl>
+         <dl class='event_info e7'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>현대카드 고객이라면, M<br/>
+              포인트 장당 20....</dt>
+              <dd class='event_date'>2018.09.21~2020.04.30</dd>
+         </dl>
+         <dl class='event_info e8'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>메가박스 마스터콤보를<br/>
+              제공받을 수 있는 ....</dt>
+              <dd class='event_date'>2017.01.01~2019.12.31</dd>
+         </dl>
+         <dl class='event_info e9'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>블루포인트 차감 4천원<br/>
+              할인!</dt>
+              <dd class='event_date'>2016.010.07~2019.12.31</dd>
+         </dl>
+         <dl class='event_info e10'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>메가박스 하나카드 콤보<br/>
+              이벤트</dt>
+              <dd class='event_date'>2016.03.04~2019.12.31</dd>
+         </dl>
+         <dl class='event_info e11'>
+              <dt class='event_img'></dt>
+              <dt class='event_title'>해피포인트로 2000원<br/>
+              알차게 영화보는 ....</dt>
+              <dd class='event_date'>2015.01.06~2019.12.31</dd>
+         </dl>
+        </div><!--inner-->
+    </div><!--list_panel3 end-->
+    <div class='list_panel' id='list_panel4'>
+        <div class='inner'>
+            <dl class='event_info e1'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>메가박스 헌혈자 응원 프<br/>
+                로젝트!!</dt>
+                <dd class='event_date'>2019.10.02~2019.10.31</dd>
+            </dl>
+            <dl class='event_info e2'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[COEX] Gangnam Co<br/>
+                ex PA....</dt>
+                <dd class='event_date'>2019.08.13~2019.12.31</dd>
+            </dl>
+            <dl class='event_info e3'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>아듀2019! 굿즈 리필 이<br/>
+                벤트!</dt>
+                <dd class='event_date'>2019.10.09~2019.12.31</dd>
+            </dl>
+            <dl class='event_info e4'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>#공짜부터 천원까지 #홍<br/>
+                대인싸모여라! 홍대....</dt>
+                <dd class='event_date'>2019.09.20~2019.10.25</dd>
+            </dl>
+            <dl class='event_info e5'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>핫한 성수동서울숲에 더<br/>
+                핫한 메가박스가!....</dt>
+                <dd class='event_date'>2019.09.11~2019.11.30</dd>
+            </dl>
+            <dl class='event_info e6'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[분당] AK플라자 X 메가<br/>
+                박스 분당</dt>
+                <dd class='event_date'>2019.10.11~2020.01.31</dd>
+            </dl>
+            <dl class='event_info e7'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[동탄] 해피할로윈! 아기<br/>
+                유령을 찾아라!</dt>
+                <dd class='event_date'>2019.10.28~2019.10.31</dd>
+            </dl>
+            <dl class='event_info e8'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[센트럴] 한정판매 부티<br/>
+                크 패키지</dt>
+                <dd class='event_date'>2019.10.21~2019.12.31</dd>
+            </dl>
+            <dl class='event_info e9'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[첨단] 대학생 학생증으<br/>
+                로 할인받기!</dt>
+                <dd class='event_date'>2019.10.14~2019.12.31</dd>
+            </dl>
+            <dl class='event_info e10'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[청라지젤] 2주년 기념<br/>
+                이벤트!!</dt>
+                <dd class='event_date'>2019.10.11~2019.10.31</dd>
+            </dl>
+            <dl class='event_info e11'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[남춘천] 영화보고 시험<br/>
+                스트레스도 날리자....</dt>
+                <dd class='event_date'>2019.10.04~2019.10.31</dd>
+            </dl>
+            <dl class='event_info e12'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[대전] 카플친 할인은 계<br/>
+                속 된다!</dt>
+                <dd class='event_date'>2019.10.01~2019.11.30</dd>
+            </dl>
+            <dl class='event_info e13'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[청라] 2019 시즌 할인권<br/>
+                파격 특가</dt>
+                <dd class='event_date'>2019.10.01~2019.12.31</dd>
+            </dl>
+            <dl class='event_info e14'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[은평] 정규 관람 패키지<br/>
+                특가 판매!</dt>
+                <dd class='event_date'>2019.10.01~2019.12.31</dd>
+            </dl>
+            <dl class='event_info e15'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[대전중앙로] 조조 맛집<br/>
+                시즌 2, 심야....</dt>
+                <dd class='event_date'>2019.09.30~2019.11.30</dd>
+            </dl>
+            <dl class='event_info e16'>
+                <dt class='event_img'></dt>
+                <dt class='event_title'>[양산] 온라인 예매하면<br/>
+                무조건 3,00....</dt>
+                <dd class='event_date'>2019.09.27~2019.12.31</dd>
+            </dl>
+        </div><!--inner-->
+    </div><!--list_panel4 end-->
+</section>
+
+<!-- footer area start-->
+<footer>
+	<div class='top_footer'>
+	  <div class='inner'>
+           <div class='zido_box' id='zido_box'>
+			<!--전국 팔도 이미지가 여기에 표시됨 background-image로써-->
+		 </div>
+		<div class='area_text'>
+			<ul class='wide_area'>
+				<li>선호영화관</li><li class='wa_btn' id='wa1'>광주/전라</li><li class='wa_btn' id='wa2'>서울</li><li class='wa_btn' id='wa3'>강원</li><li class='wa_btn' id='wa4'>경기</li><li class='wa_btn' id='wa5'>제주</li><li class='wa_btn' id='wa6'>인천</li><li class='wa_btn' id='wa7'>부산/대구/경상</li><li class='wa_btn' id='wa8'>대전/충청/세종</li>
+			</ul>
+			<div class='narrow_area'>
+				<ul class='wabox' id='wa1box'>
+					<li id='wa1na1'>광주상무</li><li id='wa1na2'>광주하남</li><li id='wa1na3'>남원</li><li id='wa1na4'>목포</li><li id='wa1na5'>목포하당</li><li id='wa1na6'>송천</li><li id='wa1na7'>순천</li><li id='wa1na8'>여수</li><li id='wa1na9'>여수응천</li><li id='wa1na10'>전대(광주)</li><li id='wa1na11'>전주(객사)</li><li id='wa1na12'>첨단(광주)</li>
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa2box'>
+					<li id='wa2na1'>강남</li><li id='wa2na2'>강남대로</li><li id='wa2na3'>강동</li><li id='wa2na4'>군자</li><li id='wa2na5'>동대문</li><li id='wa2na6'>마곡</li><li id='wa2na7'>목동</li><li id='wa2na8'>상봉</li><li id='wa2na9'>상암월드컵..</li><li id='wa2na10'>센트럴</li><li id='wa2na11'>송파파크</li><li id='wa2na12'>신촌</li><li id='wa2na13'>은평</li><li id='wa2na14'>이수</li><li id='wa2na15'>창동</li><li id='wa2na16'>코엑스</li><li id='wa2na17'>홍대</li><li id='wa2na18'>화곡</li><li id='wa2na19'>ARTNINE</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa3box'>
+					<li id='wa3na1'>남춘천</li><li id='wa3na2'>속초</li><li id='wa3na3'>원주</li><li id='wa3na4'>원주센트럴</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa4box'>
+					<li id='wa4na1'>고양스타필드</li><li id='wa4na2'>김포한강신</li><li id='wa4na3'>남양주</li><li id='wa4na4'>동탄</li><li id='wa4na5'>미사강변</li><li id='wa4na6'>백석</li><li id='wa4na7'>별내</li><li id='wa4na8'>부천스타필드</li><li id='wa4na9'>분당</li><li id='wa4na10'>수원</li><li id='wa4na11'>수원남문</li><li id='wa4na12'>시흥배곧</li><li id='wa4na13'>안산중앙</li><li id='wa4na14'>양주</li><li id='wa4na15'>영통</li><li id='wa4na16'>오산</li><li id='wa4na17'>용인테크노</li><li id='wa4na18'>의정부민락</li><li id='wa4na19'>일산</li><li id='wa4na20'>일산벨라시타</li><li id='wa4na21'>킨텍스</li><li id='wa4na22'>파주금촌</li><li id='wa4na23'>파주운정</li><li id='wa4na24'>파주출판도시</li><li id='wa4na25'>평택</li><li id='wa4na26'>하남스타필드</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa5box'>
+					<li id='wa5na1'>제주</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa6box'>
+					<li id='wa6na1'>검단</li><li id='wa6na2'>송도</li><li id='wa6na3'>영종</li><li id='wa6na4'>인천논현</li><li id='wa6na5'>청라</li><li id='wa6na6'>청라지젤</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa7box'>
+					<li id='wa7na1'>거창</li><li id='wa7na2'>경북도청</li><li id='wa7na3'>경산하양</li><li id='wa7na4'>경주</li><li id='wa7na5'>구미강동</li><li id='wa7na6'>김천</li><li id='wa7na7'>남포항</li><li id='wa7na8'>대구(칠성로)</li><li id='wa7na9'>대구신세계</li><li id='wa7na10'>대구이시아</li><li id='wa7na11'>덕천</li><li id='wa7na12'>마산</li><li id='wa7na13'>문경</li><li id='wa7na14'>부산극장</li><li id='wa7na15'>부산대</li><li id='wa7na16'>북대구(칠곡)</li><li id='wa7na17'>사천</li><li id='wa7na18'>삼천포</li><li id='wa7na19'>양산</li><li id='wa7na20'>양산라피에스타</li><li id='wa7na21'>울산</li><li id='wa7na22'>정관</li><li id='wa7na23'>창원</li><li id='wa7na24'>해운대(장산)</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+				<ul class='wabox' id='wa8box'>
+					<li id='wa8na1'>공주</li><li id='wa8na2'>대전</li><li id='wa8na3'>대전중앙로</li><li id='wa8na4'>세종</li><li id='wa8na5'>오창</li><li id='wa8na6'>제천</li><li id='wa8na7'>진천</li><li id='wa8na8'>천안</li><li id='wa8na9'>청주충북대</li><li id='wa8na10'>충주</li><li id='wa8na11'>홍성내포</li>
+
+					<div class='detail_arrow'></div>
+				</ul>
+			</div><!--narrow_area end -->
+
+		</div><!-- area_text end -->
+
+	 </div><!--top_footer inner-->
+     </div>
+
+	<div class='bottom_footer'>
+	    <div class='inner'>
+			<h1 class='footer_logo'>
+			</h1>
+			<div class='footer_info'>
+				<ul>
+					<li>회사소개</li><li>채용정보</li><li>제휴/광고/부대사업문의</li><li>이용약관</li><li class='private_info'>개인정보처리방침</li><li>고객센터</li><li>윤리경영</li>
+				</ul>
+				<p class='info'>
+					서울특별시 강남구 도산대로 156, 2층 메가박스중앙(주) (논현동, 중앙엠앤비사옥) <br/>
+					대표자명 김진선 | 개인정보보호 책임자 경영지원실 실장 박영진 <br/>
+					사업자등록번호 211-86-59478 | 통신판매업신고번호 제 833호
+				</p>
+			</div>
+			<h1 class='tm_footer_logo'></h1>
+			<div class='footer_info2'>
+				<ul class='sns_info'>
+					<li class='twitter'></li><li class='facebook'></li><li class='instagram'></li><li class='playstore'></li><li class='apple'></li>
+				</ul>
+				<p class='tel_info'>ARS 1544-0070</p>
+				<p class='copyright'>Copyright 2014 by MegaboxJonngAng,lnc.<br/> All rights reserved</p>
+			</div>
+	    </div><!--bottom-footer inner-->
+	</div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/header_control(copy).js"></script>
+<script type="text/javascript" src="js/footer_control.js"></script>
+
+<script>
+    var event_menus=document.getElementsByClassName('event_menu');
+    for(var j=0; j<event_menus.length; j++){
+        event_menus[j].addEventListener('click',change_panel,false);
+    }
+
+    var what_panel=1;
+
+    function change_panel(event){
+        var target_id=event.target.id;
+        what_panel=parseInt(target_id.replace('event_menu',''));
+        console.log('현재 패널:',what_panel);
+        var list_panel=document.getElementsByClassName('list_panel');
+
+        for(var i=0; i<list_panel.length; i++){
+            if(list_panel[i].id=== ('list_panel'+what_panel)){
+                list_panel[i].style.display='block';
+            }else{
+                list_panel[i].style.display='none';
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

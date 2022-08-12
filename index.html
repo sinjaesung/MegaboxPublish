@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scaleble=no,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/html5_reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <style>
+        *{
+            margin:0; padding:0; box-sizing:border-box;
+        }
+        html,body{
+            width:100%; height:100%
+        }
+        body{
+            background-color:#000
+        }
+    </style>
+    <link rel="stylesheet" href="css/main_visual.css"/>
+    <link rel="stylesheet" href="css/main_style.css"/>
+</head>
+<body>
+<header>
+    <!--inner구조물과 이너바깥의 user_bar는 pc에서만의 전유물이며, 모바일에선 이러한 리스트 구조에서 탈피한다-->
+    <!-- pc header ui start -->
+    <div class='inner'>
+        <ul class='header_menu'>
+            <li><a href='movie_page.html'>영화</a></li><li><a href='reserv_page.html'>예매</a></li><li><a href='#'>미리보기</a></li><li><a href='#'>특별관</a></li><li class='site_logo'><a href='index.html'></a></li><li><a href='store_page.html'>스토어</a></li><li><a href='card_page.html'>할인카드</a></li><li><a href='event_page.html'>이벤트</a></li>
+        </ul>
+    </div>
+    <ul class='user_bar'>
+        <li>로그인</li><li>회원가입</li><li>고객센터</li>
+    </ul>
+    <!--//pc ui end-->
+
+    <!--태블릿,모바일에서만 보이게 t&m ui start-->
+    <!-- tm_inner는 태블릿,모바일 전용 inner이다. 고정값은 아니며 outer 해더 전체 크기의 항상 92.5%비율을 유지하는 크기이다.-->
+    <div class='tm_inner'>
+        <div class='tm_menubar' id='tm_menubar'>
+
+        </div>
+        <div class='tm_headerlogo'>
+                <a href='index.html'></a>
+        </div>
+        <div class='tm_usericon'>
+        </div>
+    </div>
+    <!--t&m header ui end -->
+</header><!--header area end-->
+
+<!--pc에선 기본적으로 감춰놓는다-->
+<!--태블릿,모바일에서만 보여지고 처리되는 해더 디테일 네비게이션-->
+<nav class='tmheader_detail' id='tmheader_detail'>
+    <div class='tmdetail_wrap' id='tmdetail_wrap'>
+        <nav class='left_view' id='left_view'>
+
+        <div class='top_menu'>
+            <ul>
+                <li class='home_btn'><a href='index.html'></a></li><li class='setting_btn'></li>
+            </ul>
+
+            <div class='tmheader_detailClose' id='tmheader_detailClose'></div>
+        </div>
+
+        <div class='login_btn'>로그인</div>
+
+        <ul class='user_info'>
+            <li>회원가입</li><li>ID/PW찾기</li><li class='last'>비회원 예매확인</li>
+        </ul>
+
+        <ul class='reserv_menu'>
+            <li><a href='reserv_page.html'>영화관별 예매</a></li><li><a href='reserv_page.html'>영화별 예매</a></li>
+        </ul>
+
+        <ul class='main_menu'>
+            <li class='movie_symbol' onclick='javascript:location.href="movie_page.html"'><a href='movie_page.html'>영화</a></li><li class='play_symbol'onclick='javascript:location.href="reserv_page.html"'><a href='reserv_page.html'>예매</a></li><li class='discount_symbol'onclick='javascript:location.href="card_page.html"'><a href='card_page.html'>할인카드</a></li><li class='store_symbol'onclick='javascript:location.href="store_page.html"'><a href='store_page.html'>스토어</a></li><li class='theater_symbol' onclick='javascript:location.href="theater_pageE.html"'><a href='theater_pageE.html'>영화관</a></li><li class='gift_symbol'onclick='javascript:location.href="event_page.html"'><a href='event_page.html'>이벤트</a></li>
+        </ul>
+
+        <ul class='sub_menu'>
+            <li>▶&nbsp;&nbsp;무비포스트</li><li>▶&nbsp;&nbsp;할인카드안내</li><li>▶&nbsp;&nbsp;프라이빗 예매</li><li>▶&nbsp;&nbsp;스페셜 멤버십</li><li>▶&nbsp;&nbsp;고객센터</li><li>▶&nbsp;&nbsp;공지사항</li>
+        </ul>
+
+        </nav>
+        <ul class='right_view' id='right_view'>
+
+            <li class='right_viewImg v_img11'></li>
+            <li class='right_viewImg v_img12'></li>
+            <li class='right_viewImg v_img13'></li>
+            <li class='right_viewImg v_img14'></li>
+            <li class='right_viewImg v_img15'></li>
+            <li class='right_viewImg v_img16'></li>
+            <li class='right_viewImg v_img17'></li>
+            <li class='right_viewImg v_img18'></li>
+        <li class='right_viewImg v_img1'></li>
+        <li class='right_viewImg v_img2'></li>
+        <li class='right_viewImg v_img3'></li>
+        <li class='right_viewImg v_img4'></li>
+        <li class='right_viewImg v_img5'></li>
+        <li class='right_viewImg v_img6'></li>
+        <li class='right_viewImg v_img7'></li>
+        <li class='right_viewImg v_img8'></li>
+        <li class='right_viewImg v_img9'></li>
+            <li class='right_viewImg v_img10'></li>
+        </ul>
+    </div>
+    <div class='tmheader_controls'>
+    <div class='tmh_left_btn' id='tmh_left_btn'></div>
+    <div class='tmh_right_btn' id='tmh_right_btn'></div>
+    </div>
+</nav><!--t&m header detial nav end -->
+
+<section class="main_perspective">
+    <div class="main main_banner1" id="main_banner1"></div>
+    <div class="main main_banner2" id="main_banner2"></div>
+    <div class="main main_banner3" id="main_banner3"></div>
+    <div class="main main_banner4" id="main_banner4"></div>
+    <div class="main main_banner5" id="main_banner5"></div>
+    <div class="main main_banner6" id="main_banner6"></div>
+    <div class="main main_banner7" id="main_banner7"></div>
+    <div class="main main_banner8" id="main_banner8"></div>
+    <div class="main main_banner9" id="main_banner9"></div>
+    <div class="main main_banner10" id="main_banner10"></div>
+
+    <div class="mb_controller" id="mb_controller">
+        <div class="mbc_thinline">
+            <div class="mbc_statusbar" id="mbc_statusbar"></div>
+        </div>
+
+        <ul>
+            <li class='mb_bt' id='mb_bt1'>01</li>
+			<li class='mb_bt' id='mb_bt2'>02</li>
+			<li class='mb_bt' id='mb_bt3'>03</li>
+			<li class='mb_bt' id='mb_bt4'>04</li>
+			<li class='mb_bt' id='mb_bt5'>05</li>
+			<li class='mb_bt' id='mb_bt6'>06</li>
+			<li class='mb_bt' id='mb_bt7'>07</li>
+			<li class='mb_bt' id='mb_bt8'>08</li>
+			<li class='mb_bt' id='mb_bt9'>09</li>
+			<li class='mb_bt' id='mb_bt10'>10</li>
+        </ul>
+    </div>
+
+    <div class="mbc_g_thinline">
+        <div class="mbc_g_statusbar" id="mbc_g_statusbar"></div>
+    </div>
+    <ul class="circle_mb_bt">
+        <li class="mb_bt(circle)" id="mb_bt(circle)1">01</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)2'>02</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)3'>03</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)4'>04</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)5'>05</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)6'>06</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)7'>07</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)8'>08</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)9'>09</li>
+        <li class='mb_bt(circle)' id='mb_bt(circle)10'>10</li>
+    </ul>
+</section>
+
+<section class="movie_list" id="movie_list">
+    <ul class="standard_MENUS" id="standard_MENUS">
+        <li class="menu" id="menu1">박스오피스</li>
+        <li class="menu" id="menu2">최신개봉작</li>
+        <li class="menu" id="menu3">큐레이션</li>
+        <li >상영예정작</li>
+    </ul>
+    <div class="list_panel" id="list_panel1">
+        <div class="movie_mother" id="movie_mother">
+            <div class="movieWrap mw1">
+                <div class="movie m1" id="m1"></div>
+                <div class="movie m1-1"></div>
+                <div class="movie m1-2"></div>
+                <div class="movie m1-3"></div>
+                <div class="movie m1-4"></div>
+                <div class="movie m1-5"></div>
+                <div class="movie m1-6"></div>
+                <div class="movie m1-7"></div>
+                <div class="movie m1-8"></div>
+                <div class="movie m1-9"></div>
+                <div class="movie m1-10"></div>
+                <div class="movie m1-11"></div>
+                <div class="movie m1-12"></div>
+                <div class="movie m1-13"></div>
+                <div class="movie m1-14"></div>
+                <div class="movie m1-15"></div>
+                <div class="movie m1-16"></div>
+                <div class="movie m1-17"></div>
+                <div class="movie m1-18"></div>
+                <div class="movie m1-19"></div>
+                <div class="movie m1-20"></div>
+
+
+                <div class='movie m2' id='m2'></div>
+                <div class='movie  m2-1'></div>
+                <div class='movie  m2-2'></div>
+                <div class='movie  m2-3'></div>
+                <div class='movie  m2-4'></div>
+                <div class='movie  m2-5'></div>
+                <div class='movie  m2-6'></div>
+                <div class='movie  m2-7'></div>
+                <div class='movie  m2-8'></div>
+                <div class='movie  m2-9'></div>
+                <div class='movie  m2-10'></div>
+                <div class='movie  m2-11'></div>
+                <div class='movie  m2-12'></div>
+                <div class='movie  m2-13'></div>
+                <div class='movie  m2-14'></div>
+                <div class='movie  m2-15'></div>
+                <div class='movie  m2-16'></div>
+                <div class='movie  m2-17'></div>
+                <div class='movie  m2-18'></div>
+                <div class='movie  m2-19'></div>
+                <div class='movie  m2-20'></div>
+
+
+                <div class='movie m3' id='m3'></div>
+                <div class='movie  m3-1'></div>
+                <div class='movie  m3-2'></div>
+                <div class='movie  m3-3'></div>
+                <div class='movie  m3-4'></div>
+                <div class='movie  m3-5'></div>
+                <div class='movie  m3-6'></div>
+                <div class='movie  m3-7'></div>
+                <div class='movie  m3-8'></div>
+                <div class='movie  m3-9'></div>
+                <div class='movie  m3-10'></div>
+                <div class='movie  m3-11'></div>
+                <div class='movie  m3-12'></div>
+                <div class='movie  m3-13'></div>
+                <div class='movie  m3-14'></div>
+                <div class='movie  m3-15'></div>
+                <div class='movie  m3-16'></div>
+                <div class='movie  m3-17'></div>
+                <div class='movie  m3-18'></div>
+                <div class='movie  m3-19'></div>
+                <div class='movie  m3-20'></div>
+
+
+                <div class='movie m4' id='m4'></div>
+                <div class='movie  m4-1'></div>
+                <div class='movie  m4-2'></div>
+                <div class='movie  m4-3'></div>
+                <div class='movie  m4-4'></div>
+                <div class='movie  m4-5'></div>
+                <div class='movie  m4-6'></div>
+                <div class='movie  m4-7'></div>
+                <div class='movie  m4-8'></div>
+                <div class='movie  m4-9'></div>
+                <div class='movie  m4-10'></div>
+                <div class='movie  m4-11'></div>
+                <div class='movie  m4-12'></div>
+                <div class='movie  m4-13'></div>
+                <div class='movie  m4-14'></div>
+                <div class='movie  m4-15'></div>
+                <div class='movie  m4-16'></div>
+                <div class='movie  m4-17'></div>
+                <div class='movie  m4-18'></div>
+                <div class='movie  m4-19'></div>
+                <div class='movie  m4-20'></div>
+
+                <div class='movie m5' id='m5'></div>
+                <div class='movie  m5-1'></div>
+                <div class='movie  m5-2'></div>
+                <div class='movie  m5-3'></div>
+                <div class='movie  m5-4'></div>
+                <div class='movie  m5-5'></div>
+                <div class='movie  m5-6'></div>
+                <div class='movie  m5-7'></div>
+                <div class='movie  m5-8'></div>
+                <div class='movie  m5-9'></div>
+                <div class='movie  m5-10'></div>
+                <div class='movie  m5-11'></div>
+                <div class='movie  m5-12'></div>
+                <div class='movie  m5-13'></div>
+                <div class='movie  m5-14'></div>
+                <div class='movie  m5-15'></div>
+                <div class='movie  m5-16'></div>
+                <div class='movie  m5-17'></div>
+                <div class='movie  m5-18'></div>
+                <div class='movie  m5-19'></div>
+                <div class='movie  m5-20'></div>
+
+                <div class='movie m6' id='m6'></div>
+                <div class='movie  m6-1'></div>
+                <div class='movie  m6-2'></div>
+                <div class='movie  m6-3'></div>
+                <div class='movie  m6-4'></div>
+                <div class='movie  m6-5'></div>
+                <div class='movie  m6-6'></div>
+                <div class='movie  m6-7'></div>
+                <div class='movie  m6-8'></div>
+                <div class='movie  m6-9'></div>
+                <div class='movie  m6-10'></div>
+                <div class='movie  m6-11'></div>
+                <div class='movie  m6-12'></div>
+                <div class='movie  m6-13'></div>
+                <div class='movie  m6-14'></div>
+                <div class='movie  m6-15'></div>
+                <div class='movie  m6-16'></div>
+                <div class='movie  m6-17'></div>
+                <div class='movie  m6-18'></div>
+                <div class='movie  m6-19'></div>
+                <div class='movie  m6-20'></div>
+            </div>
+            <div class='movieWrap mw2'>
+                <div class='movie m7' id='m7'></div>
+                <div class='movie  m7-1'></div>
+                <div class='movie  m7-2'></div>
+                <div class='movie  m7-3'></div>
+                <div class='movie  m7-4'></div>
+                <div class='movie  m7-5'></div>
+                <div class='movie  m7-6'></div>
+                <div class='movie  m7-7'></div>
+                <div class='movie  m7-8'></div>
+                <div class='movie  m7-9'></div>
+                <div class='movie  m7-10'></div>
+                <div class='movie  m7-11'></div>
+                <div class='movie  m7-12'></div>
+                <div class='movie  m7-13'></div>
+                <div class='movie  m7-14'></div>
+                <div class='movie  m7-15'></div>
+                <div class='movie  m7-16'></div>
+                <div class='movie  m7-17'></div>
+                <div class='movie  m7-18'></div>
+                <div class='movie  m7-19'></div>
+                <div class='movie  m7-20'></div>
+
+                <div class='movie m8' id='m8'></div>
+                <div class='movie  m8-1'></div>
+                <div class='movie  m8-2'></div>
+                <div class='movie  m8-3'></div>
+                <div class='movie  m8-4'></div>
+                <div class='movie  m8-5'></div>
+                <div class='movie  m8-6'></div>
+                <div class='movie  m8-7'></div>
+                <div class='movie  m8-8'></div>
+                <div class='movie  m8-9'></div>
+                <div class='movie  m8-10'></div>
+                <div class='movie  m8-11'></div>
+                <div class='movie  m8-12'></div>
+                <div class='movie  m8-13'></div>
+                <div class='movie  m8-14'></div>
+                <div class='movie  m8-15'></div>
+                <div class='movie  m8-16'></div>
+                <div class='movie  m8-17'></div>
+                <div class='movie  m8-18'></div>
+                <div class='movie  m8-19'></div>
+                <div class='movie  m8-20'></div>
+
+                <div class='movie m9' id='m9'></div>
+                <div class='movie  m9-1'></div>
+                <div class='movie  m9-2'></div>
+                <div class='movie  m9-3'></div>
+                <div class='movie  m9-4'></div>
+                <div class='movie  m9-5'></div>
+                <div class='movie  m9-6'></div>
+                <div class='movie  m9-7'></div>
+                <div class='movie  m9-8'></div>
+                <div class='movie  m9-9'></div>
+                <div class='movie  m9-10'></div>
+                <div class='movie  m9-11'></div>
+                <div class='movie  m9-12'></div>
+                <div class='movie  m9-13'></div>
+                <div class='movie  m9-14'></div>
+                <div class='movie  m9-15'></div>
+                <div class='movie  m9-16'></div>
+                <div class='movie  m9-17'></div>
+                <div class='movie  m9-18'></div>
+                <div class='movie  m9-19'></div>
+                <div class='movie  m9-20'></div>
+
+                <div class='movie m10' id='m10'></div>
+                <div class='movie  m10-1'></div>
+                <div class='movie  m10-2'></div>
+                <div class='movie  m10-3'></div>
+                <div class='movie  m10-4'></div>
+                <div class='movie  m10-5'></div>
+                <div class='movie  m10-6'></div>
+                <div class='movie  m10-7'></div>
+                <div class='movie  m10-8'></div>
+                <div class='movie  m10-9'></div>
+                <div class='movie  m10-10'></div>
+                <div class='movie  m10-11'></div>
+                <div class='movie  m10-12'></div>
+                <div class='movie  m10-13'></div>
+                <div class='movie  m10-14'></div>
+                <div class='movie  m10-15'></div>
+                <div class='movie  m10-16'></div>
+                <div class='movie  m10-17'></div>
+                <div class='movie  m10-18'></div>
+                <div class='movie  m10-19'></div>
+                <div class='movie  m10-20'></div>
+
+                <div class='movie m11' id='m11'></div>
+                <div class='movie  m11-1'></div>
+                <div class='movie  m11-2'></div>
+                <div class='movie  m11-3'></div>
+                <div class='movie  m11-4'></div>
+                <div class='movie  m11-5'></div>
+                <div class='movie  m11-6'></div>
+                <div class='movie  m11-7'></div>
+                <div class='movie  m11-8'></div>
+                <div class='movie  m11-9'></div>
+                <div class='movie  m11-10'></div>
+                <div class='movie  m11-11'></div>
+                <div class='movie  m11-12'></div>
+                <div class='movie  m11-13'></div>
+                <div class='movie  m11-14'></div>
+                <div class='movie  m11-15'></div>
+                <div class='movie  m11-16'></div>
+                <div class='movie  m11-17'></div>
+                <div class='movie  m11-18'></div>
+                <div class='movie  m11-19'></div>
+                <div class='movie  m11-20'></div>
+
+                <div class='movie m12' id='m12'></div>
+                <div class='movie  m12-1'></div>
+                <div class='movie  m12-2'></div>
+                <div class='movie  m12-3'></div>
+                <div class='movie  m12-4'></div>
+                <div class='movie  m12-5'></div>
+                <div class='movie  m12-6'></div>
+                <div class='movie  m12-7'></div>
+                <div class='movie  m12-8'></div>
+                <div class='movie  m12-9'></div>
+                <div class='movie  m12-10'></div>
+                <div class='movie  m12-11'></div>
+                <div class='movie  m12-12'></div>
+                <div class='movie  m12-13'></div>
+                <div class='movie  m12-14'></div>
+                <div class='movie  m12-15'></div>
+                <div class='movie  m12-16'></div>
+                <div class='movie  m12-17'></div>
+                <div class='movie  m12-18'></div>
+                <div class='movie  m12-19'></div>
+                <div class='movie  m12-20'></div>
+            </div>
+        </div>
+        <div class="left_btn" id="left_btn"></div>
+        <div class="right_btn" id="right_btn"></div>
+
+        <div class="movie_info m1info" id="m1info"></div>
+        <div class="movie_info m2info" id="m2info"></div>
+        <div class="movie_info m3info" id="m3info"></div>
+        <div class="movie_info m4info" id="m4info"></div>
+        <div class="movie_info m5info" id="m5info"></div>
+        <div class="movie_info m6info" id="m6info"></div>
+        <div class="movie_info m7info" id="m7info"></div>
+        <div class="movie_info m8info" id="m8info"></div>
+        <div class="movie_info m9info" id="m9info"></div>
+        <div class="movie_info m10info" id="m10info"></div>
+        <div class="movie_info m11info" id="m11info"></div>
+        <div class="movie_info m12info" id="m12info"></div>
+    </div>
+    <div class='list_panel2' id='list_panel2'>
+        <div class='movie_mother' id='movie_mother2'>
+             <div class='movieWrap mw1'>
+                  <div class='movie m13' id='m13'></div>
+                  <div class='movie  m13-1'></div>
+                  <div class='movie  m13-2'></div>
+                  <div class='movie  m13-3'></div>
+                  <div class='movie  m13-4'></div>
+                  <div class='movie  m13-5'></div>
+                  <div class='movie  m13-6'></div>
+                  <div class='movie  m13-7'></div>
+                  <div class='movie  m13-8'></div>
+                  <div class='movie  m13-9'></div>
+                  <div class='movie  m13-10'></div>
+                  <div class='movie  m13-11'></div>
+                  <div class='movie  m13-12'></div>
+                  <div class='movie  m13-13'></div>
+                  <div class='movie  m13-14'></div>
+                  <div class='movie  m13-15'></div>
+                  <div class='movie  m13-16'></div>
+                  <div class='movie  m13-17'></div>
+                  <div class='movie  m13-18'></div>
+                  <div class='movie  m13-19'></div>
+                  <div class='movie  m13-20'></div>
+
+                  <div class='movie m14' id='m14'></div>
+                  <div class='movie  m14-1'></div>
+                  <div class='movie  m14-2'></div>
+                  <div class='movie  m14-3'></div>
+                  <div class='movie  m14-4'></div>
+                  <div class='movie  m14-5'></div>
+                  <div class='movie  m14-6'></div>
+                  <div class='movie  m14-7'></div>
+                  <div class='movie  m14-8'></div>
+                  <div class='movie  m14-9'></div>
+                  <div class='movie  m14-10'></div>
+                  <div class='movie  m14-11'></div>
+                  <div class='movie  m14-12'></div>
+                  <div class='movie  m14-13'></div>
+                  <div class='movie  m14-14'></div>
+                  <div class='movie  m14-15'></div>
+                  <div class='movie  m14-16'></div>
+                  <div class='movie  m14-17'></div>
+                  <div class='movie  m14-18'></div>
+                  <div class='movie  m14-19'></div>
+                  <div class='movie  m14-20'></div>
+
+
+                  <div class='movie m15' id='m15'></div>
+                  <div class='movie  m15-1'></div>
+                  <div class='movie  m15-2'></div>
+                  <div class='movie  m15-3'></div>
+                  <div class='movie  m15-4'></div>
+                  <div class='movie  m15-5'></div>
+                  <div class='movie  m15-6'></div>
+                  <div class='movie  m15-7'></div>
+                  <div class='movie  m15-8'></div>
+                  <div class='movie  m15-9'></div>
+                  <div class='movie  m15-10'></div>
+                  <div class='movie  m15-11'></div>
+                  <div class='movie  m15-12'></div>
+                  <div class='movie  m15-13'></div>
+                  <div class='movie  m15-14'></div>
+                  <div class='movie  m15-15'></div>
+                  <div class='movie  m15-16'></div>
+                  <div class='movie  m15-17'></div>
+                  <div class='movie  m15-18'></div>
+                  <div class='movie  m15-19'></div>
+                  <div class='movie  m15-20'></div>
+
+
+                  <div class='movie m16' id='m16'></div>
+                  <div class='movie  m16-1'></div>
+                  <div class='movie  m16-2'></div>
+                  <div class='movie  m16-3'></div>
+                  <div class='movie  m16-4'></div>
+                  <div class='movie  m16-5'></div>
+                  <div class='movie  m16-6'></div>
+                  <div class='movie  m16-7'></div>
+                  <div class='movie  m16-8'></div>
+                  <div class='movie  m16-9'></div>
+                  <div class='movie  m16-10'></div>
+                  <div class='movie  m16-11'></div>
+                  <div class='movie  m16-12'></div>
+                  <div class='movie  m16-13'></div>
+                  <div class='movie  m16-14'></div>
+                  <div class='movie  m16-15'></div>
+                  <div class='movie  m16-16'></div>
+                  <div class='movie  m16-17'></div>
+                  <div class='movie  m16-18'></div>
+                  <div class='movie  m16-19'></div>
+                  <div class='movie  m16-20'></div>
+
+                  <div class='movie m17' id='m17'></div>
+                  <div class='movie  m17-1'></div>
+                  <div class='movie  m17-2'></div>
+                  <div class='movie  m17-3'></div>
+                  <div class='movie  m17-4'></div>
+                  <div class='movie  m17-5'></div>
+                  <div class='movie  m17-6'></div>
+                  <div class='movie  m17-7'></div>
+                  <div class='movie  m17-8'></div>
+                  <div class='movie  m17-9'></div>
+                  <div class='movie  m17-10'></div>
+                  <div class='movie  m17-11'></div>
+                  <div class='movie  m17-12'></div>
+                  <div class='movie  m17-13'></div>
+                  <div class='movie  m17-14'></div>
+                  <div class='movie  m17-15'></div>
+                  <div class='movie  m17-16'></div>
+                  <div class='movie  m17-17'></div>
+                  <div class='movie  m17-18'></div>
+                  <div class='movie  m17-19'></div>
+                  <div class='movie  m17-20'></div>
+
+                  <div class='movie m18' id='m18'></div>
+                  <div class='movie  m18-1'></div>
+                  <div class='movie  m18-2'></div>
+                  <div class='movie  m18-3'></div>
+                  <div class='movie  m18-4'></div>
+                  <div class='movie  m18-5'></div>
+                  <div class='movie  m18-6'></div>
+                  <div class='movie  m18-7'></div>
+                  <div class='movie  m18-8'></div>
+                  <div class='movie  m18-9'></div>
+                  <div class='movie  m18-10'></div>
+                  <div class='movie  m18-11'></div>
+                  <div class='movie  m18-12'></div>
+                  <div class='movie  m18-13'></div>
+                  <div class='movie  m18-14'></div>
+              <div class='movie  m18-15'></div>
+                  <div class='movie  m18-16'></div>
+                  <div class='movie  m18-17'></div>
+                  <div class='movie  m18-18'></div>
+                  <div class='movie  m18-19'></div>
+                  <div class='movie  m18-20'></div>
+             </div>
+
+             <div class='movieWrap mw2'>
+                  <div class='movie m19' id='m19'></div>
+              <div class='movie  m19-1'></div>
+              <div class='movie  m19-2'></div>
+              <div class='movie  m19-3'></div>
+              <div class='movie  m19-4'></div>
+              <div class='movie  m19-5'></div>
+              <div class='movie  m19-6'></div>
+              <div class='movie  m19-7'></div>
+              <div class='movie  m19-8'></div>
+              <div class='movie  m19-9'></div>
+              <div class='movie  m19-10'></div>
+              <div class='movie  m19-11'></div>
+              <div class='movie  m19-12'></div>
+              <div class='movie  m19-13'></div>
+              <div class='movie  m19-14'></div>
+              <div class='movie  m19-15'></div>
+              <div class='movie  m19-16'></div>
+              <div class='movie  m19-17'></div>
+              <div class='movie  m19-18'></div>
+              <div class='movie  m19-19'></div>
+              <div class='movie  m19-20'></div>
+
+                  <div class='movie m20' id='m20'></div>
+              <div class='movie  m20-1'></div>
+              <div class='movie  m20-2'></div>
+              <div class='movie  m20-3'></div>
+              <div class='movie  m20-4'></div>
+              <div class='movie  m20-5'></div>
+              <div class='movie  m20-6'></div>
+              <div class='movie  m20-7'></div>
+              <div class='movie  m20-8'></div>
+              <div class='movie  m20-9'></div>
+              <div class='movie  m20-10'></div>
+              <div class='movie  m20-11'></div>
+              <div class='movie  m20-12'></div>
+              <div class='movie  m20-13'></div>
+              <div class='movie  m20-14'></div>
+              <div class='movie  m20-15'></div>
+              <div class='movie  m20-16'></div>
+              <div class='movie  m20-17'></div>
+              <div class='movie  m20-18'></div>
+              <div class='movie  m20-19'></div>
+              <div class='movie  m20-20'></div>
+
+                  <div class='movie m21' id='m21'></div>
+                  <div class='movie  m21-1'></div>
+                  <div class='movie  m21-2'></div>
+                  <div class='movie  m21-3'></div>
+                  <div class='movie  m21-4'></div>
+                  <div class='movie  m21-5'></div>
+                  <div class='movie  m21-6'></div>
+                  <div class='movie  m21-7'></div>
+                  <div class='movie  m21-8'></div>
+                  <div class='movie  m21-9'></div>
+                  <div class='movie  m21-10'></div>
+                  <div class='movie  m21-11'></div>
+                  <div class='movie  m21-12'></div>
+                  <div class='movie  m21-13'></div>
+                  <div class='movie  m21-14'></div>
+                  <div class='movie  m21-15'></div>
+                  <div class='movie  m21-16'></div>
+                  <div class='movie  m21-17'></div>
+                  <div class='movie  m21-18'></div>
+                  <div class='movie  m21-19'></div>
+                  <div class='movie  m21-20'></div>
+
+                  <div class='movie m22' id='m22'></div>
+                  <div class='movie  m22-1'></div>
+                  <div class='movie  m22-2'></div>
+                  <div class='movie  m22-3'></div>
+                  <div class='movie  m22-4'></div>
+                  <div class='movie  m22-5'></div>
+                  <div class='movie  m22-6'></div>
+                  <div class='movie  m22-7'></div>
+                  <div class='movie  m22-8'></div>
+                  <div class='movie  m22-9'></div>
+                  <div class='movie  m22-10'></div>
+                  <div class='movie  m22-11'></div>
+                  <div class='movie  m22-12'></div>
+                  <div class='movie  m22-13'></div>
+                  <div class='movie  m22-14'></div>
+                  <div class='movie  m22-15'></div>
+                  <div class='movie  m22-16'></div>
+                  <div class='movie  m22-17'></div>
+                  <div class='movie  m22-18'></div>
+                  <div class='movie  m22-19'></div>
+                  <div class='movie  m22-20'></div>
+
+                  <div class='movie m23' id='m23'></div>
+                  <div class='movie  m23-1'></div>
+                  <div class='movie  m23-2'></div>
+                  <div class='movie  m23-3'></div>
+                  <div class='movie  m23-4'></div>
+                  <div class='movie  m23-5'></div>
+                  <div class='movie  m23-6'></div>
+                  <div class='movie  m23-7'></div>
+                  <div class='movie  m23-8'></div>
+                  <div class='movie  m23-9'></div>
+                  <div class='movie  m23-10'></div>
+                  <div class='movie  m23-11'></div>
+                  <div class='movie  m23-12'></div>
+                  <div class='movie  m23-13'></div>
+                  <div class='movie  m23-14'></div>
+                  <div class='movie  m23-15'></div>
+                  <div class='movie  m23-16'></div>
+                  <div class='movie  m23-17'></div>
+                  <div class='movie  m23-18'></div>
+                  <div class='movie  m23-19'></div>
+                  <div class='movie  m23-20'></div>
+
+
+                  <div class='movie m24' id='m24'></div>
+                  <div class='movie  m24-1'></div>
+                  <div class='movie  m24-2'></div>
+                  <div class='movie  m24-3'></div>
+                  <div class='movie  m24-4'></div>
+                  <div class='movie  m24-5'></div>
+                  <div class='movie  m24-6'></div>
+                  <div class='movie  m24-7'></div>
+                  <div class='movie  m24-8'></div>
+                  <div class='movie  m24-9'></div>
+                  <div class='movie  m24-10'></div>
+                  <div class='movie  m24-11'></div>
+                  <div class='movie  m24-12'></div>
+                  <div class='movie  m24-13'></div>
+                  <div class='movie  m24-14'></div>
+                  <div class='movie  m24-15'></div>
+                  <div class='movie  m24-16'></div>
+                  <div class='movie  m24-17'></div>
+                  <div class='movie  m24-18'></div>
+                  <div class='movie  m24-19'></div>
+                  <div class='movie  m24-20'></div>
+             </div>
+        </div>
+        <div class='left_btn' id='left_btn2'></div>
+        <div class='right_btn' id='right_btn2'></div>
+
+        <div class='movie_info m13info' id='m13info'>
+
+        </div>
+        <div class='movie_info m14info' id='m14info'>
+
+        </div>
+        <div class='movie_info m15info' id='m15info'>
+
+        </div>
+        <div class='movie_info m16info' id='m16info'>
+
+        </div>
+        <div class='movie_info m17info' id='m17info'>
+
+        </div>
+        <div class='movie_info m18info' id='m18info'>
+
+        </div>
+        <div class='movie_info m19info' id='m19info'>
+
+        </div>
+        <div class='movie_info m20info' id='m20info'>
+
+        </div>
+        <div class='movie_info m21info' id='m21info'>
+
+        </div>
+        <div class='movie_info m22info' id='m22info'>
+
+        </div>
+        <div class='movie_info m23info' id='m23info'>
+
+        </div>
+        <div class='movie_info m24info' id='m24info'>
+
+        </div>
+   </div><!-- list_panel2 end -->
+   <div class='list_panel3' id='list_panel3'>
+     <div class='movie_mother' id='movie_mother3'>
+         <div class='movieWrap mw1'>
+              <div class='movie m25' id='m25'></div>
+              <div class='movie  m25-1'></div>
+              <div class='movie  m25-2'></div>
+              <div class='movie  m25-3'></div>
+              <div class='movie  m25-4'></div>
+              <div class='movie  m25-5'></div>
+              <div class='movie  m25-6'></div>
+              <div class='movie  m25-7'></div>
+              <div class='movie  m25-8'></div>
+              <div class='movie  m25-9'></div>
+              <div class='movie  m25-10'></div>
+              <div class='movie  m25-11'></div>
+              <div class='movie  m25-12'></div>
+              <div class='movie  m25-13'></div>
+              <div class='movie  m25-14'></div>
+              <div class='movie  m25-15'></div>
+              <div class='movie  m25-16'></div>
+              <div class='movie  m25-17'></div>
+              <div class='movie  m25-18'></div>
+              <div class='movie  m25-19'></div>
+              <div class='movie  m25-20'></div>
+
+              <div class='movie m26' id='m26'></div>
+              <div class='movie  m26-1'></div>
+              <div class='movie  m26-2'></div>
+              <div class='movie  m26-3'></div>
+              <div class='movie  m26-4'></div>
+              <div class='movie  m26-5'></div>
+              <div class='movie  m26-6'></div>
+              <div class='movie  m26-7'></div>
+              <div class='movie  m26-8'></div>
+              <div class='movie  m26-9'></div>
+              <div class='movie  m26-10'></div>
+              <div class='movie  m26-11'></div>
+              <div class='movie  m26-12'></div>
+              <div class='movie  m26-13'></div>
+              <div class='movie  m26-14'></div>
+              <div class='movie  m26-15'></div>
+              <div class='movie  m26-16'></div>
+              <div class='movie  m26-17'></div>
+              <div class='movie  m26-18'></div>
+              <div class='movie  m26-19'></div>
+              <div class='movie  m26-20'></div>
+
+
+              <div class='movie m27' id='m27'></div>
+              <div class='movie  m27-1'></div>
+              <div class='movie  m27-2'></div>
+              <div class='movie  m27-3'></div>
+              <div class='movie  m27-4'></div>
+              <div class='movie  m27-5'></div>
+              <div class='movie  m27-6'></div>
+              <div class='movie  m27-7'></div>
+              <div class='movie  m27-8'></div>
+              <div class='movie  m27-9'></div>
+              <div class='movie  m27-10'></div>
+              <div class='movie  m27-11'></div>
+              <div class='movie  m27-12'></div>
+              <div class='movie  m27-13'></div>
+              <div class='movie  m27-14'></div>
+              <div class='movie  m27-15'></div>
+              <div class='movie  m27-16'></div>
+              <div class='movie  m27-17'></div>
+              <div class='movie  m27-18'></div>
+              <div class='movie  m27-19'></div>
+              <div class='movie  m27-20'></div>
+
+
+              <div class='movie m28' id='m28'></div>
+              <div class='movie  m28-1'></div>
+              <div class='movie  m28-2'></div>
+              <div class='movie  m28-3'></div>
+              <div class='movie  m28-4'></div>
+              <div class='movie  m28-5'></div>
+              <div class='movie  m28-6'></div>
+              <div class='movie  m28-7'></div>
+              <div class='movie  m28-8'></div>
+              <div class='movie  m28-9'></div>
+              <div class='movie  m28-10'></div>
+              <div class='movie  m28-11'></div>
+              <div class='movie  m28-12'></div>
+              <div class='movie  m28-13'></div>
+              <div class='movie  m28-14'></div>
+              <div class='movie  m28-15'></div>
+              <div class='movie  m28-16'></div>
+              <div class='movie  m28-17'></div>
+              <div class='movie  m28-18'></div>
+              <div class='movie  m28-19'></div>
+              <div class='movie  m28-20'></div>
+
+              <div class='movie m29' id='m29'></div>
+              <div class='movie  m29-1'></div>
+              <div class='movie  m29-2'></div>
+              <div class='movie  m29-3'></div>
+              <div class='movie  m29-4'></div>
+              <div class='movie  m29-5'></div>
+              <div class='movie  m29-6'></div>
+              <div class='movie  m29-7'></div>
+              <div class='movie  m29-8'></div>
+              <div class='movie  m29-9'></div>
+              <div class='movie  m29-10'></div>
+              <div class='movie  m29-11'></div>
+              <div class='movie  m29-12'></div>
+              <div class='movie  m29-13'></div>
+              <div class='movie  m29-14'></div>
+              <div class='movie  m29-15'></div>
+              <div class='movie  m29-16'></div>
+              <div class='movie  m29-17'></div>
+              <div class='movie  m29-18'></div>
+              <div class='movie  m29-19'></div>
+              <div class='movie  m29-20'></div>
+
+              <div class='movie m30' id='m30'></div>
+              <div class='movie  m30-1'></div>
+              <div class='movie  m30-2'></div>
+              <div class='movie  m30-3'></div>
+              <div class='movie  m30-4'></div>
+              <div class='movie  m30-5'></div>
+              <div class='movie  m30-6'></div>
+              <div class='movie  m30-7'></div>
+              <div class='movie  m30-8'></div>
+              <div class='movie  m30-9'></div>
+              <div class='movie  m30-10'></div>
+              <div class='movie  m30-11'></div>
+              <div class='movie  m30-12'></div>
+              <div class='movie  m30-13'></div>
+              <div class='movie  m30-14'></div>
+              <div class='movie  m30-15'></div>
+              <div class='movie  m30-16'></div>
+              <div class='movie  m30-17'></div>
+              <div class='movie  m30-18'></div>
+              <div class='movie  m30-19'></div>
+              <div class='movie  m30-20'></div>
+         </div>
+
+         <div class='movieWrap mw2'>
+            <div class='movie m31' id='m31'></div>
+            <div class='movie  m31-1'></div>
+            <div class='movie  m31-2'></div>
+            <div class='movie  m31-3'></div>
+            <div class='movie  m31-4'></div>
+            <div class='movie  m31-5'></div>
+            <div class='movie  m31-6'></div>
+            <div class='movie  m31-7'></div>
+            <div class='movie  m31-8'></div>
+            <div class='movie  m31-9'></div>
+            <div class='movie  m31-10'></div>
+            <div class='movie  m31-11'></div>
+            <div class='movie  m31-12'></div>
+            <div class='movie  m31-13'></div>
+            <div class='movie  m31-14'></div>
+            <div class='movie  m31-15'></div>
+            <div class='movie  m31-16'></div>
+            <div class='movie  m31-17'></div>
+            <div class='movie  m31-18'></div>
+            <div class='movie  m31-19'></div>
+            <div class='movie  m31-20'></div>
+
+
+              <div class='movie m32' id='m32'></div>
+            <div class='movie  m32-1'></div>
+            <div class='movie  m32-2'></div>
+            <div class='movie  m32-3'></div>
+            <div class='movie  m32-4'></div>
+            <div class='movie  m32-5'></div>
+            <div class='movie  m32-6'></div>
+            <div class='movie  m32-7'></div>
+            <div class='movie  m32-8'></div>
+            <div class='movie  m32-9'></div>
+            <div class='movie  m32-10'></div>
+            <div class='movie  m32-11'></div>
+            <div class='movie  m32-12'></div>
+            <div class='movie  m32-13'></div>
+            <div class='movie  m32-14'></div>
+            <div class='movie  m32-15'></div>
+            <div class='movie  m32-16'></div>
+            <div class='movie  m32-17'></div>
+            <div class='movie  m32-18'></div>
+            <div class='movie  m32-19'></div>
+            <div class='movie  m32-20'></div>
+
+              <div class='movie m33' id='m33'></div>
+            <div class='movie  m33-1'></div>
+            <div class='movie  m33-2'></div>
+            <div class='movie  m33-3'></div>
+            <div class='movie  m33-4'></div>
+            <div class='movie  m33-5'></div>
+            <div class='movie  m33-6'></div>
+            <div class='movie  m33-7'></div>
+            <div class='movie  m33-8'></div>
+            <div class='movie  m33-9'></div>
+            <div class='movie  m33-10'></div>
+            <div class='movie  m33-11'></div>
+            <div class='movie  m33-12'></div>
+            <div class='movie  m33-13'></div>
+            <div class='movie  m33-14'></div>
+            <div class='movie  m33-15'></div>
+            <div class='movie  m33-16'></div>
+            <div class='movie  m33-17'></div>
+            <div class='movie  m33-18'></div>
+            <div class='movie  m33-19'></div>
+            <div class='movie  m33-20'></div>
+
+              <div class='movie m34' id='m34'></div>
+            <div class='movie  m34-1'></div>
+            <div class='movie  m34-2'></div>
+            <div class='movie  m34-3'></div>
+            <div class='movie  m34-4'></div>
+            <div class='movie  m34-5'></div>
+            <div class='movie  m34-6'></div>
+            <div class='movie  m34-7'></div>
+            <div class='movie  m34-8'></div>
+            <div class='movie  m34-9'></div>
+            <div class='movie  m34-10'></div>
+            <div class='movie  m34-11'></div>
+            <div class='movie  m34-12'></div>
+            <div class='movie  m34-13'></div>
+            <div class='movie  m34-14'></div>
+            <div class='movie  m34-15'></div>
+            <div class='movie  m34-16'></div>
+            <div class='movie  m34-17'></div>
+            <div class='movie  m34-18'></div>
+            <div class='movie  m34-19'></div>
+            <div class='movie  m34-20'></div>
+
+              <div class='movie m35' id='m35'></div>
+            <div class='movie  m35-1'></div>
+            <div class='movie  m35-2'></div>
+            <div class='movie  m35-3'></div>
+            <div class='movie  m35-4'></div>
+            <div class='movie  m35-5'></div>
+            <div class='movie  m35-6'></div>
+            <div class='movie  m35-7'></div>
+            <div class='movie  m35-8'></div>
+            <div class='movie  m35-9'></div>
+            <div class='movie  m35-10'></div>
+            <div class='movie  m35-11'></div>
+            <div class='movie  m35-12'></div>
+            <div class='movie  m35-13'></div>
+            <div class='movie  m35-14'></div>
+            <div class='movie  m35-15'></div>
+            <div class='movie  m35-16'></div>
+            <div class='movie  m35-17'></div>
+            <div class='movie  m35-18'></div>
+            <div class='movie  m35-19'></div>
+            <div class='movie  m35-20'></div>
+
+              <div class='movie m36' id='m36'></div>
+            <div class='movie  m36-1'></div>
+            <div class='movie  m36-2'></div>
+            <div class='movie  m36-3'></div>
+            <div class='movie  m36-4'></div>
+            <div class='movie  m36-5'></div>
+            <div class='movie  m36-6'></div>
+            <div class='movie  m36-7'></div>
+            <div class='movie  m36-8'></div>
+            <div class='movie  m36-9'></div>
+            <div class='movie  m36-10'></div>
+            <div class='movie  m36-11'></div>
+            <div class='movie  m36-12'></div>
+            <div class='movie  m36-13'></div>
+            <div class='movie  m36-14'></div>
+            <div class='movie  m36-15'></div>
+            <div class='movie  m36-16'></div>
+            <div class='movie  m36-17'></div>
+            <div class='movie  m36-18'></div>
+            <div class='movie  m36-19'></div>
+            <div class='movie  m36-20'></div>
+         </div>
+    </div>
+        <div class='left_btn' id='left_btn3'></div>
+        <div class='right_btn' id='right_btn3'></div>
+
+        <div class='movie_info m25info' id='m25info'>
+
+        </div>
+        <div class='movie_info m26info' id='m26info'>
+
+        </div>
+        <div class='movie_info m27info' id='m27info'>
+
+        </div>
+        <div class='movie_info m28info' id='m28info'>
+
+        </div>
+        <div class='movie_info m29info' id='m29info'>
+
+        </div>
+        <div class='movie_info m30info' id='m30info'>
+
+        </div>
+        <div class='movie_info m31info' id='m31info'>
+
+        </div>
+        <div class='movie_info m32info' id='m32info'>
+
+        </div>
+        <div class='movie_info m33info' id='m33info'>
+
+        </div>
+        <div class='movie_info m34info' id='m34info'>
+
+        </div>
+        <div class='movie_info m35info' id='m35info'>
+
+        </div>
+        <div class='movie_info m36info' id='m36info'>
+
+        </div>
+    </div><!-- list_panel3 end -->
+
+    <!--영화 디테일 정보를 보여주는 다이어로그 창(fixed형태로 따라다님)-->
+    <div class='movie_detail_fullWrap' id='movie_detail_fullWrap'>
+        <div class='movie_detail_extended'>
+             <div class='movie_detail_mother'>
+                  <div class='movie_detail'>
+                       <button class='close_btn' id='movie_detailClose'></button>
+                       <div class='movie_poster'></div><div class='movie_information'>
+                            <h2 class='title_area'>
+                                 <span class='age_grade'></span>
+                                 <span class='title'>람보 라스트워</span>
+                            </h2>
+                            <div class='core_info_area'>
+                                 <p class='core_info'>
+                                      타입 : 디지털<br/>
+                                      개봉일 : 2019.11.27<br/>
+                                      감독 : 김승우<br/>
+                                      출연진 : 이영애, 유재명, 박해준, 이원근<br/>
+                                      장르 : 스릴러 / 108 분<br/>
+                                      누적관객 : 170,481명<br/>
+                                      전일관객 : 58,847명<br/>
+                                 </p>
+                            </div>
+                            <hr class='sep_line'/>
+                            <div class='story_area'>
+                                 <h2>줄거리</h2>
+                                 <p class='story'>
+        6년 전 실종된 아들을 봤다는 연락을 받은 ‘정연’(이영애).<br/>
+        숱하게 반복되던 거짓 제보와 달리<br/>
+        생김새부터 흉터까지 똑같은 아이를 봤다는 낯선 이의 이야기에<br/>
+        ‘정연’은 지체 없이 홀로 낯선 곳으로 향한다.<br/>
+        <br/>
+        하지만 자신의 등장을 경계하는 듯한 경찰 ‘홍경장’(유재명)과<br/>
+        비슷한 아이를 본 적도 없다는 마을 사람들.<br/>
+        그들이 뭔가 숨기고 있음을 직감한 ‘정연’은<br/>
+        포기하지 않고 진실을 찾기 시작하는데…<br/>
+        <br/>
+        6년 전 사라진 아이<br/>
+        그리고 낯선 사람들<br/>
+        모두가 숨기고 있다.
+                                 </p>
+                            </div>
+                       </div><!--movie_info end-->
+                       <div class='trailer'>
+                            <video src='images/movie/seagull.mp4' controls></video>
+                       </div>
+                  </div><!--movie_detail end-->
+             </div><!--movie_detail mother-->
+        </div><!--movie_detail_extended-->
+   </div><!--movie_detail dialog fullWrap end-->
+
+   <!--standard model end-->
+</section><!--movie list container-->
+
+<section class="event_list">
+    <div class="inner">
+        <h1>새로운 이벤트</h1>
+        <div class="new_event1"></div>
+        <div class="new_event2">
+            <p class="desc1">[ 꿈을 크게, 프린세스 ]</p>
+            <p class="desc2">@코엑스,상암월드컵경기장,하남스타필드,고양스타필드</p>
+            <p class="desc3">디즈니 프린세스애니메이션 특별상영</p>
+        </div>
+        <h1 class="event2_title">제휴 이벤트</h1>
+        <div class="event_box">
+            <div class="event1"></div>
+            <div class="event2"></div>
+            <div class="event3"></div>
+            <div class="event4"></div>
+        </div>
+        <div class="event5"></div>
+    </div>
+</section>
+
+<section class="grandopen_content">
+    <div class="inner">
+        <div class="title">
+            <h1>GRAND OPENING</h1>
+            <h3>2019.10</h3>
+        </div>
+        <dl class="open1">
+            <dt>신규오픈</dt>
+            <dd class="desc1">경기도 부천</dd>
+            <dd class="desc2">부천스타필드시티</dd>
+            <dd class="desc3">2019년 9월 23일</dd>
+        </dl>
+        <dl class='open2'>
+			<dt>신규오픈</dt>
+			<dd class='desc1'>서울특별시</dd>
+			<dd class='desc2'>홍대</dd>
+			<dd class='desc3'>2019년 10월 2일</dd>
+		</dl>
+		<dl class='open3'>
+			<dt>신규오픈</dt>
+			<dd class='desc1'>경상북도</dd>
+			<dd class='desc2'>경북도청</dd>
+			<dd class='desc3'>2019년 10월 4일</dd>
+		</dl>
+    </div>
+</section>
+
+<section class="customer_content">
+    <div class="inner">
+        <div class="notice_area">
+            <h1>공지사항</h1>
+            <div class="plus_icon"></div>
+            <div class="notice_list">
+                <div class="notice_btn">전체공지</div><div class="notice_btn">영화관 공지</div>
+
+                <dl class="first_notice">
+                    <dt>전체 | 2019.08.26</dt>
+                    <dd>[킨텍스] 오페라 8/31(토) 상영 일정 조회</dd>
+                </dl>
+                <dl>
+					<dt>전체 | 2019.08.22</dt>
+					<dd>[무대인사 및 미니GV] (우리집) 1주차 무대인사 정보</dd>
+                </dl>
+                <dl class='center_notice'>
+					<dt>전체 | 2019.08.21</dt>
+					<dd>[무대인사] (유열의 음악앨범) 2주차 (9/13) 방문예정 정보</dd>
+                </dl>
+                <dl>
+					<dt>전체 | 2019.08.19</dt>
+					<dd>[무대인사] (유열의 음악앨범) 개봉전 무대인사 계획 예정</dd>
+                </dl>
+                <dl class='last_notice'>
+					<dt>전체 | 2019.08.14</dt>
+					<dd>[무대인사] (변신) 1주차 (8/24~8/25)</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="card_area">
+            <h1>메가박스 할인카드</h1>
+            <div class="plus_icon"><a href="card_page.html"></a></div>
+            <div class="card_info">
+                <img src="images/main/megabox_cardImg1.png" alt="카드이미지1"/>
+                <div class="info_text">
+                    <h2>T멤버십 일반</h2>
+                    <p>영화 2,000원 할인
+                    <br/>(1일 5매)</p>
+                </div>
+            </div>
+            <div class='card_info'>
+				<img src='images/main/megabox_cardImg3.png' alt='카드이미지2' />
+				<div class='info_text'>
+					<h2>LG U+</h2>
+					<p>영화 1,000원 현장 할인
+					<br/>(1일 1회 / 월 4회)</p>
+				</div>
+			</div>
+			<div class='card_info'>
+				<img src='images/main/megabox_cardImg2.png' alt='카드이미지3' />
+				<div class='info_text'>
+					<h2>T멤버십 일반</h2>
+					<p>현장할인,인터넷할인<br/>
+					(연 24회)</p>
+				</div>
+			</div>
+        </div>
+        <div class="customer_area">
+            <h1>고객센터</h1>
+            <dl class="customer_menu">
+                <dd class="menu1"><span>1:1문의</span></dd>
+                <dd class="menu2"><span>자주묻는질문</span></dd>
+                <dd class="menu3"><span>단체관람/대관문의</span></dd>
+                <dd class="menu4"><span>분실물문의/접수</span></dd>
+            </dl>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer area start-->
+<footer>
+    <div class='top_footer'>
+        <div class='inner'>
+            <div class='zido_box' id='zido_box'>
+            <!--전국 팔도 이미지가 여기에 표시됨 background-image로써-->
+            </div>
+            <div class='area_text'>
+                <ul class='wide_area'>
+                    <li>선호영화관</li><li class='wa_btn' id='wa1'>광주/전라</li><li class='wa_btn' id='wa2'>서울</li><li class='wa_btn' id='wa3'>강원</li><li class='wa_btn' id='wa4'>경기</li><li class='wa_btn' id='wa5'>제주</li><li class='wa_btn' id='wa6'>인천</li><li class='wa_btn' id='wa7'>부산/대구/경상</li><li class='wa_btn' id='wa8'>대전/충청/세종</li>
+                </ul>
+                <div class='narrow_area'>
+                    <ul class='wabox' id='wa1box'>
+                        <li id='wa1na1'>광주상무</li><li id='wa1na2'>광주하남</li><li id='wa1na3'>남원</li><li id='wa1na4'>목포</li><li id='wa1na5'>목포하당</li><li id='wa1na6'>송천</li><li id='wa1na7'>순천</li><li id='wa1na8'>여수</li><li id='wa1na9'>여수응천</li><li id='wa1na10'>전대(광주)</li><li id='wa1na11'>전주(객사)</li><li id='wa1na12'>첨단(광주)</li>
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa2box'>
+                        <li id='wa2na1'>강남</li><li id='wa2na2'>강남대로</li><li id='wa2na3'>강동</li><li id='wa2na4'>군자</li><li id='wa2na5'>동대문</li><li id='wa2na6'>마곡</li><li id='wa2na7'>목동</li><li id='wa2na8'>상봉</li><li id='wa2na9'>상암월드컵..</li><li id='wa2na10'>센트럴</li><li id='wa2na11'>송파파크</li><li id='wa2na12'>신촌</li><li id='wa2na13'>은평</li><li id='wa2na14'>이수</li><li id='wa2na15'>창동</li><li id='wa2na16'>코엑스</li><li id='wa2na17'>홍대</li><li id='wa2na18'>화곡</li><li id='wa2na19'>ARTNINE</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa3box'>
+                        <li id='wa3na1'>남춘천</li><li id='wa3na2'>속초</li><li id='wa3na3'>원주</li><li id='wa3na4'>원주센트럴</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa4box'>
+                        <li id='wa4na1'>고양스타필드</li><li id='wa4na2'>김포한강신</li><li id='wa4na3'>남양주</li><li id='wa4na4'>동탄</li><li id='wa4na5'>미사강변</li><li id='wa4na6'>백석</li><li id='wa4na7'>별내</li><li id='wa4na8'>부천스타필드</li><li id='wa4na9'>분당</li><li id='wa4na10'>수원</li><li id='wa4na11'>수원남문</li><li id='wa4na12'>시흥배곧</li><li id='wa4na13'>안산중앙</li><li id='wa4na14'>양주</li><li id='wa4na15'>영통</li><li id='wa4na16'>오산</li><li id='wa4na17'>용인테크노</li><li id='wa4na18'>의정부민락</li><li id='wa4na19'>일산</li><li id='wa4na20'>일산벨라시타</li><li id='wa4na21'>킨텍스</li><li id='wa4na22'>파주금촌</li><li id='wa4na23'>파주운정</li><li id='wa4na24'>파주출판도시</li><li id='wa4na25'>평택</li><li id='wa4na26'>하남스타필드</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa5box'>
+                        <li id='wa5na1'>제주</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa6box'>
+                        <li id='wa6na1'>검단</li><li id='wa6na2'>송도</li><li id='wa6na3'>영종</li><li id='wa6na4'>인천논현</li><li id='wa6na5'>청라</li><li id='wa6na6'>청라지젤</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa7box'>
+                        <li id='wa7na1'>거창</li><li id='wa7na2'>경북도청</li><li id='wa7na3'>경산하양</li><li id='wa7na4'>경주</li><li id='wa7na5'>구미강동</li><li id='wa7na6'>김천</li><li id='wa7na7'>남포항</li><li id='wa7na8'>대구(칠성로)</li><li id='wa7na9'>대구신세계</li><li id='wa7na10'>대구이시아</li><li id='wa7na11'>덕천</li><li id='wa7na12'>마산</li><li id='wa7na13'>문경</li><li id='wa7na14'>부산극장</li><li id='wa7na15'>부산대</li><li id='wa7na16'>북대구(칠곡)</li><li id='wa7na17'>사천</li><li id='wa7na18'>삼천포</li><li id='wa7na19'>양산</li><li id='wa7na20'>양산라피에스타</li><li id='wa7na21'>울산</li><li id='wa7na22'>정관</li><li id='wa7na23'>창원</li><li id='wa7na24'>해운대(장산)</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                    <ul class='wabox' id='wa8box'>
+                        <li id='wa8na1'>공주</li><li id='wa8na2'>대전</li><li id='wa8na3'>대전중앙로</li><li id='wa8na4'>세종</li><li id='wa8na5'>오창</li><li id='wa8na6'>제천</li><li id='wa8na7'>진천</li><li id='wa8na8'>천안</li><li id='wa8na9'>청주충북대</li><li id='wa8na10'>충주</li><li id='wa8na11'>홍성내포</li>
+
+                        <div class='detail_arrow'></div>
+                    </ul>
+                </div><!--narrow_area end -->
+
+            </div><!-- area_text end -->
+
+        </div><!--top_footer inner-->
+    </div>
+
+    <div class='bottom_footer'>
+        <div class='inner'>
+                <h1 class='footer_logo'>
+                </h1>
+            <div class='footer_info'>
+                <ul>
+                    <li>회사소개</li><li>채용정보</li><li>제휴/광고/부대사업문의</li><li>이용약관</li><li class='private_info'>개인정보처리방침</li><li>고객센터</li><li>윤리경영</li>
+                </ul>
+                <p class='info'>
+                    서울특별시 강남구 도산대로 156, 2층 메가박스중앙(주) (논현동, 중앙엠앤비사옥) <br/>
+                    대표자명 김진선 | 개인정보보호 책임자 경영지원실 실장 박영진 <br/>
+                    사업자등록번호 211-86-59478 | 통신판매업신고번호 제 833호
+                </p>
+            </div>
+                <h1 class='tm_footer_logo'></h1>
+            <div class='footer_info2'>
+                <ul class='sns_info'>
+                    <li class='twitter'></li><li class='facebook'></li><li class='instagram'></li><li class='playstore'></li><li class='apple'></li>
+                </ul>
+                     <p class='tel_info'>ARS 1544-0070</p>
+                <p class='copyright'>Copyright 2014 by MegaboxJonngAng,lnc.<br/> All rights reserved</p>
+            </div>
+        </div><!--bottom-footer inner-->
+    </div>
+</footer>
+<!-- footer area end -->
+
+<script src='http://code.jquery.com/jquery-1.10.2.js'></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src='js/header_control(copy).js'></script><!--헤더 컨트롤 제어 스크립트 -->
+<script src='js/footer_control.js'></script><!--푸터 컨트롤 제어 스크립트-->
+<script src='js/main_movieInfo.js'></script>
+<script>
+
+    /*메인배너 콘텐츠 제어 스크립트*/
+    var mb_bts=document.getElementsByClassName('mb_bt');
+    for(var j=0; j<mb_bts.length; j++){
+        mb_bts[j].addEventListener('click',change_mainBanner,false);
+    }
+    var mb_circle_bts=document.getElementsByClassName('mb_bt(circle)');
+    for(var j=0;j<mb_circle_bts.length; j++){
+        mb_circle_bts[j].addEventListener('click',change_mainBanner,false);
+    }
+
+    var task_array4=[];
+    var isWait4=false;
+
+    waiting_func4();
+    function waiting_func4(){
+        if(task_array4.length>0){
+            isWait4=true;
+        }else if(task_array4.length===0){
+            isWait4=false;
+        }
+        window.setTimeout(waiting_func4,2);
+    }
+
+    var now_mainBanner=1;
+    var prev_mainBanner=1;
+    var mb_rotateani=null;
+    var mb_rotateani2=null;
+    var now_bannerRotateY=-100;
+    var prev_bannerRotateY=0;
+    var mb_rotateanicount=0;
+    var mb_rotateanicount2=0;
+
+    function change_mainBanner(event){
+        if(isWait4){
+            return;
+        }
+        else{
+            var target_id;
+            var mb_btHeight;
+            var mb_btWidth;
+
+            if(event.target.className==='mb_bt'){
+                target_id=event.target.id;
+
+                target_id=target_id.replace('mb_bt','');
+                target_id=parseInt(target_id);
+
+                mb_btHeight=parseInt(window.getComputedStyle(document.getElementById('mb_bt'+target_id),null)['height']);
+
+                mbc_statusbar.style.top = (target_id - 1)*mb_btHeight +'px';
+            }else if(event.target.className==='mb_bt(circle)'){
+                target_id=event.target.id;
+
+                target_id=target_id.replace('mb_bt(circle)','');
+                target_id=parseInt(target_id);
+
+                mb_btWidth=parseFloat(window.getComputedStyle(document.getElementById('mb_bt(circle)'+target_id),null)['width'])+ 2 * parseFloat(window.getComputedStyle(document.getElementById('mb_bt(circle)'+target_id),null)['margin-left']);
+
+                mbc_g_statusbar.style.left=(target_id - 1)*mb_btWidth +'px';
+            }
+            now_mainBanner=target_id;
+
+            if(now_mainBanner===prev_mainBanner){
+                prev_mainBanner=now_mainBanner;
+                return;
+            }
+            else if(now_mainBanner !== prev_mainBanner){
+                document.getElementById('mb_bt'+now_mainBanner).style.color='#fff';
+                document.getElementById('mb_bt(circle)'+now_mainBanner).style.color='#fff';
+
+                document.getElementById('mb_bt'+prev_mainBanner).style.color='#dcdcdc';
+                document.getElementById('mb_bt(circle)'+prev_mainBanner).style.color='#dcdcdc';
+
+
+                document.getElementById('main_banner'+now_mainBanner).style.zIndex=3;
+                mb_rotateani = window.setInterval(mb_rotate,8,document.getElementById('main_banner'+now_mainBanner),1);
+                task_array4.push(mb_rotateani);
+
+                document.getElementById('main_banner'+prev_mainBanner).style.zIndex=1;
+                mb_rotateani2=window.setInterval(mb_rotate,8,document.getElementById('main_banner'+prev_mainBanner),-1);
+                task_array4.push(mb_rotateani2);
+                prev_mainBanner=now_mainBanner;
+            }
+        }
+    }
+    function mb_rotate(target_mb,y_factor){
+        if(y_factor===1){
+            now_bannerRotateY += y_factor;
+
+            target_mb.style.transform='rotateY('+now_bannerRotateY+'deg)';
+            mb_rotateanicount++;
+        }else if(y_factor===-1){
+            prev_bannerRotateY += y_factor;
+
+            target_mb.style.transform='rotateY('+prev_bannerRotateY+'deg)';
+            mb_rotateanicount2++;
+        }
+
+        if(mb_rotateanicount===100){
+            window.clearInterval(mb_rotateani);
+            task_array4.pop();
+            mb_rotateanicount=0;
+            now_bannerRotateY =-100
+        }else if(mb_rotateanicount2===100){
+            window.clearInterval(mb_rotateani2);
+            task_array4.pop();
+            mb_rotateanicount2=0;
+            prev_bannerRotateY=0;
+        }
+    }
+    
+    var agent=navigator.userAgent.toLowerCase();
+    
+    var what_device=null;
+    var lp_mobileImgs=['violet_bg4(mobile).jpg','violet_bg8(mobile).jpg','violet_bg10(mobile).jpg','violet_bg12(mobile).jpg','violet_bg13(mobile).png'];
+
+    var lp_tabletImgs=['violet_bg4(tablet).jpg','violet_bg8(tablet).jpg','violet_bg10(tablet).jpg','violet_bg12(tablet).jpg','violet_bg13(tablet).png'];
+
+    var lp_pcImgs=['violet_bg4(pc).jpg','violet_bg8(pc).jpg','violet_bg10(pc).jpg','violet_bg12(pc).jpg','violet_bg13(pc).png'];
+
+    var now_bgImgIndex=null;//문서로드시에 결정되는 랜덤인댁스 번호상태를 저장한다. 화면 리사이즈시 이미지 자체를 변경할 일은 없기에 전용이미지가 바뀌는것(인댁스랜덤번호)는 변경될일이 없기에 전용배열만 화면변환시 바꿔주면됨.
+
+    standard_MENUS.style.display='block';
+    list_panel1.style.display='block';
+    list_panel2.style.display='none';
+    list_panel3.style.display='none';
+    movie_detail_fullWrap.style.display='none';
+
+    initial_size();
+    initial_randomImg();
+
+    function initial_size(){
+        var now_menuHeight=parseInt(window.getComputedStyle(standard_MENUS,null)['height']);
+        var now_panel1Height=parseInt(window.getComputedStyle(list_panel1,null)['height']);
+        var now_panel2Height=parseInt(window.getComputedStyle(list_panel2,null)['height']);
+        var now_panel3Height=parseInt(window.getComputedStyle(list_panel3,null)['height']);
+
+        movie_list.style.height=(now_menuHeight + now_panel1Height)+'px';
+    }
+    function initial_randomImg(){
+        var now_screenWidth=window.innerWidth;
+
+        if(now_screenWidth <= 599){
+            what_device='mobile';
+        }
+        else if(now_screenWidth >= 600 && now_screenWidth<=1099){
+            what_device='tablet'
+        }
+        else if(now_screenWidth >=1100 && now_screenWidth<=1920){
+            what_device='pc&laptop'
+        }
+        else if(now_screenWidth>=1921){
+            what_device='widescreen'
+        }
+
+        var rIndex=Math.floor(5*Math.random());
+        now_bgImgIndex=rIndex;
+        switch(what_device){
+            case 'mobile':
+                standard_MENUS.style.backgroundImage="url('images/main/"+lp_mobileImgs[rIndex]+"')";
+                list_panel1.style.backgroundImage="url('images/main/"+lp_mobileImgs[rIndex]+"')";
+                list_panel2.style.backgroundImage="url('images/main/"+lp_mobileImgs[rIndex]+"')";
+                list_panel3.style.backgroundImage="url('images/main/"+lp_mobileImgs[rIndex]+"')";
+                movie_list.style.backgroundImage="url('images/main/"+lp_mobileImgs[rIndex]+"')";
+            break;
+
+            case 'tablet':
+                standard_MENUS.style.backgroundImage="url('images/main/"+lp_tabletImgs[rIndex]+"')";
+
+     			list_panel1.style.backgroundImage="url('images/main/"+lp_tabletImgs[rIndex]+"')";
+     			list_panel2.style.backgroundImage="url('images/main/"+lp_tabletImgs[rIndex]+"')";
+     			list_panel3.style.backgroundImage="url('images/main/"+lp_tabletImgs[rIndex]+"')";
+     			movie_list.style.backgroundImage="url('images/main/"+lp_tabletImgs[rIndex]+"')";
+     		break;
+
+     		case 'pc&laptop':
+                    standard_MENUS.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+
+     			list_panel1.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+     			list_panel2.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+     			list_panel3.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+     			movie_list.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+     		break;
+
+     		case 'widescreen':
+                    standard_MENUS.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+
+     			list_panel1.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+     			list_panel2.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+     			list_panel3.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+     			movie_list.style.backgroundImage="url('images/main/"+lp_pcImgs[rIndex]+"')";
+     		break;
+
+     		default:
+
+     		break;
+        }
+    }
+
+    window.addEventListener('resize',screen_resizeHandler,false);
+    function screen_resizeHandler(event){
+        var now_menuHeight=parseInt(window.getComputedStyle(standard_MENUS,null)['height']);
+        var now_panel1Height=parseInt(window.getComputedStyle(list_panel1,null)['height']);
+        var now_panel2Height=parseInt(window.getComputedStyle(list_panel2,null)['height']);
+        var now_panel3Height=parseInt(window.getComputedStyle(list_panel3,null)['height']);
+
+        console.log('현재 메뉴높이:',now_menuHeight);
+        console.log('리스트패널 높이:',now_panel1Height,now_panel2Height,now_panel3Height);
+        console.log('갱신된 무비리스트 최종높이:',now_menuHeight+now_panel1Height);
+        movie_list.style.height=(now_menuHeight + now_panel1Height)+'px';//매번 무비리스트 최종영역 높이를 겾렁짓는다 갱신한다 매 기기별 갱신딘ㄴ 메뉸ㅍ이 리스틒내ㅓㄹ높이의 합산으로 처리한다
+
+        var now_screenWidth=window.innerWidth;
+
+        if(now_screenWidth<=599){
+            what_device='mobile';
+        }else if(now_screenWidth>=600 && now_screenWidth<=1099){
+            what_device='tablet'
+        }else if(now_screenWidth>=1100 && now_screenWidth<=1920){
+            what_device='pc&laptop'
+        }else if(now_screenWidth>=1921){
+            what_device='widescreen'
+        }
+
+        switch(what_device){
+            //해당 랜덤(문서로드후 결정되는 고유값)인댁스값은 모바일,태블릿,pc배열이 모두 동일한 순서쌍의 이미지 구조로 되어있기에 해당 index에 모두 동일한 이미지이다. 기기별에 맞는 해당 index의 이미지로 갱신한다.
+            case 'mobile':
+                        standard_MENUS.style.backgroundImage="url('images/main/"+lp_mobileImgs[now_bgImgIndex]+"')";
+
+                list_panel1.style.backgroundImage="url('images/main/"+lp_mobileImgs[now_bgImgIndex]+"')";
+                list_panel2.style.backgroundImage="url('images/main/"+lp_mobileImgs[now_bgImgIndex]+"')";
+                list_panel3.style.backgroundImage="url('images/main/"+lp_mobileImgs[now_bgImgIndex]+"')";
+                movie_list.style.backgroundImage="url('images/main/"+lp_mobileImgs[now_bgImgIndex]+"')";
+            break;
+
+            case 'tablet':
+                        standard_MENUS.style.backgroundImage="url('images/main/"+lp_tabletImgs[now_bgImgIndex]+"')";
+
+                list_panel1.style.backgroundImage="url('images/main/"+lp_tabletImgs[now_bgImgIndex]+"')";
+                list_panel2.style.backgroundImage="url('images/main/"+lp_tabletImgs[now_bgImgIndex]+"')";
+                list_panel3.style.backgroundImage="url('images/main/"+lp_tabletImgs[now_bgImgIndex]+"')";
+                movie_list.style.backgroundImage="url('images/main/"+lp_tabletImgs[now_bgImgIndex]+"')";
+            break;
+
+            case 'pc&laptop':
+                        standard_MENUS.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+
+                list_panel1.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+                list_panel2.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+                list_panel3.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+                movie_list.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+            break;
+
+            case 'widescreen':
+                standard_MENUS.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+
+                list_panel1.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+                list_panel2.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+                list_panel3.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+                movie_list.style.backgroundImage="url('images/main/"+lp_pcImgs[now_bgImgIndex]+"')";
+            break;
+
+            default:
+
+            break;
+        }
+    }
+
+    right_btn.addEventListener('click',rotate_handle,false);
+    left_btn.addEventListener('click',rotate_handle,false);
+
+    right_btn2.addEventListener('click',rotate_handle,false);
+    left_btn2.addEventListener('click',rotate_handle,false);
+
+    right_btn3.addEventListener('click',rotate_handle,false);
+    left_btn3.addEventListener('click',rotate_handle,false);
+
+    var task_id;
+    var task_array=[];
+    var task_array2=[];
+    var task_array3=[];
+
+    var degs=0,degs2=0,degs3=0;
+
+    var seg='';
+    var isWait=false;
+    var isWait2=false;
+
+    var now_panel=1;
+    var prev_panel=1;
+
+    var menus=document.getElementsByClassName('menu');
+    for(var j=0; j<menus.length; j++){
+        menus[j].addEventListener('click',change_panel,false);
+    }
+
+    waiting_func();
+    waiting_func2();
+
+    function waiting_func(){
+        if(task_array.length>0){
+            isWait=true;
+        }else{
+            isWait=false;
+        }
+        window.setTimeout(waiting_func,2)
+    }
+    function waiting_func2(){
+        if(task_array2.length>0){
+            isWait2=true;
+        }else if(task_array2.length===0){
+            isWait2=false;
+        }
+        window.setTimeout(waiting_func2,2);
+    }
+
+    var list_panels=[list_panel1,list_panel2,list_panel3];
+
+    function change_panel(event){
+        var target_id=event.target.id;
+
+        target_id=target_id.replace('menu','');
+        target_id=parseInt(target_id);
+
+        now_panel=target_id;
+
+        if(now_panel===prev_panel){
+            prev_panel=now_panel;
+            return;
+        }else if(now_panel!==prev_panel){
+            for(var j=0; j<list_panels.length; j++){
+                if(list_panels[j].id===('list_panel'+now_panel)){
+                    list_panels[j].style.zIndex=2;
+                    list_panels[j].style.display='block';
+                    list_panels[j].style.transform='translateX(0%)';
+                }else{
+                    list_panels[j].style.zIndex=1;
+                    list_panels[j].style.display='none';
+                    list_panels[j].style.transform='translateX(-100%)';
+                }
+            }
+
+            prev_panel=now_panel;
+        }
+    }
+
+    function rotate_handle(event){
+        if(isWait){
+            return;
+        }
+        task_id=setInterval(calc_degs,10);
+        task_array.push(task_id);
+        movie_list.style.backgroudColor='#000';
+
+        if(event.target.id==='right_btn' || event.target.id==='right_btn2' || event.target.id==='right_btn3'){
+            seg='right';
+            right_sort();
+        }else if(event.target.id==='left_btn' || event.target.id==='left_btn2' || event.target.id==='left_btn3'){
+            seg='left';
+            left_sort();
+        }
+    }
+
+    function calc_degs(){
+        var rotate_target;
+        var rotate_degs;
+
+        switch(now_panel){
+            case 1:
+                rotate_target=movie_mother;
+            break;
+
+            case 2:
+                rotate_target=movie_mother2;
+            break;
+
+            case 3:
+                rotate_target=movie_mother3;
+            break;
+
+            default:
+                break;
+        }
+        if(seg==='right'){
+            if(now_panel===1){
+                rotate_degs=degs;
+                rotate_degs += 1;
+                rotate_target.style.transform='rotateX(-10deg)rotateY('+rotate_degs+'deg)';
+            }else if(now_panel===2){
+
+                rotate_degs=degs2;
+                rotate_degs +=1;
+                rotate_target.style.transform='rotateX(-10deg)rotateY('+rotate_degs+'deg)';
+            }else if(now_panel===3){
+                rotate_degs=degs3;
+                rotate_degs +=1;
+                rotate_target.style.transform='rotateX(-10deg)rotateY('+rotate_degs+'deg)';
+            }
+        }else if(seg==='left'){
+            if(now_panel===1){
+                rotate_degs=degs;
+                rotate_degs -= 1;
+                rotate_target.style.transform='rotateX(-10deg)rotateY('+rotate_degs+'deg)';
+            }
+            else if(now_panel===2){
+                rotate_degs=degs2;
+                rotate_degs -= 1;
+                rotate_target.style.transform='rotateX(-10deg)rotateY('+rotate_degs+'deg)';
+            }
+            else if(now_panel===3){
+                rotate_degs=degs3;
+                rotate_degs-= 1;
+                rotate_target.style.transform='rotateX(-10deg)rotateY('+rotate_degs+'deg)';
+            }
+        }
+
+        if(rotate_degs===0 || rotate_degs===60 || rotate_degs===120 || rotate_degs===180 || rotate_degs===240 || rotate_degs===300){
+            console.log('목표각도 도달 pause 0 60 120 180 240 300');
+            clearInterval(task_id);
+            task_array.pop();
+            show_movie();
+
+            if(now_panel===1){
+                degs=rotate_degs;
+            }else if(now_panel===2){
+                degs2=rotate_degs;
+            }else if(now_panel===3){
+                degs3=rotate_degs;
+            }
+        }if(rotate_degs===360){
+            console.log('목표각도 도달 pause 360');
+
+            clearInterval(task_id);
+            task_array.pop();
+            show_movie();
+
+            rotate_degs=0;
+            if(now_panel===1){
+                degs=rotate_degs;
+            }else if(now_panel===2){
+                degs2=rotate_degs;
+            }else if(now_panel===3){
+                degs3=rotate_degs;
+            }
+        }if(rotate_degs===-60 || rotate_degs===-120 || rotate_degs===-180 || rotate_degs===-240 || rotate_degs===-300){
+            console.log('목표각도 도달 pause -60 -120 -180 -240 -300');
+
+            clearInterval(task_id);
+            task_array.pop();
+            show_movie();
+
+            if(now_panel===1){
+                degs=rotate_degs;
+            }else if(now_panel===2){
+                degs2=rotate_degs;
+            }else if(now_panel===3){
+                degs3=rotate_degs;
+            }
+        }if(rotate_degs===-360){
+            console.log('목표각도 도달 pause -360');
+
+            clearInterval(task_id);
+            task_array.pop();
+            show_movie();
+
+            rotate_degs=0;
+            if(now_panel===1){
+                degs=rotate_degs;
+            }else if(now_panel===2){
+                degs2=rotate_degs;
+            }else if(now_panel===3){
+                degs3=rotate_degs;
+            }
+        }
+        if(now_panel===1){
+            degs=rotate_degs;
+        }else if(now_panel===2){
+            degs2=rotate_degs;
+        }else if(now_panel===3){
+            degs3=rotate_degs;
+        }
+
+        return;
+    }
+
+    var original_set=[m1,m2,m3,m4,m5,m6];
+    var original_set2=[m7,m8,m9,m10,m11,m12];
+
+    var original_set3=[m13,m14,m15,m16,m17,m18];
+    var original_set4=[m19,m20,m21,m22,m23,m24];
+
+    var original_set5=[m25,m26,m27,m28,m29,m30];
+    var original_set6=[m31,m32,m33,m34,m35,m36];
+
+    var panel1_prevtarget=null;
+    var panel1_prevtarget2=null;
+    var panel1_nowtarget=null;
+    var panel1_nowtarget2=null;
+
+    var panel2_prevtarget=null;
+    var panel2_prevtarget2=null;
+    var panel2_nowtarget=null;
+    var panel2_nowtarget2=null;
+
+    var panel3_prevtarget=null;
+    var panel3_prevtarget2=null;
+    var panel3_nowtarget=null;
+    var panel3_nowtarget2=null;
+
+    function right_sort(){
+        var tmp_set=new Array(6);
+        var tmp_set2=new Array(6);
+
+        var top_set=new Array(6);
+        var bottom_set=new Array(6);
+
+        var prev_target,prev_target2;
+        var now_target,now_target2;
+
+        switch(now_panel){
+            case 1:
+                for(var j=0; j<original_set.length; j++){
+                    top_set[j]=original_set[j];
+                }
+                for(var i=0; i<original_set2.length; i++){
+                    bottom_set[i]=original_set2[i];
+                }
+            break;
+
+            case 2:
+                for(var j=0; j<original_set3.length; j++){
+                    top_set[j]=original_set3[j];
+                }
+                for(var i=0; i<original_set4.length; i++){
+                    bottom_set[i]=original_set4[i];
+                }
+            break;
+
+            case 3:
+                for(var j=0; j<original_set5.length; j++){
+                    top_set[j]=original_set5[j];
+                }
+                for(var i=0;i<original_set6.length; i++){
+                    bottom_set[i]=original_set6[i];
+                }
+            break;
+
+            default:
+            break;
+        }
+
+        for(var j=0; j<top_set.length; j++){
+            tmp_set[j]=top_set[j];
+        }
+        for(var j=0; j<bottom_set.length; j++){
+            tmp_set2[j]=bottom_set[j];
+        }
+        prev_target=tmp_set[0];
+        prev_target2=tmp_set2[0];
+        console.log('기존정렬전 타깃요소:',prev_target,prev_target2);
+
+        var next_index,next_index2;
+
+        for(var i=0; i<top_set.length; i++){
+            next_index=i+1 < 6? i+1:(i+1)-6;
+
+            console.log('topSet['+next_index+']=tmp_set['+i+']:'+tmp_set[i]);
+            top_set[next_index]=tmp_set[i];
+        }
+        for(var i=0; i<bottom_set.length; i++){
+            next_index2= i+1 < 6 ? i+1:(i+1)-6;
+
+            console.log('bottom_set['+next_index2+']=tmp_set2['+i+']:'+tmp_set2[i]);
+            bottom_set[next_index2]=tmp_set2[i];
+        }
+        console.log('정렬된 일층요소:',top_set);
+        console.log('정렬된 이층욧소:',bottom_set);
+        console.log('==============End======================');
+
+        now_target=top_set[0];
+        now_target2=bottom_set[0];
+
+        if(now_panel===1){
+            for(var c=0; c<top_set.length; c++){
+                original_set[c]=top_set[c];
+            }
+            for(var c=0; c<bottom_set.length; c++){
+                original_set2[c]=bottom_set[c];
+            }
+
+            panel1_prevtarget=prev_target;
+            panel1_prevtarget2=prev_target2;
+            panel1_nowtarget=now_target;
+            panel1_nowtarget2=now_target2;
+        }else if(now_panel===2){
+            for(var c=0; c<top_set.length; c++){
+                original_set3[c]=top_set[c];
+            }
+            for(var c=0; c<bottom_set.length; c++){
+                original_set4[c]=bottom_set[c];
+            }
+            panel2_prevtarget=prev_target;
+            panel2_prevtarget2=prev_target2;
+            panel2_nowtarget=now_target;
+            panel2_nowtarget2=now_target2;
+        }else if(now_panel===3){
+            for(var c=0; c<top_set.length; c++){
+                original_set5[c]=top_set[c];
+            }
+            for(var c=0; c<bottom_set.length; c++){
+                original_set6[c]=bottom_set[c];
+            }
+            panel3_prevtarget=prev_target;
+            panel3_prevtarget2=prev_target2;
+            panel3_nowtarget=now_target;
+            panel3_nowtarget2=now_target2;
+        }      
+    }
+
+    function left_sort(){
+        var tmp_set=new Array(6);
+        var tmp_set2=new Array(6);
+
+        var top_set=new Array(6);
+        var bottom_set=new Array(6);
+
+        var prev_target,prev_target2;
+        var now_target,now_target2;
+
+        switch(now_panel){
+            case 1:
+                for(var j=0; j<original_set.length; j++){
+                    top_set[j]=original_set[j];
+                }
+                for(var i=0; i<original_set2.length; i++){
+                    bottom_set[i]=original_set2[i];
+                }
+            break;
+
+            case 2:
+                for(var j=0; j<original_set3.length; j++){
+                    top_set[j]= original_set3[j];
+                }
+                for(var i=0; i<original_set4.length; i++){
+                    bottom_set[i]=original_set4[i];
+                }
+            break;
+
+            case 3:
+                for(var j=0; j<original_set5.length; j++){
+                    top_set[j]=original_set5[j];
+                }
+                for(var i=0; i<original_set6.length; i++){
+                    bottom_set[i]=original_set6[i];
+                }
+            break;
+
+            default:
+            break;
+        }
+        for(var j=0; j<top_set.length; j++){
+            tmp_set[j]=top_set[j];
+        }
+        for(var j=0; j<bottom_set.length; j++){
+            tmp_set2[j]=bottom_set[j];
+        }
+        prev_target=tmp_set[0];
+        prev_target2=tmp_set2[0];
+
+        var prev_index,prev_index2;
+
+        for(var i=0; i<top_set.length; i++){
+            prev_index =i-1 > -1? i-1 : (i-1)+6;
+
+            console.log('top_set['+prev_index+']=tmp_set['+i+']:'+tmp_set[i]);
+            top_set[prev_index]=tmp_set[i];
+        }
+        for(var i=0; i<bottom_set.length;i++){
+            prev_index2=i-1 > -1 ? i-1 : (i-1)+6;
+
+            console.log('bottom_set['+prev_index2+']=tmp_set2['+i+']:'+tmp_set2[i]);
+            bottom_set[prev_index2] = tmp_set2[i];
+        }
+        console.log('정렬딘 일층요소:',top_set);
+        console.log('정렬된 이층요소:',bottom_set);
+        console.log('=============End========================');
+
+        now_target=top_set[0];
+        now_target2=bottom_set[0];
+
+        if(now_panel===1){
+            for(var c=0; c<top_set.length; c++){
+                original_set[c]=top_set[c];
+            }
+            for(var c=0; c<bottom_set.length; c++){
+                original_set2[c]=bottom_set[c];
+            }
+            panel1_prevtarget=prev_target;
+            panel1_prevtarget2=prev_target2;
+            panel1_nowtarget=now_target;
+            panel1_nowtarget2=now_target2;
+        }else if(now_panel===2){
+            for(var c=0; c<top_set.length; c++){
+                original_set3[c]=top_set[c];
+            }
+            for(var c=0; c<bottom_set.length; c++){
+                original_set4[c]=bottom_set[c];
+            }
+            panel2_prevtarget=prev_target;
+            panel2_prevtarget2=prev_target2;
+            panel2_nowtarget=now_target;
+            panel2_nowtarget2=now_target2;
+        }else if(now_panel===3){
+            for(var c=0; c<top_set.length; c++){
+                original_set5[c]=top_set[c];
+            }
+            for(var c=0; c<bottom_set.length; c++){
+                original_set6[c]=bottom_set[c];
+            }
+            panel3_prevtarget=prev_target;
+            panel3_prevtarget2=prev_target2;
+            panel3_nowtarget=now_target;
+            panel3_nowtarget2=now_target2;//패널1의 prev,now target들에 전역변수에 함수에서 저장해놨던 갱신되었던 정보를 저장(기존의 타깃들,현재 타깃들)
+        }
+    }
+
+    var slide_aniId,slide_aniId2;
+    var slide_aniId3,slide_aniId4;
+
+    var original_X=-65,original_X2=65;
+    var original2_X=65, original2_X2=-65;
+    var count=0,count2=0,count3=0,count4=0;
+
+    function show_movie(){
+        if(isWait2){
+            console.log('isWiat2sss:',isWait2);
+            return;
+        }else{
+            var now_target,now_target2;
+            var prev_target,prev_target2;
+            if(now_panel===1){
+                now_target=panel1_nowtarget;
+                now_target2=panel1_nowtarget2;
+                prev_target=panel1_prevtarget;
+                prev_target2=panel1_prevtarget2;
+            }else if(now_panel===2){
+                now_target=panel2_nowtarget;
+                now_target2=panel2_nowtarget2;
+                prev_target=panel2_prevtarget;
+                prev_target2=panel2_prevtarget2;
+            }else if(now_panel===3){
+                now_target=panel3_nowtarget;
+                now_target2=panel3_nowtarget2;
+                prev_target=panel3_prevtarget;
+                prev_target2=panel3_prevtarget2;
+            }
+
+            document.getElementById(now_target.id+'info').style.display='block';
+            document.getElementById(now_target2.id+'info').style.display='block';
+
+            console.log('현재 타깃 무비타깃:',now_target,now_target2);
+            console.log('이전 타깃무비타깃:',prev_target,prev_target2);
+            console.log('실행가능 실행배열상태:',task_array2);
+
+            slide_aniId=window.setInterval(slide_animate,5,document.getElementById(now_target.id+'info'),1/100,1.3,'a');
+            task_array2.push(slide_aniId);
+            slide_aniId2=window.setInterval(slide_animate,5,document.getElementById(prev_target.id+'info'),-1/100,-1.3,'a');
+            task_array2.push(slide_aniId2);
+
+            slide_aniId3=window.setInterval(slide_animate,5,document.getElementById(now_target2.id+'info'),1/100,-1.3,'b');
+            task_array2.push(slide_aniId3);
+            slide_aniId4=window.setInterval(slide_animate,5,document.getElementById(prev_target2.id+'info'),-1/100,1.3,'b');
+            task_array2.push(slide_aniId4);
+        }
+    }
+
+    function slide_animate(target,opacity_factor,x_factor,animation_type){
+        var original_opacity=parseFloat(window.getComputedStyle(target,null)['opacity']);
+        var changed_opacity=original_opacity+ opacity_factor;
+
+        target.style.opacity=changed_opacity;
+
+        var changed_transform;
+        if(x_factor===1.3){
+            if(animation_type==='a'){
+                original_X += x_factor;
+                changed_transform='translateX('+original_X+'%)';
+
+                target.style.transform=changed_transform;
+                count++;//타깃형.
+            }else if(animation_type==='b'){
+                original2_X2 += x_factor;
+                changed_transform='translateX('+original2_X2+'%)';
+
+                target.style.transform=changed_transform;
+                count4++;//복귀형 
+            }
+        }else if(x_factor===-1.3){
+            if(animation_type==='a'){
+                original_X2 += x_factor;
+                changed_transform='translateX('+original_X2+'%)';
+
+                target.style.transform=changed_transform;
+                count2++;//복귀형
+            }else if(animation_type==='b'){
+                original2_X += x_factor;
+                changed_transform='translateX('+original2_X+'%)';
+
+                target.style.transform=changed_transform;
+                count3++;
+            }
+        }
+
+        if(count===100){
+            window.clearInterval(slide_aniId);
+            task_array2.pop();
+            count=0;
+            original_X=-65;
+        }else if(count2===100){
+            window.clearInterval(slide_aniId2);
+            task_array2.pop();
+            count2=0;
+            original_X2=65;
+
+            target.style.display='none';
+        }else if(count3===100){
+            window.clearInterval(slide_aniId3);
+            task_array2.pop();
+            count3=0;
+            original2_X=65;
+        }else if(count4===100){
+            window.clearInterval(slide_aniId4);
+            task_array2.pop();
+            count4=0;
+            original2_X2=-65;
+
+            target.style.display='none';
+        }
+    }
+
+    var is_modal_open=false;
+
+    $('.movie_info').click(read_detail_info);
+    $('.movie_info').click(detail_open);
+
+    movie_detailClose.addEventListener('click',detail_close,false);
+
+    function read_detail_info(event){
+        var target=event.target;
+        var target_id=target.id;
+        var target_index=target.id.replace('m','');
+        target_index = parseInt(target_index.replace('info',''));
+
+        var read_info=movie_info[target_index];
+        var title=read_info['title'];
+        var poster_url=read_info['poster_url'];
+        var agegrade_url=read_info['agegrade_url'];
+        var core_info=read_info['core_info'];
+        var story=read_info['story'];
+        var trailer_url=read_info['trailer_url'];
+
+        $('.movie_poster').css({'background-image':'url("'+poster_url+'")'});
+        $('.movie_information .age_grade').css({'background-image':'url("'+agegrade_url+'")'});
+        $('.movie_information .title').text(title);
+        $('.movie_information .core_info').html(core_info);
+        $('.movie_information .story').html(story);
+        $('.trailer video').attr('src',trailer_url);
+    }
+    function detail_close(event){
+        $('#movie_detail_fullWrap').animate({
+            opacity:0,
+            height:0
+        },{
+            duration:500,
+            complete:function(){
+                $('#movie_detail_fullWrap').css({'display':'none'});
+                $('html').css({'overflow':'visible'})
+            }
+        });
+        is_modal_open=false;
+
+        return false;
+    }
+    function detail_open(event){
+        $('#movie_detail_fullWrap').css({'display':'block'});
+        $('#movie_detail_fullWrap').animate({
+            opacity:1,
+            height:'100vh'
+        },{
+            duration:500,
+            complete:function(){
+                $('html').css({'overflow':'hidden'})
+            }
+        });
+        is_modal_open=true;
+
+        return false;
+    } 
+</script>
+</body>
+</html>

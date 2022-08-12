@@ -1,0 +1,661 @@
+@media all and (orientation:landscape){
+    .main_perspective{
+        perspective:8000px;
+        perspective-origin:50% 50%;
+        transform-style:preserve-3d;
+        position:relative;
+        width:100%;height:100vh
+    }
+    .main_perspective >.main{
+        width:100%;height:100%;
+        background-color:#000;
+        background-size:cover;
+        background-attachment:scroll;
+        background-position:50% 50%;
+
+        transform-origin:left;
+        position:absolute;
+        left:0;top:0
+    }
+    .main_perspective >.main_banner1{
+        transform:rotateY(0deg);
+        background-image:url('../images/main/main_bannerImg13-2.jpg');
+        z-index:3;
+    }
+    .main_perspective>.main_banner2{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg28-1.jpg');
+        z-index:1;
+  }
+  .main_perspective>.main_banner3{
+        transform:rotateY(-100deg);
+       -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg29.jpg');
+       z-index:1;
+  }
+  .main_perspective>.main_banner4{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg30.jpg');
+        z-index:1;
+  }
+  .main_perspective>.main_banner5{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg33.jpg');
+        z-index:1;
+  }
+  .main_perspective>.main_banner6{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg6-2.jpg');
+        z-index:1;
+  }
+  .main_perspective>.main_banner7{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg7-1.jpg');
+        z-index:1;
+  }
+  .main_perspective>.main_banner8{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg8-1.jpg');
+        z-index:1;
+  }
+  .main_perspective>.main_banner9{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg9.jpg');
+        z-index:1;
+  }
+  .main_perspective>.main_banner10{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg11-1.jpg');
+        z-index:1;
+  }
+}
+
+@media all and (orientation:landscape) and (min-height:800px){
+    .main_perspective{
+        perspective:8000px;
+        -ms-perspective:8000px;
+        perspective-origin:50% 50%;
+        -ms-perspective-origin:50% 50%;
+        transform-style:preserve-3d;
+        -ms-transform-style:preserve-3d;
+        position:relative;
+        width:100%;height:1000px;
+    }
+    .main_perspective >.mb_controller{
+        width:45px;
+        height:380px;
+        position:absolute;
+        right:8.33333333333%; top:0;bottom:0;margin:auto 0;
+        background-color:transparent;
+        overflow:hidden;
+        z-index:93
+    }
+    .main_perspective >.circle_mb_bt{
+        display:none;
+    }
+    .main_perspective>.mb_controller>.mbc_thinline{
+        width:5px;
+        height:380px;
+        background-color:rgba(0,0,0,0.5);
+        border-right:1px solid #dcdcdc;
+        float:left;
+        position:relative;
+    }
+    .main_perspective>.mbc_g_thinline{
+        display:none
+    }
+    .main_perspective>.mb_controller>.mbc_thinline>.mbc_statusbar{
+        width:100%;
+        height:38px;
+        background-color:#fff;
+        position:absolute;
+        left:0;top:0
+    }
+    .main_perspective>.mb_controller>ul{
+        width:40px;
+        height:380px;
+        float:left;
+        background-color:rgba(0,0,0,0.5);
+        color:#dcdcdc;
+    }
+    .main_perspective>.mb_controller>ul>li{
+        display:block;
+        width:100%;
+        height:38px;
+        background-color:transparent;
+        font-size:18px;
+        line-height:38px;
+        text-align:center;
+        font-weight:900
+    }
+    .main_perspective>.mb_controller>ul>#mb_bt1{
+        color:white;
+        font-weight:900
+    }
+    .main_perspective >.mb_controller{
+        width:65px;height:450px;
+        position:absolute; right:8.33333333333333%;
+        top:0;bottom:0;margin:auto 0;
+        background-color:transparent;
+        overflow:hidden;
+        z-index:93
+    }
+    .main_perspective >.circle_mb_bt{
+        display:none;
+    }
+    .main_perspective >.mb_controller>.mbc_thineline{
+        width:5px;
+        height:450px;
+        background-color:rgba(0,0,0,0.5);
+        border-right:1px solid #dcdcdc;
+        float:left;
+        position:relative;
+    }
+    .main_perspective >.mb_controller>.mbc_thineline>.mbc_statusbar{
+        width:100%;
+        height:45px;
+        background-color:#fff;
+        position:absolute;
+        left:0;top:0
+    }
+    .main_perspective>.mbc_g_thinline{
+        display:none;
+    }
+
+    .main_perspective >.mb_controller>ul{
+        width:60px;
+        height:450px;
+        float:left;
+        background-color:rgba(0,0,0,0.5);
+        color:#dcdcdc;
+    }
+    .main_perspective>.mb_controller>ul>li{
+        display:block;
+        width:100%;height:45px;
+        background-color:transparent;
+        font-size:23px;
+        line-height:45px;
+        text-align:center;
+        font-weight:900
+    }
+    .main_perspective>.mb_controller>ul>#mb_bt1{
+        color:white;
+        font-weight:900
+    }
+}
+
+
+@media all and (orientation:landscape) and (min-height:600px) and (max-height:799px){
+    .main_perspective >.mb_controller{
+        width:65px; height:450px;
+        position:absolute;
+        right:8.333333333333333%;top:0;bottom:0; margin:auto 0;
+        background-color:transparent;
+        overflow:hidden;
+        z-index:93
+    }
+    .main_perspective>.circle_mb_bt{
+        display:none;
+    }
+    .main_perspective>.mb_controller>.mbc_thinline{
+        width:5px;
+        height:450px; background-color:rgba(0,0,0,0.5);
+        border-right:1px solid #dcdcdc;
+        float:left;
+        position:relative;
+    }
+    .main_perspective>.mbc_g_thinline{
+        display:none;
+    }
+    .main_perspective>.mb_controller>.mbc_thinline>.mbc_statusbar{
+        width:100%;
+        height:45px;
+        background-color:#fff;
+        position:absolute;
+        left:0;top:0
+    }
+    .main_perspective>.mb_controller>ul{
+        width:60px;
+        height:4560pox;
+        float:left;
+        background-color:rgba(0,0,0,0.5);
+        color:#dcdcdc;
+    }
+    .main_perspective>.mb_controller>ul>li{
+        display:block;
+        width:100%;height:45px;
+        background-color:transparent;
+        font-size:23px;
+        line-height:45px;
+        text-align:center;
+        font-weight:900
+    }
+    .main_perspective>.mb_controller>ul>#mb_bt1{
+        color:white;
+        font-weight:900
+    }
+
+    /*해당 폭의 범위를 가지면서 1100~1499이면서 laptop폭기준, 해당 노트북에 해당비율을 가진 기기라면 처리한다*/
+	 /*메인배너 영역 스타일링 flip_animation*/
+	 .main_perspective{
+        perspective:8000px;
+        -ms-perspective:8000px;
+        perspective-origin:50% 50%;
+        -ms-perspective-origin:50% 50%;
+        transform-style:preserve-3d;
+        -ms-transform-style:preserve-3d;
+        position:relative;
+        width:100%;height:100vh;/*보통 노트북은 780~920 급 높이를 가진다*/
+   }
+   .main_perspective>.mb_controller{
+      width:65px;
+      height:450px;
+      position:absolute;
+      right:8.33333333333%;top:0;bottom:0;margin:auto 0;
+      background-color:transparent;
+      overflow:hidden;
+      z-index:93;
+   }
+   .main_perspective>.circle_mb_bt{
+        display:none;
+   }
+   .main_perspective>.mbc_g_thinline{
+        display:none;
+   }
+   
+   .main_perspective>.main{
+        width:100%;height:100%;
+        background-color:#000;
+        background-size:cover;
+        background-attachment:scroll;
+        background-position:50% 50%;
+
+        transform-origin:left;
+        -ms-transform-origin:left;
+        position:absolute;
+        left:0;top:0;
+   }
+   .main_perspective>.main_banner1{
+        transform:rotateY(0deg);
+        -ms-transform:rotateY(0deg);
+        background-image:url('../images/main/main_bannerImg13-1(laptop).jpg');
+        z-index:3;
+   }
+   .main_perspective>.main_banner2{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg28(laptop).jpg');
+        z-index:1;
+   }
+   .main_perspective>.main_banner3{
+        transform:rotateY(-100deg);
+       -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg29(laptop).jpg');
+       z-index:1;
+   }
+   .main_perspective>.main_banner4{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg30(laptop).jpg');
+        z-index:1;
+   }
+   .main_perspective>.main_banner5{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg33(laptop).jpg');
+        z-index:1;
+   }
+   .main_perspective>.main_banner6{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg6-2(laptop).jpg');
+        z-index:1;
+   }
+   .main_perspective>.main_banner7{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg7(laptop).jpg');
+        z-index:1;
+   }
+   .main_perspective>.main_banner8{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg8(laptop).jpg');
+        z-index:1;
+   }
+   .main_perspective>.main_banner9{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg9(laptop).jpg');
+        z-index:1;
+   }
+   .main_perspective>.main_banner10{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg11(laptop).jpg');
+        z-index:1;
+   }
+}
+/*5.599이하 기기높이인 와이드화면이라면*/
+@media all and (orientation:landscape) and (max-height:599px){
+    /*와이드형 기기중에서도 599 이하 기기자체 높이를 갖고 있는 작은 화면 사실상 태블릿 작은거나 모바일폰 기기 뒤집은것 모델*/
+
+    .main_perspective>.mb_controller{
+      
+        display:none;
+    }
+    .main_perspective>.circle_mb_bt{
+         display:block;
+         width:500px;position:absolute;
+         height:40px;right:8.33333333333%;bottom:8px;
+         overflow:hidden;
+         z-index:93;
+    }
+    .main_perspective>.circle_mb_bt>li{
+         float:left; width:40px;height:40px;border-radius:20px;
+         background-color:rgba(0,0,0,0.5); text-align:center;
+         font-size:14px;line-height:40px;color:#dcdcdc;margin:0 5px;
+         font-weight:900;
+    }
+    .main_perspective>.circle_mb_bt>li:first-child{
+         color:#fff;
+         font-weight:900;
+    }
+  
+    .main_perspective>.mbc_g_thinline{
+         display:block;
+         width:500px;position:absolute;bottom:52px;right:8.33333333333%;
+         background-color:rgba(0,0,0,0.5);height:5px;border-bottom:1px solid #dcdcdc;
+         z-index:93;
+    }
+    .main_perspective>.mbc_g_thinline>.mbc_g_statusbar{
+         display:block;
+         width:50px;height:4px;background-color:#fff;
+         position:absolute;top:0;left:0;
+    }
+  
+    
+}
+
+
+@media all and (min-width:600px) and (max-width:1099px) and (orientation:portrait){
+     /*메인배너 영역 스타일링 flip_animation*/
+	 .main_perspective{
+        perspective:8000px;
+        -ms-perspective:8000px;
+        perspective-origin:50% 50%;
+        -ms-perspective-origin:50% 50%;
+        transform-style:preserve-3d;
+        -ms-transform-style:preserve-3d;
+        position:relative;
+        width:100%;height:100vh;/*보통 노트북은 780~920 급 높이를 가진다*/
+   }
+    .main_perspective>.circle_mb_bt{
+        display:none;
+   }
+   .main_perspective>.mbc_g_thinline{
+        display:none;
+   }
+   .main_perspective>.mb_controller{
+    width:65px;
+    height:450px;
+    position:absolute;
+    right:8.333333333333%;top:0;bottom:0;margin:auto 0;
+    background-color:transparent;
+    overflow:hidden;
+    z-index:93
+   }
+   .main_perspective>.mb_controller>.mbc_thinline{
+    width:5px;
+    height:450px;
+    background-color:rgba(0,0,0,0.5);
+    border-right:1px solid #dcdcdc;
+    float:left;
+    position:relative;
+   }
+   .main_perspective>.mb_controller>.mbc_thinline>.mbc_statusbar{
+    width:100%;
+    height:45px;
+    background-color:#fff;
+    position:absolute;
+    left:0;top:0
+   }
+   .main_perspective>.mb_controller>ul{
+        width:60px;
+        height:450px;
+        float:left;
+        background-color:rgba(0,0,0,0.5);
+        color:#dcdcdc;
+   }
+   .main_perspective>.mb_controller>ul>li{
+        display:block;
+        width:100%;
+        height:45px;
+        background-color:transparent;
+        font-size:23px;
+        line-height:45px;
+        text-align:center;
+        font-weight:900
+   }
+   .main_perspective>.mb_controller>ul>#mb_bt1{
+        color:white;
+        font-weight:900
+    }
+   .main_perspective>.main{
+        width:100%;height:100%;
+        background-color:#000;
+        background-size:cover;
+        background-attachment:scroll;
+        background-position:50% 50%;
+
+        transform-origin:left;
+        position:absolute;
+        left:0;top:0
+   }
+
+   .main_perspective>.main_banner1{
+        transform:rotateY(0deg);
+        -ms-transform:rotateY(0deg);
+        background-image:url('../images/main/main_bannerImg13-1(tablet).jpg');
+        z-index:3;
+    }
+    .main_perspective>.main_banner2{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg28(tablet).jpg');
+        z-index:1;
+    }
+    .main_perspective>.main_banner3{
+        transform:rotateY(-100deg);
+    -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg29(tablet).jpg');
+    z-index:1;
+    }
+    .main_perspective>.main_banner4{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg30(tablet).jpg');
+        z-index:1;
+    }
+    .main_perspective>.main_banner5{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg33(tablet).jpg');
+        z-index:1;
+    }
+    .main_perspective>.main_banner6{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg6(tablet).jpg');
+        z-index:1;
+    }
+    .main_perspective>.main_banner7{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg7(tablet).jpg');
+        z-index:1;
+    }
+    .main_perspective>.main_banner8{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg8(tablet).jpg');
+        z-index:1;
+    }
+    .main_perspective>.main_banner9{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg9(tablet).jpg');
+        z-index:1;
+    }
+    .main_perspective>.main_banner10{
+        transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+        background-image:url('../images/main/main_bannerImg11(tablet).jpg');
+        z-index:1;
+    }
+}
+/*9.mobile급 해상도 599 이하 */
+@media all and ( max-width:599px) and (orientation:portrait){
+    /*메인배너 영역 스타일링 flip_animation*/
+    .main_perspective{
+         perspective:8000px;
+         -ms-perspective:8000px;
+         perspective-origin:50% 50%;
+         -ms-perspective-origin:50% 50%;
+         transform-style:preserve-3d;
+         -ms-transform-style:preserve-3d;
+         position:relative;
+         width:100%;height:100vh;/*보통 노트북은 780~920 급 높이를 가진다*/
+    }
+    .main_perspective>.mb_controller{
+       width:50px;
+       height:320px;
+       position:absolute;
+       right:8.33333333333%;top:0;bottom:0;margin:auto 0;
+       background-color:transparent;
+       overflow:hidden;
+       z-index:93;
+    }
+     .main_perspective>.circle_mb_bt{
+         display:none;
+    }
+    .main_perspective>.mbc_g_thinline{
+         display:none;
+    }
+    .main_perspective>.mb_controller>.mbc_thinline{
+       width:5px;
+       height:320px;
+       background-color:rgba(0,0,0,0.5);
+       border-right:1px solid #dcdcdc;/*보더 라이트 제외 컨텐츠영역 폭4px*/
+       float:left;
+       position:relative;
+    }
+    .main_perspective>.mb_controller>.mbc_thinline>.mbc_statusbar{
+       width:100%;
+       height:32px;
+       background-color:#fff;
+       position:absolute;
+       left:0;top:0;
+    }
+    .main_perspective>.mb_controller>ul{
+       width:45px;
+       height:320px;
+       float:left;
+       background-color:rgba(0,0,0,0.5);
+       color:#dcdcdc;/*선택된 버튼요소는 흰색으로 변경*/
+    }
+    .main_perspective>.mb_controller>ul>li{
+       display:block;
+       width:100%;
+       height:32px;
+       background-color:transparent;
+       font-size:16px;
+       line-height:32px;
+       text-align:center;
+       font-weight:900;
+    }
+    .main_perspective>.mb_controller>ul>#mb_bt1{
+       color:white;
+       font-weight:900;
+    }
+    .main_perspective>.main{
+         width:100%;height:100%;
+         background-color:#000;
+         background-size:cover;
+         background-attachment:scroll;
+         background-position:50% 50%;
+
+         transform-origin:left;
+         -ms-transform-origin:left;
+         position:absolute;
+         left:0;top:0;
+    }
+    .main_perspective>.main_banner1{
+         transform:rotateY(0deg);
+         -ms-transform:rotateY(0deg);
+         background-image:url('../images/main/main_bannerImg13-1(mobile).jpg');
+         z-index:3;
+    }
+    .main_perspective>.main_banner2{
+         transform:rotateY(-100deg);
+         -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg28(mobile).jpg');
+         z-index:1;
+    }
+    .main_perspective>.main_banner3{
+         transform:rotateY(-100deg);
+        -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg29(mobile).jpg');
+        z-index:1;
+    }
+    .main_perspective>.main_banner4{
+         transform:rotateY(-100deg);
+         -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg30(mobile).jpg');
+         z-index:1;
+    }
+    .main_perspective>.main_banner5{
+         transform:rotateY(-100deg);
+         -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg33(mobile).jpg');
+         z-index:1;
+    }
+    .main_perspective>.main_banner6{
+         transform:rotateY(-100deg);
+         -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg6(mobile).jpg');
+         z-index:1;
+    }
+    .main_perspective>.main_banner7{
+         transform:rotateY(-100deg);
+         -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg7(mobile).jpg');
+         z-index:1;
+    }
+    .main_perspective>.main_banner8{
+         transform:rotateY(-100deg);
+         -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg8(mobile).jpg');
+         z-index:1;
+    }
+    .main_perspective>.main_banner9{
+         transform:rotateY(-100deg);
+         -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg9(mobile).jpg');
+         z-index:1;
+    }
+    .main_perspective>.main_banner10{
+         transform:rotateY(-100deg);
+         -ms-transform:rotateY(-100deg);
+         background-image:url('../images/main/main_bannerImg11(mobile).jpg');
+         z-index:1;
+    }
+}
